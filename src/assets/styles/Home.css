@@ -1,0 +1,300 @@
+.LANA {
+  width: 108px;
+  height: 34px;
+  margin: 15px 0px 4px 179px;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.Product-Customers-Pr {
+  width: 350px;
+  height: 28px;
+  margin: -30px 29px 9px 600px;
+}
+  .products {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+
+
+  .bg {
+    width: 102px;
+    height: 46px;
+    margin: 0 14px 0 29px;
+    padding: 11px 22px 12px 25px;
+    border-radius: 4px;
+    border: solid 1px #a6a6a6;
+    
+  }
+
+  .Sign-In {
+    width: 55px;
+    height: 23px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .Photo {
+    background: url('../images/pagina1/home.png') center center/cover no-repeat; 
+    width: 1111px;
+    height: 734px;
+    margin: 0 144px 128px 145px;
+    padding: 194px 48px 86px 565px;
+    object-fit: contain;
+  }
+
+  .base {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    background: #fff; 
+    width: 1111px;
+    height: 172px;
+    margin: 0 144px 128px 145px;
+    object-fit: contain;
+  }
+
+  .sectionA {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    background: #fff; 
+    width: 1111px;
+    max-width: 1111px;
+    height: 559px;
+    margin: 0 144px 128px 145px;
+    object-fit: contain;
+  }
+
+  .BotonEmpezar {
+    width: 229px;
+    height: 46px;
+    margin: 10px 268px 31px 1px;
+    object-fit: contain;
+  }
+  
+
+  .Logos-tiendas {
+    width: 258px;
+    height: 39px;
+    margin: 31px 238px 0 2px;
+    object-fit: contain;
+  }
+
+  .Rectangle {
+    width: 1400px;
+    height: 78px;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+  }
+
+  .Rectangle-a {
+    width: 1400px;
+    height: 78px;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+
+  }
+
+  .taxes {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+
+  .accounting {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+
+  .audits {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+
+  .payroll {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+
+  .corporations {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+
+  .planning {
+    width: 146px;
+    height: 172px;
+    margin: 0px 0px 0px 0;
+    padding: 0px 0px 0px 0;
+  
+  }
+  
+
+  .imageA {
+    width: 573px;
+    height: 559px;
+    margin: 0 0px 0px 0px;
+    object-fit: contain;
+  } 
+
+  .sectionAa {
+    width: 665px;
+    height: 199px;
+    margin: 0 0 23px;
+    font-family: Poppins;
+    font-size: 59px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: right;
+    color: #009245;
+  }
+
+ 
+  .textA {
+    width: 598px;
+    height: 180px;
+    margin: 0px 0px 23px 25px;
+  }
+
+  .Nuestra-videollamada {
+    width: 530px;
+    height: 49px;
+    margin: 0px 100px 0 100px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a6a6a6;
+  }
+
+  .Boton-Nombre {
+    width: 380px;
+    height: 46px;
+    margin: 10px 0 18px;
+    border-radius: 23px;
+    background-color: #d6d6d6;
+  }
+
+  .Botones {
+    width: 380px;
+    height: 46px;
+    margin: 50px 0px 0px 200px;
+
+  }
+
+  .Boton-CorreoElectronico {
+    width: 380px;
+    height: 46px;
+    margin: 10px 0 18px;
+    border-radius: 23px;
+    background-color: #d6d6d6;
+  }
+ 
+
+  @media screen and (max-width: 400px) {
+    .Text {
+      width: 267px;
+      height: 206px;
+      margin: 326px 26px 13px 27px;
+      object-fit: contain;
+    }
+    .Photo {
+      background: url('../images/pagina1/photoMobile.png') center  no-repeat; 
+      width: 320px;
+  height: 734px;
+  margin: 0 0 91px;
+  padding: 0 0 19px;
+  object-fit: contain;
+    }
+
+    .BotonEmpezar {
+      width: 229px;
+      height: 46px;
+      margin: 13px 45px 24px 46px;
+      object-fit: contain;
+    }
+
+    .Logos-tiendas {
+      width: 258px;
+      height: 39px;
+      margin: 24px 31px 0;
+      object-fit: contain;
+    }
+
+    
+
+    }
+
+    @media screen and (device-width: 800px) { /*Reglas CSS*/ 
+    
+      .Text {
+        width: 267px;
+        height: 206px;
+        margin: 326px 26px 13px 27px;
+        object-fit: contain;
+      }
+      .Photo {
+        background: url('../images/pagina1/photoMobile.png') center  no-repeat; 
+        width: 320px;
+    height: 734px;
+    margin: 0 0 91px;
+    padding: 0 0 19px;
+    object-fit: contain;
+      }
+  
+      .BotonEmpezar {
+        width: 229px;
+        height: 46px;
+        margin: 13px 45px 24px 46px;
+        object-fit: contain;
+      }
+  
+      .Logos-tiendas {
+        width: 258px;
+        height: 39px;
+        margin: 24px 31px 0;
+        object-fit: contain;
+      }
+  
+    } 
+
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="84" viewBox="0 0 76 84">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g stroke="#009245" stroke-linecap="round" stroke-width="3">
+                            <path d="M0.353 73.242L53.329 73.242 53.329 0.227 0.353 0.227z" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                            <path d="M53.329 6.631L59.714 6.631 59.714 79.646 6.739 79.646 6.739 73.241" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                        </g>
+                        <path stroke="#009245" stroke-linecap="round" stroke-width="3" d="M7 25L25 25 25 7 7 7z" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                        <path fill="#D9E021" d="M10 21L21 21 21 10 10 10z" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                        <path stroke="#009245" stroke-linecap="round" stroke-width="3" d="M6 31.5L48 31.5M6 38.5L48 38.5M6 44.5L48 44.5M31 7.5L48 7.5M31 13.5L48 13.5M6 51.5L48 51.5M48 66.5L34 66.5" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                        <path fill="#D9E021" d="M34 64L48 64 48 59 34 59z" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387)"/>
+                        <g stroke="#009245" stroke-linecap="round" stroke-width="3">
+                            <path d="M.311 32.195L4.926 32.195 4.926 4.835.311 4.835zM2.32 40.07h.597c1.11 0 2.01-.886 2.01-1.978v-5.897H.31v5.897c0 1.092.9 1.978 2.009 1.978zM2.619 40.07L2.619 44.649" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387) translate(67 35)"/>
+                            <path d="M2.917.291H2.32C1.21.291.311 1.177.311 2.27v2.566h4.616V2.269c0-1.092-.9-1.978-2.01-1.978z" transform="translate(-900 -1478) translate(145 1050) translate(373 43) translate(384 387) translate(67 35)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

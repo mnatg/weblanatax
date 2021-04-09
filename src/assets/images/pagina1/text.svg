@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="498" height="329" viewBox="0 0 498 329">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FFF">
+            <g>
+                <g>
+                    <text font-family="HelveticaRounded-Bold, HelveticaRounded" font-size="65" font-weight="bold" letter-spacing="4.1" transform="translate(-710 -194) translate(145) translate(565 194)">
+                        <tspan x="0" y="60">NO TE</tspan> <tspan x="0" y="123">COMPLIQUES</tspan> <tspan x="0" y="186">CON TUS</tspan> <tspan x="0" y="249">TAXES,</tspan>
+                    </text>
+                    <text font-family="HelveticaRounded-Bold, HelveticaRounded" font-size="25" font-weight="bold" transform="translate(-710 -194) translate(145) translate(565 194)">
+                        <tspan x="0" y="259">Nos encargamos de todo por ti</tspan>
+                    </text>
+                    <text font-family="Modeco-Regular" font-size="16" transform="translate(-710 -194) translate(145) translate(565 194)">
+                        <tspan x="6" y="324">Ven a recibir la mejor atención</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

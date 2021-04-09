@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="46" viewBox="0 0 160 46">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-430 -1845) translate(145 1625) translate(285 220)">
+                    <rect width="160" height="46" fill="#009245" rx="23"/>
+                    <text fill="#FFF" font-family="Poppins-SemiBold, Poppins" font-size="16" font-weight="500">
+                        <tspan x="45" y="28">Conectar</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

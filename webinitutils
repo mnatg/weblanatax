@@ -1,0 +1,38 @@
+admin@admin.com
+123456
+recepcion@recepcion.com
+LanaP4ss**
+consultor@consultor.com
+LanaP4ss** 
+
+
+ERRORS:
+
+
+error: ENOSPC: System limit for number of file watchers reached, watch '/home/guzman/ReactJSProjects/webinit/public/404.html'
+
+sol:
+sudo sysctl -w fs.inotify.max_user_watches=20000 && sudo sysctl -p
+
+
+error: has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+
+sol:
+
+
+
+git config --global user.email "lgalvis@mnatg.com"
+git config --global user.name "lgalvismanda"
+
+---
+
+
+
+
+  Enlaces lanatax
+  
+play.google.com/store/apps/details?id=com.lanatax
+https://apps.apple.com/co/app/lanatax/id1556736650
+
+
+
