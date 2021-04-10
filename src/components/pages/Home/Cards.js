@@ -1,11 +1,11 @@
 import React from 'react';
-import '../assets/styles/Home.css';
-import taxes from '../assets/images/pagina1/impuestos.png'
-import accounting from '../assets/images/pagina1/contabilidad.png'
-import audits from '../assets/images/pagina1/auditorias.png'
-import payroll from '../assets/images/pagina1/nomina.png'
-import corporations from '../assets/images/pagina1/corporaciones.png'
-import planning from '../assets/images/pagina1/planificacion.png'
+import '../../../assets/styles/Home/Home.css';
+import taxes from '../../../assets/images/Home/init/impuestos.png'
+import accounting from '../../../assets/images/Home/init//contabilidad.png'
+import audits from '../../../assets/images/Home/init/auditorias.png'
+import payroll from '../../../assets/images/Home/init//nomina.png'
+import corporations from '../../../assets/images/Home/init//corporaciones.png'
+import planning from '../../../assets/images/Home/init//planificacion.png'
 import { Link } from 'react-router-dom';
 
 function Cards() {

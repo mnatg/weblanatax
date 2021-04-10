@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/pages/Home/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
+import Home from './components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import Services from './components/pages/Services/Services';
+import Products from './components/pages/Products/Products';
+import SignUp from './components/pages/Home/SignUp';
 
 function App() {
   return (

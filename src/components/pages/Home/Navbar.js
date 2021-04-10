@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import '../assets/styles/Home.css'
-import logo from '../assets/images/pagina1/lana@3x.png';
+import '../../../assets/styles/Home/Navbar.css';
+import '../../../assets/styles/Home/Home.css'
+import logo from '../../../assets/images/Home/init/lana@3x.png';
 
 
 function Navbar() {
