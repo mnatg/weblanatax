@@ -35,7 +35,7 @@ function sectionC() {
           <img className="noticias-image-one" src={imageTwo} alt="imageTwo"/>
           </Link>
           <h1 className='noticia-one-autor'> By Maria | 03 Enero 2021</h1>
-          <h2 className='noticia-one-title'> Los mejores en la <br/>comunidad latina  </h2>
+          <h2 className='noticia-two-title'> Los mejores en la <br/>comunidad latina  </h2>
 
       </div>
 

@@ -6,6 +6,7 @@ import Footer from '../../pages/Home/Footer';
 import SectionA from '../../pages/Home/sectionA'
 import SectionB from '../../pages/Home/sectionB'
 import SectionC from '../../pages/Home/sectionC'
+import SectionD from '../../pages/Home/sectionD'
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <SectionA />
       <SectionB />
       <SectionC />
+      <SectionD />
       <Footer />
     </>
   );

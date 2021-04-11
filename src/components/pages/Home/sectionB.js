@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 
 function sectionB() {
   return (
-    <div className='sectionB'>
+    <div className='sectionB homebackground'>
        
     <p className='Le-ayudaremos-a-hace'>Le ayudaremos a <br/> hacer bien sus <br/>
      impuestos,<br/>
@@ -44,16 +44,16 @@ que estás obteniendo el <br/> máximo reembolso. </p>
 </div>
 
 <div className='gridtest'>
-<img className="BILLETES" src={personas} alt="personas"/>
-<p className='Conctate-con-EAs-'> Conéctate con EA’s (Agentes <br/> Inscritos) cada vez para <br/>obtener consejos y <br/>revisiones de tu declaración <br/> de impuestos.  </p>
-<img className="TORTA" src={estadistica} alt="estadistica"/>
-<p className='Videollamada-Gratis'> Notificaciones push - Haremos <br/> que sea fácil estar informado <br/> sobre tu declaración de <br/>impuestos con notificaciones<br/> enviadas directamente a tu<br/> celular. </p>
+<img className="PERSONAS" src={personas} alt="personas"/>
+<p className='Conctate-con-EAs'> Conéctate con EA’s (Agentes <br/> Inscritos) cada vez para <br/>obtener consejos y <br/>revisiones de tu declaración <br/> de impuestos.  </p>
+<img className="ESTADISTICA" src={estadistica} alt="estadistica"/>
+<p className='Notificaciones-push '> Notificaciones push - Haremos <br/> que sea fácil estar informado <br/> sobre tu declaración de <br/>impuestos con notificaciones<br/> enviadas directamente a tu<br/> celular. </p>
 </div>
 
 <div className='gridtest'>
-<img className="BILLETES" src={planeta} alt="planeta"/>
-<p className='Simple-fcil-y-segu'> Haz tus taxes de donde sea.  </p>
-<img className="TORTA" src={hojas} alt="hojas"/>
+<img className="PLANETA" src={planeta} alt="planeta"/>
+<p className='haz-tus-taxes'> Haz tus taxes de donde sea.  </p>
+<img className="HOJAS" src={hojas} alt="hojas"/>
 <p className='Ten-acceso-a-todos-t'> Ten acceso a todos tus<br/> documentos. </p>
 </div>
 

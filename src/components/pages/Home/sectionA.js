@@ -10,12 +10,19 @@ import { Link } from 'react-router-dom';
 
 function sectionA() {
   return (
+
+    <div className='homebackground'>
     <div className='sectionA'>
        
         <img className="imageA" src={imageA} alt="imageA"/>
 
         <div>
-        <img className="textA" src={textA} alt="textA"/>
+
+        <h1 className='TUS-IMPUESTOS-CON-LO'>
+        TUS IMPUESTOS <br/>
+CON LOS MEJORES <br/>
+ <p className='TUS-IMPUESTOS-CON-LO text-style-1'> Y EN VIVO</p>
+ </h1>
         <h1 className='Nuestra-videollamada'>
         Nuestra videollamada es Simple, Fácil y Segura. <br/>
 Todos Empiezan  completamente GRATIS*
@@ -35,6 +42,8 @@ Todos Empiezan  completamente GRATIS*
         </div>
         
        
+    </div>
+
     </div>
   );
 }

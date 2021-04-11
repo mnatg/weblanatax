@@ -58,7 +58,8 @@
 
   .homebackground {
    
-    width: 1111px;
+    width: fit-content;
+    max-width: 1111px;
     height: 734px;
     margin: 0 144px 128px 145px;
     object-fit: contain;
@@ -95,7 +96,7 @@
   .noticia-one-title {
     width: 294px;
     height: 70px;
-    margin: 12px 54px 0 0;
+    margin: 12px 54px 0 0px;
     font-family: Poppins;
     font-size: 24px;
     font-weight: bold;
@@ -105,6 +106,21 @@
     letter-spacing: normal;
     color: #a6a6a6;
   }
+
+  .noticia-two-title  {
+    width: 294px;
+    height: 70px;
+    margin: 12px 54px 0 0px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: #d9e021;
+  }
+  
 
   .base {
     display: grid;
@@ -118,13 +134,22 @@
 
   .sectionA {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, auto);
     background: #fff; 
-    width: 1111px;
-    max-width: 1111px;
-    height: 559px;
-    margin: 0 144px 128px 145px;
-    object-fit: contain;
+
+  }
+
+  .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #fff; 
+
+  }
+
+  .sectionD {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #fff; 
   }
 
   .doscolumnas-sectionB{
@@ -149,14 +174,14 @@
   .noticias-image-one {
     width: 348px;
     height: 185px;
-    margin: 0 0 25px;
+    margin: 0 0 25px 10px;
     object-fit: contain;
   }
 
   .noticia-one-autor {
     width: 230px;
     height: 28px;
-    margin: 25px 118px 12px 0;
+    margin: 25px 118px 12px 0px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: normal;
@@ -170,7 +195,7 @@
   .noticia-three-autor {
     width: 290px;
     height: 28px;
-    margin: 25px 118px 12px 0;
+    margin: 25px 118px 12px 0px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: normal;
@@ -191,7 +216,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     background: #fff; 
-    width: 1111px;
+    width: fit-content;
     max-width: 1111px;
     height: 559px;
     margin: 0 144px 128px 145px;
@@ -293,7 +318,7 @@
   
 
   .imageA {
-    width: 573px;
+    width: 550px;
     height: 559px;
     margin: 0 0px 0px 0px;
     object-fit: contain;
@@ -324,7 +349,7 @@
   .Nuestra-videollamada {
     width: 530px;
     height: 49px;
-    margin: 0px 100px 0 100px;
+    margin: 0px 100px 0 0px;
     font-family: Poppins;
     font-size: 24px;
     font-weight: 600;
@@ -367,11 +392,18 @@
     margin: 120px 0 0 420px;
     object-fit: contain;
   }
+
+  .BotonConectarD {
+    width: 160px;
+    height: 46px;
+    margin: 18px 20px 35px 220px;
+    object-fit: contain;
+  }
  
   .Le-ayudaremos-a-hace {
     width: 381px;
     height: 204px;
-    margin: 134px 93px 129px 0;
+    margin: 134px 0px 129px 0;
     font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
@@ -382,24 +414,231 @@
     color: #009245;
   }
 
+  .LANA-FOOTER {
+    width: 134px;
+    height: 42px;
+    margin: 46px 188px 193px 2px;
+    object-fit: contain;
+  }
+
+  .sectionFooter{
+
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      background: #fff; 
+  
+    
+  }
+
+  .Enlaces-rpidos {
+    width: 161px;
+    height: 30px;
+    margin: 0 0 35px;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
+
+  .About-Us-Blog-Contac {
+    width: 72px;
+    height: 140px;
+    margin: 35px 89px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    color: #544837;
+  }
+
+  .About-Us {
+    
+    margin: 0px 0px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    color: #544837;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .link-decoration{
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .Rectangle-5-Copy {
+    width: 325px;
+    height: 48px;
+    margin: 34px 0 21px;
+    padding: 10px 128px 10px 15px;
+    border-radius: 4px;
+    border: solid 1px #bcd0e5;
+    background-color: #ffffff;
+  }
+
+  .signup-now-button {
+    width: 131px;
+    height: 39px;
+    margin: 21px 194px 0 0;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #008f45;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .signup-now {
+    width: 101px;
+    height: 23px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .line-copy {
+    width: 1109px;
+    height: 1px;
+    margin: 38px 0 0;
+    opacity: 0.5;
+    background-color: #008f45;
+  }
+
+  .MA-Tax-Group {
+    width: 311px;
+    height: 21px;
+    margin: 20px 142px 14px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  
+  .facebook {
+    width: 44px;
+    height: 44px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .twitter {
+    width: 44px;
+    height: 44px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .instagram {
+    width: 44px;
+    height: 44px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .apple {
+    width: 44px;
+    height: 44px;
+    margin: 10px 16px 1px 342px;
+    object-fit: contain;
+  }
+
+  .googleplay {
+    width: 44px;
+    height: 44px;
+    margin: 10px 0 1px 16px;
+    object-fit: contain;
+  }
+
+  
+  
+  
   .ICON-LLAMADA {
     width: 54px;
     height: 96px;
-    margin: 0 34px 44px 13px;
     object-fit: contain;
   }
   
   .BILLETES {
     width: 77px;
     height: 62px;
-    margin: 53px 24px 37px 0;
+    margin: 53px 0px 37px 0;
     object-fit: contain;
   }
+
+  .PERSONAS {
+    width: 72px;
+    height: 72px;
+    margin: 57px 0px 47px 0px;
+    object-fit: contain;
+  }
+
+  .ESTADISTICA {
+    width: 77px;
+    height: 56px;
+    margin: 74px 0 46px 0px;
+    object-fit: contain;
+  }
+
+  
+  .PLANETA {
+    width: 71px;
+    height: 72px;
+    margin: 41px 0px 1px 0px;
+    object-fit: contain;
+  }
+
+  .HOJAS {
+    width: 72px;
+    height: 80px;
+    margin: 34px 0px 0 0px;
+    object-fit: contain;
+  }
+
+  .line {
+    width: 1109px;
+    height: 1px;
+    margin: 0 0 38px;
+    opacity: 0.5;
+    background-color: #008f45;
+  }
+  
+
+  
+  
 
   .Videollamada-Gratis {
     width: 223px;
     height: 26px;
-    margin: 26px 54px 88px 27px;
+    margin: 26px 0px 88px 0px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -413,7 +652,7 @@
   .Reembolso-Mximo-Gar {
     width: 247px;
     height: 42px;
-    margin: 0 10px 42px 0;
+    margin: 0 0px 42px 0;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -424,24 +663,39 @@
     color: #a6a6a6;
   }
 
+  .Notificaciones-push {
+    width: 255px;
+    height: 126px;
+    margin: 31px 0px 31px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  
+
   .BOLSITADINERO {
     width: 77px;
     height: 84px;
-    margin: 9px 0 47px 49px;
+    margin: 9px 0 47px 0px;
     object-fit: contain;
   }
 
   .TORTA {
     width: 71px;
     height: 71px;
-    margin: 44px 3px 37px 52px;
+    margin: 44px 0px 37px 0px;
     object-fit: contain;
   }
 
   .Simple-fcil-y-segu {
     width: 190px;
     height: 26px;
-    margin: 63px 87px 63px 27px;
+    margin: 63px 0px 63px 0px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -452,7 +706,22 @@
     color: #a6a6a6;
   }
 
-  .Conctate-con-EAs- {
+  .haz-tus-taxes {
+    width: 228px;
+    height: 26px;
+    margin: 60px 120px 28px 27px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  
+
+  .Conctate-con-EAs {
     width: 223px;
     height: 105px;
     margin: 37px 57px 34px 24px;
@@ -469,7 +738,7 @@
   .Ten-acceso-a-todos-t {
     width: 257px;
     height: 42px;
-    margin: 45px 0 0;
+    margin: 45px 10px 0 70px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -479,6 +748,82 @@
     letter-spacing: normal;
     color: #a6a6a6;
   }
+
+  .CONECTAR-CON-TU-ASES {
+    width: 491px;
+    height: 189px;
+    margin: 0 0 49px;
+    font-family: Poppins;
+    font-size: 59px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    color: #009245;
+  }
+  .CONECTAR-CON-TU-ASES .text-style-1 {
+    color: #cb2222;
+  }
+
+  .TUS-IMPUESTOS-CON-LO {
+    width: 570px;
+    height: 199px;
+    margin: 0 0 23px;
+    font-family: Poppins;
+    font-size: 59px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: right;
+    color: #009245;
+  }
+  .TUS-IMPUESTOS-CON-LO .text-style-1 {
+    color: #cb2222;
+  }
+
+  .imageD {
+    width: 573px;
+    height: 559px;
+    margin: 57px 128px 0 10px;
+    object-fit: contain;
+  }
+
+  .textD {
+    width: 473px;
+    height: 44px;
+    margin: 49px 18px 0 0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .Boton-Nombre-d {
+    width: 380px;
+    height: 46px;
+    margin: 10px 0px 18px;
+    border-radius: 23px;
+    background-color: #d6d6d6;
+  }
+
+  .BotonEmail {
+    width: 380px;
+    height: 46px;
+    margin: 10px 0px 18px;
+    border-radius: 23px;
+    background-color: #d6d6d6;
+  }
+  
+  
+  
+  
   
 
   @media screen and (max-width: 400px) {
