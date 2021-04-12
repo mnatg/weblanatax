@@ -23,7 +23,6 @@
   }
 
 
-
   .bg {
     width: 102px;
     height: 46px;
@@ -96,7 +95,7 @@
   .noticia-one-title {
     width: 294px;
     height: 70px;
-    margin: 12px 54px 0 0px;
+    margin: 12px 54px 50px 10px;
     font-family: Poppins;
     font-size: 24px;
     font-weight: bold;
@@ -110,7 +109,7 @@
   .noticia-two-title  {
     width: 294px;
     height: 70px;
-    margin: 12px 54px 0 0px;
+    margin: 12px 54px 50px 10px;
     font-family: Poppins;
     font-size: 24px;
     font-weight: bold;
@@ -181,7 +180,7 @@
   .noticia-one-autor {
     width: 230px;
     height: 28px;
-    margin: 25px 118px 12px 0px;
+    margin: 25px 118px 12px 10px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: normal;
@@ -195,7 +194,21 @@
   .noticia-three-autor {
     width: 290px;
     height: 28px;
-    margin: 25px 118px 12px 0px;
+    margin: 25px 118px 12px 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #544837;
+  }
+
+  .noticia-one-autor {
+    width: 230px;
+    height: 28px;
+    margin: 25px 118px 30px 10px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: normal;
@@ -208,6 +221,7 @@
 
   .noticia-one-autor .text-style-1 {
     font-weight: bold;
+  
   }
 
 
@@ -1029,14 +1043,14 @@
   .ICON-LLAMADA {
     width: 54px;
     height: 96px;
-    margin: 0 12px 53px 11px;
+    margin: 0 12px 53px 5px;
     object-fit: contain;
   }
 
   .Videollamada-Gratis {
     width: 187px;
     height: 26px;
-    margin: 0 0 107px 3px;
+    margin: 70px 0 107px 3px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -1050,14 +1064,14 @@
   .BILLETES {
     width: 77px;
     height: 62px;
-    margin: 53px 0 57px;
+    margin: 53px 0 57px 5px;
     object-fit: contain;
   }
 
   .Simple-fcil-y-segu {
     width: 187px;
     height: 26px;
-    margin: 107px 0 42px 3px;
+    margin: 70px 0 42px 3px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
@@ -1071,7 +1085,7 @@
   .PERSONAS {
     width: 72px;
     height: 72px;
-    margin: 57px 3px 54px 2px;
+    margin: 57px 3px 54px 5px;
     object-fit: contain;
   }
 
@@ -1092,7 +1106,7 @@
   .PLANETA {
     width: 71px;
     height: 72px;
-    margin: 54px 3px 57px;
+    margin: 54px 3px 57px 5px;
     object-fit: contain;
   }
 
@@ -1113,7 +1127,7 @@
   .BOLSITADINERO {
     width: 77px;
     height: 84px;
-    margin: 57px 0 78px;
+    margin: 57px 0 78px 5px;
     object-fit: contain;
   }
 
@@ -1134,7 +1148,7 @@
   .TORTA {
     width: 71px;
     height: 71px;
-    margin: 78px 3px 123px;
+    margin: 78px 3px 123px 5px;
     object-fit: contain;
   }
 
@@ -1155,7 +1169,7 @@
   .ESTADISTICA {
     width: 77px;
     height: 56px;
-    margin: 123px 0 79px;
+    margin: 123px 0 79px 5px;
     object-fit: contain;
   }
 
@@ -1176,7 +1190,7 @@
   .HOJAS {
     width: 72px;
     height: 80px;
-    margin: 79px 3px 0 2px;
+    margin: 79px 3px 0 2px 5px;
     object-fit: contain;
   }
 
@@ -1197,7 +1211,7 @@
   .Millones-nos-Respald {
     width: 224px;
     height: 60px;
-    margin: 1600px 47px 36px 0;
+    margin: 1600px 47px 36px 10px;
     font-family: Poppins;
     font-size: 34px;
     font-weight: bold;
@@ -1211,7 +1225,7 @@
   .nase-a-especialista {
     width: 271px;
     height: 72px;
-    margin: 36px 0 0;
+    margin: 36px 0 20px 10px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
@@ -1233,7 +1247,7 @@
   .CONECTAR-CON-TU-ASES {
     width: 271px;
     height: 81px;
-    margin: 500px 25px 30px 24px;
+    margin: 700px 25px 30px 24px;
     font-family: Poppins;
     font-size: 29px;
     font-weight: 900;
@@ -1300,7 +1314,28 @@
     opacity: 0.5;
     background-color: #008f45;
   }
+
+  .movilbackground-footer{
+    margin-top: 1000px;
+  }
   
+  .navbar-container {
+    align-items: center;
+    max-width: 500px;
+    width: 320px;
+    height: 49px;
+    margin: 0 0 776px;
+    padding: 12px 13px 13px 16px;
+    background-color: #ffffff;
+}
+
+.LANA {
+  width: 76px;
+  height: 24px;
+  margin: 15px 0 0 199px;
+  object-fit: contain;
+}
+
   .sectionFooter{
 
     display: grid;
@@ -1313,7 +1348,7 @@
   .Enlaces-rpidos {
     width: 161px;
     height: 30px;
-    margin: 0 0 35px;
+    margin: 0 0 35px 10px;
     font-family: Gotham;
     font-size: 20px;
     font-weight: bold;
@@ -1327,7 +1362,7 @@
   .About-Us {
     width: 72px;
     height: 25px;
-    margin: 35px 89px 0 0;
+    margin: 35px 89px 0 10px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: normal;
@@ -1341,7 +1376,7 @@
   .Legales {
     width: 79px;
     height: 30px;
-    margin: 20px 53px 35px 0;
+    margin: 20px 53px 35px 10px;
     font-family: Gotham;
     font-size: 20px;
     font-weight: bold;
@@ -1356,7 +1391,7 @@
   .suscribete {
     width: 280px;
     height: 57px;
-    margin: 50px 0 34px 1px;
+    margin: 80px 0 34px 10px;
     font-family: Gotham;
     font-size: 20px;
     font-weight: bold;
@@ -1370,7 +1405,7 @@
   .Rectangle-5-Copy {
     width: 266px;
     height: 48px;
-    margin: 34px 15px 21px 0;
+    margin: 34px 15px 21px 10px;
     padding: 10px 67px 10px 17px;
     border-radius: 4px;
     border: solid 1px #bcd0e5;
@@ -1380,6 +1415,27 @@
   .Sign-up-Now {
     width: 101px;
     height: 23px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  
+  }
+
+
+  .signup-now-button {
+    width: 131px;
+    height: 39px;
+    margin: 21px 194px 0 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #008f45;
+
     font-family: Poppins;
     font-size: 16px;
     font-weight: bold;
@@ -1457,7 +1513,30 @@
     text-align: center;
   }
 
-  
+  .sectionD {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #fff; 
+  }
+
+.imageD{
+
+  width: 320px;
+  height: 429px;
+  margin: 104px 0 59px;
+  object-fit: contain;
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 250px;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  justify-content: left;
+}
 
 
 

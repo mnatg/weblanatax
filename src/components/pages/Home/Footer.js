@@ -13,7 +13,7 @@ import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 
 function Footer() {
   return (
-    <div className='homebackground'>
+    <div className='homebackground movilbackground-footer'>
 
     <p className='line'></p>
 
