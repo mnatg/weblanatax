@@ -46,27 +46,27 @@ function Footer() {
 
           <div className='second'>
 
-          <p className='Enlaces-rpidos'>Enlaces Rápidos</p>
+          <p className='Legales'>Legales</p>
                   <Link className='link-decoration' to='/'  >
 
 
-              <p className='About-Us'>About Us</p>
+              <p className='About-Us'>Disclaimer</p>
                 </Link>
                 <Link className='link-decoration' to='/'  >
-              <p className='About-Us'>Blog</p>
+              <p className='About-Us'>Financing</p>
                 </Link>
                 <Link className='link-decoration' to='/'  >
-              <p className='About-Us'>Contact</p>
+              <p className='About-Us'>Privacy Policy</p>
                 </Link>
                 <Link className='link-decoration' to='/'  >
-              <p className='About-Us'>FAQ</p>
+              <p className='About-Us'>Terms of Service</p>
                 </Link>
 
           </div>
 
 
           <div className='third'>
-          <p className='Enlaces-rpidos'>Enlaces Rápidos</p>
+          <p className='suscribete'>Suscribete para tenerte al <br/>día via SMS</p>
 
           <Grid   container>
                     <input className="Rectangle-5-Copy" placeholder="Enter your phone Number" />

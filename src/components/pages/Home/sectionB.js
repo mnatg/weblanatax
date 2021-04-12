@@ -39,7 +39,7 @@ como tu elijas.</p>
 <img className="BILLETES" src={billetes} alt="billetes"/>
 <p className='Simple-fcil-y-segu'> Simple, fácil y seguro. </p>
 <img className="TORTA" src={torta} alt="torta"/>
-<p className='Videollamada-Gratis'> Revisión Completa - Obtén una <br/> revisión y análisis completo con <br/>nuestro software y asegúrate <br/>
+<p className='Revisin-Completa'> Revisión Completa - Obtén una <br/> revisión y análisis completo con <br/>nuestro software y asegúrate <br/>
 que estás obteniendo el <br/> máximo reembolso. </p>
 </div>
 
@@ -47,7 +47,7 @@ que estás obteniendo el <br/> máximo reembolso. </p>
 <img className="PERSONAS" src={personas} alt="personas"/>
 <p className='Conctate-con-EAs'> Conéctate con EA’s (Agentes <br/> Inscritos) cada vez para <br/>obtener consejos y <br/>revisiones de tu declaración <br/> de impuestos.  </p>
 <img className="ESTADISTICA" src={estadistica} alt="estadistica"/>
-<p className='Notificaciones-push '> Notificaciones push - Haremos <br/> que sea fácil estar informado <br/> sobre tu declaración de <br/>impuestos con notificaciones<br/> enviadas directamente a tu<br/> celular. </p>
+<p className='Notificaciones-push'> Notificaciones push - Haremos <br/> que sea fácil estar informado <br/> sobre tu declaración de <br/>impuestos con notificaciones<br/> enviadas directamente a tu<br/> celular. </p>
 </div>
 
 <div className='gridtest'>

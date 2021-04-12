@@ -364,7 +364,7 @@
   .Boton-Nombre {
     width: 380px;
     height: 46px;
-    margin: 10px 0 18px;
+    margin: 10px 0 18px -30px;
     border-radius: 23px;
     background-color: #d6d6d6;
     
@@ -381,7 +381,7 @@
   .Boton-CorreoElectronico {
     width: 380px;
     height: 46px;
-    margin: 10px 0 18px;
+    margin: 10px 0 18px -30px;
     border-radius: 23px;
     background-color: #d6d6d6;
   }
@@ -389,7 +389,7 @@
   .BotonConectar {
     width: 160px;
     height: 46px;
-    margin: 120px 0 0 420px;
+    margin: 120px 0 0 390px;
     object-fit: contain;
   }
 
@@ -541,6 +541,20 @@
     line-height: normal;
     letter-spacing: normal;
     color: #a6a6a6;
+  }
+
+  .suscribete {
+    width: 280px;
+    height: 57px;
+    margin: 0 45px 34px 0;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
   }
   
   .facebook {
@@ -820,13 +834,39 @@
     border-radius: 23px;
     background-color: #d6d6d6;
   }
+
+  .Revisin-Completa {
+    width: 247px;
+    height: 105px;
+    margin: 42px 10px 31px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
   
-  
+  .Legales {
+    width: 79px;
+    height: 30px;
+    margin: 0 53px 35px 0;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
   
   
   
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     .Text {
       width: 267px;
       height: 206px;
@@ -837,7 +877,7 @@
       background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat; 
       width: 340px;
   height: 734px;
-  margin: 0 12px 91px;
+  margin: 0 0px 91px 0px;
   padding: 0 0 19px;
   object-fit: contain;
     }
@@ -856,41 +896,605 @@
       object-fit: contain;
     }
 
+    .base {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      background: #fff; 
+      object-fit: contain;
+      width: 320px;
+      height: 685px;
+      margin: 49px 0 91px 20px;
+    }
+
+    .sectionA {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      background: #fff; 
+  
+    }
+
+
     
+    .imageA {
+      width: 320px;
+      height: 316px;
+      margin: 0 0px 52px 30px;
+      object-fit: contain;
+    } 
+
+    .homebackground{
+
+      width: 320px;
+      height: 685px;
+      margin: 49px 0 91px;
+      object-fit: contain;
 
     }
 
+    .TUS-IMPUESTOS-CON-LO {
+      width: 271px;
+      height: 150px;
+      margin: 0px 25px 0px 24px;
+      font-family: Poppins;
+      font-size: 29px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.93;
+      letter-spacing: normal;
+      text-align: right;
+      color: #009245;
+    }
+    .TUS-IMPUESTOS-CON-LO .text-style-1 {
+      color: #cb2222;
+    }
+
+    .Nuestra-videollamada {
+      width: 271px;
+      height: 50px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      justify-content: center;
+      color: #a6a6a6;
+      margin-left: 50px;
+    }
+
+    .Botones {
+      width: 300px;
+      height: 90px;
+      margin: 50px 0px 0px 200px;
+    
+    }
+    
+    .Boton-Nombre {
+      width: 265px;
+      height: 46px;
+      margin: 0 0px 100px -150px;
+   
+    }
+
+   .Boton-CorreoElectronico{
+      width: 265px;
+      height: 46px;
+      margin: 70px 0 100px -265px;
+   
+   
+   }
+
+   .BotonConectar {
+    width: 160px;
+    height: 46px;
+    margin: 60px 52px 0 100px;
+    object-fit: contain;
+  }
+
+  .Le-ayudaremos-a-hace {
+    width: 266px;
+    height: 144px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #009245;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .sectionB {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #fff; 
+    width: fit-content;
+    max-width: 1111px;
+    height: 559px;
+    object-fit: contain;
+    
+  }
+
+  .gridtest {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    object-fit: contain;
+  }
+
+  .ICON-LLAMADA {
+    width: 54px;
+    height: 96px;
+    margin: 0 12px 53px 11px;
+    object-fit: contain;
+  }
+
+  .Videollamada-Gratis {
+    width: 187px;
+    height: 26px;
+    margin: 0 0 107px 3px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .BILLETES {
+    width: 77px;
+    height: 62px;
+    margin: 53px 0 57px;
+    object-fit: contain;
+  }
+
+  .Simple-fcil-y-segu {
+    width: 187px;
+    height: 26px;
+    margin: 107px 0 42px 3px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .PERSONAS {
+    width: 72px;
+    height: 72px;
+    margin: 57px 3px 54px 2px;
+    object-fit: contain;
+  }
+
+  .Conctate-con-EAs {
+    width: 160px;
+    height: 147px;
+    margin: 42px 30px 39px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .PLANETA {
+    width: 71px;
+    height: 72px;
+    margin: 54px 3px 57px;
+    object-fit: contain;
+  }
+
+  .haz-tus-taxes {
+    width: 160px;
+    height: 52px;
+    margin: 39px 27px 76px 3px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .BOLSITADINERO {
+    width: 77px;
+    height: 84px;
+    margin: 57px 0 78px;
+    object-fit: contain;
+  }
+
+  .Reembolso-Mximo-Gar {
+    width: 172px;
+    height: 42px;
+    margin: 76px 18px 57px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .TORTA {
+    width: 71px;
+    height: 71px;
+    margin: 78px 3px 123px;
+    object-fit: contain;
+  }
+
+  .Revisin-Completa {
+    width: 165px;
+    height: 147px;
+    margin: 57px 25px 22px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .ESTADISTICA {
+    width: 77px;
+    height: 56px;
+    margin: 123px 0 79px;
+    object-fit: contain;
+  }
+
+  .Notificaciones-push {
+    width: 165px;
+    height: 189px;
+    margin: 22px 25px 34px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .HOJAS {
+    width: 72px;
+    height: 80px;
+    margin: 79px 3px 0 2px;
+    object-fit: contain;
+  }
+
+  .Ten-acceso-a-todos-t {
+    width: 165px;
+    height: 42px;
+    margin: 34px 25px 0 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+
+  .Millones-nos-Respald {
+    width: 224px;
+    height: 60px;
+    margin: 1600px 47px 36px 0;
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    color: #009245;
+  }
+
+  .nase-a-especialista {
+    width: 271px;
+    height: 72px;
+    margin: 36px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  
+  .columnas-sectionNoticias {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #fff; 
+    object-fit: contain;
+
+  }
+
+  .CONECTAR-CON-TU-ASES {
+    width: 271px;
+    height: 81px;
+    margin: 500px 25px 30px 24px;
+    font-family: Poppins;
+    font-size: 29px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.93;
+    letter-spacing: normal;
+    color: #009245;
+  }
+
+  .CONECTAR-CON-TU-ASES .text-style-1 {
+    margin: 0px 0px 0px 0px;
+    color: #cb2222;
+  }
+  
+  .textD {
+
+
+    width: 248px;
+    height: 98px;
+    margin: 30px 48px 36px 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  
+  .Boton-Nombre-d {
+    width: 266px;
+    height: 46px;
+    margin: 36px 25px 18px 29px;
+    object-fit: contain;
+  }
+
+  .BotonEmail {
+    width: 266px;
+    height: 46px;
+    margin: 18px 25px 18px 29px;
+    object-fit: contain;
+  }
+
+  .BotonConectarD {
+    width: 160px;
+    height: 46px;
+    margin: 18px 78px 0 82px;
+    object-fit: contain;
+  }
+
+  .LANA-FOOTER {
+    width: 134px;
+    height: 42px;
+    margin: 0px 91px 28px 95px;
+    object-fit: contain;
+  }
+  
+  .line {
+    width: 320px;
+    height: 1px;
+    margin: 400px 0 35px;
+    opacity: 0.5;
+    background-color: #008f45;
+  }
+  
+  .sectionFooter{
+
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #fff; 
+
+  
+}
+
+  .Enlaces-rpidos {
+    width: 161px;
+    height: 30px;
+    margin: 0 0 35px;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
+  
+  .About-Us {
+    width: 72px;
+    height: 25px;
+    margin: 35px 89px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    color: #544837;
+  }
+
+  .Legales {
+    width: 79px;
+    height: 30px;
+    margin: 20px 53px 35px 0;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
+  
+
+  .suscribete {
+    width: 280px;
+    height: 57px;
+    margin: 50px 0 34px 1px;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
+
+  .Rectangle-5-Copy {
+    width: 266px;
+    height: 48px;
+    margin: 34px 15px 21px 0;
+    padding: 10px 67px 10px 17px;
+    border-radius: 4px;
+    border: solid 1px #bcd0e5;
+    background-color: #ffffff;
+  }
+
+  .Sign-up-Now {
+    width: 101px;
+    height: 23px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .line-copy {
+    width: 320px;
+    height: 1px;
+    margin: 10px 0 0;
+    opacity: 0.5;
+    background-color: #008f45;
+  }
+  
+  .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background: #fff; 
+
+  }
+
+  .facebook {
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px 0px 40px;
+    object-fit: contain;
+  }
+
+  .twitter {
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .instagram {
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .apple {
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .googleplay {
+    width: 37px;
+    height: 37px;
+    margin: 10px 10px 0px 0px;
+    object-fit: contain;
+  }
+
+  .MA-Tax-Group {
+    width: 207px;
+    height: 15px;
+    margin: 9px 0px 0;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+
+
+
+}
+
+  @media screen and (min-width: 1090px) and (max-width: 1090px) {
+ 
+    .homebackground{
+      
+        width: 768px;
+        height: 734px;
+        padding: 0 0 86px;
+        object-fit: contain;
+      
+    }
+
+    .Photo{
+
+      width: 768px;
+      height: 734px;
+      padding: 0 0 86px;
+      object-fit: contain;
+    }
+
+
+  }
+
+
+    
+
     @media screen and (device-width: 800px) { /*Reglas CSS*/ 
     
-      .Text {
-        width: 267px;
-        height: 206px;
-        margin: 326px 26px 13px 27px;
-        object-fit: contain;
-      }
-      .Photo {
-        background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat; 
-        width: 320px;
-    height: 734px;
-    margin: 0 -10px 91px;
-    padding: 0 0 19px;
-    object-fit: contain;
-      }
-  
-      .BotonEmpezar {
-        width: 229px;
-        height: 46px;
-        margin: 13px 45px 24px 46px;
-        object-fit: contain;
-      }
-  
-      .Logos-tiendas {
-        width: 258px;
-        height: 39px;
-        margin: 24px 31px 0;
-        object-fit: contain;
-      }
-  
+
     } 
 
+  
 
+
+
+    

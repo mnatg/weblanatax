@@ -18,7 +18,7 @@ function sectionC() {
     <h1 className='Millones-nos-Respald'>Millones nos Respaldan</h1>
     <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>  
 
-    <div className='columnas-sectionNoticias '> 
+    <div className='columnas-sectionNoticias'> 
     
       <div>
       <Link to='/' >
