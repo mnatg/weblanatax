@@ -10,7 +10,9 @@ import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
-    <div className='base'>
+
+    
+    <div className='base homebackground'>
         <Link to='/' >
         <img className="taxes" src={taxes} alt="taxes"/>
         </Link>

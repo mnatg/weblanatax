@@ -7,10 +7,12 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import SignUp from './components/pages/Home/SignUp';
 
+
 function App() {
   return (
     <>
       <Router>
+     
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
@@ -18,6 +20,7 @@ function App() {
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
         </Switch>
+    
       </Router>
     </>
   );

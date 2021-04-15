@@ -9,9 +9,11 @@ import SectionC from '../../pages/Home/sectionC'
 import SectionD from '../../pages/Home/sectionD'
 
 
+
 function Home() {
   return (
     <>
+    
       <HeroSection />
       <Cards />
       <SectionA />
@@ -19,6 +21,7 @@ function Home() {
       <SectionC />
       <SectionD />
       <Footer />
+   
     </>
   );
 }

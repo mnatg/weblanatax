@@ -35,12 +35,12 @@ function Navbar() {
         <Link to='/'  onClick={closeMobileMenu}>
           <img className="LANA" src={logo} alt="logo"/>
           </Link>
+          
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
 
 
-<div className='Product-Customers-Pr'>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
           
@@ -100,8 +100,7 @@ function Navbar() {
           
           </div>
 
-         
-        </div>
+        
       </nav>
     </>
   );

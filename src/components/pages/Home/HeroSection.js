@@ -13,14 +13,27 @@ function HeroSection() {
   return (
     <div className='Photo'>
       {/*<video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <img className="Text" src={text} alt="text"/>
-      <Link to='/' >
+      <p className='no-te'>NO TE
+COMPLIQUES
+CON TUS
+TAXES,</p>
+<p className='Nos-encargamos'>Nos encargamos de todo por ti</p>
+<p className='Ven-a'>Ven a recibir la mejor atención</p>
+<div className='empezar-gratis'>
+<Link to='/' >
           <img className="BotonEmpezar" src={initbutton} alt="initbutton"/>
           </Link>
+          </div>
+
+          <div className='empezar-gratis'>
           <Link to='/' >
           <img className="Logos-tiendas" src={storelabels} alt="storelabels"/>
           </Link>
+          </div>
+
+
     </div>
+    
   );
 }
 

@@ -28,6 +28,11 @@ a la comunidad hispana por más de 20 años.
         </h1>
         <Grid   container>
                     <input className="Boton-Nombre-d" placeholder="Nombre" />
+                  
+                </Grid>
+
+                <Grid   container>
+                    
                     <input className="BotonEmail" placeholder="Correo Electronico"  />
                 </Grid>
 

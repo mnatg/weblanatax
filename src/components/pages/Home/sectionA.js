@@ -18,10 +18,10 @@ function sectionA() {
 
         <div>
 
-        <h1 className='TUS-IMPUESTOS-CON-LO'>
+        <h1 className='TUS-IMPUESTOS'>
         TUS IMPUESTOS <br/>
 CON LOS MEJORES <br/>
- <p className='TUS-IMPUESTOS-CON-LO text-style-1'> Y EN VIVO</p>
+ <p className='TUS-IMPUESTOS text-style-1'> Y EN VIVO</p>
  </h1>
         <h1 className='Nuestra-videollamada'>
         Nuestra videollamada es Simple, Fácil y Segura. <br/>
@@ -29,16 +29,21 @@ Todos Empiezan  completamente GRATIS*
 
         </h1>
 
-        <Grid  className='Botones' container>
+        <Grid container>
                     <input className="Boton-Nombre" placeholder="Nombre" />
-                    <input className="Boton-CorreoElectronico" placeholder="Correo Electronico"  />
-                </Grid>
+                  
+        </Grid>
 
-                <Link to='/' >
+        <Grid  container>
+                   
+                    <input className="Boton-CorreoElectronico" placeholder="Correo Electronico"  />
+        </Grid>
+
+    <div className='divbase'>
+          <Link  to='/' >
           <img className="BotonConectar" src={botonConectar} alt="botonConectar"/>
           </Link>
-        
-
+          </div>
         </div>
         
        
