@@ -984,7 +984,7 @@
 
     
 
-  @media screen and (max-width: 320px) {  /* smartphones, iPhone, portrait 480x320 phones */ 
+  @media  (min-width: 320px) and (max-width: 767px)  {  /* smartphones, iPhone, portrait 480x320 phones */ 
     .Text {
       width: 267px;
       height: 206px;
@@ -1748,13 +1748,10 @@
 
 
 
-  @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
-  }
-  @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 
-  }
-  @media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  @media (min-width: 768px) and (max-width: 960px)   { /* tablet, landscape iPad, lo-res laptops ands desktops */
     .Text {
       width: 267px;
       height: 206px;
@@ -2030,7 +2027,7 @@
     height: 26px;
     margin: 70px 0 107px 3px;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2051,7 +2048,7 @@
     height: 26px;
     margin: 70px 0 42px 3px;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2072,7 +2069,7 @@
     height: 147px;
     margin: 42px 30px 39px 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2093,7 +2090,7 @@
     height: 52px;
     margin: 39px 27px 76px 3px;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2114,7 +2111,7 @@
     height: 42px;
     margin: 76px 18px 57px 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2135,7 +2132,7 @@
     height: 147px;
     margin: 57px 25px 22px 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2156,7 +2153,7 @@
     height: 189px;
     margin: 22px 25px 34px 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2177,7 +2174,7 @@
     height: 42px;
     margin: 34px 25px 0 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2213,7 +2210,7 @@
     height: 52px;
     margin: 36px 0 20px 10px;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -2263,7 +2260,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -2335,7 +2332,7 @@
   .sectionFooter{
 
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(3, auto);
     background: #fff; 
 
   
@@ -2356,9 +2353,9 @@
   }
   
   .About-Us {
-    width: 72px;
-    height: 25px;
-    margin: 35px 89px 0 10px;
+    width: auto;
+    height: 10px;
+    margin: 35px 89px 5px 10px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 16px;
     font-weight: normal;
@@ -2384,18 +2381,18 @@
   }
   
 
-  .suscribete {
+  .suscribete {    
     width: 280px;
-    height: 57px;
-    margin: 80px 0 34px 10px;
-    font-family: Gotham;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    color: #2f281e;
+  height: 57px;
+  margin: 0 45px 34px 0;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2f281e;
   }
 
   .Rectangle-5-Copy {
@@ -2452,7 +2449,7 @@
   
   .redes-sociales {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
     background: #fff; 
 
   }
@@ -2495,11 +2492,11 @@
 
 
   .MA-Tax-Group {
-    width: 207px;
-    height: 15px;
+    width: 311px;
+    height: 21px;
     margin: 9px 0px 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -2535,16 +2532,56 @@
   justify-content: left;
 }
 
+.line {
+  width: 766px;
+  height: 1px;
+  margin: 0 0 38px;
+  opacity: 0.5;
+  background-color: #008f45;
+}
+
+.LANA-FOOTER {
+  width: 134px;
+  height: 42px;
+  margin: 46px 57px 193px 60px;
+  object-fit: contain;
+}
+
+.Enlaces-rpidos {
+  width: 161px;
+  height: 30px;
+  margin: 0 0 35px;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2f281e;
+}
+
+
+.Legales {
+  width: 79px;
+  height: 30px;
+  margin: 0 53px 35px 0;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2f281e;
+}
+
+
 
    }
-  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 
-  }
-  @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 
-  
-  }
-  
+
 
 
 
