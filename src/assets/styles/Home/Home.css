@@ -28,7 +28,7 @@
 }
 
 .empezar-gratis {
-  width: 498px;
+  width: auto;
   height: 70px;
   margin:auto;
 }
@@ -229,7 +229,7 @@
     grid-template-columns: repeat(3, auto);
     background: #fff; 
     object-fit: contain;
-    margin-left: 10%;
+    margin-left: 0%;
 
   }
 
@@ -434,7 +434,7 @@
   }
 
   .Nuestra-videollamada {
-    width: 530px;
+    width: 550px;
     height: 49px;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -709,7 +709,7 @@
   .BILLETES {
     width: 77px;
     height: 62px;
-    margin: 53px 0px 37px 0;
+    margin: 53px 0px 37px 20px;
     object-fit: contain;
     margin-block: auto;
   }
@@ -816,6 +816,7 @@
     width: 190px;
     height: 26px;
     margin-block: auto;
+    margin-left: 20px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -912,10 +913,10 @@
   }
 
   .textD {
-    width: 473px;
+    width: 500px;
     height: 44px;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 20%;
+    margin-bottom: 15%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins', sans-serif !important;
@@ -1030,6 +1031,9 @@
       letter-spacing: normal;
       color: #ffffff;
       margin:auto;
+      margin-left: auto;
+      margin-right: 24%;
+   
     }
     
     .Ven-a {
@@ -1044,21 +1048,23 @@
       letter-spacing: normal;
       color: #ffffff;
       margin:auto;
-     
+      margin-right: 24%;
     }
 
 
     .BotonEmpezar {
       width: 229px;
       height: 46px;
-      margin: 13px 45px 24px 46px;
+      margin: 13px 0px 24px 0px;
       object-fit: contain;
+      margin-left: 15%;
     }
 
     .Logos-tiendas {
       width: 258px;
       height: 39px;
-      margin: 24px 31px 0;
+      margin-top: 24px;
+      margin-left: 12%;
       object-fit: contain;
     }
 
@@ -1103,6 +1109,7 @@
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    justify-content: center;
   }
 
     .TUS-IMPUESTOS {
@@ -1141,6 +1148,7 @@
       margin:auto;
       margin-left: 10%;
       margin-bottom: 20%;
+      text-align: center;
     }
 
     .Botones {
@@ -1160,6 +1168,7 @@
       margin-right: auto;
       border-radius: 23px;
       background-color: #d6d6d6;
+      
       
     }
 
@@ -1201,6 +1210,7 @@
     color: #009245;
     text-align: left;
     margin-left: 30px;
+    margin-top: 10%;
   }
 
 
@@ -1211,8 +1221,9 @@
     width: 90%;
     height: 559px;
     margin: auto;
-    margin-left: 5%;
-    object-fit: contain;
+    margin-left: 0%;
+    justify-content: left;
+   
   }
 
   .gridtest {
@@ -1242,7 +1253,8 @@
   .Videollamada-Gratis {
     width: 187px;
     height: 26px;
-    margin: 70px 0 107px 3px;
+    margin-block: auto;
+    margin-top: 40%;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1251,19 +1263,20 @@
     line-height: 1.73;
     letter-spacing: normal;
     color: #a6a6a6;
+    
   }
 
   .BILLETES {
     width: 77px;
     height: 62px;
-    margin: 53px 0 57px 5px;
+    margin: 0px 0 57px -5px;
     object-fit: contain;
   }
 
   .Simple-fcil-y-segu {
     width: 187px;
     height: 26px;
-    margin: 70px 0 42px 3px;
+    margin: 0px 0 42px -10px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1277,14 +1290,15 @@
   .PERSONAS {
     width: 72px;
     height: 72px;
-    margin: 57px 3px 54px 5px;
+    margin: 0px 3px 54px 5px;
+    margin-top: 50%;
     object-fit: contain;
   }
 
   .Conctate-con-EAs {
     width: 160px;
     height: 147px;
-    margin: 42px 30px 39px 0;
+    margin: 0px 30px 39px 0;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1298,14 +1312,14 @@
   .PLANETA {
     width: 71px;
     height: 72px;
-    margin: 54px 3px 57px 5px;
+    margin: 30px 3px 0px 5px;
     object-fit: contain;
   }
 
   .haz-tus-taxes {
     width: 160px;
     height: 52px;
-    margin: 39px 27px 76px 3px;
+    margin: 39px 27px 20px 3px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1319,7 +1333,7 @@
   .BOLSITADINERO {
     width: 77px;
     height: 84px;
-    margin: 57px 0 78px 5px;
+    margin: 0px 0 78px 5px;
     object-fit: contain;
   }
 
@@ -1340,14 +1354,15 @@
   .TORTA {
     width: 71px;
     height: 71px;
-    margin: 78px 3px 123px 5px;
+    margin: 0px 3px 123px 5px;
+    margin-top: 50%;
     object-fit: contain;
   }
 
   .Revisin-Completa {
     width: 165px;
     height: 147px;
-    margin: 57px 25px 22px 0;
+    margin: 0px 25px 22px 0;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1361,14 +1376,15 @@
   .ESTADISTICA {
     width: 77px;
     height: 56px;
-    margin: 123px 0 79px 5px;
+    margin: 0px 0 79px 5px;
+    margin-top: 50%;
     object-fit: contain;
   }
 
   .Notificaciones-push {
     width: 165px;
     height: 189px;
-    margin: 22px 25px 34px 0;
+    margin: 0px 25px 34px 0;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1382,14 +1398,16 @@
   .HOJAS {
     width: 72px;
     height: 80px;
-    margin: 79px 3px 0 2px 5px;
+    margin: 0px 3px 0 2px 5px;
+    margin-top: 50%;
     object-fit: contain;
   }
 
   .Ten-acceso-a-todos-t {
     width: 165px;
     height: 42px;
-    margin: 34px 25px 0 0;
+    margin: 0px 25px 0 0;
+    margin-top: 60%;
     font-family: 'Poppins', sans-serif !important;
     font-size: 15px;
     font-weight: 500;
@@ -1403,7 +1421,7 @@
   .Millones-nos-Respald {
     width: 224px;
     height: 60px;
-    margin: 1600px 47px 36px 10px;
+    margin: 1200px 47px 36px 70px;
     font-family: 'Poppins', sans-serif !important;
     font-size: 34px;
     font-weight: bold;

@@ -59,7 +59,7 @@
   color: #000;
   align-items: center;
   text-decoration: none;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif !important;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
