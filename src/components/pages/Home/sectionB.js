@@ -7,6 +7,7 @@ import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.p
 import billetes from '../../../assets/images/Home/initA/billetes.png'
 import iconllamada from '../../../assets/images/Home/initA/icon-llamada.png'
 import bolsitadinero from '../../../assets/images/Home/initA/bolsitadinero.png'
+import ahorratiempo from '../../../assets/images/Home/initA/ahorratiempo.png'
 import estadistica from '../../../assets/images/Home/initA/estadistica.png'
 import hojas from '../../../assets/images/Home/initA/hojas.png'
 import personas from '../../../assets/images/Home/initA/personas.png'
@@ -23,12 +24,13 @@ function sectionB() {
     <div className='homebackground'>
     <div className='sectionB'>
        
-    <p className='Le-ayudaremos-a-hace'>Le ayudaremos a <br/> hacer bien sus <br/>
-     impuestos,<br/>
-como tu elijas.</p>
+    <p className='Le-ayudaremos-a-hace display-mobile'>La mejor <br/>combinación<br/>
+     entre personas<br/>
++ tecnología</p>
 
-
+<p className='Le-ayudaremos-a-hace display-tablet'>La mejor combinación entre<br/>personas+ tecnología</p>
 <div>
+  
 
 
 <div className='gridtest-area'>
@@ -39,8 +41,8 @@ como tu elijas.</p>
 </div>
 
 <div className='gridtest'>
-<img className="BOLSITADINERO" src={bolsitadinero} alt="bolsitadinero"/>
-<p className='Videollamada-Gratis'> Reembolso Máximo <br/> Garantizado. </p>
+<img className="BOLSITADINERO" src={ahorratiempo} alt="bolsitadinero"/>
+<p className='Videollamada-Gratis'>Ahorra Tiempo.</p>
 </div>
 </div>
 
@@ -53,8 +55,7 @@ como tu elijas.</p>
 
 <div className='gridtest'>
 <img className="TORTA" src={torta} alt="torta"/>
-<p className='Revisin-Completa'> Revisión Completa - Obtén una <br/> revisión y análisis completo con <br/>nuestro software y asegúrate <br/>
-que estás obteniendo el <br/> máximo reembolso. </p>
+<p className='Revisin-Completa'> Obtén una revisión y análisis<br/>completo.</p>
 </div>
 
 </div>
@@ -63,12 +64,12 @@ que estás obteniendo el <br/> máximo reembolso. </p>
 
 <div className='gridtest'>
 <img className="PERSONAS" src={personas} alt="personas"/>
-<p className='Conctate-con-EAs'> Conéctate con EA’s (Agentes <br/> Inscritos) cada vez para <br/>obtener consejos y <br/>revisiones de tu declaración <br/> de impuestos.  </p>
+<p className='Conctate-con-EAs'>Calidad con la que<br/>puedes contar.</p>
 </div>
 
 <div className='gridtest'>
 <img className="ESTADISTICA" src={estadistica} alt="estadistica"/>
-<p className='Notificaciones-push'> Notificaciones push - Haremos <br/> que sea fácil estar informado <br/> sobre tu declaración de <br/>impuestos con notificaciones<br/> enviadas directamente a tu<br/> celular. </p>
+<p className='Notificaciones-push'>Te mantendremos informado</p>
 </div>
 
 </div>
@@ -77,12 +78,12 @@ que estás obteniendo el <br/> máximo reembolso. </p>
 
 <div className='gridtest'>
 <img className="PLANETA" src={planeta} alt="planeta"/>
-<p className='haz-tus-taxes'> Haz tus taxes de donde sea.  </p>
+<p className='haz-tus-taxes'>Te ayudaremos en donde<br/>quiera que estes</p>
 </div>
 
 <div className='gridtest'>
 <img className="HOJAS" src={hojas} alt="hojas"/>
-<p className='Ten-acceso-a-todos-t'> Ten acceso a todos tus<br/> documentos. </p>
+<p className='Ten-acceso-a-todos-t'>Ten acceso a todos tus<br/>documentos. </p>
 </div>
 
 </div>

@@ -66,13 +66,13 @@ function Footer() {
 
 
           <div className='third'>
-          <p className='suscribete'>Suscribete para tenerte al <br/>día via SMS</p>
+          <p className='suscribete'>Suscribete a nuestro <br/>Newslatter</p>
 
           <Grid   container>
-                    <input className="Rectangle-5-Copy" placeholder="Enter your phone Number" />
+                    <input className="Rectangle-5-Copy" placeholder="Email" />
                 
                 </Grid>
-<button className='signup-now-button'>Sign Up Now</button>
+<button className='signup-now-button'>Registrar</button>
             
           </div>
 

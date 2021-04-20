@@ -16,25 +16,16 @@ function sectionD() {
 
         <div>
         <h1 className='CONECTAR-CON-TU-ASES'>
-        CONECTAR <br/>
-CON TU ASESOR <br/>
- <p className='CONECTAR-CON-TU-ASES text-style-1'>EN VIVO</p>
-
+        RESOLVIENDO CON <br/>TRANSPARENCIA<br/>
         </h1>
         <h1 className='textD'>
-        Conéctate con los expertos en impuestos que han servido <br/>
-a la comunidad hispana por más de 20 años. 
-
-        </h1>
+        Conéctate con los expertos en impuestos que han servido <br/>a la comunidad hispana por más de 20 años.</h1>
+        <h1 className='textD1'>
+        SUSCRIBETE PARA TENERTE AL DÍA VIA SMS</h1>
         <Grid   container>
-                    <input className="Boton-Nombre-d" placeholder="Nombre" />
+                    <input className="Boton-Nombre-d" placeholder="Enter your phone number" />
                   
-                </Grid>
-
-                <Grid   container>
-                    
-                    <input className="BotonEmail" placeholder="Correo Electronico"  />
-                </Grid>
+                </Grid>            
 
                 <Link to='/' >
           <img className="BotonConectarD" src={botonConectar} alt="botonConectar"/>

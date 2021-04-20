@@ -19,14 +19,12 @@ function sectionA() {
         <div>
 
         <h1 className='TUS-IMPUESTOS'>
-        TUS IMPUESTOS <br/>
-CON LOS MEJORES <br/>
- <p className='TUS-IMPUESTOS text-style-1'> Y EN VIVO</p>
+        TODOS EMPIEZAN <br/>
+COMPLETAMENTE <br/>
+ <p className='TUS-IMPUESTOS text-style-1'>GRATIS</p>
  </h1>
         <h1 className='Nuestra-videollamada'>
-        Nuestra videollamada es Simple, Fácil y Segura. <br/>
-Todos Empiezan  completamente GRATIS*
-
+        Nuestra videollamada es Simple, Fácil y Segura.
         </h1>
 
         <Grid container>

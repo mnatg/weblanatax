@@ -41,17 +41,20 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(7, 80px);
+  grid-template-columns: repeat(7, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 60vw;
   margin-top: 10px;
   justify-content: right;
+  margin-left: 12%;
+  margin-top: 1.5%;
 }
 
 .nav-item {
   height: 80px;
+  margin:auto;
 }
 
 .nav-links {
@@ -60,7 +63,7 @@
   align-items: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif !important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

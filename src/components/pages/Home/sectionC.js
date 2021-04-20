@@ -24,7 +24,7 @@ function sectionC() {
       <Link to='/' >
           <img className="noticias-image-one" src={imageOne} alt="imageOne"/>
           </Link>
-          <h1 className='noticia-one-autor'> By Fernanda |  03 Marzo 2021</h1>
+          <h1 className='noticia-one-autor'> By <strong>Fernanda |</strong>  03 Marzo 2021</h1>
           <h2 className='noticia-one-title'> Lana Tax, Facil - Rapido <br/> y seguro</h2>
 
       </div>
@@ -34,7 +34,7 @@ function sectionC() {
       <Link to='/' >
           <img className="noticias-image-one" src={imageTwo} alt="imageTwo"/>
           </Link>
-          <h1 className='noticia-one-autor'> By Maria | 03 Enero 2021</h1>
+          <h1 className='noticia-one-autor'> By <strong>Maria |</strong> 03 Enero 2021</h1>
           <h2 className='noticia-two-title'> Los mejores en la <br/>comunidad latina  </h2>
 
       </div>
@@ -44,7 +44,7 @@ function sectionC() {
       <Link to='/' >
           <img className="noticias-image-one" src={imageThree} alt="imageThree"/>
           </Link>
-          <h1 className='noticia-three-autor'> By Alejandro | 03 Diciembre 2019</h1>
+          <h1 className='noticia-three-autor'> By <strong>Alejandro |</strong> 03 Diciembre 2019</h1>
         
           <h2 className='noticia-one-title'> Muchas gracias por su <br/>asesoria con mi caso</h2>
 
