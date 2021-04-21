@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: repeat(2, 150px);
   margin:auto;
-  margin-left: 22%;
+  margin-left: 16%;
   justify-content: left;
 }
 
@@ -1140,7 +1140,7 @@
 
     
 
-  @media  (min-width: 320px) and (max-width: 767px)  {  /* smartphones, iPhone, portrait 480x320 phones */ 
+  @media  (min-width: 320px) and (max-width: 600px)  {  /* smartphones, iPhone, portrait 480x320 phones */ 
 
 
 
@@ -1245,15 +1245,13 @@
       margin-left: 15%;
     }
 
-
-.empezar-gratis-logos {
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
-  margin:auto;
-  margin-left: -10%;
-  justify-content: left;
-}
-
+    .empezar-gratis-logos {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      margin:auto;
+      margin-left: -10%;
+      justify-content: left;
+    }
 
     .Logos-tiendas {
       width: 258px;
@@ -2152,7 +2150,7 @@
 
 
 
-  @media (min-width: 768px) and (max-width: 960px)   { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  @media (min-width: 599px) and (max-width: 960px)   { /* tablet, landscape iPad, lo-res laptops ands desktops */
     .Text {
       width: 267px;
       height: 206px;
