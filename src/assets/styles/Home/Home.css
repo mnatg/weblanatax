@@ -135,10 +135,11 @@
   margin    : auto;
   padding   : 194px 48px 86px 565px;
   object-fit: contain;
+  max-width: 2048px;
 }
 
 .homebackground {
-
+  max-width: 2048px;
   width        : 90%;
   height       : auto;
   margin-top   : 10%;

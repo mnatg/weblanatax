@@ -7,14 +7,19 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import SignUp from './components/pages/Home/SignUp';
 import SignIn from './components/pages/SignIn/SignIn';
+import AppRouter from './components/pages/Routers/AppRouter';
 
+//--firebase
+//Auth
+import { FirebaseAppProvider } from 'reactfire';
+import fireConfig from './firebase-config';
 
 
 function App() {
   return (
     <>
 
-
+<FirebaseAppProvider firebaseConfig={fireConfig}>
       <Router>
      
         <Navbar />
@@ -23,11 +28,12 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
+          <Route path='/app-router' component={AppRouter} />
           <Route path='/sign-in' component={SignIn} />
         </Switch>
     
       </Router>
-
+      </FirebaseAppProvider>
      
     </>
   );
