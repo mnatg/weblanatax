@@ -1,0 +1,145 @@
+@import './colors.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.signin-background {
+    background-image : url('../../images/Home/signin/background.png');
+    background-repeat: no-repeat;
+    width            : 100%;
+    height           : auto !important;
+    background-size  : cover;
+    font-family      : $AvenirN-M;
+
+}
+
+.sign-in-parent {
+    margin-left: -1%;
+
+    input {
+        flex     : 0 0 100%;
+        max-width: 100%;
+    }
+
+    .imgs {
+        padding-top: 18%;
+
+        .logo-lana {
+            height       : 3em;
+            margin-bottom: 0.2em;
+        }
+
+        img:last-of-type {
+            margin-left: 1.625em;
+        }
+    }
+
+    .input-text {
+        margin          : 0.375em 0 0;
+        padding         : $min-space;
+        border-radius   : 1.25em;
+        border          : solid 1px #dfe2e6;
+        background-color: $white;
+        font-family     : AvenirNext;
+        padding-top     : 0.8em;
+        padding-left    : 1em;
+        padding-bottom  : 0.8em;
+    }
+
+    .input-text:focus {
+        outline: transparent;
+    }
+
+    .label-container {
+        max-width: 25%;
+    }
+
+    .label-text {
+        font-family: AvenirNext;
+        font-weight: 500;
+        line-height: 2;
+        color      : $blue;
+        font-size  : 0.875em;
+        padding-top: 1em;
+    }
+
+    .button-green {
+        padding         : $min-space;
+        border-radius   : 20px;
+        border          : solid 2px $green;
+        background-color: $green;
+        color           : $white;
+        width           : 20%;
+        margin-top      : 1.5em;
+        font-family     : $AvenirN-M;
+    }
+
+    .button-green:focus {
+        outline: transparent;
+    }
+
+    .button-google {
+        background-color: $white;
+        border-radius   : 15px;
+        box-shadow      : 0 0.5em $grey;
+        border          : none;
+        display         : flex;
+        img {
+            margin: $min-space;
+            height: 2em;
+        }
+        p {
+            margin-right: $min-space;
+            font-family : $AvenirN-D;
+            color       : $grey-dark;
+        }
+    }
+
+    .button-google:focus {
+        outline: none;
+    }
+
+    .MuiSnackbar-root {
+        max-width: 40%;
+
+        .MuiAlert-root {
+            font-family: $AvenirN-M !important;
+            color      : $red !important;
+        }
+    }
+
+    .forgot-password {
+        margin          : 1em;
+        background-color: transparent;
+        border          : none;
+        color           : $green;
+        cursor          : pointer;
+    }
+
+    .forgot-password:focus {
+        border : none;
+        outline: none;
+    }
+}
+
+
+/************ Responsive css ********************/
+@media screen and (max-width: 600px) {
+    body {
+        background-size: inherit;
+    }
+
+    .imgs {
+        padding-top: 20%;
+    }
+
+    .label-container {
+        max-width: 65%;
+    }
+
+    .button-green {
+        width         : 65%;
+        padding-top   : 0.6em;
+        padding-bottom: 0.6em;
+        margin-top    : 1em;
+    }
+}
