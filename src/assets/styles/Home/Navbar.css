@@ -1,9 +1,9 @@
 .navbar {
   background: #fff;
-  height: 80px;
+  height: 5em;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -12,9 +12,8 @@
 .navbar-container {
   align-items: center;
   width: 90%;
-  height: 78px;
+  height: 4.875em;
   margin: 0 0 0 0;
-  /* max-width: 1500px; */
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -23,7 +22,8 @@
 
 
 
-.navbar-logo {
+.navbar-logo { 
+  /* En desuso */
   color: #fff;
   justify-self: start;
   margin-left: 20px;
@@ -35,6 +35,7 @@
 }
 
 .fa-typo3 {
+  /* En desuso */
   margin-left: 0.5rem;
   font-size: 1.8rem;
 }
@@ -42,19 +43,23 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(7, auto);
-  grid-gap: 10px;
+  grid-gap: 0.625em;
   list-style: none;
   text-align: center;
   width: 60vw;
-  margin-top: 10px;
+  /* margin-top: 0.625em; */
   justify-content: right;
   margin-left: 12%;
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
 }
 
 .nav-item {
-  height: 80px;
-  margin:auto;
+  height: 2em;
+  margin: auto;
+}
+
+.nav-btn {
+  margin-top: -0.4em;
 }
 
 .nav-links {
@@ -63,13 +68,14 @@
   align-items: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif !important;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    color: #a6a6a6;
+  font-size: 0.875em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #a6a6a6;
+  margin-right: 3em;
 }
 
 .nav-links:hover {
@@ -91,6 +97,7 @@
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
+  /* En desuso */
     position: relative;
   }
 
@@ -102,10 +109,10 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 90vh;
+    width: 75%;
+    height: 85vh;
     position: fixed;
-    top: 80px;
+    top: 5em;
     left: -200%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -126,13 +133,14 @@
     display: table;
   }
 
-  .nav-links:hover {
+  /* .nav-links:hover {
     background-color: #fff;
     color: #242424;
     border-radius: 0;
-  }
+  } */
 
   .navbar-logo {
+  /* En desuso */
     position: absolute;
     top: 0;
     left: 0;
@@ -164,7 +172,7 @@
     font-size: 1.5rem;
     background-color: transparent;
     color: #fff;
-    padding: 14px 20px;
+    padding: 0.875em 1.25em;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
   }

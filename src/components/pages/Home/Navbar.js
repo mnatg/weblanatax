@@ -79,11 +79,11 @@ function Navbar() {
               </Link>
              </li>
              
-            <li className='nav-item'>
+            <li className='nav-item nav-btn'>
             {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
             </li>
 
-            <li className='nav-item'>
+            <li className='nav-item nav-btn'>
             {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</Button>}
             </li>
 
