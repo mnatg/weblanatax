@@ -84,7 +84,7 @@ function Navbar() {
             </li>
 
             <li className='nav-item'>
-            {button && <Button onClick={closeMobileMenu} className='nav-links' buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</Button>}
+            {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</Button>}
             </li>
 
           </ul>

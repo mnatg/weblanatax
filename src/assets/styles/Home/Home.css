@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: repeat(2, 150px);
   margin:auto;
-  margin-left: 15%;
+  margin-left: 22%;
   justify-content: left;
 }
 
@@ -448,10 +448,24 @@
   
 
   .Logos-tiendas {
-    width: 258px;
+    width: auto;
     height: 39px;
     margin: auto;
     object-fit: contain;
+  }
+
+  .Logos-tiendas-apple {
+    width: 115px;
+    height: 39px;
+    margin: 0 14px 0 0;
+    object-fit: contain;
+  }
+
+  .Logos-tiendas-android {
+    width: 129px;
+  height: 38px;
+  margin: 1px 0 0 14px;
+  object-fit: contain;
   }
 
   .Rectangle {
@@ -620,7 +634,7 @@
   .BotonConectarD {
     width: 160px;
     height: 46px;
-    margin: 18px 20px 35px 220px;
+    margin: 18px 20px 35px 20%;
     object-fit: contain;
   }
  
@@ -1011,9 +1025,9 @@
 
 
   .textD {
-    width: 473px;
+    width: auto;
     height: 44px;
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 15%;
     margin-left: auto;
     margin-right: auto;
@@ -1031,8 +1045,8 @@
     width: 550px;
     height: 33px;
 
-    margin-top: 20%;
-    margin-bottom: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins', sans-serif !important;
@@ -1248,6 +1262,21 @@
       margin-left: 12%;
       object-fit: contain;
     }
+
+    .Logos-tiendas-apple {
+      width: 115px;
+      height: 39px;
+      margin: 0 14px 0 0;
+      object-fit: contain;
+    }
+  
+    .Logos-tiendas-android {
+      width: 129px;
+    height: 38px;
+    margin: 1px 0 0 14px;
+    object-fit: contain;
+    }
+  
 
 
     .base {
@@ -2227,7 +2256,7 @@
       display: grid;
       grid-template-columns: repeat(2, 150px);
       margin:auto;
-      margin-left: 2%;
+      margin-left: 10%;
       margin-top: 5%;
       justify-content: center;
     }
@@ -2592,7 +2621,7 @@
     width: 412px;
     height: 48px;
     margin: auto;
-    margin-top: 120%;
+    margin-top: 70%;
     font-family: 'Poppins', sans-serif !important;
     font-size: 34px;
     font-weight: bold;
@@ -3012,7 +3041,7 @@
     display: grid;
     grid-template-columns: repeat(2, 150px);
     margin:auto;
-    margin-left: 28%;
+    margin-left: 35%;
     justify-content: left;
   }
 

@@ -12,7 +12,7 @@ ERRORS:
 error: ENOSPC: System limit for number of file watchers reached, watch '/home/guzman/ReactJSProjects/webinit/public/404.html'
 
 sol:
-sudo sysctl -w fs.inotify.max_user_watches=20000 && sudo sysctl -p
+sudo sysctl -w fs.inotify.max_user_watches=120000 && sudo sysctl -p
 
 
 error: has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
