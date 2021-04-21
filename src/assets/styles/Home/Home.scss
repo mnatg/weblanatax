@@ -141,13 +141,10 @@
   }
 
   .homebackground {
-   
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
     object-fit: contain;
     max-width: 2048;
   }
@@ -315,10 +312,15 @@
   .sectionA {
     display: grid;
     grid-template-columns: repeat(2, 45%);
-    background: #fff; 
-    margin: auto;
-    margin-left: 10%;
-
+    background: #fff;
+    width: 100%;
+    
+    .imageA {
+      width: 550px;
+      height: 559px;
+      margin: 0 0px 0px 0px;
+      object-fit: contain;
+    } 
   }
 
   .redes-sociales {
@@ -540,12 +542,7 @@
   }
   
 
-  .imageA {
-    width: 550px;
-    height: 559px;
-    margin: 0 0px 0px 0px;
-    object-fit: contain;
-  } 
+
 
   .sectionAa {
     width: 665px;

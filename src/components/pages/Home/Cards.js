@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../assets/styles/Home/Home.css';
+import '../../../assets/styles/Home/Home.scss';
 import taxes from '../../../assets/images/Home/init/impuestos.png'
 import accounting from '../../../assets/images/Home/init/contabilidad.png'
 import audits from '../../../assets/images/Home/init/auditorias.png'

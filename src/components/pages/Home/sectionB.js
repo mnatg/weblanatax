@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../assets/styles/Home/Home.css';
+import '../../../assets/styles/Home/Home.scss';
 import imageA from '../../../assets/images/Home/sectionA/photo.png'
 import textA from '../../../assets/images/Home/sectionA/textA.png'
 import { Grid } from '@material-ui/core';

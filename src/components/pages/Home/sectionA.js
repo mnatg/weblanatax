@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../assets/styles/Home/Home.css';
+import '../../../assets/styles/Home/Home.scss';
 import imageA from '../../../assets/images/Home/sectionA/photo.png'
 import textA from '../../../assets/images/Home/sectionA/textA.png'
 import { Grid } from '@material-ui/core';
@@ -12,40 +12,33 @@ function sectionA() {
   return (
 
     <div className='homebackground'>
-    <div className='sectionA'>
-       
-        <img className="imageA" src={imageA} alt="imageA"/>
-
+      <div className='sectionA'>
+        <img className="imageA" src={imageA} alt="imageA" />
         <div>
-
-        <h1 className='TUS-IMPUESTOS'>
-        TODOS EMPIEZAN <br/>
-COMPLETAMENTE <br/>
- <p className='TUS-IMPUESTOS text-style-1'>GRATIS</p>
- </h1>
-        <h1 className='Nuestra-videollamada'>
-        Nuestra videollamada es Simple, Fácil y Segura.
+          <h1 className='TUS-IMPUESTOS'>
+            TODOS EMPIEZAN <br />
+          COMPLETAMENTE <br />
+            <p className='TUS-IMPUESTOS text-style-1'>GRATIS</p>
+          </h1>
+          <h1 className='Nuestra-videollamada'>
+            Nuestra videollamada es Simple, Fácil y Segura.
         </h1>
+          <Grid container>
+            <input className="Boton-Nombre" placeholder="Nombre" />
+          </Grid>
+          <Grid container>
+            <input className="Boton-CorreoElectronico" placeholder="Correo Electronico" />
+          </Grid>
 
-        <Grid container>
-                    <input className="Boton-Nombre" placeholder="Nombre" />
-                  
-        </Grid>
-
-        <Grid  container>
-                   
-                    <input className="Boton-CorreoElectronico" placeholder="Correo Electronico"  />
-        </Grid>
-
-    <div className='divbase'>
-          <Link  to='/' >
-          <img className="BotonConectar" src={botonConectar} alt="botonConectar"/>
-          </Link>
+          <div className='divbase'>
+            <Link to='/' >
+              <img className="BotonConectar" src={botonConectar} alt="botonConectar" />
+            </Link>
           </div>
         </div>
-        
-       
-    </div>
+
+
+      </div>
 
     </div>
   );

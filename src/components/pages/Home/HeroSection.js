@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../App.css';
 import { Button } from './Button';
 import '../../../assets/styles/Home/HeroSection.css';
-import '../../../assets/styles/Home/Home.css'
+import '../../../assets/styles/Home/Home.scss'
 import text from '../../../assets/images/Home/init/text.png'
 import initbutton from '../../../assets/images/Home/init/boton-empezar.png'
 import storelabels from '../../../assets/images/Home/init/app-store.png'
