@@ -16,7 +16,7 @@ function SectionA() {
         <p className='TextQuienes'>Lanatax es una compañía que combina gente y tecnología para innovar los servicios profesionales que proveemos en el sector financiero. La base de nuestros principios son valores que promueven eficiencia y eficacia para asegurar la mejor calidad a nuestros clientes.
 </p>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={2} className="imgQuienes">
           <img className="imagenAQuienes" src={imagenA} alt="imagenA" />
         </Grid>
       </Grid>
