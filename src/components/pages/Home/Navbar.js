@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import '../../../assets/styles/Home/Navbar.css';
+import '../../../assets/styles/Home/Navbar.scss';
 import '../../../assets/styles/Home/Home.scss'
 import logo from '../../../assets/images/Home/init/lana@3x.png';
 

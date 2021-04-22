@@ -7,7 +7,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  max-width: 2048px;
 }
 
 .navbar-container {
@@ -18,8 +17,6 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
-
-
 
 .navbar-logo { 
   /* En desuso */
@@ -92,6 +89,16 @@
 
 .menu-icon {
   display: none;
+}
+
+@media screen and (min-width: 2048px) {
+  .nav-menu {
+    width: 41vw;
+    margin-left: 20%;
+  }
+  .LANA {
+    margin-left: 40% !important;
+  }
 }
 
 @media screen and (max-width: 960px) {
