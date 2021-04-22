@@ -34,7 +34,7 @@ console.log("usuario: ",user.data);
             
           </>
           :
-          <Route path="/sign-in" component={SignIn} />
+          <Route path="/" component={SignIn} />
         }
       </Switch>
 

@@ -146,7 +146,7 @@
     margin-top: 10%;
     margin-bottom: 10%;
     object-fit: contain;
-    max-width: 2048;
+    max-width: 2048px;
   }
 
   .Millones-nos-Respald {
@@ -494,11 +494,10 @@
   }
 
   .taxes {
-    width: 86px;
-    height: 120px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 5.375em;
+    height: 7.5em;
+    margin: 0;
+    padding: 0;
   }
 
   .accounting {
@@ -1449,7 +1448,6 @@
 
 
   .homebackground {
-   
     width: 90%;
     height: auto;
     margin-top: 10%;
@@ -2295,17 +2293,16 @@
     } 
 
 
-  .homebackground {
-   
-    width: 90%;
-    height: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
-    max-width: 90%;
-  }
+    .homebackground {
+      width: 90%;
+      height: auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: contain;
+      max-width: 90%;
+    }
 
     .TUS-IMPUESTOS {
       width: 80%;
