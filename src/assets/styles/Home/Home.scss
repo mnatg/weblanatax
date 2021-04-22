@@ -584,7 +584,6 @@
   }
 
   .Boton-Nombre {
-    text-align: center;
     width: 380px;
     height: 46px;
     margin-top: 10px;
@@ -593,6 +592,8 @@
     margin-right: auto;
     border-radius: 23px;
     background-color: #d6d6d6;
+    border: none;
+    padding-left: 3em;
     
   }
 
@@ -603,7 +604,6 @@
   }
 
   .Boton-CorreoElectronico {
-    text-align: center;
     width: 380px;
     height: 46px;
     margin-top: 10px;
@@ -612,6 +612,8 @@
     margin-right: auto;
     border-radius: 23px;
     background-color: #d6d6d6;
+    border: none;
+    padding-left: 3em;
   }
 
   .divbase{

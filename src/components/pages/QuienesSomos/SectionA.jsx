@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../App.css';
-import '../../../assets/styles/Home/Home.css'
+import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/QuienesSomos/QuienesSomos.css'
 import imagenA from '../../../assets/images/QuienesSomos/q-s-celu.png'
 import { Link } from 'react-router-dom';
