@@ -4,10 +4,11 @@ import './App.css';
 import Home from './components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services/Services';
-import Products from './components/pages/Products/Products';
+import Products from './components/pages/QuienesSomos/QuienesSomos';
 import SignUp from './components/pages/Home/SignUp';
 import SignIn from './components/pages/SignIn/SignIn';
 import AppRouter from './components/pages/Routers/AppRouter';
+import QuienesSomos from './components/pages/QuienesSomos/QuienesSomos';
 
 //--firebase
 //Auth
@@ -30,6 +31,7 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/app-router' component={AppRouter} />
           <Route path='/sign-in' component={SignIn} />
+          <Route path='/quienes-somos' component={QuienesSomos} />
         </Switch>
     
       </Router>
