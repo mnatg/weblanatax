@@ -17,39 +17,39 @@ function Cards() {
         <Link to='/' >
         <img className="taxes" src={taxes} alt="taxes"/>
         </Link>
-        <p className='servicios-lanatax-taxes'>Impuestos</p>
+        <p className='servicios-lanatax servicios-lanatax-taxes'>Impuestos</p>
         </div>
 
         <div>
         <Link to='/'>
         <img className="accounting" src={accounting} alt="accounting"/>
         </Link>
-        <p className='servicios-lanatax-accounting'>Contabilidad</p>
+        <p className='servicios-lanatax servicios-lanatax-accounting'>Contabilidad</p>
         </div>
 
         <div>
         <Link to='/' >
         <img className="audits" src={audits} alt="audits"/>
         </Link>
-        <p className='servicios-lanatax-audits'>Auditorias</p>
+        <p className='servicios-lanatax servicios-lanatax-audits'>Auditorias</p>
         </div>
         <div>
         <Link to='/'>
         <img className="payroll" src={payroll} alt="payroll"/>
         </Link>
-        <p className='servicios-lanatax-payroll'>Nomina</p>
+        <p className='servicios-lanatax servicios-lanatax-payroll'>Nomina</p>
         </div>
         <div>
         <Link to='/' >
         <img className="corporations" src={corporations} alt="corporations"/>
         </Link>
-        <p className='servicios-lanatax-corporations'>Coorporaciones</p>
+        <p className='servicios-lanatax servicios-lanatax-corporations'>Coorporaciones</p>
         </div>
         <div>
         <Link to='/'>
         <img className="planning" src={planning} alt="planning"/>
         </Link>
-        <p className='servicios-lanatax-planning'>Planificacion</p>
+        <p className='servicios-lanatax servicios-lanatax-planning'>Planificacion</p>
         </div>
 
 

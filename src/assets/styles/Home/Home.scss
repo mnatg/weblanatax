@@ -220,12 +220,12 @@
     max-width: 1600px;
   }
 
-.servicios-lanatax-taxes {
-    width: 87px;
-    height: 23px;
-    margin: 0 91px 0 0;
+  .servicios-lanatax {
+    width: 5.4375em;
+    height: 1.4375em;
+    margin: 0;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -233,82 +233,30 @@
     letter-spacing: normal;
     color: #009245;
     text-decoration: none;
+  }
+
+  .servicios-lanatax-taxes {
+    margin-right: 5.6875em;
   }
 
   .servicios-lanatax-accounting {
-    width: 87px;
-    height: 23px;
-    margin: 12% 91px 0 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #009245;
-    text-decoration: none;
+    margin: 7% 5.6875em 0 0;
   }
 
   .servicios-lanatax-audits {
-    width: 87px;
-    height: 23px;
-    margin: 15% 91px 0 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #009245;
-    text-decoration: none;
+    margin: 15% 0 0 1.3em;
   }
 
   .servicios-lanatax-payroll {
-    width: 87px;
-    height: 23px;
-    margin: 20% 91px 0 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #009245;
-    text-decoration: none;
+    margin: 20% 0 0 2.5em;
   }
 
   .servicios-lanatax-corporations {
-    width: 87px;
-    height: 23px;
-    margin: 12% 91px 0 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #009245;
-    text-decoration: none;
+    margin: 7% 5.6875em 0 0;
   }
 
   .servicios-lanatax-planning {
-    width: 87px;
-    height: 23px;
-    margin: 15% 91px 0 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #009245;
-    text-decoration: none;
-  
+    margin: 10% 5.6875em 0 0.7em;
   }
 
   .sectionA {
@@ -494,56 +442,37 @@
     max-width: 1500px;
 
   }
-
+  
   .taxes {
     width: 5.375em;
     height: 7.5em;
-    margin: 0;
-    padding: 0;
   }
 
   .accounting {
-    width: 76px;
-    height: 105px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 4.75em;
+    height: 6.5625em;
+    margin-left: 0.7em;
   }
 
   .audits {
-    width: 125px;
-    height: 97px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 7.8125em;
+    height: 6.0625em;
   }
 
   .payroll {
-    width: 117px;
-    height: 90px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 7.3125em;
+    height: 5.625em;
   }
 
   .corporations {
-    width: 117px;
-    height: 103px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 7.3125em;
+    height: 6.4375em;
   }
 
   .planning {
-    width: 121px;
-    height: 98px;
-    margin: 0px 0px 0px 0;
-    padding: 0px 0px 0px 0;
-  
+    width: 7.5625em;
+    height: 6.125em;
   }
-  
-
-
 
   .sectionAa {
     width: 665px;
@@ -1294,143 +1223,57 @@
     }
 
     .taxes {
-      width: 86px;
-  height: 120px;
-  margin: 0 52px 0px 19px;
-  object-fit: contain;
-    
+      margin: 0 3.25em 0 1.1875em;
+      object-fit: contain;
     }
   
     .accounting {
-      width: 76px;
-      height: 105px;
-      margin: 1px 24px 0px 53px;
+      margin: 1px 1.5em 0 3.3125em;
       object-fit: contain;
-    
     }
 
     .audits {
-      width: 125px;
-  height: 97px;
-  margin: 49px 32px 0px 0;
-  object-fit: contain;
-    
+      margin: 3.0625em 2em 0 0;
+      object-fit: contain;
     }
   
     .payroll {
-      width: 117px;
-      height: 90px;
-      margin: 56px 2px 0px 34px;
+      margin: 3.5em 2px 0 2.125em;
       object-fit: contain;
-    
     }
   
     .corporations {
-      width: 117px;
-      height: 103px;
-      margin: 21px 44px 0px 3px;
+      margin: 1.3125em 2.75em 0 3px;
       object-fit: contain;
-    
     }
   
     .planning {
-      width: 121px;
-      height: 98px;
-      margin: 30px 0 0 32px;
+      margin: 1.875em 0 0 2em;
       object-fit: contain;
-    
     }
 
-
     .servicios-lanatax-taxes {
-      width: 87px;
-      height: 23px;
-      margin: 0 91px 0 10%;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
+      margin: 0 5.6875em 0 10%;
     }
   
     .servicios-lanatax-accounting {
-      width: 87px;
-      height: 23px;
-      margin: 10% 91px 0 25%;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
+      margin: 10% 5.6875em 0 25%;
     }
   
     .servicios-lanatax-audits {
-      width: 87px;
-      height: 23px;
-      margin: 15% 91px 0 10%;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
+      margin: 15% 5.6875em 0 10%;
     }
   
     .servicios-lanatax-payroll {
-      width: 87px;
-      height: 23px;
-      margin: 15% 91px 0 40%;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
+      margin: 15% 5.6875em 0 40%;
     }
   
     .servicios-lanatax-corporations {
-      width: 87px;
-      height: 23px;
-      margin: 12% 91px 0 0;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
+      margin: 12% 5.6875em 0 0;
     }
   
     .servicios-lanatax-planning {
-      width: 87px;
-      height: 23px;
-      margin: 10% 91px 0 25%;
-      font-family: 'Poppins', sans-serif !important;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #009245;
-      text-decoration: none;
-    
+      margin: 10% 5.6875em 0 25%;
     }
 
     .sectionA {
