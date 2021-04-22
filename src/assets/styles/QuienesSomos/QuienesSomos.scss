@@ -1,0 +1,78 @@
+.Rectangle-quienes {
+  width        : 100%;
+  background   : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
+  margin-top   : 0%;
+  padding-left : 15%;
+  padding-top  : 5%;
+
+  .ContainerQuienes {
+    width  : 87.5em;
+    height : 1052px;
+    margin : 0 0 73px;
+    padding: 0 0 55px;
+
+  }
+
+  
+  .TextQuienes{
+  width: 315px;
+  height: 186px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  }
+
+  .imagenAQuienes {
+    width: 43em;
+  }
+
+}
+.QuienesSomos {
+  margin: 50% 0% 0.5em 0%;
+  font-family: 'Poppins', sans-serif !important;
+  font-size     : 4.5em;
+  font-weight   : 900;
+  line-height   : 1;
+  letter-spacing: normal;
+  color         : #d9e021;
+}
+
+
+
+
+
+/*---------------------Responsive---------------------------*/
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 2000px) and (max-width: 3000px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+
+
+
+}
