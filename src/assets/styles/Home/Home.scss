@@ -373,10 +373,9 @@
     object-fit: contain;
   }
 
-
   .gridtest {
     display: grid;
-    grid-template-columns: 100px 25%;
+    grid-template-columns: 6.25em 25%;
     grid-template-columns: fit-content;
     grid-auto-flow: column;
     column-width: auto;
@@ -759,51 +758,48 @@
     margin: 10px 0 1px 16px;
     object-fit: contain;
   }
-
-  
-  
   
   .ICON-LLAMADA {
-    width: 54px;
-    height: 96px;
+    width: 3.375em;
+    height: 6em;
     object-fit: contain;
     margin-block: auto;
   }
   
   .BILLETES {
-    width: 77px;
-    height: 62px;
-    margin: 53px 0px 37px 20px;
+    width: 4.8125em;
+    height: 3.875em;
+    margin: 2em auto 0 auto;
     object-fit: contain;
-    margin-block: auto;
   }
 
   .PERSONAS {
-    width: 72px;
-    height: 72px;
-    margin: 57px 0px 47px 0px;
+    width: 4.5em;
+    height: 4.5em;
+    margin: auto;
     object-fit: contain;
   }
 
   .ESTADISTICA {
-    width: 77px;
-    height: 56px;
-    margin: 74px 0 46px 0px;
+    width: 4.8125em;
+    height: 3.5em;
+    margin: auto 0;
     object-fit: contain;
   }
 
   
   .PLANETA {
-    width: 71px;
-    height: 72px;
-    margin: 41px 0px 1px 0px;
+    width: 4.4375em;
+    height: 4.5em;
+    margin: auto;
     object-fit: contain;
   }
 
   .HOJAS {
-    width: 72px;
-    height: 80px;
-    margin: 34px 0px 0 0px;
+    width: 4.5em;
+    height: 5em;
+    margin: auto;
+    margin-left: 4%;
     object-fit: contain;
   }
 
@@ -815,17 +811,13 @@
     background-color: #008f45;
   }
   
-
-  
-  
-
   .Videollamada-Gratis {
-    width: 223px;
-    height: 26px;
-    margin-top: 20%;
-    margin-bottom: 50%;
+    width: 13.9375em;
+    height: 1.625em;
+    margin-top: auto;
+    margin-bottom: auto;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -849,11 +841,11 @@
   }
 
   .Notificaciones-push {
-    width: 255px;
-    height: 126px;
-    margin: 60% 0px 0px 0;
+    width: 15.9375em;
+    height: 7.875em;
+    padding-top: 50%;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -864,26 +856,27 @@
   
 
   .BOLSITADINERO {
-    width: 78px;
-    height: 77px;
+    width: 4.875em;
+    height: 4.8125em;
+    margin-left: -0.7em;
     margin-block: auto;
     object-fit: contain;
   }
 
   .TORTA {
-    width: 71px;
-    height: 71px;
-    margin: 44px 0px 37px 0px;
+    width: 4.4375em;
+    height: 4.4375em;
+    margin: auto 0;
     object-fit: contain;
   }
 
   .Simple-fcil-y-segu {
-    width: 190px;
-    height: 26px;
+    width: 11.875em;
+    height: 1.625em;
     margin-block: auto;
-    margin-left: 20px;
+    margin-left: 1.25em;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -893,11 +886,12 @@
   }
 
   .haz-tus-taxes {
-    width: 228px;
-    height: 26px;
+    width: 14.25em;
+    height: 3.125em;
     margin-block: auto;
+    padding-left: 1em;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -908,12 +902,13 @@
   
 
   .Conctate-con-EAs {
-    width: 223px;
-    height: 105px;
-    margin-block: auto;
-    margin-top: 50%;
+    width: 13.9375em;
+    height: 6.5625em;
+    margin: auto;
+    padding-top: 33%;
+    padding-left: 1em;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -923,11 +918,11 @@
   }
   
   .Ten-acceso-a-todos-t {
-    width: 257px;
-    height: 42px;
+    width: 16.0625em;
+    height: 2.625em;
     margin-block: auto;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -1034,11 +1029,11 @@
   }
 
   .Revisin-Completa {
-    width: 247px;
-    height: 105px;
-    margin: 40% 10px 31px 0;
+    width: 15.4375em;
+    height: 6.5625em;
+    padding-top: 30%;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -1777,16 +1772,14 @@
     height: 49px;
     margin: 0 0 776px;
     padding: 12px 13px 13px 16px;
-}
+  }
 
-.LANA {
-  width: 76px;
-  height: 24px;
-  margin: auto;
-  margin-left: 10%;
-  margin-top: 10%;
-  object-fit: contain;
-}
+  .LANA {
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 10%;
+    object-fit: contain;
+  }
 
   .sectionFooter{
 
@@ -2119,6 +2112,12 @@
       justify-content: space-around;
     }
   
+    .taxes {
+      margin-left: 1em;
+    }
+    .servicios-lanatax-taxes {
+      margin-left: 1em;
+    }
 
     .sectionA {
       display: grid;
@@ -2612,25 +2611,21 @@
     height: 49px;
     margin: 0 0 776px;
     padding: 12px 13px 13px 16px;
-}
+  }
 
-.LANA {
-  width: 76px;
-  height: 24px;
-  margin: auto;
-  margin-left: 50%;
-  margin-top: 10%;
-  object-fit: contain;
-}
+  .LANA {
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 10%;
+    object-fit: contain;
+  }
 
   .sectionFooter{
 
     display: grid;
     grid-template-columns: repeat(3, auto);
     background: #fff; 
-
-  
-}
+  }
 
   .Enlaces-rpidos {
     width: 161px;
@@ -2839,38 +2834,34 @@
   object-fit: contain;
 }
 
-.Enlaces-rpidos {
-  width: 161px;
-  height: 30px;
-  margin: 0 0 35px;
-  font-family: 'Gotham', sans-serif !important;
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #2f281e;
+  .Enlaces-rpidos {
+    width: 161px;
+    height: 30px;
+    margin: 0 0 35px;
+    font-family: 'Gotham', sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
+
+  .Legales {
+    width: 79px;
+    height: 30px;
+    margin: 0 53px 35px 0;
+    font-family: 'Gotham', sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2f281e;
+  }
 }
-
-
-.Legales {
-  width: 79px;
-  height: 30px;
-  margin: 0 53px 35px 0;
-  font-family: 'Gotham', sans-serif !important;
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #2f281e;
-}
-
-
-
-   }
 
 
 
