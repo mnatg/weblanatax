@@ -11,6 +11,7 @@ function SectionA() {
 <div className='homebackground sectionA-columns-quienes Rectangle-quienes'> 
     <h1 className='QUIENES-SOMOS'>QUIENES SOMOS</h1>
     <img className="imagenA-quienes" src={imagenA} alt="imagenA"/>
+
     </div>
 
 

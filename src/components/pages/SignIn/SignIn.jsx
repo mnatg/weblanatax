@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // Components
 import { Grid } from '@material-ui/core';
 import Toast from '../../../utils/Toast';
-import PopUpForgot from '../../pages/PopUp/PupUp-Forgot';
+import PopUpForgot from '../PopUp/PupUp-Forgot';
 // Styles
 import '../../../assets/styles/SignIn/sign-in.scss';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +17,22 @@ import 'firebase/auth';
 import { useFirebaseApp } from 'reactfire';
 
 import { useUser } from 'reactfire';
+import Navbar from '../Home/Navbar';
+
+//---------- data de usuario
+export const homeObjOne = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'VIEW OUR PRODUCTS',
+    headline: 'Shop through our catalog of products',
+    description:
+      'We provide worldwide shipping to all countries. If there are any issues, just issue a refund and we will process your request',
+    buttonLabel: 'Shop Now',
+    imgStart: '',
+    img: 'images/svg-4.svg',
+    alt: 'Credit Card'
+  };
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -51,7 +67,10 @@ const SignIn = () => {
                     Toast(err.message, "error");
                 }
             });
+            
     };
+
+
     // Ingreso por google de usuario
     const google = () => {
         firebaseG.auth().signInWithPopup(provider)

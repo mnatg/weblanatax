@@ -94,6 +94,26 @@
   display: none;
 }
 
+.hide{
+  display: none;
+}
+
+.user-avatar{
+  justify-items: left;
+  color: #000;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.875em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #a6a6a6;
+  margin-right: 3em;
+}
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
   /* En desuso */
