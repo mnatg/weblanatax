@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../../App.css';
-import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/QuienesSomos/QuienesSomos.scss'
 import imagenB from '../../../assets/images/QuienesSomos/free-phone-12-mockup.png'
 import { Link } from 'react-router-dom';
