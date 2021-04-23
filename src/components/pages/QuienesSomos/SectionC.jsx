@@ -16,6 +16,7 @@ function SectionA() {
           <p className='SecondText'>
             Nuestro equipo nos separa de la competencia trayendo un sin par de valores a nuestros clientes.
             <br></br>
+            <br></br>
             La amabilidad y calidad de nuestro equipo nos destaca frente a la competencia, otorgando una experiencia única frente al mercado. </p>
         </div>
       </Grid>
