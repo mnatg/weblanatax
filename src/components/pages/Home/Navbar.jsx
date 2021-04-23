@@ -3,7 +3,7 @@ import { Button } from './Button';
 import { ButtonSignUp } from './ButtonSignUp';
 import { ButtonSignOut } from './ButtonSignOut';
 import { Link } from 'react-router-dom';
-import '../../../assets/styles/Home/Navbar.css';
+import '../../../assets/styles/Home/Navbar.scss';
 import '../../../assets/styles/Home/Home.scss'
 import logo from '../../../assets/images/Home/init/lana@3x.png';
 import { useUser } from 'reactfire';
