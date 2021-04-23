@@ -1,42 +1,13 @@
 .Rectangle-quienes {
-  width       : 100%;
-  background  : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
-  margin-top  : 0%;
-  padding-left: 15%;
-  padding-top : 5%;
-
-  .ContainerQuienes {
-    width  : 87.5em;
-    height : 1052px;
-    margin : 0 0 73px;
-    padding: 0 0 55px;
-
-  }
-
-
-  .TextQuienes {
-    height        : 186px;
-    font-family   : 'Poppins', sans-serif !important;
-    font-size     : 1.2em;
-    font-weight   : normal;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : normal;
-    letter-spacing: normal;
-    color         : #ffffff;
-  }
-
-  .imagenAQuienes {
-    width: 43em;
-  }
+  width      : 100%;
+  background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
+  margin-top : 0%;
+  padding-top: 5%;
 
 }
-.imgQuienes{
-  
-  font: -webkit-small-control;
-}
-.QuienesSomos {
-  margin        : 50% 0% 0.5em 0%;
+
+.FirstTitle {
+  margin        : 40% 5% 0.5em 15%;
   font-family   : 'Poppins', sans-serif !important;
   font-size     : 4.5em;
   font-weight   : 900;
@@ -44,6 +15,77 @@
   letter-spacing: normal;
   color         : #d9e021;
 }
+
+.FirstTesx {
+  margin        : 0% 10% 0.5em 15%;
+  height        : 186px;
+  font-family   : 'Poppins', sans-serif !important;
+  font-size     : 1.2em;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : normal;
+  letter-spacing: normal;
+  color         : #ffffff;
+}
+
+.ContainerGrid {
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap             : 10px;
+  grid-auto-rows       : minmax(100px, auto);
+}
+
+.GridLeft {
+  padding : 5%;
+  grid-row: 0.6;
+}
+
+.GridRight {
+  padding    : 5%;
+  grid-column: 0.4;
+}
+
+.SecondText {
+  margin        : 0% 10% 0.5em 15%;
+  height        : 186px;
+  font-family   : 'Poppins', sans-serif !important;
+  font-size     : 1.2em;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : normal;
+  letter-spacing: normal;
+  color         : #a6a6a6;
+}
+
+.SecondTitle {
+  margin        : 10% 5% 0.5em 15%;
+  font-family   : 'Poppins', sans-serif !important;
+  font-size     : 4.5em;
+  font-weight   : 900;
+  line-height   : 1;
+  letter-spacing: normal;
+  color         : #009245;
+}
+
+.ContainerSectionC {
+  display              : grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap             : 10px;
+  grid-auto-rows       : minmax(100px, auto);
+  background-image     : url(../../images/QuienesSomos/shutterstock-104304026.png);
+  max-width: 2040px;
+  width: 100%;
+  background-repeat: round;
+
+  .Container {
+    margin: 10% 10% 10% 10%;
+    width     : 35%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  }
+}
+
 
 
 

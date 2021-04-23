@@ -4,8 +4,8 @@ import Cards from '../../pages/Home/Cards';
 import HeroSection from '../../pages/Home/HeroSection';
 import Footer from '../../pages/Home/Footer';
 import SectionA from '../../pages/QuienesSomos/SectionA'
-import SectionB from '../../pages/Home/sectionB'
-import SectionC from '../../pages/Home/sectionC'
+import SectionB from '../../pages/QuienesSomos/SectionB'
+import SectionC from '../../pages/QuienesSomos/SectionC'
 import SectionD from '../../pages/Home/sectionD'
 
 
@@ -16,6 +16,8 @@ function QuienesSomos() {
     
  
       <SectionA />
+      <SectionB/>
+      <SectionC/>
   
       <Footer />
    
