@@ -74,7 +74,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  background-image     : url(../../images/QuienesSomos/q-s-celu.png);
+  background-image     : url(../../images/QuienesSomos/shutterstock-104304026@2x.png);
   width                : 100%;
   background-repeat    : round;
 
@@ -143,38 +143,39 @@
     text-align: center;
     font-size     : 1.2em;
   }
-}
-.GridsUp{
-  text-align: center;
-}
-.ContainerSectionC {
-  display              : grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap             : 10px;
-  grid-auto-rows       : minmax(100px, auto);
-  background-image     : url(../../images/QuienesSomos/shutterstock-104304026@2x.png);
-  width                : 100%;
-  background-repeat    : no-repeat;
+  .GridsUp{
+    text-align: center;
+  }
+  .ContainerSectionC {
+    display              : grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap             : 10px;
+    grid-auto-rows       : minmax(100px, auto);
+    background-image     : url(../../images/QuienesSomos/shutterstock-104304026.png);
+    width                : 100%;
+    background-repeat    : no-repeat;
+    
+    max-width: 100%;
+    
   
-  max-width: 100%;
-  
-
-  .Container {
-    margin    : 10% 10% 10% 10%;
-    width     : 35%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    .Container {
+      margin    : 10% 10% 10% 10%;
+      width     : 35%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+  .homebackground {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    object-fit: contain;
+    max-width: 1600px;
+    max-width: 100%;
   }
 }
-.homebackground {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  object-fit: contain;
-  max-width: 1600px;
-  max-width: 100%;
-}
+
 
 @media (min-width: 320px) and (max-width: 767px) {
   /* smartphones, iPhone, portrait 480x320 phones */
