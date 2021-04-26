@@ -311,7 +311,7 @@
   .ThirdTitle {
     margin        : 22% 5% 0.5em 15%;
     font-family   : "Poppins", sans-serif !important;
-    font-size     : 4.5em;
+    font-size     : 3.5em;
     font-weight   : 900;
     line-height   : 1;
     letter-spacing: normal;
@@ -344,9 +344,10 @@
 
 
     .Container {
-      margin    : 45% 10% 10% 10%;
-      width     : 80%;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.6334908963585435) 0%, rgba(255, 255, 255, 0) 100%);
+      margin: 45% 0% 0% 0%;
+      width: 47%;
+      background: none;
+      text-align: -webkit-center;
     }
   }
 }
