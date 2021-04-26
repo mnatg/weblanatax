@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../App.css';
+import '../../../App.scss';
 import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/QuienesSomos/QuienesSomos.scss'
 import imagenA from '../../../assets/images/QuienesSomos/q-s-celu.png'

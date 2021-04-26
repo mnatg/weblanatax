@@ -11,7 +11,7 @@
 // }
 
 import React from 'react';
-import '../../../assets/styles/Home/Button.css';
+import '../../../assets/styles/Home/Button.scss';
 import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test','btn--outlinetest'];
