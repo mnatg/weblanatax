@@ -7,8 +7,8 @@
 }
 
 .FirstTitle {
-  margin        : 40% 5% 0.5em 15%;
-  font-family   : 'Poppins', sans-serif !important;
+  margin        : 28% 5% 0.5em 15%;
+  font-family   : "Poppins", sans-serif !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
@@ -16,7 +16,7 @@
   color         : #d9e021;
 }
 
-.FirstTesx {
+.FirstText {
   margin        : 0% 10% 0.5em 15%;
   height        : 186px;
   font-family   : 'Poppins', sans-serif !important;
@@ -38,12 +38,18 @@
 
 .GridLeft {
   padding : 5%;
-  grid-row: 0.6;
+  grid-row: 0.5;
 }
 
 .GridRight {
   padding    : 5%;
-  grid-column: 0.4;
+  grid-column: 0.5;
+  align-items: flex-end;
+}
+
+.imagenBQuienes {
+  width     : 100%;
+  margin-top: 4em;
 }
 
 .SecondText {
@@ -60,13 +66,36 @@
 }
 
 .SecondTitle {
-  margin        : 10% 5% 0.5em 15%;
-  font-family   : 'Poppins', sans-serif !important;
+  margin        : 22% 5% 0.5em 15%;
+  font-family   : "Poppins", sans-serif !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
   letter-spacing: normal;
   color         : #009245;
+}
+
+.ThirdTitle {
+  margin        : 22% 5% 0.5em 15%;
+  font-family   : "Poppins", sans-serif !important;
+  font-size     : 4.5em;
+  font-weight   : 900;
+  line-height   : 1;
+  letter-spacing: normal;
+  color         : #009245;
+}
+
+.ThirdText {
+  margin        : 0% 10% 0.5em 15%;
+  height        : 186px;
+  font-family   : 'Poppins', sans-serif !important;
+  font-size     : 1.2em;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : normal;
+  letter-spacing: normal;
+  color         : #a6a6a6;
 }
 
 .ContainerSectionC {
@@ -77,6 +106,7 @@
   background-image     : url(../../images/QuienesSomos/shutterstock-104304026@2x.png);
   width                : 100%;
   background-repeat    : round;
+  margin-top           : 10%;
 
   .Container {
     margin    : 10% 10% 10% 10%;
@@ -89,7 +119,7 @@
   display: none;
 }
 
-.imagenAQuienes{
+.imagenAQuienes {
   width: 100%;
 }
 
@@ -101,78 +131,112 @@
 
 @media (min-width: 600px) and (max-width: 960px) {
   .Rectangle-quienes {
-    max-width : 100%;
+    width     : 60em;
     background: none;
   }
 
-  .ContainerGrid {
-    display              : none;
-    grid-template-columns: repeat(1, 2fr);
-
-    .FirstTesx {
-      height        : 186px;
-      font-family   : 'Poppins', sans-serif !important;
-      font-size     : 1.2em;
-      font-weight   : normal;
-      font-stretch  : normal;
-      font-style    : normal;
-      line-height   : normal;
-      letter-spacing: normal;
-      color         : #ffffff;
-    }
+  .imagenAQuienes {
+    width     : 100%;
+    margin-top: 4em;
   }
+
+  .ContainerGrid {
+    display: none;
+  }
+
+
 
   .ContainerGridTablet {
     display: block;
   }
 
-  .GridRight {
+  .GridUp {
     align-items: center;
-    background: linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
+    background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
   }
 
   .FirstTitle {
+    width     : 90%;
     text-align: center;
-    margin: 0% 0%;
-    color : #008637;
+    margin    : 0% 0%;
+    color     : #008637;
   }
 
   .FirstText {
     color     : #a6a6a6;
-    margin    : 10% 10% 0% 10%;
     text-align: center;
+    font-size : 1.2em;
+    margin-top: 3em;
+    width     : 60%;
+  }
+
+
+  .GridsUp {
+    text-align: -webkit-center;
+    width     : 58em;
+    margin-top: 3em;
+  }
+
+  .GridUnder {
+    text-align: -webkit-center;
+    width     : 58em;
+    margin-top: 3em;
+  }
+
+  .SecondText {
+    height        : 14em;
+    font-family   : "Poppins", sans-serif !important;
     font-size     : 1.2em;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    color         : #a6a6a6;
+    width         : 43em;
+    margin        : 0;
   }
-  .GridsUp{
-    text-align: center;
+
+  .ThirdTitle {
+    margin        : 22% 5% 0.5em 15%;
+    font-family   : "Poppins", sans-serif !important;
+    font-size     : 4.5em;
+    font-weight   : 900;
+    line-height   : 1;
+    letter-spacing: normal;
+    color         : #009245;
   }
+
+  .ThirdText {
+    margin        : 0% 10% 0.5em 15%;
+    height        : 186px;
+    font-family   : 'Poppins', sans-serif !important;
+    font-size     : 1.2em;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    color         : #a6a6a6;
+  }
+
   .ContainerSectionC {
     display              : grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap             : 10px;
     grid-auto-rows       : minmax(100px, auto);
     background-image     : url(../../images/QuienesSomos/shutterstock-104304026.png);
-    width                : 100%;
+    width                : 960px;
     background-repeat    : no-repeat;
+    background-position-x: center;
     
-    max-width: 100%;
-    
-  
+
+
     .Container {
-      margin    : 10% 10% 10% 10%;
-      width     : 35%;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+      margin    : 45% 10% 10% 10%;
+      width     : 80%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.6334908963585435) 0%, rgba(255, 255, 255, 0) 100%);
     }
-  }
-  .homebackground {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    object-fit: contain;
-    max-width: 1600px;
-    max-width: 100%;
   }
 }
 
@@ -180,22 +244,113 @@
 @media (min-width: 320px) and (max-width: 767px) {
   /* smartphones, iPhone, portrait 480x320 phones */
 
+  .Rectangle-quienes {
+    width     : 60em;
+    background: none;
+  }
+
+  .imagenAQuienes {
+    width     : 100%;
+    margin-top: 4em;
+  }
+
+  .ContainerGrid {
+    display: none;
+  }
+
+  .ContainerGridTablet {
+    display: block;
+  }
+
+  .GridUp {
+    align-items: center;
+    background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
+  }
+
+  .FirstTitle {
+    width     : 90%;
+    text-align: center;
+    margin    : 0% 0%;
+    color     : #008637;
+  }
+
+  .FirstText {
+    color     : #a6a6a6;
+    text-align: center;
+    font-size : 1.2em;
+    margin-top: 3em;
+    width     : 60%;
+  }
 
 
+  .GridsUp {
+    text-align: -webkit-center;
+    width     : 58em;
+    margin-top: 3em;
+  }
+
+  .GridUnder {
+    text-align: -webkit-center;
+    width     : 58em;
+    margin-top: 3em;
+  }
+
+  .SecondText {
+    height        : 14em;
+    font-family   : "Poppins", sans-serif !important;
+    font-size     : 1.2em;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    color         : #a6a6a6;
+    width         : 43em;
+    margin        : 0;
+  }
+
+  .ThirdTitle {
+    margin        : 22% 5% 0.5em 15%;
+    font-family   : "Poppins", sans-serif !important;
+    font-size     : 4.5em;
+    font-weight   : 900;
+    line-height   : 1;
+    letter-spacing: normal;
+    color         : #009245;
+  }
+
+  .ThirdText {
+    margin        : 0% 10% 0.5em 15%;
+    height        : 186px;
+    font-family   : 'Poppins', sans-serif !important;
+    font-size     : 1.2em;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    color         : #a6a6a6;
+  }
+
+  .ContainerSectionC {
+    display              : grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap             : 10px;
+    grid-auto-rows       : minmax(100px, auto);
+    background-image     : url(../../images/QuienesSomos/shutterstock-104304026.png);
+    width                : 960px;
+    background-repeat    : no-repeat;
+    background-position-x: center;
+    
 
 
-
-
-
-
-
-
-
-
+    .Container {
+      margin    : 45% 10% 10% 10%;
+      width     : 80%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.6334908963585435) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
 }
-
-
-
 @media (min-width: 2000px) and (max-width: 3000px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 
