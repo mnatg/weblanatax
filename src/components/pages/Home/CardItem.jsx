@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+// en desuso
 function CardItem(props) {
   return (
     <>
