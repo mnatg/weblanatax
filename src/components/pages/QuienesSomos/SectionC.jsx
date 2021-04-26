@@ -8,7 +8,7 @@ import { Grid, Paper } from '@material-ui/core';
 
 function SectionA() {
   return (
-    <div className='homebackground sectionA-columns-quienes'>
+    <div className='Rectangle-quiene'>
       <Grid className="ContainerSectionC">
         <div className="Container">
           <p className='SecondTitle'>nuestra gente</p>
