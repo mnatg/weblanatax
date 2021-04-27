@@ -1,5 +1,5 @@
 
-import { Config } from '../config/config';
+import { Config } from '../../Config/config';
 import axios from 'axios'
 
 export default (uid) => {

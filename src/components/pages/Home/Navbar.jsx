@@ -18,7 +18,7 @@ import { useFirebaseApp } from 'reactfire';
 //--Services
 //Services
 
-import LogOutEmployeeService from '../../../services/logoutEmployee';
+import LogOutEmployeeService from '../../../Services/webinit/logoutEmployee';
 
 //Util
 
@@ -63,11 +63,13 @@ const signOut = async () => {
     await firebase.auth().signOut();
     LogOutEmployeeService(user.data.uid);
     Toast("La sesión se cerró.", "success");
+    closeMobileMenu();
   }catch(err){
     console.error("Error al cerrar sesión:" , err);
     Toast("Error al cerrar sesión.", "error");
   }
 }
+
 
 
   return (
@@ -115,21 +117,47 @@ const signOut = async () => {
 
             <li>
               <Link
+                to='/sign-in'
+                className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
+                onClick={closeMobileMenu}
+              >
+                Sign In
+              </Link>
+             </li>
+
+             <li>
+              <Link
                 to='/sign-up'
-                className='nav-links-mobile'
+                className={autenticacion ? 'nav-links-mobile' : 'hide' } 
+                onClick={signOut}
+              >
+                Sign Out
+
+              </Link>
+              {!button &&<h1 className='user-avatar-mobile'>{email}</h1>}
+             </li>
+
+             <li>
+              <Link
+                to='/sign-in'
+                className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
                 onClick={closeMobileMenu}
               >
                 Sign Up
               </Link>
              </li>
              
+
             <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
             {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
             </li>
 
             <li className={autenticacion ? 'user-avatar' : 'hide' }>
-            {button && <h1>{email}</h1>}
-            <ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>
+            {button && <h1 className='user-avatar'>{email}</h1>}
+            </li>
+
+            <li className={autenticacion ? 'user-avatar' : 'hide' }>
+            {button &&<ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>}
             </li>
 
 

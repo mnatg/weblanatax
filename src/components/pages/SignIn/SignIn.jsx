@@ -16,6 +16,9 @@ import firebaseG from 'firebase/app';
 import 'firebase/auth';
 import { useFirebaseApp } from 'reactfire';
 
+//Auth Microservices
+import LoginService from '../../../Services/User/LogIn'
+
 import { useUser } from 'reactfire';
 import Navbar from '../Home/Navbar';
 
@@ -34,6 +37,10 @@ export const homeObjOne = {
     alt: 'Credit Card'
   };
 
+
+  
+
+  //SignIn Firebase
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -53,8 +60,25 @@ const SignIn = () => {
         }
     }
 
-    // Ingreso de usuario
     const signIn = async () => {
+        await firebase.auth().signInWithEmailAndPassword(email, password)
+            .catch((err) => {
+                if(err.code === "auth/invalid-email"){
+                    Toast('Correo invalido.', "error");
+                }else if(err.code === "auth/user-not-found" || err.code === "auth/wrong-password"){
+                    Toast('Correo o contraseña incorrectos.', "error");
+                }else if (err.code === "auth/too-many-requests"){
+                    Toast('Ha superado el número de intentos.\nIntente de nuevo más tarde.', "error");
+                }else{
+                    Toast(err.message, "error");
+                }
+            });
+            
+    };
+
+
+    // Ingreso de usuario
+    const signInFireBase = async () => {
         await firebase.auth().signInWithEmailAndPassword(email, password)
             .catch((err) => {
                 if(err.code === "auth/invalid-email"){

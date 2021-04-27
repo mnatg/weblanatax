@@ -9,16 +9,20 @@ import AppRouter from './routers/AppRouter';
 //Auth
 import { FirebaseAppProvider } from 'reactfire';
 import fireConfig from './firebase-config';
+import {Provider} from 'react-redux';
+import {store,persistor} from './Store/index'
 
 
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={fireConfig}>
       <Suspense>
         <AppRouter />
       </Suspense>
     </FirebaseAppProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
