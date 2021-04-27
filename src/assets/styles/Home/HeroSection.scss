@@ -6,7 +6,7 @@ video {
   z-index: -1;
 }
 
-.hero-container {
+.hero-container { // en desuso
   background: url('../../images/Home/init/home@3x.png') center center/cover no-repeat; 
   height: 100vh;
   width: 100%;
@@ -18,13 +18,13 @@ video {
   object-fit: contain;
 }
 
-.hero-container > h1 {
+.hero-container > h1 { // en desuso
   color: #fff;
   font-size: 100px;
   margin-top: -100px;
 }
 
-.hero-container > p {
+.hero-container > p { // en desuso
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
@@ -32,32 +32,32 @@ video {
     'Lucida Sans', Arial, sans-serif;
 }
 
-.hero-btns {
+.hero-btns { // en desuso
   margin-top: 32px;
 }
 
-.hero-btns .btn {
+.hero-btns .btn { // en desuso
   margin: 6px;
 }
 
-.fa-play-circle {
+.fa-play-circle { // en desuso
   margin-left: 4px;
 }
 
 @media screen and (max-width: 960px) {
-  .hero-container > h1 {
+  .hero-container > h1 { // en desuso
     font-size: 70px;
     margin-top: -150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container > h1 {
+  .hero-container > h1 { // en desuso
     font-size: 50px;
     margin-top: -100px;
   }
 
-  .hero-container > p {
+  .hero-container > p { // en desuso
     font-size: 30px;
   }
 
@@ -66,7 +66,7 @@ video {
     text-decoration: none;
   }
 
-  .btn {
+  .btn { // en desuso
     width: 100%;
   }
 }

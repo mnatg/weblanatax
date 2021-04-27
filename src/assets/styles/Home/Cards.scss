@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 
-.cards__container {
+.cards__container { // en desuso
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -16,12 +16,12 @@ h1 {
   margin: 0 auto;
 }
 
-.cards__wrapper {
+.cards__wrapper {// en desuso
   position: relative;
   margin: 50px 0 45px;
 }
 
-.cards__items {
+.cards__items {// en desuso
   margin-bottom: 24px;
 }
 
@@ -51,7 +51,7 @@ h1 {
   overflow: hidden;
 }
 
-.fade-img {
+.fade-img { // en desuso
   animation-name: fade-img;
   animation-duration: 2s;
 }
@@ -100,13 +100,13 @@ h1 {
 }
 
 @media only screen and (min-width: 1200px) {
-  .content__blog__container {
+  .content__blog__container {// en desuso
     width: 84%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .cards__items {
+  .cards__items {// en desuso
     display: flex;
   }
 }

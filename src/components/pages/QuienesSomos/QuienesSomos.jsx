@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../App.css';
+import '../../../App.scss';
 import Cards from '../../pages/Home/Cards';
 import HeroSection from '../../pages/Home/HeroSection';
 import Footer from '../../pages/Home/Footer';

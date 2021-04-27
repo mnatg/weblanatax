@@ -14,48 +14,31 @@ import { Link } from 'react-router-dom';
 function sectionC() {
   return (
     <div className='homebackground'>
-       
-    <h1 className='Millones-nos-Respald'>Millones nos Respaldan</h1>
-    <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>  
-
-    <div className='columnas-sectionNoticias'> 
-    
-      <div>
-      <Link to='/' >
-          <img className="noticias-image-one" src={imageOne} alt="imageOne"/>
+      <h1 className='Millones-nos-Respald'>Millones nos Respaldan</h1>
+      <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>  
+      <div className='columnas-sectionNoticias'> 
+        <div>
+          <Link to='/' >
+            <img className="news-image" src={imageOne} alt="imageOne"/>
           </Link>
-          <h1 className='noticia-one-autor'> By <strong>Fernanda |</strong>  03 Marzo 2021</h1>
-          <h2 className='noticia-one-title'> Lana Tax, Facil - Rapido <br/> y seguro</h2>
-
-      </div>
-
-      <div>
-
-      <Link to='/' >
-          <img className="noticias-image-one" src={imageTwo} alt="imageTwo"/>
+          <h1 className='news-autor'> By <strong>Fernanda |</strong>  03 Marzo 2021</h1>
+          <h2 className='news-title news-one-title'> Lana Tax, Facil - Rapido <br/> y seguro</h2>
+        </div>
+        <div>
+          <Link to='/' >
+            <img className="news-image" src={imageTwo} alt="imageTwo"/>
           </Link>
-          <h1 className='noticia-one-autor'> By <strong>Maria |</strong> 03 Enero 2021</h1>
-          <h2 className='noticia-two-title'> Los mejores en la <br/>comunidad latina  </h2>
-
-      </div>
-
-      <div>
-
-      <Link to='/' >
-          <img className="noticias-image-one" src={imageThree} alt="imageThree"/>
+          <h1 className='news-autor'> By <strong>Maria |</strong> 03 Enero 2021</h1>
+          <h2 className='news-title news-two-title'> Los mejores en la <br/>comunidad latina  </h2>
+        </div>
+        <div>
+          <Link to='/' >
+            <img className="news-image" src={imageThree} alt="imageThree"/>
           </Link>
-          <h1 className='noticia-three-autor'> By <strong>Alejandro |</strong> 03 Diciembre 2019</h1>
-        
-          <h2 className='noticia-one-title'> Muchas gracias por su <br/>asesoria con mi caso</h2>
-
+          <h1 className='news-autor'> By <strong>Alejandro |</strong> 03 Diciembre 2019</h1>
+          <h2 className='news-title news-one-title'> Muchas gracias por su <br/>asesoria con mi caso</h2>
+        </div>
       </div>
-
-
-
-      </div>
-
-
-
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import '../../../App.css';
-import '../../../assets/styles/Home/Home.scss'
+import '../../../App.scss';
 import '../../../assets/styles/QuienesSomos/QuienesSomos.scss'
 import imagenB from '../../../assets/images/QuienesSomos/free-phone-12-mockup.png'
 import { Link } from 'react-router-dom';
@@ -9,12 +8,13 @@ import { Grid, Paper } from '@material-ui/core';
 
 function SectionA() {
   return (
-    <div className='homebackground sectionA-columns-quienes'>
+    <div className='Rectangle-quiene'>
       <Grid className="ContainerSectionC">
         <div className="Container">
-          <p className='SecondTitle'>nuestra gente</p>
-          <p className='SecondText'>
+          <p className='ThirdTitle'>nuestra gente</p>
+          <p className='ThirdText'>
             Nuestro equipo nos separa de la competencia trayendo un sin par de valores a nuestros clientes.
+            <br></br>
             <br></br>
             La amabilidad y calidad de nuestro equipo nos destaca frente a la competencia, otorgando una experiencia única frente al mercado. </p>
         </div>
