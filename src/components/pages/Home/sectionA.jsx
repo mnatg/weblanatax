@@ -14,7 +14,7 @@ function sectionA() {
     <div className='homebackground'>
       <div className='sectionA'>
         <img className="imageA" src={imageA} alt="imageA" />
-        <div>
+        <div className='form-container' >
           <h1 className='TUS-IMPUESTOS'>
             TODOS EMPIEZAN <br />
           COMPLETAMENTE <br />
@@ -24,10 +24,10 @@ function sectionA() {
             Nuestra videollamada es Simple, Fácil y Segura.
         </h1>
           <Grid container>
-            <input className="Boton-Nombre" placeholder="Nombre" />
+            <input className="input-form" placeholder="Nombre" />
           </Grid>
           <Grid container>
-            <input className="Boton-CorreoElectronico" placeholder="Correo Electronico" />
+            <input className="input-form" placeholder="Correo Electronico" />
           </Grid>
 
           <div className='divbase'>

@@ -27,13 +27,13 @@ function Cards() {
         <p className='servicios-lanatax servicios-lanatax-accounting'>Contabilidad</p>
         </div>
 
-        <div>
+        <div className='center-services' >
         <Link to='/' >
         <img className="audits" src={audits} alt="audits"/>
         </Link>
         <p className='servicios-lanatax servicios-lanatax-audits'>Auditorias</p>
         </div>
-        <div>
+        <div className='center-services' >
         <Link to='/'>
         <img className="payroll" src={payroll} alt="payroll"/>
         </Link>
