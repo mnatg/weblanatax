@@ -44,50 +44,42 @@ const Navbar = ({ user }) => {
   }, []);
 
   window.addEventListener('resize', showButton);
- var autenticacion = false;
+  var autenticacion = false;
 
- var user = useUser();
- var email = "";
+  var user = useUser();
+  var email = "";
 
- if(user.data == null){
-  console.log("usuario no está definido");
-} else {
-  console.log("usuario está definido",user);
-  email = user.data.email;
-  //console.log("usuario está definido",user.data.email);
-  autenticacion = true;
-}
-
-const signOut = async () => {
-  try {
-    await firebase.auth().signOut();
-    LogOutEmployeeService(user.data.uid);
-    Toast("La sesión se cerró.", "success");
-  }catch(err){
-    console.error("Error al cerrar sesión:" , err);
-    Toast("Error al cerrar sesión.", "error");
+  if(user.data == null){
+    console.log("usuario no está definido");
+  } else {
+    console.log("usuario está definido",user);
+    email = user.data.email;
+    //console.log("usuario está definido",user.data.email);
+    autenticacion = true;
   }
-}
 
+  const signOut = async () => {
+    try {
+      await firebase.auth().signOut();
+      LogOutEmployeeService(user.data.uid);
+      Toast("La sesión se cerró.", "success");
+    }catch(err){
+      console.error("Error al cerrar sesión:" , err);
+      Toast("Error al cerrar sesión.", "error");
+    }
+  }
 
   return (
-
     <>
       <nav className='navbar'>
-  
         <div className='navbar-container'>
-        <Link to='/'  onClick={closeMobileMenu}>
-          <img className="LANA" src={logo} alt="logo"/>
+          <Link to='/'  onClick={closeMobileMenu}>
+            <img className="LANA" src={logo} alt="logo"/>
           </Link>
-          
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-
-
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-          
             <li className='nav-item'>
               <Link to='/quienes-somos' className='nav-links' onClick={closeMobileMenu}>
                 Quienes Somos
@@ -111,8 +103,6 @@ const signOut = async () => {
                 Cómo Pensamos
               </Link>
             </li>
-
-
             <li>
               <Link
                 to='/sign-up'
@@ -121,27 +111,19 @@ const signOut = async () => {
               >
                 Sign Up
               </Link>
-             </li>
-             
+            </li>
             <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
-            {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
+              {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
             </li>
-
             <li className={autenticacion ? 'user-avatar' : 'hide' }>
-            {button && <h1>{email}</h1>}
-            <ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>
+              {button && <h1>{email}</h1>}
+              <ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>
             </li>
-
-
             <li className={autenticacion ? 'display-tablet' : 'nav-item nav-btn' }>
-            {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
+              {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
             </li>
-
           </ul>
-          
-          </div>
-
-        
+        </div>        
       </nav>
     </>
   );

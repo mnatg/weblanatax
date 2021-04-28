@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../assets/styles/Home/Footer.scss';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/Home/init/lana@3x.png';

@@ -1,128 +1,4 @@
 
-.LANA {
-  width: 6.75em;
-  height: 2.125em;
-  margin: auto;
-  margin-left: 10%;
-  object-fit: contain;
-  justify-content: center;
-}
-
-.Product-Customers-Pr { // en desuso
-  width: 350px;
-  height: 28px;
-  margin: -30px 29px 9px 600px;
-}
-
-.no-te {
-  width: 7.975em;
-  height: 2.7em;
-  font-family: 'HelveticaRounded', sans-serif !important;
-  font-size: 4.0625em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.97;
-  letter-spacing: 4.1px;
-  color: #ffffff;
-  margin:auto;
-}
-
-.empezar-gratis {
-  width: 31.125em;
-  height: 4.375em;
-  margin:auto;
-}
-
-.empezar-gratis-logos {
-  display: grid;
-  grid-template-columns: repeat(2, 9.375em);
-  margin:auto;
-  margin-left: 16%;
-  justify-content: left;
-}
-
-.display-tablet{
-  display: none;
-}
-
-.impuestos{
-  width: 7.975em;
-  height: 0.6em;
-  font-family: 'HelveticaRounded', sans-serif !important;
-  font-size: 4.0625em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.97;
-  letter-spacing: 4.1px;
-  color: #009245;
-  margin: auto;
-}
-
-.Nos-encargamos {
-  width: 20.125em;
-  height: 5%;
-  font-family: 'HelveticaRounded', sans-serif !important;
-  font-size: 1.5625em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.48;
-  letter-spacing: normal;
-  color: #ffffff;
-  margin:auto;
-  margin-bottom: 1%;
-}
-
-.Ven-a {
-  width: 27.6em;
-  height: 1.5em;
-  font-family: "Modeco", sans-serif;
-  font-size: 1.125em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  margin:auto;
-  margin-top: 5%;
-}
-
-.products { // en desuso
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.bg { // en desuso
-  width: 102px;
-  height: 46px;
-  margin: 0 14px 0 29px;
-  padding: 11px 22px 12px 25px;
-  border-radius: 4px;
-  border: solid 1px #a6a6a6;
-}
-
-.Sign-In { // en deuso
-  width: 55px;
-  height: 23px;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
 .Photo {
   background: url('../../images/Home/init/home.png') center center/cover no-repeat; 
   width: 90%;
@@ -131,65 +7,84 @@
   padding: 12.125em 3em 5.375em 35.3125em;
   object-fit: contain;
   max-width: 1600px;
-}
-
-.homebackground {
-  width: 90%;
-  height: auto;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  object-fit: contain;
-  max-width: 1600px;
-}
-
-.Millones-nos-Respald {
-  width: 12.75em;
-  height: 1em;
-  margin: 0 12.375em 0.5em 0;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 2.125em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #009245;
-}
-
-.nase-a-especialista {
-  width: 51.125em;
-  height: 1.625em;
-  margin: 0.75em 0 1.5em 0;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.63;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.news-title {
-  width: 11.375em;
-  height: 4.375em;
-  margin: 0.75em 3.375em 3.125em 0.5em;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.42;
-  letter-spacing: normal;
-}
-
-.news-one-title {
-  color: #a6a6a6;
-}
-
-.news-two-title  {
-  color: #d9e021;
+  .no-te {
+    width: 7.975em;
+    height: 2.7em;
+    font-family: 'HelveticaRounded', sans-serif !important;
+    font-size: 4.0625em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: 4.1px;
+    color: #ffffff;
+    margin:auto;
+  }
+  .impuestos{
+    width: 7.975em;
+    height: 0.6em;
+    font-family: 'HelveticaRounded', sans-serif !important;
+    font-size: 4.0625em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: 4.1px;
+    color: #009245;
+    margin: auto;
+  }
+  .Nos-encargamos {
+    width: 20.125em;
+    height: 5%;
+    font-family: 'HelveticaRounded', sans-serif !important;
+    font-size: 1.5625em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.48;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin:auto;
+    margin-bottom: 1%;
+  }
+  .Ven-a {
+    width: 27.6em;
+    height: 1.5em;
+    font-family: "Modeco", sans-serif;
+    font-size: 1.125em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin:auto;
+    margin-top: 5%;
+  }
+  .empezar-gratis {
+    width: 31.125em;
+    height: 4.375em;
+    margin:auto;
+    .btn-start {
+      width: 14.3125em;
+      height: 2.875em;
+      margin: auto;
+      object-fit: contain;
+    }
+  }
+  .empezar-gratis-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 9.375em);
+    margin:auto;
+    margin-left: 16%;
+    justify-content: left;
+    .Logo-store {
+      width: auto;
+      height: 2.4375em;
+      margin: auto;
+      object-fit: contain;
+    }
+  }
 }
 
 .base {
@@ -205,761 +100,615 @@
   max-width: 1600px;
 }
 
-.servicios-lanatax {
-  width: 5.4375em;
-  height: 1.4375em;
-  margin: 0;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #009245;
-  text-decoration: none;
-}
-
-.servicios-lanatax-taxes {
-  margin-right: 5.6875em;
-}
-
-.servicios-lanatax-accounting {
-  margin: 7% 5.6875em 0 0;
-}
-
-.servicios-lanatax-audits {
-  margin: 15% 0 0 1.3em;
-}
-
-.servicios-lanatax-payroll {
-  margin: 20% 0 0 2.5em;
-}
-
-.servicios-lanatax-corporations {
-  margin: 7% 5.6875em 0 0;
-}
-
-.servicios-lanatax-planning {
-  margin: 10% 5.6875em 0 0.7em;
-}
-
-.sectionA {
-  display: grid;
-  grid-template-columns: repeat(2, 45%);
-  background: #fff;
-  width: 100%;
-  
-  .imageA {
-    width: 34.375em;
-    height: 34.9375em;
-    margin: 0;
-    object-fit: contain;
-  } 
-}
-
-.redes-sociales {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  background: #fff; 
-}
-
-.sectionD {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  background: #fff; 
-  margin-left: 10%;
-}
-
-.doscolumnas-sectionB { // en desuso
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  background: #fff; 
-  width: 1111px;
-  max-width: 1111px;
-  height: 559px;
-  margin: 0 0px 0px 0px;
-  object-fit: contain;
-}
-
-.columnas-sectionNoticias {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  background: #fff; 
-  object-fit: contain;
-}
-
-.news-image {
-  width: 21.75em;
-  height: 11.5625em;
-  margin: 0 0 1.5625em 0.625em;
-  object-fit: contain;
-}
-
-.news-autor {
-  width: 15em;
-  height: 1.75em;
-  margin: 1.5625em 7.375em 0.75em 0.625em;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.75;
-  letter-spacing: normal;
-  color: #544837;
-}
-
-.news-autor .text-style-1 {
-  font-weight: bold;
-}
-
-.sectionB {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  background: #fff; 
+.homebackground {
   width: 90%;
-  height: 34.9375em;
+  height: auto;
   margin: auto;
-  margin-left: 5%;
-  object-fit: contain;
-}
-
-.gridtest {
-  display: grid;
-  grid-template-columns: 6.25em 25%;
-  grid-template-columns: fit-content;
-  grid-auto-flow: column;
-  column-width: auto;
-  object-fit: contain;
-  justify-content: right;
-}
-
-.gridtest-area {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  object-fit: contain;
-}
-
-.btn-start {
-  width: 14.3125em;
-  height: 2.875em;
-  margin: auto;
-  object-fit: contain;
-}
-
-.Logo-store {
-  width: auto;
-  height: 2.4375em;
-  margin: auto;
-  object-fit: contain;
-}
-
-.Logo-store-apple { // en desuso
-  width: 115px;
-  height: 39px;
-  margin: 0 14px 0 0;
-  object-fit: contain;
-}
-
-.Logo-store-android { // en desuso
-  width: 129px;
-  height: 38px;
-  margin: 1px 0 0 14px;
-  object-fit: contain;
-}
-
-.Rectangle { // en desuso
-  width: 1400px;
-  height: 78px;
-  margin: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1500px;
-}
-
-.Rectangle-a { // en desuso
-  width: 1400px;
-  height: 78px;
-  margin: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1500px;
-}
-
-.taxes {
-  width: 5.375em;
-  height: 7.5em;
-}
-
-.accounting {
-  width: 4.75em;
-  height: 6.5625em;
-  margin-left: 0.7em;
-}
-
-.center-services {
-  width: 10.8125em;
-}
-
-.audits {
-  width: 7.8125em;
-  height: 6.0625em;
-}
-
-.payroll {
-  width: 7.3125em;
-  height: 5.625em;
-}
-
-.corporations {
-  width: 7.3125em;
-  height: 6.4375em;
-}
-
-.planning {
-  width: 7.5625em;
-  height: 6.125em;
-}
-
-.sectionAa { // en desuso
-  width: 665px;
-  height: 199px;
-  margin: 0 0 23px;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 59px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
-  text-align: right;
-  color: #009245;
-}
-
-.textA { // en desuso
-  width: 598px;
-  height: 180px;
-  margin: 0px 0px 23px 25px;
-}
-
-.form-container {
-  margin-inline: auto;
-}
-
-.Nuestra-videollamada {
-  width: 24.75em;
-  height: 0.0625em;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1.5em;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: right;
-  color: #a6a6a6;
-}
-
-.input-form {
-  width: 26.75em;
-  height: 3.5em;
-  margin-top: 0.625em;
-  margin-bottom: 0.625em;
-  margin-left: 40%;
-  margin-right: auto;
-  border-radius: 23px;
-  background-color: #d6d6d6;
-  border: none;
-  padding-left: 3em;
-}
-
-.Botones { // en desuso
-  margin-right: auto;
-}
-
-.divbase{
-  margin:auto;
-  width: 90%;
-}
-
-.BotonConectar {
-  width: 33.75em;
-  height: 2.875em;
-  margin-top: 0.625em;
-  margin-bottom: 0.625em;
-  margin-left: 40%;
-  margin-right: auto;
-  object-fit: contain;
-}
-
-.BotonConectarD {
-  width: 10em;
-  height: 2.875em;
-  margin: 1.125em 1.25em 2.1875em 20%;
-  object-fit: contain;
-}
-
-.Le-ayudaremos-a-hace {
-  width: 7.8125em;
-  height: 12.75em;
-  margin: 2.375em 0 2.0625em 0;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 2.8125em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: #009245;
-}
-
-.LANA-FOOTER {
-  width: 8.375em;
-  height: 2.625em;
-  margin: 2.875em 11.75em 12.0625em 0.125em;
-  object-fit: contain;
-}
-
-.sectionFooter{
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  background: #fff; 
-}
-
-.Enlaces-rpidos {
-  width: 8.0625em;
-  height: 1.5em;
-  margin: 0 0 1.75em;
-  font-family: "Gotham", sans-serif !important;
-  font-size: 1.25em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #2f281e;
-}
-
-.About-Us-Blog-Contac { // en desuso
-  width: 72px;
-  height: 140px;
-  margin: 35px 89px 0 0;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.19;
-  letter-spacing: normal;
-  color: #544837;
-}
-
-.About-Us {
-  margin: 0;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.19;
-  letter-spacing: normal;
-  color: #544837;
-}
-
-.link-decoration {
-  text-decoration: none;
-  list-style: none;
-}
-
-.Rectangle-5-Copy {
-  width: 20.3125em;
-  height: 3em;
-  margin: 2.125em 0 1.3125em;
-  padding: 0.625em 1em 0.625em 0.9375em;
-  border-radius: 4px;
-  border: solid 1px #bcd0e5;
-  background-color: #ffffff;
-}
-
-.signup-now-button {
-  width: 12.5em;
-  height: 2.4375em;
-  margin: 1.3125em 12.125em 0 0;
-  padding: 0.5em 0.9375em;
-  border-radius: 4px;
-  background-color: #008f45;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.signup-now { // en desuso
-  width: 101px;
-  height: 23px;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.line-copy {
-  width: 90%;
-  height: 1px;
-  margin-top: 2.375em;
-  opacity: 0.5;
-  background-color: #008f45;
-}
-
-.MA-Tax-Group {
-  width: 20.75em;
-  height: 1.3125em;
-  margin: 1.25em 0 0.875em 0;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 0.9375em;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.suscribete {
-  width: 17.5em;
-  height: 2.5625em;
-  margin: 0 2.8125em 2em 0;
-  font-family: "Gotham", sans-serif !important;
-  font-size: 1.25em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #2f281e;
-}
-
-.icons {
-  margin-top: 0.5em;
-  margin-left: 5em;
-}
-
-.icon {
-  width: 2.75em;
-  height: 2.75em;
-  margin-right: 1em;
-  object-fit: contain;
-}
-
-.apple {
-  margin-left: 24.375em;
-}
-
-.ICON-LLAMADA {
-  width: 3.375em;
-  height: 6em;
-  object-fit: contain;
-  margin-block: auto;
-}
-
-.BILLETES {
-  width: 4.8125em;
-  height: 3.875em;
-  margin: 2em auto 0 auto;
-  object-fit: contain;
-}
-
-.PERSONAS {
-  width: 4.5em;
-  height: 4.5em;
-  margin: auto;
-  object-fit: contain;
-}
-
-.ESTADISTICA {
-  width: 4.8125em;
-  height: 3.5em;
-  margin: auto 0;
-  object-fit: contain;
-}
-
-.PLANETA {
-  width: 4.4375em;
-  height: 4.5em;
-  margin: auto;
-  object-fit: contain;
-}
-
-.HOJAS {
-  width: 4.5em;
-  height: 5em;
-  margin: auto;
-  margin-left: 4%;
-  object-fit: contain;
-}
-
-.Videollamada-Gratis {
-  width: 13.9375em;
-  height: 1.625em;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.73;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.Reembolso-Mximo-Gar { // en desuso
-  width: 247px;
-  height: 42px;
-  margin: 0 0px 42px 0;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.Notificaciones-push {
-  width: 15.9375em;
-  height: 7.875em;
-  padding-top: 50%;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.BOLSITADINERO {
-  width: 4.875em;
-  height: 4.8125em;
-  margin-left: -0.7em;
-  margin-block: auto;
-  object-fit: contain;
-}
-
-.TORTA {
-  width: 4.4375em;
-  height: 4.4375em;
-  margin: auto 0;
-  object-fit: contain;
-}
-
-.Simple-fcil-y-segu {
-  width: 11.875em;
-  height: 1.625em;
-  margin-block: auto;
-  margin-left: 1.25em;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.73;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.haz-tus-taxes {
-  width: 14.25em;
-  height: 3.125em;
-  margin-block: auto;
-  padding-left: 1em;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.73;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.Conctate-con-EAs {
-  width: 13.9375em;
-  height: 6.5625em;
-  margin: auto;
-  padding-top: 33%;
-  padding-left: 1em;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.Ten-acceso-a-todos-t {
-  width: 16.0625em;
-  height: 2.625em;
-  margin-block: auto;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.CONECTAR-CON-TU-ASES {
-  width: 8.6875em;
-  height: 2.8125em;
-  margin: 0 0 1.0625em;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 3.6875em;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
-  color: #009245;
-}
-
-.CONECTAR-CON-TU-ASES .text-style-1 { // en desuso
-  color: #cb2222;
-}
-
-.textD {
-  width: auto;
-  height: 2.75em;
-  margin-bottom: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
-
-.textD1 {
-  width: 23.375em;
-  height: 1.0625em;
   margin-top: 10%;
-  margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1.5em;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #2f281e;
-}
-
-.TUS-IMPUESTOS{
-  width: 10.2em;
-  height: 3.4375em;
-  margin: auto;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 3.6875em;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
-  text-align: right;
-  color: #009245;
-}
-
-.TUS-IMPUESTOS .text-style-1 {
-  color: #cb2222;
-  font-size: 1em;
-}
-
-.imageD {
-  width: 35.8125em;
-  height: 34.9375em;
-  margin: 3.5625em 8em 0 0.625em;
+  margin-bottom: 10%;
   object-fit: contain;
-}
+  max-width: 1600px;
 
-.Boton-Nombre-d {
-  width: 25.75em;
-  height: 3em;
-  margin: 0.625em 0 1.125em;
-  padding-left: 2em;
-  border-radius: 23px;
-  background-color: #d6d6d6;
-  border: none;
-  font-size: 1em;
-}
+  .servicios-lanatax {
+    width: 5.4375em;
+    height: 1.4375em;
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #009245;
+    text-decoration: none;
+  }
+  .taxes {
+    width: 5.375em;
+    height: 7.5em;
+  }
+  .servicios-lanatax-taxes {
+    margin-right: 5.6875em;
+  }
+  .accounting {
+    width: 4.75em;
+    height: 6.5625em;
+    margin-left: 0.7em;
+  }
+  .servicios-lanatax-accounting {
+    margin: 7% 5.6875em 0 0;
+  }
+  .center-services {
+    width: 10.8125em;
+    .audits {
+      width: 7.8125em;
+      height: 6.0625em;
+    }
+    .servicios-lanatax-audits {
+      margin: 15% 0 0 1.3em;
+    }
+    .payroll {
+      width: 7.3125em;
+      height: 5.625em;
+    }
+    .servicios-lanatax-payroll {
+      margin: 20% 0 0 2.5em;
+    }
+  }
+  .corporations {
+    width: 7.3125em;
+    height: 6.4375em;
+  }
+  .servicios-lanatax-corporations {
+    margin: 7% 5.6875em 0 0;
+  }
+  .planning {
+    width: 7.5625em;
+    height: 6.125em;
+  }
+  .servicios-lanatax-planning {
+    margin: 10% 5.6875em 0 0.7em;
+  }
 
-.BotonEmail { // en desuso
-  text-align: center;
-  width: 380px;
-  height: 46px;
-  margin: 10px 0px 18px;
-  border-radius: 23px;
-  background-color: #d6d6d6;
-}
+  .sectionA {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    background: #fff;
+    width: 100%;
+    .imageA {
+      width: 34.375em;
+      height: 34.9375em;
+      margin: 0;
+      object-fit: contain;
+    }
+    .form-container {
+      margin-inline: auto;
+      .TUS-IMPUESTOS{
+        width: 10.2em;
+        height: 3.4375em;
+        margin: auto;
+        font-family: "Poppins", sans-serif !important;
+        font-size: 3.6875em;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+        text-align: right;
+        color: #009245;
+        .text-style-1 {
+          color: #cb2222;
+          font-size: 1em;
+        }
+      }
+      .Nuestra-videollamada {
+        width: 24.75em;
+        height: 0.0625em;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Poppins", sans-serif !important;
+        font-size: 1.5em;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #a6a6a6;
+      }
+      .input-form {
+        width: 26.75em;
+        height: 3.5em;
+        margin-top: 0.625em;
+        margin-bottom: 0.625em;
+        margin-left: 40%;
+        margin-right: auto;
+        border-radius: 23px;
+        background-color: #d6d6d6;
+        border: none;
+        padding-left: 3em;
+      }
+      .divbase{
+        margin:auto;
+        width: 90%;
+        .BotonConectar {
+          width: 33.75em;
+          height: 2.875em;
+          margin-top: 0.625em;
+          margin-bottom: 0.625em;
+          margin-left: 40%;
+          margin-right: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
 
-.Revisin-Completa {
-  width: 15.4375em;
-  height: 6.5625em;
-  padding-top: 30%;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1em;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #a6a6a6;
-}
+  .sectionB {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #fff; 
+    width: 90%;
+    height: 34.9375em;
+    margin: auto;
+    margin-left: 5%;
+    object-fit: contain;
+    .Le-ayudaremos-a-hace {
+      width: 7.8125em;
+      height: 12.75em;
+      margin: 2.375em 0 2.0625em 0;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 2.8125em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #009245;
+    }
+    .display-tablet {
+      display: none;
+    }
+    .gridtest-area {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      object-fit: contain;
+      .gridtest {
+        display: grid;
+        grid-template-columns: 6.25em 25%;
+        grid-template-columns: fit-content;
+        grid-auto-flow: column;
+        column-width: auto;
+        object-fit: contain;
+        justify-content: right;
+        .ICON-LLAMADA {
+          width: 3.375em;
+          height: 6em;
+          object-fit: contain;
+          margin-block: auto;
+        }
+        .Videollamada-Gratis {
+          width: 13.9375em;
+          height: 1.625em;
+          margin-top: auto;
+          margin-bottom: auto;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.73;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .BOLSITADINERO {
+          width: 4.875em;
+          height: 4.8125em;
+          margin-left: -0.7em;
+          margin-block: auto;
+          object-fit: contain;
+        }
+        .BILLETES {
+          width: 4.8125em;
+          height: 3.875em;
+          margin: 2em auto 0 auto;
+          object-fit: contain;
+        }
+        .Simple-fcil-y-segu {
+          width: 11.875em;
+          height: 1.625em;
+          margin-block: auto;
+          margin-left: 1.25em;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.73;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .TORTA {
+          width: 4.4375em;
+          height: 4.4375em;
+          margin: auto 0;
+          object-fit: contain;
+        }
+        .Revisin-Completa {
+          width: 15.4375em;
+          height: 6.5625em;
+          padding-top: 30%;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .PERSONAS {
+          width: 4.5em;
+          height: 4.5em;
+          margin: auto;
+          object-fit: contain;
+        }
+        .Conctate-con-EAs {
+          width: 13.9375em;
+          height: 6.5625em;
+          margin: auto;
+          padding-top: 33%;
+          padding-left: 1em;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .ESTADISTICA {
+          width: 4.8125em;
+          height: 3.5em;
+          margin: auto 0;
+          object-fit: contain;
+        }
+        .Notificaciones-push {
+          width: 15.9375em;
+          height: 7.875em;
+          padding-top: 50%;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .PLANETA {
+          width: 4.4375em;
+          height: 4.5em;
+          margin: auto;
+          object-fit: contain;
+        }
+        .haz-tus-taxes {
+          width: 14.25em;
+          height: 3.125em;
+          margin-block: auto;
+          padding-left: 1em;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.73;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+        .HOJAS {
+          width: 4.5em;
+          height: 5em;
+          margin: auto;
+          margin-left: 4%;
+          object-fit: contain;
+        }
+        .Ten-acceso-a-todos-t {
+          width: 16.0625em;
+          height: 2.625em;
+          margin-block: auto;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          color: #a6a6a6;
+        }
+      }
+    }
+  }
 
-.Legales {
-  width: 3.9375em;
-  height: 1.5em;
-  margin: 0 2.7em 1.75em 0;
-  font-family: "Gotham", sans-serif !important;
-  font-size: 1.25em;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #2f281e;
-}
+  .Millones-nos-Respald {
+    width: 12.75em;
+    height: 1em;
+    margin: 0 12.375em 0.5em 0;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 2.125em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #009245;
+  }
+  .nase-a-especialista {
+    width: 51.125em;
+    height: 1.625em;
+    margin: 0.75em 0 1.5em 0;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #a6a6a6;
+  }
+  .columnas-sectionNoticias {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background: #fff; 
+    object-fit: contain;
+    .news-image {
+      width: 21.75em;
+      height: 11.5625em;
+      margin: 0 0 1.5625em 0.625em;
+      object-fit: contain;
+    }
+    .news-autor {
+      width: 15em;
+      height: 1.75em;
+      margin: 1.5625em 7.375em 0.75em 0.625em;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 1em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: #544837;
+    }
+    .news-title {
+      width: 11.375em;
+      height: 4.375em;
+      margin: 0.75em 3.375em 3.125em 0.5em;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 1.5em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.42;
+      letter-spacing: normal;
+    }
+    .news-one-title {
+      color: #a6a6a6;
+    }
+    .news-two-title  {
+      color: #d9e021;
+    }
+  }
 
+  .sectionD {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #fff; 
+    margin-left: 10%;
+    .CONECTAR-CON-TU-ASES {
+      width: 8.6875em;
+      height: 2.8125em;
+      margin: 0 0 1.0625em;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 3.6875em;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.1;
+      letter-spacing: normal;
+      color: #009245;
+    }
+    .textD {
+      width: auto;
+      height: 2.75em;
+      margin-bottom: 15%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 1em;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a6a6a6;
+    }
+    .textD1 {
+      width: 23.375em;
+      height: 1.0625em;
+      margin-top: 10%;
+      margin-bottom: 5%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 1.5em;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2f281e;
+    }
+    .Boton-Nombre-d {
+      width: 25.75em;
+      height: 3em;
+      margin: 0.625em 0 1.125em;
+      padding-left: 2em;
+      border-radius: 23px;
+      background-color: #d6d6d6;
+      border: none;
+      font-size: 1em;
+    }
+    .BotonConectarD {
+      width: 10em;
+      height: 2.875em;
+      margin: 1.125em 1.25em 2.1875em 20%;
+      object-fit: contain;
+    }
+    .imageD {
+      width: 35.8125em;
+      height: 34.9375em;
+      margin: 3.5625em 8em 0 0.625em;
+      object-fit: contain;
+    }
+  }
+
+  .line-copy {
+    width: 90%;
+    height: 1px;
+    margin-top: 2.375em;
+    opacity: 0.5;
+    background-color: #008f45;
+  }
+  .sectionFooter{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    background: #fff;
+    .LANA-FOOTER {
+      width: 8.375em;
+      height: 2.625em;
+      margin: 2.875em 11.75em 12.0625em 0.125em;
+      object-fit: contain;
+    }
+    .Enlaces-rpidos {
+      width: 8.0625em;
+      height: 1.5em;
+      margin: 0 0 1.75em;
+      font-family: "Gotham", sans-serif !important;
+      font-size: 1.25em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #2f281e;
+    }
+    .Legales {
+      width: 3.9375em;
+      height: 1.5em;
+      margin: 0 2.7em 1.75em 0;
+      font-family: "Gotham", sans-serif !important;
+      font-size: 1.25em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #2f281e;
+    }
+    .link-decoration {
+      text-decoration: none;
+      list-style: none;
+      .About-Us {
+        margin: 0;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.19;
+        letter-spacing: normal;
+        color: #544837;
+      }
+    }
+    .third {
+      .suscribete {
+        width: 17.5em;
+        height: 2.5625em;
+        margin: 0 2.8125em 2em 0;
+        font-family: "Gotham", sans-serif !important;
+        font-size: 1.25em;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2f281e;
+      }
+      .Rectangle-5-Copy {
+        width: 20.3125em;
+        height: 3em;
+        margin: 2.125em 0 1.3125em;
+        padding: 0.625em 1em 0.625em 0.9375em;
+        border-radius: 4px;
+        border: solid 1px #bcd0e5;
+        background-color: #ffffff;
+      }
+      .signup-now-button {
+        width: 12.5em;
+        height: 2.4375em;
+        margin: 1.3125em 12.125em 0 0;
+        padding: 0.5em 0.9375em;
+        border-radius: 4px;
+        background-color: #008f45;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 1em;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+  .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background: #fff;
+    .MA-Tax-Group {
+      width: 20.75em;
+      height: 1.3125em;
+      margin: 1.25em 0 0.875em 0;
+      font-family: "Poppins", sans-serif !important;
+      font-size: 0.9375em;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a6a6a6;
+    }
+    .icons {
+      margin-top: 0.5em;
+      margin-left: 5em;
+      .icon {
+        width: 2.75em;
+        height: 2.75em;
+        margin-right: 1em;
+        object-fit: contain;
+      }
+      .apple {
+        margin-left: 24.375em;
+      }
+    }
+  }
+}
 /*---------------------Responsive---------------------------*/
 @media  (min-width: 320px) and (max-width: 600px)  {  /* smartphones, iPhone, portrait 480x320 phones */ 
 
@@ -968,15 +717,7 @@
     overflow-x: hidden!important
   } 
 
-  .Text { // en desuso
-    width: 267px;
-    height: 206px;
-    margin: 326px 26px 13px 27px;
-    object-fit: contain;
-  }
-
   .Photo {
-    /*background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat; */
     background-image: url('../../images/Home/init/photoMobile.png');
     background-size: cover;
     width: 100%;
@@ -986,70 +727,44 @@
     padding: 60% 0 1.1875em 0;
     box-sizing: border-box;
     max-width: 400px;
-  }
-
-  .no-te {
-    width: 70%;
-    height: 2.625em;
-    font-family: 'HelveticaRounded', sans-serif !important;
-    font-size: 2.125em;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.97;
-    letter-spacing: 4.1px;
-    color: #ffffff;
-    margin-top: 10%;
-    margin-bottom: 1%;
-    margin-left:10%;
-  }
-
-  .Nos-encargamos {
-    font-size: 1.0625em;
-    margin-left: 10%;
-  }
-    
-  .Ven-a {
-    height: 0.1em;
-    font-size: 1em;
-    margin-left: 10%;
-  }
-
-  .impuestos{
-    font-size: 2.125em;
-    letter-spacing: 2.14px;
-    margin-bottom: 1%;
-    margin-left:10%;
-  }
-
-  .btn-start {
-    margin: 1.875em 0 1.5em 0;
-    margin-left: 15%;
-  }
-
-  .empezar-gratis-logos {
-    margin-left: -10%;
-  }
-
-  .Logo-store {
-    width: 16.125em;
-    height: 2.4375em;
-    margin-top: 1.5em;
-    margin-left: 12%;
-  }
-
-  .Logo-store-apple {// en desuso
-    width: 115px;
-    height: 39px;
-    margin: 0 14px 0 0;
-    object-fit: contain;
-  }
-
-  .Logo-store-android {// en desuso
-    width: 129px;
-    height: 38px;
-    margin: 1px 0 0 14px;
-    object-fit: contain;
+    .no-te {
+      width: 70%;
+      height: 2.625em;
+      font-size: 2.125em;
+      margin-top: 10%;
+      margin-bottom: 1%;
+      margin-left:10%;
+    }
+    .impuestos{
+      font-size: 2.125em;
+      letter-spacing: 2.14px;
+      margin-bottom: 1%;
+      margin-left:10%;
+    }
+    .Nos-encargamos {
+      font-size: 1.0625em;
+      margin-left: 10%;
+    }
+    .Ven-a {
+      height: 0.1em;
+      font-size: 1em;
+      margin-left: 10%;
+    }
+    .empezar-gratis {
+      .btn-start {
+        margin: 1.875em 0 1.5em 0;
+        margin-left: 15%;
+      }
+    }
+    .empezar-gratis-logos {
+      margin-left: -10%;
+      .Logo-store {
+        width: 16.125em;
+        height: 2.4375em;
+        margin-top: 1.5em;
+        margin-left: 12%;
+      }
+    }
   }
 
   .base {
@@ -1058,483 +773,360 @@
     justify-content:center;
   }
 
-  .taxes {
-    margin: 0 3.25em 0 1.1875em;
-    object-fit: contain;
-  }
-
-  .accounting {
-    margin: 1px 1.5em 0 3.3125em;
-    object-fit: contain;
-  }
-
-  .audits {
-    margin: 3.0625em 2em 0 0;
-    object-fit: contain;
-  }
-
-  .payroll {
-    margin: 3.5em 2px 0 2.125em;
-    object-fit: contain;
-  }
-
-  .corporations {
-    margin: 1.3125em 2.75em 0 3px;
-    object-fit: contain;
-  }
-
-  .planning {
-    margin: 1.875em 0 0 2em;
-    object-fit: contain;
-  }
-
-  .servicios-lanatax-taxes {
-    margin: 0 5.6875em 0 10%;
-  }
-
-  .servicios-lanatax-accounting {
-    margin: 10% 5.6875em 0 25%;
-  }
-
-  .servicios-lanatax-audits {
-    margin: 15% 5.6875em 0 10%;
-  }
-
-  .servicios-lanatax-payroll {
-    margin: 15% 5.6875em 0 40%;
-  }
-
-  .servicios-lanatax-corporations {
-    margin: 12% 5.6875em 0 0;
-  }
-
-  .servicios-lanatax-planning {
-    margin: 10% 5.6875em 0 25%;
-  }
-
-  .sectionA {
-    grid-template-columns: repeat(1, 100%);
-    margin: auto;
-    margin-left: 0%;
-    justify-content: center;
-    .imageA {
-      width: 20em;
-      height: 19.75em;
-      margin-inline: auto;
-    } 
-  }
-
   .homebackground {
     justify-content: center;
-  }
 
-  .TUS-IMPUESTOS {
-    width: 9.6125em;
-    height: 4.375em;
-    margin: auto;
-    font-size: 1.8125em;
-    line-height: 0.93;
-    text-align: center;
-    justify-content: center;
-  }
+    .taxes {
+      margin: 0 3.25em 0 1.1875em;
+      object-fit: contain;
+    }
+    .servicios-lanatax-taxes {
+      margin: 0 5.6875em 0 10%;
+    }
+    .accounting {
+      margin: 1px 1.5em 0 3.3125em;
+      object-fit: contain;
+    }
+    .servicios-lanatax-accounting {
+      margin: 10% 5.6875em 0 25%;
+    }
+    .center-services {
+      .audits {
+        margin: 3.0625em 2em 0 0;
+        object-fit: contain;
+      }
+      .servicios-lanatax-audits {
+        margin: 15% 5.6875em 0 10%;
+      }
+      .payroll {
+        margin: 3.5em 2px 0 2.125em;
+        object-fit: contain;
+      }
+      .servicios-lanatax-payroll {
+        margin: 15% 5.6875em 0 40%;
+      }
+    }
+    .corporations {
+      margin: 1.3125em 2.75em 0 3px;
+      object-fit: contain;
+    }
+    .servicios-lanatax-corporations {
+      margin: 12% 5.6875em 0 0;
+    }
+    .planning {
+      margin: 1.875em 0 0 2em;
+      object-fit: contain;
+    }
+    .servicios-lanatax-planning {
+      margin: 10% 5.6875em 0 25%;
+    }
 
-  .Nuestra-videollamada {
-    width: 16.9375em;
-    font-size: 0.875em;
-    margin:auto;
-    margin-bottom: 20%;
-    text-align: center;
-  }
+    .sectionA {
+      grid-template-columns: repeat(1, 100%);
+      margin: auto;
+      margin-left: 0%;
+      justify-content: center;
+      .imageA {
+        width: 20em;
+        height: 19.75em;
+        margin-inline: auto;
+      }
+      .form-container {
+        .TUS-IMPUESTOS {
+          width: 9.6125em;
+          height: 4.375em;
+          margin: auto;
+          font-size: 1.8125em;
+          line-height: 0.93;
+          text-align: center;
+          justify-content: center;
+        }
+        .Nuestra-videollamada {
+          width: 16.9375em;
+          font-size: 0.875em;
+          margin:auto;
+          margin-bottom: 20%;
+          text-align: center;
+        }
+        .input-form {
+          width: 19.5625em;
+          margin-inline: auto;
+        }
+        .divbase {
+          .BotonConectar {
+            width: 16.4em;
+            margin-inline: auto;
+          }
+        }
+      }
+    }
 
-  .Botones { // en desuso
-    margin-right: auto;
-  }
+    .sectionB {
+      grid-template-columns: repeat(1, auto);
+      margin: auto;
+      justify-content: left;
+      .Le-ayudaremos-a-hace {
+        width: 5.625em;
+        height: 6em;
+        font-size: 1.875em;
+        line-height: 1.13;
+        text-align: center;
+        margin-left: 20%;
+        margin-top: 5%;
+      }
+      .gridtest-area {
+        grid-template-columns: repeat(1, auto);
+        margin-inline: auto;
+        .gridtest {
+          grid-template-columns: 30% 30%;
+          justify-content: left;
+          margin-left: 15%;
+          .ICON-LLAMADA {
+            margin-bottom: 1.3125em;
+          }
+          .Videollamada-Gratis {
+            margin-top: 40%;
+          }
+          .BOLSITADINERO {
+            margin-top: 1em;
+            margin-bottom: 1.875em;
+          }
+          .BILLETES {
+            margin-left: 0;
+          }
+          .Simple-fcil-y-segu {
+            margin-left: 0;
+            padding-top: 0.5em;
+          }
+          .Revisin-Completa {
+            width: 10em;
+            height: 9.1875em;
+            padding-top: 50%;
+          }
+          .PERSONAS {
+            margin-left: 0;
+          }
+          .Conctate-con-EAs {
+            padding-left: 0;
+          }
+          .Notificaciones-push {
+            padding-top: 60%;
+            width: 10em;
+          }
+          .PLANETA {
+            margin-left: 0.5em;
+          }
+          .haz-tus-taxes {
+            width: 10em;
+            padding-left: 0;
+            margin-top: 0;
+          }
+          .HOJAS {
+            margin-top: 40%;
+            margin-left: 0.5em;
+          }
+          .Ten-acceso-a-todos-t {
+            width: 10em;
+          }
+        }
+      }
+    }
 
-  .input-form {
-    width: 19.5625em;
-    margin-inline: auto;
-  }
+    .Millones-nos-Respald {
+      width: 7em;
+      height: 1.5em;
+      margin: 20.75em 2.9375em 0.25em 15%;
+      line-height: 0.88;
+      text-align: center;
+    }
+    .nase-a-especialista {
+      width: 16.9375em;
+      height: 4.5em;
+      margin: 2.25em 0 1.25em 15%;
+      line-height: 1.13;
+    }
+    .columnas-sectionNoticias {
+      grid-template-columns: repeat(1, 90%);
+      justify-content: center;
+      .news-image {
+        width: 17.9375em;
+        margin:auto;
+        margin-left: 5%;
+        border-radius: 8px;
+      }
+    }
 
-  .BotonConectar {
-    width: 16.4em;
-    margin-inline: auto;
-  }
+    .sectionD {
+      grid-template-columns: repeat(1, auto);
+      margin-left: 0%;
+      justify-content: center;
+      .CONECTAR-CON-TU-ASES {
+        width: 8.55em;
+        margin: 0.4375em 1.1875em 1.5625em;
+        font-size: 1.875em;
+        line-height: 1.33;
+        text-align: center;
+      }
+      .textD {
+        width: 14.5em;
+        height: 6.125em;
+        margin-top: 20%;
+        text-align: center;
+      }
+      .textD1 {
+        width: 11em;
+        height: 2.1875em;
+        margin: 1.5625em 1.3em 2.125em;
+        text-align: center;
+      }
+      .Boton-Nombre-d {
+        width: 16.625em;
+        margin: 2.25em 1.5625em 1.125em 1.8125em;
+      }
+      .BotonConectarD {
+        margin: 1.125em 4.875em 0 5.125em;
+      }
+      .imageD{
+        width: 20em;
+        height: 26.8125em;
+        margin-inline: auto;
+      }
+    }
 
-  .Le-ayudaremos-a-hace {
-    width: 5.625em;
-    height: 6em;
-    font-size: 1.875em;
-    line-height: 1.13;
-    text-align: center;
-    margin-left: 20%;
-    margin-top: 5%;
+    .line-copy {
+      width: 100%;
+      margin-top: 0.625em;
+    }
+    .sectionFooter{
+      grid-template-columns: repeat(1, auto);
+      .LANA-FOOTER {
+        width: 11.375em;
+        margin-bottom: 1.75em;
+        margin-left: 15%;
+        margin-right: auto;
+      }
+      .Enlaces-rpidos {
+        margin-left: 1em;
+      }
+      .Legales {
+        margin: 1.25em 3.3125em 2.1875em 1em;
+      }
+      .link-decoration {
+        .About-Us {
+          width: auto;
+          height: 1.5625em;
+          margin: 2.1875em 5.5625em 0 1.25em;
+        }
+      }
+      .third {
+        .suscribete {
+          margin: 2.3em 0 1.125em 1em;
+        }
+        .Rectangle-5-Copy {
+          width: 18.625em;
+          margin-left: 1.25em;
+        }
+        .signup-now-button {
+          width: 9.375em;
+          margin-left: 1.25em;
+        }
+      }
+    }
+    .redes-sociales {
+      grid-template-columns: repeat(1, auto);
+      .MA-Tax-Group {
+        font-size: 0.625em;
+        margin-inline: auto;
+        justify-content: center;
+        text-align: center;
+        grid-row: none;
+      }
+      .icons {
+        margin-inline: auto;
+        .icon {
+          margin-right: 0.5em;
+        }
+        .apple {
+          margin: 0;
+          margin-right: 1em;
+        }
+      }
+    }
   }
-
-  .sectionB {
-    grid-template-columns: repeat(1, auto);
-    margin: auto;
-    justify-content: left;
-  }
-
-  .gridtest {
-    grid-template-columns: 30% 30%;
-    justify-content: left;
-    margin-left: 15%;
-  }
-
-  .gridtest-area {
-    grid-template-columns: repeat(1, auto);
-    margin-inline: auto;
-  }
-
-  .ICON-LLAMADA {
-    margin-bottom: 1.3125em;
-  }
-
-  .Videollamada-Gratis {
-    margin-top: 40%;
-  }
-
-  .BILLETES {
-    margin-left: 0;
-  }
-
-  .Simple-fcil-y-segu {
-    margin-left: 0;
-    padding-top: 0.5em;
-  }
-
-  .PERSONAS {
-    margin-left: 0;
-  }
-
-  .Conctate-con-EAs {
-    padding-left: 0;
-  }
-
-  .PLANETA {
-    margin-left: 0.5em;
-  }
-
-  .haz-tus-taxes {
-    width: 10em;
-    padding-left: 0;
-    margin-top: 0;
-  }
-
-  .BOLSITADINERO {
-    margin-top: 1em;
-    margin-bottom: 1.875em;
-  }
-
-  .Reembolso-Mximo-Gar { // en desuso
-    width: 172px;
-    height: 42px;
-    margin: 76px 18px 57px 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: #a6a6a6;
-  }
-
-  .Revisin-Completa {
-    width: 10em;
-    height: 9.1875em;
-    padding-top: 50%;
-  }
-
-  .Notificaciones-push {
-    padding-top: 60%;
-    width: 10em;
-  }
-
-  .HOJAS {
-    margin-top: 40%;
-    margin-left: 0.5em;
-  }
-
-  .Ten-acceso-a-todos-t {
-    width: 10em;
-  }
-
-  .Millones-nos-Respald {
-    width: 7em;
-    height: 1.5em;
-    margin: 20.75em 2.9375em 0.25em 15%;
-    line-height: 0.88;
-    text-align: center;
-  }
-
-  .news-image {
-    width: 17.9375em;
-    margin:auto;
-    margin-left: 5%;
-    border-radius: 8px;
-  }
-
-  .nase-a-especialista {
-    width: 16.9375em;
-    height: 4.5em;
-    margin: 2.25em 0 1.25em 15%;
-    line-height: 1.13;
-  }
-  
-  .columnas-sectionNoticias {
-    grid-template-columns: repeat(1, 90%);
-    justify-content: center;
-  }
-
-  .sectionD {
-    grid-template-columns: repeat(1, auto);
-    margin-left: 0%;
-    justify-content: center;
-  }
-
-  .CONECTAR-CON-TU-ASES {
-    width: 8.55em;
-    margin: 0.4375em 1.1875em 1.5625em;
-    font-size: 1.875em;
-    line-height: 1.33;
-    text-align: center;
-  }
-
-  .CONECTAR-CON-TU-ASES .text-style-1 { // en desuso
-    margin: 0px 0px 0px 0px;
-    color: #cb2222;
-  }
-  
-  .textD {
-    width: 14.5em;
-    height: 6.125em;
-    margin-top: 20%;
-    text-align: center;
-  }
-
-  .textD1 {
-    width: 11em;
-    height: 2.1875em;
-    margin: 1.5625em 1.3em 2.125em;
-    text-align: center;
-  }
-
-  .Boton-Nombre-d {
-    width: 16.625em;
-    margin: 2.25em 1.5625em 1.125em 1.8125em;
-  }
-
-  .BotonEmail { // en desuso
-    text-align: center;
-    width: 266px;
-    height: 46px;
-    margin: 18px 25px 18px 29px;
-    object-fit: contain;
-  }
-
-  .BotonConectarD {
-    margin: 1.125em 4.875em 0 5.125em;
-  }
-
-  .LANA-FOOTER {
-    width: 11.375em;
-    margin-bottom: 1.75em;
-    margin-left: 15%;
-    margin-right: auto;
-  }
-
   .movilbackground-footer{
     margin-top: 10%;
   }
-  
-  .navbar-container {
-    align-items: center;
-    max-width: 500px;
-    width: 320px;
-    height: 49px;
-    margin: 0 0 776px;
-    padding: 12px 13px 13px 16px;
-  }
 
-  .LANA {
-    margin: auto;
-    margin-left: 10%;
-    margin-top: 10%;
-    object-fit: contain;
-  }
-
-  .sectionFooter{
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .Enlaces-rpidos {
-    margin-left: 1em;
-  }
-  
-  .About-Us {
-    width: auto;
-    height: 1.5625em;
-    margin: 2.1875em 5.5625em 0 1.25em;
-  }
-
-  .Legales {
-    margin: 1.25em 3.3125em 2.1875em 1em;
-  }
-  
-  .suscribete {
-    margin: 2.3em 0 1.125em 1em;
-  }
-
-  .Rectangle-5-Copy {
-    width: 18.625em;
-    margin-left: 1.25em;
-  }
-
-  .Sign-up-Now {
-    width: 101px;
-    height: 23px;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-  
-  }
-
-  .signup-now-button {
-    width: 9.375em;
-    margin-left: 1.25em;
-  }
-
-  .line-copy {
-    width: 100%;
-    margin-top: 0.625em;
-  }
-  
-  .redes-sociales {
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .icons {
-    margin-inline: auto;
-  }
-
-  .facebook {
-    width: 2.3125em;
-    height: 2.3125em;
-    margin: 0.625em 0.625em 0 0.5em;
-  }
-
-  .twitter {
-    width: 37px;
-    height: 37px;
-    margin: 10px 10px 0px 0px;
-    object-fit: contain;
-  }
-
-  .apple {
-    margin: 0;
-    margin-right: 1em;
-  }
-
-  .MA-Tax-Group {
-    font-size: 0.625em;
-    margin-inline: auto;
-    justify-content: center;
-    text-align: center;
-    grid-row: none;
-  }
-
-  .imageD{
-    width: 20em;
-    height: 26.8125em;
-    margin-inline: auto;
-  }
-
-  .menu-icon {
-
-    top: 0;
-    margin-right: 10%;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    justify-content: right;
+  .navbar {
+    .navbar-container {
+      max-width: 500px;
+      width: 8em;
+      height: 3.0625em;
+      margin: 0 0 48.5em;
+      padding: 0.75em 0.8125em 0.8125em 1em;
+      .LANA {
+        margin: auto;
+        margin-left: 10%;
+        margin-top: 10%;
+        object-fit: contain;
+      }
+      .menu-icon {
+        top: 0;
+        margin-right: 10%;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        justify-content: right;
+      }
+    }
   }
 }
 
 /*-----------Responsive tablet--------------*/
 @media (min-width: 601px) and (max-width: 960px)   { /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .Text {
-    width: 267px;
-    height: 206px;
-    margin: 326px 26px 13px 27px;
-    object-fit: contain;
-  }
-
   .Photo {
     background: url('../../images/Home/init/pick-header.png') center no-repeat;
     height: 45.875em;
     margin-top: 5em;
     padding: 20% 0 5.375em;
     width: 53em;
-  }
-
-  .no-te {
-    width: 9.3125em;
-    height: 3em;
-    font-family: 'HelveticaRounded', sans-serif !important;
-    font-size: 2.5em;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.97;
-    letter-spacing: 4.1px;
-    color: #ffffff;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 57%;
-    margin-right: 25%;
-  }
-  .impuestos{
-    font-size: 2.5em;
-    letter-spacing: 2.14px;
-    margin-left: 57%;
-    margin-bottom: 1%;
-  }
-
-  .Nos-encargamos {
-    width: 15.875em;
-    margin-left: 57%;
-  }
-  
-  .Ven-a {
-    width: 13.875em;
-    height: 0.8em;
-    font-size: 1em;
-    margin-left: 57%;
-  }
-
-  .btn-start {
-    margin-top: 10%;
-    margin-left: 65%;
-  }
-
-  .Logo-store {
-    width: 16.125em;
-    margin-top: 10%;
-    margin-left: 62%;
-  }
-
-  .empezar-gratis-logos {
-    margin-left: 10%;
-    margin-top: 5%;
-    justify-content: center;
+    .no-te {
+      height: 3em;
+      font-size: 2.5em;
+      margin-left: 57%;
+    }
+    .impuestos{
+      font-size: 2.5em;
+      letter-spacing: 2.14px;
+      margin-left: 57%;
+      margin-bottom: 1%;
+    }
+    .Nos-encargamos {
+      width: 15.875em;
+      margin-left: 57%;
+    }
+    .Ven-a {
+      width: 13.875em;
+      height: 0.8em;
+      font-size: 1em;
+      margin-left: 57%;
+    }
+    .empezar-gratis {
+      .btn-start {
+        margin-top: 10%;
+        margin-left: 65%;
+      }
+    }
+    .empezar-gratis-logos {
+      margin-left: 10%;
+      margin-top: 5%;
+      justify-content: center;
+      .Logo-store {
+        width: 16.125em;
+        margin-top: 10%;
+        margin-left: 62%;
+      }
+    }
   }
 
   .base {
@@ -1542,345 +1134,262 @@
     margin-left: 10%;
   }
 
-  .taxes {
-    margin-left: 1em;
-  }
-
-  .servicios-lanatax-taxes {
-    margin-left: 1em;
-  }
-
-  .sectionA {
-    grid-template-columns: repeat(1, auto);
-    margin: auto;
-    margin-left: 0%;
-    justify-content: center;
-    .imageA {
-      width: 35.8125em;
-      margin-left: 13%;
-    }
-  }
-
-
   .homebackground {
     max-width: 90%;
-  }
 
-  .TUS-IMPUESTOS {
-    width: 9.1875em;
-    height: 2.375em;
-    margin: auto;
-    line-height: 0.93;
-    text-align: center;
-  }
+    .taxes {
+      margin-left: 1em;
+    }
+    .servicios-lanatax-taxes {
+      margin-left: 1em;
+    }
 
-  .Nuestra-videollamada {
-    font-size: 1.25em;
-    margin-left: 10%;
-    margin-top: 20%;
-  }
+    .sectionA {
+      grid-template-columns: repeat(1, auto);
+      margin: auto;
+      margin-left: 0%;
+      justify-content: center;
+      .imageA {
+        width: 35.8125em;
+        margin-left: 13%;
+      }
+      .form-container {
+        .TUS-IMPUESTOS {
+          width: 9.1875em;
+          height: 2.375em;
+          margin: auto;
+          line-height: 0.93;
+          text-align: center;
+        }
+        .Nuestra-videollamada {
+          font-size: 1.25em;
+          margin-left: 10%;
+          margin-top: 20%;
+        }
+        .input-form {
+          margin-inline: auto;
+        }
+        .divbase {
+          .BotonConectar {
+            width: 10em;
+            margin-left: 35%;
+          }
+        }
+      }
+    }
 
-  .Botones { // en desuso
-    margin-right: auto;
-  }
-  
-  .input-form {
-    margin-inline: auto;
-  }
+    .sectionB {
+      grid-template-columns: repeat(1, auto);
+      margin: auto;
+      .Le-ayudaremos-a-hace {
+        width: 20.9375em;
+        height: 1em;
+        font-size: 37px;
+        line-height: 1.13;
+        text-align: center;
+      }
+      .display-mobile {
+        display: none;
+      }
+      .display-tablet {
+        display: block;
+      }
+      .gridtest-area {
+        justify-content: left;
+        .gridtest {
+          .Videollamada-Gratis {
+            font-size: 1.125em;
+            width: 11.9375em;
+          }
+          .BOLSITADINERO {
+            margin: 4.5625em 0 4.875em 0;
+          }
+          .BILLETES {
+            margin: auto 0;
+          }
+          .Simple-fcil-y-segu {
+            margin-left: 0.2em;
+            font-size: 1.125em;
+            width: 11.9375em;
+          }
+          .Revisin-Completa {
+            width: 10.3125em;
+            height: 9.1875em;
+            padding-top: 3em;
+            font-size: 1.125em;
+          }
+          .Conctate-con-EAs {
+            width: 11.9375em;
+            font-size: 1.125em;
+            padding-top: 60%;
+            padding-left: 0.5em;
+          }
+          .ESTADISTICA {
+            margin: auto;
+          }
+          .Notificaciones-push {
+            width: 10.3125em;
+            height: 11.8125em;
+            padding-top: 4.5em;
+            font-size: 1.125em;
+          }
+          .PLANETA {
+            margin-left: 1.5em;
+            margin-top: 0.5em;
+          }
+          .haz-tus-taxes {
+            width: 10em;
+            margin-block: 0;
+            font-size: 1.125em;
+          }
+          .HOJAS {
+            margin-left: 55%;
+          }
+          .Ten-acceso-a-todos-t {
+            width: 10.3125em;
+            font-size: 1.125em;
+            margin-left: 2em;
+          }
+        }
+      }
+    }
 
-  .BotonConectar {
-    width: 10em;
-    margin-left: 35%;
-  }
+    .Millones-nos-Respald {
+      margin: auto;
+      margin-top: 60%;
+      margin-left: 30%;
+      line-height: 0.88;
+    }
+    .nase-a-especialista {
+      width: 30.0625em;
+      height: 3.25em;
+      margin: 2.25em 0 1.25em 20%;
+      font-size: 1.125em;
+      line-height: 1.13;
+      text-align: center;
+    }
+    .columnas-sectionNoticias {
+      grid-template-columns: repeat(1, auto);
+      margin-left: 35%;
+      .news-image {
+        width: 21.9375em;
+        height: 12.5625em;
+        margin: 0 1.4375em 0.0625em 0;
+        border-radius: 8px;
+      }
+    }
 
-  .display-tablet {
-    display: block;
-  }
+    .sectionD {
+      grid-template-columns: repeat(1, 90%);
+      .CONECTAR-CON-TU-ASES {
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 0.93;
+        text-align: center;
+      }
+      .textD {
+        margin-bottom: 10%;
+        font-size: 1.125em;
+        text-align: center;
+      }
+      .textD1 {
+        width: 23.25em;
+        height: 2.0625em;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .Boton-Nombre-d {
+        margin: 0.75em 9.125em 1.125em;
+      }
+      .BotonConectarD {
+        margin: 1.125em 0 0 38%;
+      }
+      .imageD{
+        margin-inline: auto;
+      }
+    }
 
-  .Le-ayudaremos-a-hace {
-    width: 20.9375em;
-    height: 1em;
-    font-size: 37px;
-    line-height: 1.13;
-    text-align: center;
+    .line-copy {
+      width: 100%;
+      margin-top: 0.625em;
+    }
+    .sectionFooter{
+      grid-template-columns: repeat(3, auto);
+      .LANA-FOOTER {
+        margin-left: 1.75em;
+        margin-right: 3em;
+      }
+      .Legales {
+        margin-left: 0.5em;
+      }
+      .link-decoration {
+        .About-Us {
+          width: 8em;
+          height: 0.625em;
+          margin: 2.1875em 5.5625em 0.3125em 0.625em;
+        }
+      }
+      .third {
+        grid-column: 2;
+        .suscribete {
+          width: 10.5em;
+          margin: 0;
+          margin-bottom: 2em;
+        }
+        .signup-now-button {
+          width: 9.375em;
+          margin-right: 0;
+        }
+      }
+    }
+    .redes-sociales {
+      grid-template-columns: repeat(2, 50%);
+      .MA-Tax-Group {
+        font-size: 1em;
+        margin-top: 2em;
+        justify-content: center;
+        text-align: center;
+      }
+      .icons {
+        margin-right: 0.5em;
+        margin-left: auto;
+        margin-top: 1em;
+        .apple {
+          margin: 0;
+          margin-right: 1em;
+        }
+      }
+    }
   }
-
-  .display-mobile {
-    display: none;
-  }
-
-  .sectionB {
-    grid-template-columns: repeat(1, auto);
-    margin: auto;
-  }
-
-  .gridtest-area {
-    justify-content: left;
-  }
-
-  .Videollamada-Gratis {
-    font-size: 1.125em;
-    width: 11.9375em;
-  }
-
-  .BILLETES {
-    margin: auto 0;
-  }
-
-  .Simple-fcil-y-segu {
-    margin-left: 0.2em;
-    font-size: 1.125em;
-    width: 11.9375em;
-  }
-
-  .Conctate-con-EAs {
-    width: 11.9375em;
-    font-size: 1.125em;
-    padding-top: 60%;
-    padding-left: 0.5em;
-  }
-
-  .PLANETA {
-    margin-left: 1.5em;
-    margin-top: 0.5em;
-  }
-
-  .haz-tus-taxes {
-    width: 10em;
-    margin-block: 0;
-    font-size: 1.125em;
-  }
-
-  .BOLSITADINERO {
-    margin: 4.5625em 0 4.875em 0;
-  }
-
-  .Reembolso-Mximo-Gar { // en desuso
-    width: 172px;
-    height: 42px;
-    margin: 76px 18px 57px 0;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 17px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: #a6a6a6;
-  }
-
-  .Revisin-Completa {
-    width: 10.3125em;
-    height: 9.1875em;
-    padding-top: 3em;
-    font-size: 1.125em;
-  }
-
-  .ESTADISTICA {
-    margin: auto;
-  }
-
-  .Notificaciones-push {
-    width: 10.3125em;
-    height: 11.8125em;
-    padding-top: 4.5em;
-    font-size: 1.125em;
-  }
-
-  .HOJAS {
-    margin-left: 55%;
-  }
-
-  .Ten-acceso-a-todos-t {
-    width: 10.3125em;
-    font-size: 1.125em;
-    margin-left: 2em;
-  }
-
-  .Millones-nos-Respald {
-    margin: auto;
-    margin-top: 45%;
-    margin-left: 30%;
-    line-height: 0.88;
-  }
-
-  .news-image {
-    width: 21.9375em;
-    height: 12.5625em;
-    margin: 0 1.4375em 0.0625em 0;
-    border-radius: 8px;
-  }
-
-  .nase-a-especialista {
-    width: 30.0625em;
-    height: 3.25em;
-    margin: 2.25em 0 1.25em 20%;
-    font-size: 1.125em;
-    line-height: 1.13;
-  }
-  
-  .columnas-sectionNoticias {
-    grid-template-columns: repeat(1, auto);
-    margin-left: 35%;
-  }
-
-  .CONECTAR-CON-TU-ASES {
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 0.93;
-    text-align: center;
-  }
-
-  .CONECTAR-CON-TU-ASES .text-style-1 { // en desuso
-    margin: 0px 0px 0px 0px;
-    color: #cb2222;
-  }
-  
-  .textD {
-    margin-bottom: 10%;
-    font-size: 1.125em;
-    text-align: center;
-  }
-
-  .textD1 {
-    width: 23.25em;
-    height: 2.0625em;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
-  .Boton-Nombre-d {
-    margin: 0.75em 9.125em 1.125em;
-  }
-
-  .BotonEmail { // en desuso
-    width: 380px;
-  height: 46px;
-  margin: 0px 194px 18px;
-  object-fit: contain;
-  }
-
-  .BotonConectarD {
-    margin: 1.125em 0 0 38%;
-  }
-
   .movilbackground-footer{
     margin-top: 10%;
   }
-  
-  .navbar-container {
-    max-width: 500px;
-    width: 9em;
-    height: 3.0625em;
-    margin: 0 0 48.5em;
-    padding: 0.75em 0.8125em 0.8125em 1em;
-  }
 
-  .LANA {
-    margin: auto;
-    margin-left: 50%;
-    margin-top: 10%;
-    object-fit: contain;
-  }
-
-  .sectionFooter{
-    grid-template-columns: repeat(3, auto);
-  }
-  
-  .About-Us {
-    width: auto;
-    height: 0.625em;
-    margin: 2.1875em 5.5625em 0.3125em 0.625em;
-  }
-
-  .Sign-up-Now {
-    width: 101px;
-    height: 23px;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-  
-  }
-
-  .signup-now-button {
-    width: 9.375em;
-  }
-
-  .line-copy {
-    width: 100%;
-    margin-top: 0.625em;
-  }
-  
-  .redes-sociales {
-    grid-template-columns: repeat(2, 50%);
-  }
-
-  .icons {
-    margin-right: 0.5em;
-    margin-left: auto;
-    margin-top: 1em;
-  }
-
-  .facebook {
-    width: 2.3125em;
-    height: 2.3125em;
-    margin: 0.625em 0.625em 0 2.5em;
-  }
-
-  .twitter {
-    width: 37px;
-    height: 37px;
-    margin: 10px 10px 0px 0px;
-    object-fit: contain;
-  }
-
-  .apple {
-    margin: 0;
-    margin-right: 1em;
-  }
-
-  .MA-Tax-Group {
-    font-size: 1em;
-    margin-top: 2em;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .sectionD {
-    grid-template-columns: repeat(1, 90%);
-  }
-
-  .imageD{
-    margin-inline: auto;
-  }
-
-.menu-icon {
-  top: 0;
-  margin-right: 10%;
-  transform: translate(-100%, 60%);
-  font-size: 1.8rem;
-  cursor: pointer;
-  justify-content: left;
-}
-
-  .LANA-FOOTER {
-    margin-left: 3.75em;
-    margin-right: auto;
-  }
-
-  .Legales {
-    margin-left: 0.5em;
+  .navbar {
+    .navbar-container {
+      max-width: 500px;
+      width: 9em;
+      height: 3.0625em;
+      margin: 0 0 48.5em;
+      padding: 0.75em 0.8125em 0.8125em 1em;
+      .LANA {
+        margin: auto;
+        margin-left: 50%;
+        margin-top: 10%;
+        object-fit: contain;
+      }
+      .menu-icon {
+        margin-right: 10%;
+        justify-content: left;
+      }
+    }
   }
 }
 
 @media (min-width: 2000px) and (max-width: 3000px) {
- .empezar-gratis-logos {
-    margin-left: 25%;
+  .Photo {
+    .empezar-gratis-logos {
+      margin-left: 25%;
+    }
   }
 }

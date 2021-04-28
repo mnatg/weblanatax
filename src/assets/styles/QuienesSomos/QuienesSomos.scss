@@ -3,7 +3,6 @@
   background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
   margin-top : 0%;
   padding-top: 5%;
-
 }
 
 .FirstTitle {
@@ -123,10 +122,6 @@
   width: 100%;
 }
 
-
-
-
-
 /*---------------------Responsive---------------------------*/
 
 @media (min-width: 600px) and (max-width: 960px) {
@@ -143,8 +138,6 @@
   .ContainerGrid {
     display: none;
   }
-
-
 
   .ContainerGridTablet {
     display: block;
@@ -169,7 +162,6 @@
     margin-top: 3em;
     width     : 60%;
   }
-
 
   .GridsUp {
     text-align: -webkit-center;
@@ -196,7 +188,6 @@
     width         : 43em;
     margin        : 0;
   }
- 
 
   .ThirdTitle {
     margin        : 22% 5% 0.5em 15%;
@@ -230,8 +221,6 @@
     width                : 960px;
     background-repeat    : no-repeat;
     background-position-x: center;
-
-
 
     .Container {
       margin    : 45% 10% 10% 10%;

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../../App.scss';
 import { Button } from './Button';
-import '../../../assets/styles/Home/HeroSection.scss';
 import '../../../assets/styles/Home/Home.scss'
 import text from '../../../assets/images/Home/init/text.png'
 import initbutton from '../../../assets/images/Home/init/boton-empezar.png'

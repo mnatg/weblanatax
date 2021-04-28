@@ -70,7 +70,6 @@ const SignIn = () => {
             
     };
 
-
     // Ingreso por google de usuario
     const google = () => {
         firebaseG.auth().signInWithPopup(provider)
@@ -96,7 +95,6 @@ const SignIn = () => {
 
     return (
         <div className='signin-background'>
-
             <Grid container direction="column" justify="center" alignItems="center" className="sign-in-parent" >
                 <div className="imgs">
                     <img className="logo-lana" src={logoLana} alt="LANA TAX logo"/>
@@ -118,9 +116,6 @@ const SignIn = () => {
                 </button>
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
-
-
-
         </div>
     )
 
