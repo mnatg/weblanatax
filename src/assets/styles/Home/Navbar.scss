@@ -1,19 +1,20 @@
 .navbar {
-  background: #edf0f5;
+  background: #edf0f5 !important;
   height: 5em;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  // font-size: 1.2em;
+  // position: sticky;
+  // top: 0;
+  // z-index: 999;
   .navbar-container {
     align-items: center;
-    width: 90%;
     height: 4.875em;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    justify-content: flex-end;
+    // width: 90%;
+    // display: grid;
+    // grid-template-columns: repeat(2, auto);
     .LANA {
       width: 6.75em;
       height: 2.125em;
@@ -29,17 +30,15 @@
       }
     }
     .nav-menu {
-      display: grid;
-      grid-template-columns: repeat(7, auto);
+      display: flex;
       grid-gap: 0.625em;
       list-style: none;
       text-align: center;
-      width: 62vw;
-      justify-content: right;
       margin-left: 12%;
       .nav-item {
         height: 2em;
         margin: auto;
+        width: max-content;
         .nav-links {
           justify-items: left;
           align-items: center;
@@ -52,10 +51,10 @@
           line-height: 2;
           letter-spacing: normal;
           color: #a6a6a6;
-          margin-right: 3em;
+          margin-right: 4em;
         }
         .nav-links:hover {
-          border-bottom: 4px solid #fff;
+          color: #009245;
           transition: all 0.2s ease-out;
         }
       }
@@ -88,17 +87,6 @@
   margin-right: 3em;
 }
 
-@media screen and (min-width: 2048px) {
-  .navbar {
-    .navbar-container {
-      width: 50%;
-      .nav-menu {
-        width: 41vw;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 960px) {
   .navbar {
    position:fixed;
@@ -106,12 +94,6 @@
    .navbar-container {
     .menu-icon {
       display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
     }
     .nav-menu {
       display: flex;
@@ -165,4 +147,9 @@
     color: #000;
     font-size: 2rem;
   }
+  .left {
+    margin-inline-start: auto;
+    margin-inline-end: 15%;
+  }
 }
+

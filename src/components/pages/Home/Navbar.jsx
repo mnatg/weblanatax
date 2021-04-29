@@ -1,29 +1,33 @@
+// React
 import React, { useState, useEffect } from 'react';
+// Redux
+import { useDispatch } from 'react-redux'
+import { onLogout } from '../../../Store/actions/Auth'
+// Components
+import {
+  AppBar,
+  Toolbar,
+  IconButton
+} from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import { ButtonSignUp } from './ButtonSignUp';
 import { ButtonSignOut } from './ButtonSignOut';
-import { Link } from 'react-router-dom';
+// Styles
 import '../../../assets/styles/Home/Navbar.scss';
 import '../../../assets/styles/Home/Home.scss'
+// Assets
 import logo from '../../../assets/images/Home/init/lana@3x.png';
-import { useUser } from 'reactfire';
+// Icons
+import { Menu } from '@material-ui/icons';
+//Auth
+import 'firebase/auth';
+import { useFirebaseApp, useUser } from 'reactfire';
+// Util
 import Toast from '../../../utils/Toast';
 
-//Auth
-import firebaseG from 'firebase/app';
-import 'firebase/auth';
-import { useFirebaseApp } from 'reactfire';
-
-
-//--Services
-//Services
-
-import LogOutEmployeeService from '../../../services/logoutEmployee';
-
-//Util
-
-
 const Navbar = ({ user }) => {
+  const dispatch = useDispatch()
   const firebase = useFirebaseApp();
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -50,7 +54,7 @@ const Navbar = ({ user }) => {
   var email = "";
 
   if(user.data == null){
-    console.log("usuario no está definido");
+   console.log("usuario no está definido");
   } else {
     console.log("usuario está definido",user);
     email = user.data.email;
@@ -59,26 +63,32 @@ const Navbar = ({ user }) => {
   }
 
   const signOut = async () => {
-    try {
-      await firebase.auth().signOut();
-      LogOutEmployeeService(user.data.uid);
-      Toast("La sesión se cerró.", "success");
-    }catch(err){
-      console.error("Error al cerrar sesión:" , err);
-      Toast("Error al cerrar sesión.", "error");
-    }
+    console.log("hola sign out");
+      try {
+        console.log("hola action");
+        await dispatch(onLogout({
+        }));
+        setTimeout(() => {
+         // //setLoading(false)
+        }, 5000);
+      } catch (error) {
+        //setLoading(false)
+        Toast(error,"error")
+      }
   }
 
   return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/'  onClick={closeMobileMenu}>
+      <AppBar className='navbar'>
+        <Toolbar className='navbar-container'>
+          <IconButton edge="end" className='menu-icon' aria-label="menu" onClick={handleClick} >
+            <Menu fontSize='large' />
+          </IconButton>
+          {/* <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div> */}
+          <Link to='/' className='left' onClick={closeMobileMenu}>
             <img className="LANA" src={logo} alt="logo"/>
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/quienes-somos' className='nav-links' onClick={closeMobileMenu}>
@@ -105,8 +115,30 @@ const Navbar = ({ user }) => {
             </li>
             <li>
               <Link
+                to='/sign-in'
+                className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
+                onClick={closeMobileMenu}
+              >
+                Sign In
+              </Link>
+             </li>
+
+             <li>
+              <Link
                 to='/sign-up'
-                className='nav-links-mobile'
+                className={autenticacion ? 'nav-links-mobile' : 'hide' } 
+                onClick={signOut}
+              >
+                Sign Out
+
+              </Link>
+              {!button &&<h1 className='user-avatar-mobile'>{email}</h1>}
+             </li>
+
+             <li>
+              <Link
+                to='/sign-up'
+                className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
                 onClick={closeMobileMenu}
               >
                 Sign Up
@@ -116,16 +148,18 @@ const Navbar = ({ user }) => {
               {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
             </li>
             <li className={autenticacion ? 'user-avatar' : 'hide' }>
-              {button && <h1>{email}</h1>}
-              <ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>
+            {button && <h1 className='user-avatar'>{email}</h1>}
             </li>
-            <li className={autenticacion ? 'display-tablet' : 'nav-item nav-btn' }>
+
+            <li className={autenticacion ? 'user-avatar' : 'hide' }>
+            {button &&<ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>}
+            </li>
+            <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
               {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
             </li>
           </ul>
-        </div>        
-      </nav>
-    </>
+        </Toolbar>        
+      </AppBar>
   );
 }
 

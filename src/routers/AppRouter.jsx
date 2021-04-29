@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from '../components/pages/Home/Navbar';
 import Home from '../components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from '../components/pages/Services/Services';
+import QueHacemos from '../components/pages/QueHacemos/QueHacemos';
 import Products from '../components/pages/QuienesSomos/QuienesSomos';
-import SignUp from '../components/pages/Home/SignUp';
+import SignUp from '../components/pages/SignIn/SignUp';
 import SignIn from '../components/pages/SignIn/SignIn';
 import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
 
@@ -25,7 +25,7 @@ function AppRouter() {
         <Navbar user={user} />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
+          <Route path='/que-hacemos' component={QueHacemos} />
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/sign-in' component={SignIn} />
