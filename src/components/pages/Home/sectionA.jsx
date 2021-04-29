@@ -10,36 +10,31 @@ import { Link } from 'react-router-dom';
 
 function sectionA() {
   return (
-
     <div className='homebackground'>
       <div className='sectionA'>
         <img className="imageA" src={imageA} alt="imageA" />
-        <div>
+        <div className='form-container' >
           <h1 className='TUS-IMPUESTOS'>
             TODOS EMPIEZAN <br />
-          COMPLETAMENTE <br />
+            COMPLETAMENTE <br />
             <p className='TUS-IMPUESTOS text-style-1'>GRATIS</p>
           </h1>
           <h1 className='Nuestra-videollamada'>
             Nuestra videollamada es Simple, Fácil y Segura.
-        </h1>
+          </h1>
           <Grid container>
-            <input className="Boton-Nombre" placeholder="Nombre" />
+            <input className="input-form" placeholder="Nombre" />
           </Grid>
           <Grid container>
-            <input className="Boton-CorreoElectronico" placeholder="Correo Electronico" />
+            <input className="input-form" placeholder="Correo Electronico" />
           </Grid>
-
           <div className='divbase'>
             <Link to='/' >
               <img className="BotonConectar" src={botonConectar} alt="botonConectar" />
             </Link>
           </div>
         </div>
-
-
       </div>
-
     </div>
   );
 }

@@ -1,5 +1,9 @@
+// React
 import React from 'react';
+// Styles
 import '../../../App.scss';
+// Components
+import { Grid } from '@material-ui/core';
 import Cards from './Cards';
 import HeroSection from './HeroSection';
 import Footer from './Footer';
@@ -10,10 +14,9 @@ import SectionD from './sectionD'
 
 
 
-function Home() {
+const Home = () => {
   return (
-    <>
-    
+    <Grid container>
       <HeroSection />
       <Cards />
       <SectionA />
@@ -21,8 +24,7 @@ function Home() {
       <SectionC />
       <SectionD />
       <Footer />
-   
-    </>
+    </Grid>
   );
 }
 

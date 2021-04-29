@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../assets/styles/Home/Footer.scss';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/Home/init/lana@3x.png';
@@ -14,7 +13,7 @@ import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 function Footer() {
   return (
     <div className='homebackground movilbackground-footer'>
-      <p className='line'></p>
+      <p className='line-copy'></p>
       <div className='sectionFooter'>
         <Link to='/'  >
           <img className="LANA-FOOTER" src={logo} alt="logo"/>
@@ -60,21 +59,21 @@ function Footer() {
       <p className='line-copy'></p>
       <div className='redes-sociales'>
         <p className='MA-Tax-Group'>©2021 M&A Tax Group. All rights reserved</p>
-        <div>
+        <div className='icons' >
           <Link>
-            <img className="facebook" src={facebook} alt="facebook"/>
+            <img className="icon" src={facebook} alt="facebook"/>
           </Link>
           <Link>
-            <img className="twitter" src={twitter} alt="twitter"/>
+            <img className="icon" src={twitter} alt="twitter"/>
           </Link>
           <Link>
-            <img className="instagram" src={instagram} alt="instagram"/>
+            <img className="icon" src={instagram} alt="instagram"/>
           </Link>
           <Link>
-            <img className="apple" src={apple} alt="apple"/>
+            <img className="icon apple" src={apple} alt="apple"/>
           </Link>
           <Link>
-            <img className="googleplay" src={googleplay} alt="googleplay"/>
+            <img className="icon" src={googleplay} alt="googleplay"/>
           </Link>
         </div>
       </div>

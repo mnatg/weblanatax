@@ -77,32 +77,24 @@ const signOut = async () => {
         }, 5000);
       } catch (error) {
         //setLoading(false)
-        Toast("error",error)
+        Toast(error,"error")
       }
     
 }
 
 
 
-
   return (
-
     <>
       <nav className='navbar'>
-  
         <div className='navbar-container'>
-        <Link to='/'  onClick={closeMobileMenu}>
-          <img className="LANA" src={logo} alt="logo"/>
+          <Link to='/'  onClick={closeMobileMenu}>
+            <img className="LANA" src={logo} alt="logo"/>
           </Link>
-          
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-
-
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-          
             <li className='nav-item'>
               <Link to='/quienes-somos' className='nav-links' onClick={closeMobileMenu}>
                 Quienes Somos
@@ -126,8 +118,6 @@ const signOut = async () => {
                 Cómo Pensamos
               </Link>
             </li>
-
-
             <li>
               <Link
                 to='/sign-in'
@@ -158,13 +148,10 @@ const signOut = async () => {
               >
                 Sign Up
               </Link>
-             </li>
-             
-
-            <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
-            {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
             </li>
-
+            <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
+              {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
+            </li>
             <li className={autenticacion ? 'user-avatar' : 'hide' }>
             {button && <h1 className='user-avatar'>{email}</h1>}
             </li>
@@ -172,17 +159,11 @@ const signOut = async () => {
             <li className={autenticacion ? 'user-avatar' : 'hide' }>
             {button &&<ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>}
             </li>
-
-
-            <li className={autenticacion ? 'display-tablet' : 'nav-item nav-btn' }>
-            {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
+            <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
+              {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
             </li>
-
           </ul>
-          
-          </div>
-
-        
+        </div>        
       </nav>
     </>
   );

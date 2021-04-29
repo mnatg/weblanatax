@@ -118,7 +118,6 @@ const SignIn = () => {
 
     return (
         <div className='signin-background'>
-
             <Grid container direction="column" justify="center" alignItems="center" className="sign-in-parent" >
                 <div className="imgs">
                     <img className="logo-lana" src={logoLana} alt="LANA TAX logo"/>
@@ -136,9 +135,6 @@ const SignIn = () => {
                 <button className="forgot-password"  onClick={handleClickOpen}>¿Olvidaste tu contraseña?</button>
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
-
-
-
         </div>
     )
 
