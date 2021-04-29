@@ -19,6 +19,12 @@ import { useFirebaseApp } from 'reactfire';
 import { useUser } from 'reactfire';
 import Navbar from '../Home/Navbar';
 
+
+//Auth Redux
+import { useDispatch } from 'react-redux'
+import { onSignUp } from '../../../Store/actions/Auth'
+
+
 //---------- data de usuario
 export const homeObjOne = {
     lightBg: true,
@@ -34,9 +40,13 @@ export const homeObjOne = {
     alt: 'Credit Card'
   };
 
-const SignIn = () => {
+const SignUp = () => {
+
+    const dispatch = useDispatch();
+    const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
 
     const firebase = useFirebaseApp();
     const provider = new firebaseG.auth.GoogleAuthProvider();
@@ -49,26 +59,35 @@ const SignIn = () => {
             return Toast('La contraseña es demasiado corta. \nDebe tener más de 6 caracteres.', "error");
         }
         else {
-            return signIn();
+            return handleForm();
         }
     }
 
-    // Ingreso de usuario
-    const signIn = async () => {
-        await firebase.auth().signInWithEmailAndPassword(email, password)
-            .catch((err) => {
-                if(err.code === "auth/invalid-email"){
-                    Toast('Correo invalido.', "error");
-                }else if(err.code === "auth/user-not-found" || err.code === "auth/wrong-password"){
-                    Toast('Correo o contraseña incorrectos.', "error");
-                }else if (err.code === "auth/too-many-requests"){
-                    Toast('Ha superado el número de intentos.\nIntente de nuevo más tarde.', "error");
-                }else{
-                    Toast(err.message, "error");
-                }
-            });
-            
-    };
+    // Registro de usuario
+    const handleForm = async () => {
+        //setLoading(true);
+        if (email == '' || password == '' || fullName == '') {
+          Toast("Todos los campos son requridos","error");
+          //setLoading(false);
+          return
+        } else if ( password.length < 6 ) {
+          Toast("La contraseña debe tener 6 caracteres minimo","error");
+          //setLoading(false);
+          return
+        }
+        try {
+          await dispatch(onSignUp({
+            email: email,
+            password: password,
+            fullName: fullName
+          }));
+          setTimeout(() => {
+            //setLoading(false)
+          }, 5000);
+        } catch (error) {
+          //setLoading(false);
+        }
+      }
 
 
     // Ingreso por google de usuario
@@ -103,6 +122,9 @@ const SignIn = () => {
                     <img src={logo}  alt="M&A TAX GROUP logo" />
                 </div>
                 <Grid className="label-container" container direction="column" justify="flex-start">
+                    <label className="label-text" htmlFor="FullName">FullName</label>
+                    <input className="input-text" type="FullName" name="FullName" id="FullName" placeholder="Usuario" value={fullName}
+                        onChange={(e) => setFullName(e.target.value)} />
                     <label className="label-text" htmlFor="Email">Correo</label>
                     <input className="input-text" type="email" name="email" id="Email" placeholder="Correo" value={email}
                         onChange={(e) => setEmail(e.target.value)} />
@@ -110,12 +132,7 @@ const SignIn = () => {
                     <input className="input-text" type="password" name="password" id="Password" placeholder="Contraseña" value={password}
                         onChange={(e) => setPassword(e.target.value)} />
                 </Grid>
-                <button className="button-green" onClick={validation}>Ingresar</button>
-                <button className="forgot-password"  onClick={handleClickOpen}>¿Olvidaste tu contraseña?</button>
-                <button className="button-google" onClick={google}>
-                    <img src={googleIcon}  alt="Icono de Google" />
-                    <p>Ingresar con Google</p>
-                </button>
+                <button className="button-green" onClick={validation}>! Registrarse</button>
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
 
@@ -127,4 +144,4 @@ const SignIn = () => {
 }
 
 
-export default SignIn;
+export default SignUp;

@@ -15,6 +15,11 @@ import 'firebase/auth';
 import { useFirebaseApp } from 'reactfire';
 
 
+//Auth Redux
+import { useDispatch } from 'react-redux'
+import { onLogout } from '../../../Store/actions/Auth'
+
+
 //--Services
 //Services
 
@@ -24,6 +29,7 @@ import LogOutEmployeeService from '../../../Services/webinit/logoutEmployee';
 
 
 const Navbar = ({ user }) => {
+  const dispatch = useDispatch()
   const firebase = useFirebaseApp();
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -59,16 +65,23 @@ const Navbar = ({ user }) => {
 }
 
 const signOut = async () => {
-  try {
-    await firebase.auth().signOut();
-    LogOutEmployeeService(user.data.uid);
-    Toast("La sesión se cerró.", "success");
-    closeMobileMenu();
-  }catch(err){
-    console.error("Error al cerrar sesión:" , err);
-    Toast("Error al cerrar sesión.", "error");
-  }
+  console.log("hola sign out");
+ 
+      try {
+          console.log("hola action");
+        await dispatch(onLogout({
+         
+        }));
+        setTimeout(() => {
+         // //setLoading(false)
+        }, 5000);
+      } catch (error) {
+        //setLoading(false)
+        Toast("error",error)
+      }
+    
 }
+
 
 
 
@@ -139,7 +152,7 @@ const signOut = async () => {
 
              <li>
               <Link
-                to='/sign-in'
+                to='/sign-up'
                 className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
                 onClick={closeMobileMenu}
               >

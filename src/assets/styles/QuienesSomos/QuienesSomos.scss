@@ -129,7 +129,7 @@
 
 
 
-/*---------------------Responsive mobile---------------------------*/
+/*---------------------Responsive tablet---------------------------*/
 
 @media (min-width: 600px) and (max-width: 960px) {
   .Rectangle-quienes {
@@ -145,8 +145,6 @@
   .ContainerGrid {
     display: none;
   }
-
-
 
   .ContainerGridTablet {
     display: block;
@@ -198,6 +196,7 @@
     width         : 43em;
     margin        : 0;
   }
+ 
 
   .ThirdTitle {
     margin        : 22% 5% 0.5em 15%;
@@ -242,13 +241,13 @@
   }
 }
 
-//----------Responsive large width
+//----------Responsive mobile
 
 @media (min-width: 320px) and (max-width: 600px) {
   /* smartphones, iPhone, portrait 480x320 phones */
 
   .Rectangle-quienes {
-    width     : 40em;
+    width     : 100vmin;
     background: none;
   }
 
@@ -266,11 +265,15 @@
   }
 
   .GridUp {
+    margin-top: 2em;
+    width: 100vmin;
+
     align-items: center;
     background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
   }
 
   .FirstTitle {
+    font-size : 3.5em;
     width     : 90%;
     text-align: center;
     margin    : 0% 0%;
@@ -293,7 +296,6 @@
   .GridUnder {
     text-align: -webkit-center;
     width: 100%;
-    margin-top: 3em;
     margin-bottom: 15em;
   }
 
@@ -310,11 +312,14 @@
     width         : 100%;
     margin        : 0;
   }
+  .SecondTitle {
+    font-size     : 3em;
+  }
 
   .ThirdTitle {
     margin        : 22% 5% 0.5em 15%;
     font-family   : "Poppins", sans-serif !important;
-    font-size     : 3.5em;
+    font-size : 3em;
     font-weight   : 900;
     line-height   : 1;
     letter-spacing: normal;
@@ -348,7 +353,7 @@
 
     .Container {
       margin: 45% 0% 0% 0%;
-      width: 47%;
+      width: 100vmin;
       background: none;
       text-align: -webkit-center;
     }

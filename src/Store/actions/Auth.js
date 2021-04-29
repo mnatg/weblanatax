@@ -7,7 +7,7 @@ import {
   FACEBOOK_SIGN_IN,
   GOOGLE_SIGN_UP,
   FACEBOOK_SIGN_UP
-} from "main/Store/Types";
+} from "../../Store/Types";
 
 export const onLogin = payload => ({
   type: LOGIN,

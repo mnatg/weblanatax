@@ -12,37 +12,49 @@ import { GoogleSignin } from 'react-google-login';
 //import { LoginManager, AccessToken, AppEventsLogger } from 'react-fbsdk';
 import Toast from '../../utils/Toast';
 
-const signInEmailStrategy = (email, password) => (
-  auth()
+//Firebase Auth
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
+  
+
+function SignInEmailStrategy (email, password) {
+  Toast("hola signemailstrategy");
+  firebase.auth()
     .signInWithEmailAndPassword(email, password)
     .then(async (data) => {
       //console.log("Inicio sesion el usuario: " + data.additionalUserInfo.profile.email);
+    
       let user_object = {
         email: data.user.email,
         uid: data.user.uid,
         photoURL: data.user.photoURL,
         name: data.user.displayName
       }
+      console.log("datos del usuario:",user_object)
       return (user_object)
     })
     .catch(error => {
       if (error.code === 'auth/email-already-in-use') {
-        Toast.show("El correo ingresado ya esta en uso");
-        console.log('That email address is already in use!');
+        Toast("El correo ingresado ya esta en uso","error");
+        console.log('That email address is already in use!',"error");
       } else if (error.code === 'auth/invalid-email' || error.code === 'auth/user-not-found') {
-        Toast.show("El correo ingresado no es valido");
+        Toast("El correo ingresado no es valido","error");
       } else if (error.code === 'auth/wrong-password') {
-        Toast.show("La clave ingresada no es correcta");
+        Toast("La clave ingresada no es correcta","error");
       } else {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar","error");
         console.error(error);
       }
       throw error;
     })
-)
+
+
+  }
+
 
 const signUpEmailStrategy = (email, password, fullName) => (
-  auth()
+  firebase.auth()
     .createUserWithEmailAndPassword(email, password)
     .then(async (data) => {
       let user_object = {
@@ -54,11 +66,11 @@ const signUpEmailStrategy = (email, password, fullName) => (
       return (user_object)
     }).catch(error => {
       if (error.code === 'auth/email-already-in-use') {
-        Toast.show("El usuario ya esta registrado en la plataforma");
+        Toast("El usuario ya esta registrado en la plataforma","error");
       } else if (error.code === 'auth/invalid-email' || error.code === 'auth/user-not-found') {
-        Toast.show("El correo ingresado no es valido");
+        Toast("El correo ingresado no es valido","error");
       } else {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar","error");
         console.error("error al crear usuario:", error)
       }
 
@@ -80,13 +92,13 @@ const googleSignInStrategy = () => {
       return (user_object)
     }).catch(error => {
       if (error.code === 'auth/email-already-in-use') {
-        Toast.show("El correo ingresado ya se encuentra en uso");
+        Toast("El correo ingresado ya se encuentra en uso");
         console.error('That email address is already in use!');
       } else if (error.code === 'auth/invalid-email') {
-        Toast.show("El correo ingresado no es valido");
+        Toast("El correo ingresado no es valido");
         console.error('That email address is invalid!');
       } else {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar");
         console.error(error);
       }
       throw (error)
@@ -95,8 +107,10 @@ const googleSignInStrategy = () => {
 }
 
 const facebookSignInStrategy = () => {
-  
+  //Search ReactJS libraries
 }
+
+
 
 export function* signUp(action) {
   let { email, password, fullName } = action.payload
@@ -112,7 +126,7 @@ export function* signUp(action) {
       yield put({ type: UPDATE_USER, payload: user })
      // AppEventsLogger.logEvent("fb_mobile_complete_registration");
     } catch (e) {
-      Toast.show("Ocurrio un error al registrar");
+      Toast("Ocurrio un error al registrar");
       throw e;
     }
   } catch (error) {
@@ -121,20 +135,21 @@ export function* signUp(action) {
 }
 
 export function* logOut(action) {
-  auth()
+  firebase.auth()
     .signOut()
 }
 
-export function* signIn(action) {
+export function* SignIn(action) {
   let { email, password, strategy } = action.payload
+
   try {
     if (strategy == "email") {
-      const user = yield call(signInEmailStrategy, email, password)
+      const user = yield call(SignInEmailStrategy, email, password)
       try {
         yield call(LoginService, user.uid);
         yield put({ type: UPDATE_USER, payload: user })
       } catch (e) {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar");
         throw e;
       }
     }
@@ -152,7 +167,7 @@ export function* googleSignIn(action) {
         yield call(LoginService, user.uid);
         yield put({ type: UPDATE_USER, payload: user })
       } catch (e) {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar");
         throw e;
       }
     }
@@ -176,7 +191,7 @@ export function* googleSignUp(action) {
         yield put({ type: UPDATE_USER, payload: user })
         //AppEventsLogger.logEvent("fb_mobile_complete_registration");
       } catch (e) {
-        Toast.show("Ocurrio un error al registrar");
+        Toast("Ocurrio un error al registrar");
         throw e;
       }
     }
@@ -194,7 +209,7 @@ export function* facebookSignIn(action) {
         yield call(LoginService, user.uid);
         yield put({ type: UPDATE_USER, payload: user })
       } catch (e) {
-        Toast.show("Ocurrio un error al ingresar");
+        Toast("Ocurrio un error al ingresar");
         throw e;
       }
     }
@@ -218,7 +233,7 @@ export function* facebookSignUp(action) {
         yield put({ type: UPDATE_USER, payload: user })
         //AppEventsLogger.logEvent("fb_mobile_complete_registration");
       } catch (e) {
-        Toast.show("Ocurrio un error al registrar");
+        Toast("Ocurrio un error al registrar");
         throw e;
       }
     }
@@ -226,3 +241,4 @@ export function* facebookSignUp(action) {
     yield put({ type: ERROR, payload: error })
   }
 }
+

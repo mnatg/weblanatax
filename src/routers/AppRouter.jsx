@@ -4,7 +4,7 @@ import Home from '../components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import QueHacemos from '../components/pages/QueHacemos/QueHacemos';
 import Products from '../components/pages/QuienesSomos/QuienesSomos';
-import SignUp from '../components/pages/Home/SignUp';
+import SignUp from '../components/pages/SignIn/SignUp';
 import SignIn from '../components/pages/SignIn/SignIn';
 import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
 
