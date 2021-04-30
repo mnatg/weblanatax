@@ -273,7 +273,7 @@
         align-items          : flex-end;
 
         .TEXT {
-          font-size: 2vmin;
+          font-size : 2vmin;
           align-self: center;
           color     : #a6a6a6;
 
@@ -283,32 +283,47 @@
   }
 }
 
-.Millones-nos-Respald {
-  width         : 12.75em;
-  height        : 1em;
-  margin        : 0 12.375em 0.5em 0;
-  font-family   : "Poppins", sans-serif !important;
-  font-size     : 2.125em;
-  font-weight   : bold;
-  font-stretch  : normal;
-  font-style    : normal;
-  line-height   : normal;
-  letter-spacing: normal;
-  color         : #009245;
+.title-carousel {
+  width        : 90%;
+  margin-left  : 5%;
+  margin-bottom: 2em;
+
+  .Millones-nos-Respald {
+    width         : 100%;
+    font-family   : "Poppins", sans-serif !important;
+    font-size     : 2.5vmax;
+    font-weight   : bold;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    color         : #009245;
+  }
+
+  .nase-a-especialista {
+    font-family   : "Poppins", sans-serif !important;
+    font-size     : 1em;
+    font-weight   : 500;
+    font-stretch  : normal;
+    font-style    : normal;
+    width         : 100%;
+    letter-spacing: normal;
+    color         : #a6a6a6;
+  }
 }
 
-.nase-a-especialista {
-  width         : 51.125em;
-  height        : 1.625em;
-  margin        : 0.75em 0 1.5em 0;
-  font-family   : "Poppins", sans-serif !important;
-  font-size     : 1em;
-  font-weight   : 500;
-  font-stretch  : normal;
-  font-style    : normal;
-  line-height   : 1.63;
-  letter-spacing: normal;
-  color         : #a6a6a6;
+.carousel {
+  display              : grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  grid-gap             : 30px;
+  grid-auto-rows       : minmax(100px, auto);
+  width                : 80%;
+  margin-left          : 5%;
+
+  .image-carousel {
+    text-decoration: none;
+  }
+
 }
 
 .columnas-sectionNoticias {
@@ -998,6 +1013,32 @@
   .movilbackground-footer {
     margin-top: 10%;
   }
+
+  .navbar {
+    .navbar-container {
+      max-width: 500px;
+      width    : 8em;
+      height   : 3.0625em;
+      margin   : 0 0 48.5em;
+      padding  : 0.75em 0.8125em 0.8125em 1em;
+
+      .LANA {
+        margin     : auto;
+        margin-left: 10%;
+        margin-top : 10%;
+        object-fit : contain;
+      }
+
+      .menu-icon {
+        top            : 0;
+        margin-right   : 10%;
+        transform      : translate(-100%, 60%);
+        font-size      : 1.8rem;
+        cursor         : pointer;
+        justify-content: right;
+      }
+    }
+  }
 }
 
 /*-----------Responsive tablet--------------*/
@@ -1333,6 +1374,28 @@
 
   .movilbackground-footer {
     margin-top: 10%;
+  }
+
+  .navbar {
+    .navbar-container {
+      max-width: 500px;
+      width    : 9em;
+      height   : 3.0625em;
+      margin   : 0 0 48.5em;
+      padding  : 0.75em 0.8125em 0.8125em 1em;
+
+      .LANA {
+        margin     : auto;
+        margin-left: 50%;
+        margin-top : 10%;
+        object-fit : contain;
+      }
+
+      .menu-icon {
+        margin-right   : 10%;
+        justify-content: left;
+      }
+    }
   }
 }
 
