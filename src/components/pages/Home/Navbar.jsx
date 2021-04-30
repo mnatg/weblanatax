@@ -1,30 +1,32 @@
-// React
 import React, { useState, useEffect } from 'react';
-// Redux
-import { useDispatch } from 'react-redux'
-import { onLogout } from '../../../Store/actions/Auth'
-// Components
-import {
-  AppBar,
-  Toolbar,
-  IconButton
-} from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import { ButtonSignUp } from './ButtonSignUp';
 import { ButtonSignOut } from './ButtonSignOut';
-// Styles
+import { Link } from 'react-router-dom';
 import '../../../assets/styles/Home/Navbar.scss';
 import '../../../assets/styles/Home/Home.scss'
-// Assets
 import logo from '../../../assets/images/Home/init/lana@3x.png';
-// Icons
-import { Menu } from '@material-ui/icons';
-//Auth
-import 'firebase/auth';
-import { useFirebaseApp, useUser } from 'reactfire';
-// Util
+import { useUser } from 'reactfire';
 import Toast from '../../../utils/Toast';
+
+//Auth
+import firebaseG from 'firebase/app';
+import 'firebase/auth';
+import { useFirebaseApp } from 'reactfire';
+
+
+//Auth Redux
+import { useDispatch } from 'react-redux'
+import { onLogout } from '../../../Store/actions/Auth'
+
+
+//--Services
+//Services
+
+import LogOutEmployeeService from '../../../Services/webinit/logoutEmployee';
+
+//Util
+
 
 const Navbar = ({ user }) => {
   const dispatch = useDispatch()
@@ -48,25 +50,27 @@ const Navbar = ({ user }) => {
   }, []);
 
   window.addEventListener('resize', showButton);
-  var autenticacion = false;
+ var autenticacion = false;
 
-  var user = useUser();
-  var email = "";
+ var user = useUser();
+ var email = "";
 
-  if(user.data == null){
-   console.log("usuario no está definido");
-  } else {
-    console.log("usuario está definido",user);
-    email = user.data.email;
-    //console.log("usuario está definido",user.data.email);
-    autenticacion = true;
-  }
+ if(user.data == null){
+  console.log("usuario no está definido");
+} else {
+  console.log("usuario está definido",user);
+  email = user.data.email;
+  //console.log("usuario está definido",user.data.email);
+  autenticacion = true;
+}
 
-  const signOut = async () => {
-    console.log("hola sign out");
+const signOut = async () => {
+  console.log("hola sign out");
+ 
       try {
-        console.log("hola action");
+          console.log("hola action");
         await dispatch(onLogout({
+         
         }));
         setTimeout(() => {
          // //setLoading(false)
@@ -75,20 +79,21 @@ const Navbar = ({ user }) => {
         //setLoading(false)
         Toast(error,"error")
       }
-  }
+    
+}
+
+
 
   return (
-      <AppBar className='navbar'>
-        <Toolbar className='navbar-container'>
-          <IconButton edge="end" className='menu-icon' aria-label="menu" onClick={handleClick} >
-            <Menu fontSize='large' />
-          </IconButton>
-          {/* <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div> */}
-          <Link to='/' className='left' onClick={closeMobileMenu}>
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/'  onClick={closeMobileMenu}>
             <img className="LANA" src={logo} alt="logo"/>
           </Link>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/quienes-somos' className='nav-links' onClick={closeMobileMenu}>
@@ -158,8 +163,9 @@ const Navbar = ({ user }) => {
               {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
             </li>
           </ul>
-        </Toolbar>        
-      </AppBar>
+        </div>        
+      </nav>
+    </>
   );
 }
 
