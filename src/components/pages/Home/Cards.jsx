@@ -7,47 +7,53 @@ import payroll from '../../../assets/images/Home/init/nomina.png'
 import corporations from '../../../assets/images/Home/init/corporaciones.png'
 import planning from '../../../assets/images/Home/init/planificacion.png'
 import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
 
 function Cards() {
   return (
-    <div className='base homebackground'>
-      <div > 
+    <Grid className='base'>
+      <div className='center-services'>
         <Link to='/' >
-          <img className="taxes" src={taxes} alt="taxes"/>
+          <img className="iconServices" src={taxes} alt="taxes" />
         </Link>
-        <p className='servicios-lanatax servicios-lanatax-taxes'>Impuestos</p>
+        <p className='servicios-lanatax '>Impuestos</p>
       </div>
-      <div>
+
+      <div className='center-services'>
         <Link to='/'>
-          <img className="accounting" src={accounting} alt="accounting"/>
+          <img className="iconServices" src={accounting} alt="accounting" />
         </Link>
-        <p className='servicios-lanatax servicios-lanatax-accounting'>Contabilidad</p>
+        <p className='servicios-lanatax '>Contabilidad</p>
       </div>
+
+      <div className='center-services  ' >
+        <Link to='/' >
+          <img className="extraicon" src={audits} alt="audits" />
+        </Link>
+        <p className='servicios-lanatax '>Auditorias</p>
+      </div>
+
       <div className='center-services' >
-        <Link to='/' >
-          <img className="audits" src={audits} alt="audits"/>
-        </Link>
-        <p className='servicios-lanatax servicios-lanatax-audits'>Auditorias</p>
-      </div>
-      <div className='center-services' >
         <Link to='/'>
-          <img className="payroll" src={payroll} alt="payroll"/>
+          <img className="extraicon" src={payroll} alt="payroll" />
         </Link>
-        <p className='servicios-lanatax servicios-lanatax-payroll'>Nomina</p>
+        <p className='servicios-lanatax '>Nomina</p>
       </div>
-      <div>
+
+      <div className='center-services'>
         <Link to='/' >
-          <img className="corporations" src={corporations} alt="corporations"/>
+          <img className="extraicon" src={corporations} alt="corporations" />
         </Link>
-        <p className='servicios-lanatax servicios-lanatax-corporations'>Coorporaciones</p>
+        <p className='servicios-lanatax '>Coorporaciones</p>
       </div>
-      <div>
+
+      <div className='center-services'>
         <Link to='/'>
-          <img className="planning" src={planning} alt="planning"/>
+          <img className="extraicon" src={planning} alt="planning" />
         </Link>
-        <p className='servicios-lanatax servicios-lanatax-planning'>Planificacion</p>
+        <p className='servicios-lanatax '>Planificacion</p>
       </div>
-    </div>
+    </Grid>
   );
 }
 

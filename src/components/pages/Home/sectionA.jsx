@@ -11,9 +11,11 @@ import { Link } from 'react-router-dom';
 function sectionA() {
   return (
     <div className='homebackground'>
-      <div className='sectionA'>
-        <img className="imageA" src={imageA} alt="imageA" />
-        <div className='form-container' >
+      <Grid className='sectionA'>
+        <div className="GridLeft">
+          <img className="imageA" src={imageA} alt="imageA" />
+        </div>
+        <div className='form-container GridRight' >
           <h1 className='TUS-IMPUESTOS'>
             TODOS EMPIEZAN <br />
             COMPLETAMENTE <br />
@@ -30,11 +32,11 @@ function sectionA() {
           </Grid>
           <div className='divbase'>
             <Link to='/' >
-              <img className="BotonConectar" src={botonConectar} alt="botonConectar" />
+              <p>Conectar</p>
             </Link>
           </div>
         </div>
-      </div>
+      </Grid>
     </div>
   );
 }
