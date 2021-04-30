@@ -998,19 +998,6 @@
   .movilbackground-footer {
     margin-top: 10%;
   }
-
-  .navbar {
-    .navbar-container {
-      width    : 100%;
-
-      .LANA {
-        margin     : auto;
-        margin-left: 10%;
-        margin-top : 10%;
-        object-fit : contain;
-      }
-    }
-  }
 }
 
 /*-----------Responsive tablet--------------*/
@@ -1346,20 +1333,6 @@
 
   .movilbackground-footer {
     margin-top: 10%;
-  }
-
-  .navbar {
-    align-items: flex-start;
-    .navbar-container {
-      width: 100%;
-      margin: 0;
-
-      .LANA {
-        margin     : auto;
-        margin-left: 50%;
-        width: 20.75em;
-      }
-    }
   }
 }
 
