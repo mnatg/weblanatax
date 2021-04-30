@@ -14,53 +14,63 @@ import personas from '../../../assets/images/Home/initA/personas.png'
 import planeta from '../../../assets/images/Home/initA/planeta.png'
 import torta from '../../../assets/images/Home/initA/torta.png'
 
+
+
+
 import { Link } from 'react-router-dom';
 
 function sectionB() {
   return (
     <div className='homebackground'>
-      <Grid className='sectionB'>
-        <div className="GridLefB">
-          <p className='TextB'>La mejor <br />combinación<br />
-          entre personas<br />
+      <div className='sectionB'>
+        <p className='Le-ayudaremos-a-hace display-mobile'>La mejor <br/>combinación<br/>
+          entre personas<br/>
           + tecnología
         </p>
+        <p className='Le-ayudaremos-a-hace display-tablet'>La mejor combinación entre<br/>personas+ tecnología</p>
+        <div>
+          <div className='gridtest-area'>
+            <div className='gridtest'>
+              <img className="ICON-LLAMADA" src={iconllamada} alt="iconllamada"/>
+              <p className='Videollamada-Gratis'> Videollamada Gratis. </p>
+            </div>
+            <div className='gridtest'>
+              <img className="BOLSITADINERO" src={ahorratiempo} alt="bolsitadinero"/>
+              <p className='Videollamada-Gratis'>Ahorra Tiempo.</p>
+            </div>
+          </div>
+          <div className='gridtest-area'>
+            <div className='gridtest'>
+              <img className="BILLETES" src={billetes} alt="billetes"/>
+              <p className='Simple-fcil-y-segu'> Simple, fácil y seguro. </p>
+            </div>
+            <div className='gridtest'>
+              <img className="TORTA" src={torta} alt="torta"/>
+              <p className='Revisin-Completa'> Obtén una revisión y análisis<br/>completo.</p>
+            </div>
+          </div>
+          <div className='gridtest-area'>
+            <div className='gridtest'>
+              <img className="PERSONAS" src={personas} alt="personas"/>
+              <p className='Conctate-con-EAs'>Calidad con la que<br/>puedes contar.</p>
+            </div>
+            <div className='gridtest'>
+              <img className="ESTADISTICA" src={estadistica} alt="estadistica"/>
+              <p className='Notificaciones-push'>Te mantendremos informado</p>
+            </div>
+          </div>
+          <div className='gridtest-area'>
+            <div className='gridtest'>
+              <img className="PLANETA" src={planeta} alt="planeta"/>
+              <p className='haz-tus-taxes'>Te ayudaremos en donde<br/>quiera que estes</p>
+            </div>
+            <div className='gridtest'>
+              <img className="HOJAS" src={hojas} alt="hojas"/>
+              <p className='Ten-acceso-a-todos-t'>Ten acceso a todos tus<br/>documentos. </p>
+            </div>
+          </div>
         </div>
-        <Grid className='GridRightB' >
-          <div className='gridtest'>
-            <img className="ICON" src={iconllamada} alt="iconllamada" />
-            <p className='TEXT'> Videollamada Gratis. </p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={ahorratiempo} alt="bolsitadinero" />
-            <p className='TEXT'>Ahorra Tiempo.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={billetes} alt="billetes" />
-            <p className='TEXT'> Simple, fácil y seguro. </p>
-          </div>
-          <div className='gridtest'>
-            <img className="TORTA" src={torta} alt="torta" />
-            <p className='TEXT'> Obtén una revisión y análisis<br />completo.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={personas} alt="personas" />
-            <p className='TEXT'>Calidad con la que<br />puedes contar.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={estadistica} alt="estadistica" />
-            <p className='TEXT'>Te mantendremos informado</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={planeta} alt="planeta" />
-            <p className='TEXT'>Te ayudaremos en donde<br />quiera que estes</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={hojas} alt="hojas" />
-            <p className='TEXT'>Ten acceso a todos tus<br />documentos. </p>
-          </div>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
