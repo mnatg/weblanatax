@@ -12,7 +12,7 @@ import { render } from '@testing-library/react';
 function sectionC() {
   const items = [
     {
-      id: 1, boddy: <Link to='/' > <img src={imageOne} alt="imageOne" /></Link>,
+      id: 1, boddy: <Link to='/' > <img src={imageOne} className="image-carousel" alt="imageOne" /></Link>,
       title: <p className='news-autor'> By <strong>Fernanda |</strong>  03 Marzo 2021</p>,
       subtitle: <p className='news-title news-one-title'> Lana Tax, Facil - Rapido <br /> y seguro</p>
     },
@@ -33,7 +33,7 @@ function sectionC() {
         <h1 className='Millones-nos-Respald'>Millones nos Respaldan</h1>
         <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>
       </div>
-      <Carousel itemsToShow={3}>
+      <Carousel itemsToShow={3} className="carrusel">
         {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
       </Carousel>
     </div>
