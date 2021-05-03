@@ -28,7 +28,7 @@ function HeroSection() {
           </Link>
         </div>
 
-        <div className='empezar-gratis-logos'>
+        <div className='empezar-gratis'>
           <a href='https://apps.apple.com/co/app/lanatax/id1556736650' >
             <img className="Logo-store" src={storelabels} alt="storelabels" />
           </a>
