@@ -78,6 +78,8 @@
   }
 
   .empezar-gratis {
+    width         : 7.975em;
+    height        : 2.7em;
     width : 31.125em;
     height: 4.375em;
     margin: auto;
@@ -90,20 +92,6 @@
     }
   }
 
-  .empezar-gratis-logos {
-    display              : grid;
-    grid-template-columns: repeat(2, 9.375em);
-    margin               : auto;
-    margin-left          : 16%;
-    justify-content      : left;
-
-    .Logo-store {
-      width     : auto;
-      height    : 2.4375em;
-      margin    : auto;
-      object-fit: contain;
-    }
-  }
 }
 
 .base {
@@ -365,53 +353,56 @@
   grid-auto-rows       : minmax(100px, auto);
 
   .CONECTAR-CON-TU-ASES {
-    margin: 5%;
-    font-size: 59px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.1;
+    margin        : 5%;
+    font-size     : 59px;
+    font-weight   : 900;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.1;
     letter-spacing: normal;
-    color: #009245;
+    color         : #009245;
   }
 
   .textD {
     width       : 100%;
     color       : #a6a6a6;
-    margin: 5%;
+    margin      : 5%;
     font-size   : 1.2vmax;
     font-weight : bold;
     font-stretch: normal;
     font-style  : normal;
-    font-weight: 600;
-    font-family: Poppins;
+    font-weight : 600;
+    font-family : Poppins;
   }
-  .textD1{
-    margin: 5%;
-    font-family: Poppins;
-    font-size: 1.5vmax;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
+
+  .textD1 {
+    margin        : 5%;
+    font-family   : Poppins;
+    font-size     : 1.5vmax;
+    font-weight   : 600;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
     letter-spacing: normal;
-    color: #2f281e;
+    color         : #2f281e;
   }
-  .Boton-Nombre-d{
-    width: 50%;
-    height: 3em;
-    padding-left: 3em;
-    margin-left: 5%;
-    border-radius: 23px;
+
+  .Boton-Nombre-d {
+    width           : 50%;
+    height          : 3em;
+    padding-left    : 3em;
+    margin-left     : 5%;
+    border-radius   : 23px;
     background-color: #d6d6d6;
-    border: none;
+    border          : none;
   }
-  .BotonConectarD{
-    border-radius: 3em;
-    width: 20%;
+
+  .BotonConectarD {
+    border-radius   : 3em;
+    width           : 20%;
     background-color: #008f45;
-    margin-left: 20%;
-    margin-top: 1em;
+    margin-left     : 20%;
+    margin-top      : 1em;
   }
 }
 
@@ -565,14 +556,8 @@
 
 /*---------------------Responsive---------------------------*/
 @media (min-width: 320px) and (max-width: 600px) {
+
   /* smartphones, iPhone, portrait 480x320 phones */
-
-  html,
-  body {
-    width     : auto !important;
-    overflow-x: hidden !important
-  }
-
   .Photo {
     background-image: url('../../images/Home/init/photoMobile.png');
     background-size : cover;
@@ -1003,59 +988,12 @@
 }
 
 /*-----------Responsive tablet--------------*/
-@media (min-width: 601px) and (max-width: 960px) {
+@media (min-width: 600px) and (max-width: 960px) {
 
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .Photo {
-    background: url('../../images/Home/init/pick-header.png') center no-repeat;
-    height    : 45.875em;
-    margin-top: 5em;
-    padding   : 20% 0 5.375em;
-    width     : 53em;
-
-    .no-te {
-      height     : 3em;
-      font-size  : 2.5em;
-      margin-left: 57%;
-    }
-
-    .impuestos {
-      font-size     : 2.5em;
-      letter-spacing: 2.14px;
-      margin-left   : 57%;
-      margin-bottom : 1%;
-    }
-
-    .Nos-encargamos {
-      width      : 15.875em;
-      margin-left: 57%;
-    }
-
-    .Ven-a {
-      width      : 13.875em;
-      height     : 0.8em;
-      font-size  : 1em;
-      margin-left: 57%;
-    }
-
-    .empezar-gratis {
-      .btn-start {
-        margin-top : 10%;
-        margin-left: 65%;
-      }
-    }
-
-    .empezar-gratis-logos {
-      margin-left    : 10%;
-      margin-top     : 5%;
-      justify-content: center;
-
-      .Logo-store {
-        width      : 16.125em;
-        margin-top : 10%;
-        margin-left: 62%;
-      }
-    }
+  .photo {
+    width      : 65em;
+    margin-left: 105% !important;
   }
 
   .base {
