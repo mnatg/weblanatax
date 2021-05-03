@@ -38,7 +38,6 @@
   justify-content: center;
   width: 6.5em;
   height: 2.3em;
-  font-family: Poppins;
   font-size: 1.05em;
   font-weight: 600;
   font-stretch: normal;
@@ -47,12 +46,12 @@
   letter-spacing: normal;
   color: #a6a6a6;
   margin-left: 20%;
+  padding-top: 0.5em;
 }
 
 .btn--large {
   width: 6.5em;
   height: 2.3em;
-  font-family: Poppins;
   font-size: 1.05em;
   font-weight: 600;
   font-stretch: normal;
@@ -61,6 +60,7 @@
   letter-spacing: normal;
   color: #ffffff;
   margin-left: 20%;
+  padding-top: 0.5em;
 }
 
 .btn--large:hover,

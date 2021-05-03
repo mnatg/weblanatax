@@ -314,7 +314,6 @@
 
 .news-autor {
   margin      : 0.75em 3.375em 1% 1%;
-  font-family : Poppins;
   font-weight : bold;
   font-stretch: normal;
   font-style  : normal;
@@ -328,7 +327,6 @@
 .rec {
   .news-title {
     margin        : 25px 118px 12px 0;
-    font-family   : Poppins;
     font-size     : 16px;
     font-weight   : normal;
     font-stretch  : normal;
@@ -345,7 +343,7 @@
 
   .news-title {
     margin        : 12px 54px 0 0;
-    font-family   : Poppins;
+    font-family   : 'PT SANS';
     font-size     : 24px;
     font-weight   : bold;
     font-stretch  : normal;
@@ -384,11 +382,9 @@
     font-stretch: normal;
     font-style  : normal;
     font-weight: 600;
-    font-family: Poppins;
   }
   .textD1{
     margin: 5%;
-    font-family: Poppins;
     font-size: 1.5vmax;
     font-weight: 600;
     font-stretch: normal;
@@ -974,32 +970,6 @@
   .movilbackground-footer {
     margin-top: 10%;
   }
-
-  .navbar {
-    .navbar-container {
-      max-width: 500px;
-      width    : 8em;
-      height   : 3.0625em;
-      margin   : 0 0 48.5em;
-      padding  : 0.75em 0.8125em 0.8125em 1em;
-
-      .LANA {
-        margin     : auto;
-        margin-left: 10%;
-        margin-top : 10%;
-        object-fit : contain;
-      }
-
-      .menu-icon {
-        top            : 0;
-        margin-right   : 10%;
-        transform      : translate(-100%, 60%);
-        font-size      : 1.8rem;
-        cursor         : pointer;
-        justify-content: right;
-      }
-    }
-  }
 }
 
 /*-----------Responsive tablet--------------*/
@@ -1335,28 +1305,6 @@
 
   .movilbackground-footer {
     margin-top: 10%;
-  }
-
-  .navbar {
-    .navbar-container {
-      max-width: 500px;
-      width    : 9em;
-      height   : 3.0625em;
-      margin   : 0 0 48.5em;
-      padding  : 0.75em 0.8125em 0.8125em 1em;
-
-      .LANA {
-        margin     : auto;
-        margin-left: 50%;
-        margin-top : 10%;
-        object-fit : contain;
-      }
-
-      .menu-icon {
-        margin-right   : 10%;
-        justify-content: left;
-      }
-    }
   }
 }
 
