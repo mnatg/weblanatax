@@ -26,9 +26,12 @@ function SectionA() {
           <p className='FirstText'>Elige Uno de nuestro Planes y empieza completamente gratis
 </p>
 {!click && <div className='empezar-gratis-videollamada'>
+  
         <Link to='/empieza-gratis-videollamada' >
           <img className="btn-start" src={initbutton} alt="initbutton"/>
         </Link>
+
+
       </div>}
         </div>
         <div className="GridRight">
