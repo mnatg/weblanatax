@@ -1,7 +1,6 @@
 // React
 import React from 'react';
 // Styles
-import '../../../App.scss';
 // Components
 import { Grid } from '@material-ui/core';
 import Cards from './Cards';

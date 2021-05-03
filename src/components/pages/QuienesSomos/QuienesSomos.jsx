@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../App.scss';
 import Cards from '../../pages/Home/Cards';
 import HeroSection from '../../pages/Home/HeroSection';
 import Footer from '../../pages/Home/Footer';
@@ -13,14 +12,10 @@ import SectionD from '../../pages/Home/sectionD'
 function QuienesSomos() {
   return (
     <>
-    
- 
       <SectionA />
       <SectionB/>
       <SectionC/>
-  
       <Footer />
-   
     </>
   );
 }

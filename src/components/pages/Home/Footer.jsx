@@ -8,6 +8,9 @@ import twitter from '../../../assets/images/Home/sectionD/twitter.png';
 import instagram from '../../../assets/images/Home/sectionD/instagram.png';
 import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
+import '../../../assets/styles/Home/Home.scss'
+import '../../../assets/styles/Home/Navbar.scss'
+
 
 
 function Footer() {
@@ -60,21 +63,21 @@ function Footer() {
       <div className='redes-sociales'>
         <p className='MA-Tax-Group'>©2021 M&A Tax Group. All rights reserved</p>
         <div className='icons' >
-          <Link>
+          <a href='https://www.facebook.com/mnataxgroup'>
             <img className="icon" src={facebook} alt="facebook"/>
-          </Link>
-          <Link>
-            <img className="icon" src={twitter} alt="twitter"/>
-          </Link>
-          <Link>
+            </a>
+          <a href=''>
+            <img className="icon hideIcon" src={twitter} alt="twitter"/>
+            </a>
+          <a href='https://www.instagram.com/mnataxgroup/'>
             <img className="icon" src={instagram} alt="instagram"/>
-          </Link>
-          <Link>
+            </a>
+          <a href='https://apps.apple.com/co/app/lanatax/id1556736650'>
             <img className="icon apple" src={apple} alt="apple"/>
-          </Link>
-          <Link>
+            </a>
+          <a href='https://play.google.com/store/apps/details?id=com.lanatax'>
             <img className="icon" src={googleplay} alt="googleplay"/>
-          </Link>
+            </a>
         </div>
       </div>
     </div>

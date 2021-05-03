@@ -4,7 +4,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 // Styles
-import '../../../App.scss';
 import '../../../assets/styles/Home/Home.scss'
 // Assets
 import initbutton from '../../../assets/images/Home/init/boton-empezar.png'
@@ -22,7 +21,7 @@ function HeroSection() {
       <h1 className='Nos-encargamos'>todo por ti</h1>
       <p className='Ven-a'>Ven a recibir la mejor atención</p>
       <div className='empezar-gratis'>
-        <Link to='/' >
+        <Link to='/empieza-gratis' >
           <img className="btn-start" src={initbutton} alt="initbutton"/>
         </Link>
       </div>

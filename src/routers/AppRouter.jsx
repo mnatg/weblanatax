@@ -7,6 +7,9 @@ import Products from '../components/pages/QuienesSomos/QuienesSomos';
 import SignUp from '../components/pages/SignIn/SignUp';
 import SignIn from '../components/pages/SignIn/SignIn';
 import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
+import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
+import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
+import videoCallObject from '../components/pages/EmpiezaGratis/ContactoAsesor';
 
 //--firebase
 //Auth
@@ -30,6 +33,8 @@ function AppRouter() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/sign-in' component={SignIn} />
           <Route path='/quienes-somos' component={QuienesSomos} />
+          <Route path='/empieza-gratis' component={EmpiezaGratis} />
+          <Route path='/empieza-gratis-videollamada' component={EmpiezaGratisVideollamada} />
         </Switch>
     
       </Router>
