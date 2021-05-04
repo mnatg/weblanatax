@@ -18,6 +18,7 @@ function SectionA() {
   const showImageAp = () => setClick(false);
 
 
+
   return (
     <div className='Rectangle-quienes'>
       <Grid className="ContainerGrid">
@@ -27,7 +28,7 @@ function SectionA() {
 </p>
 {!click && <div className='empezar-gratis-videollamada'>
   
-        <Link to='/empieza-gratis-videollamada' >
+        <Link to='/empieza-gratis-videollamada/:Edna/:Ortega' >
           <img className="btn-start" src={initbutton} alt="initbutton"/>
         </Link>
 
@@ -41,6 +42,8 @@ function SectionA() {
 
         </div>
       </Grid>
+
+
       <Grid className="ContainerGridTablet">
 
         <div className="GridUp">

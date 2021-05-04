@@ -3,7 +3,7 @@
 }
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
-  width                : 60em;
+  width                : 100%;
   margin-top           : 5em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);

@@ -16,26 +16,36 @@ import { onAddTaxes } from '../../../Store/actions/Taxes'
 import Toast from '../../../utils/Toast';
 import 'firebase/firestore';
 import firebase from 'firebase/app';
-import { useCollectionData, useDocument } from 'react-firebase-hooks/firestore'
+//import { useCollectionData, useDocument } from 'react-firebase-hooks/firestore'
 //import NetInfo from "@react-native-community/netinfo";
 
-function ContactoAsesor() {
+function ContactoAsesor (props)  {
+
+  const name = props.name;
+  const apellido = props.apellido;
+
+  console.log("nombre: ",name);
+  console.log("apellido: ",apellido);
+
+
 
   const firestore = firebase.firestore();
   const [loading, setLoading] = useState(false);
-  const talkSessionRef = firestore().collection('TalkSession');
-  const talkSessionquery = talkSessionRef.where('avaliable', '==', true);
-  const [talkSessions] = useCollectionData(talkSessionquery, { idField: 'sessionId' });
+
+  //const talkSessionRef = firestore().collection('TalkSession');
+
+  const talkSessionquery = firestore.collection('TalkSession').where('avaliable', '==', true);
+
+  //const [talkSessions] = useCollectionData(talkSessionquery, { idField: 'sessionId' });
+
+  const [talkSessions] = '';
 
   const [offRedirect, setOffRedirect] = useState(false);
 
   const getResolution = async () =>{
-   
-   
+  
       return "1920x1080";
- 
   }
-
 
   const handleContacWithUs = async () => {
     if (talkSessions.length > 0) {
@@ -101,7 +111,7 @@ function ContactoAsesor() {
           <br></br>
           Disponibles todo el año<br></br>¡Comencemos!</p>
           <br></br>
-          <Link to={{pathname: '/empieza-gratis-videollamada/7'}}>
+          <Link to='/'>
           <img onClick={handleContacWithUs} className="btn-start" src={callBtn} alt="callBtn"/>
         </Link>
         </div>
@@ -115,8 +125,3 @@ function ContactoAsesor() {
 }
 
 export default ContactoAsesor;
-
-
-
-
-
