@@ -302,7 +302,9 @@
     color         : #a6a6a6;
   }
 }
-
+.sectionDMovil{
+  display: none;
+}
 .news-autor {
   margin      : 0.75em 3.375em 1% 1%;
   font-weight : bold;
@@ -1076,9 +1078,11 @@
       }
     }
   }
-  .carrusel{
-    display: none  !important;
+
+  .carrusel {
+    display: none !important;
   }
+
   .carruselMovil {
     display: none !important;
   }
@@ -1094,8 +1098,61 @@
   .sectionD {
     display: none;
   }
-  .sectionDMovil{
-    
+
+  .sectionDMovil {
+    grid-template-columns: repeat(1, 1fr);
+
+    .GridRight {
+      width: 100%;
+
+      .imageD {
+        width : 60%;
+        margin: 10% 20% 5% 20%;
+      }
+    }
+
+    .GridLeft {
+      .CONECTAR-CON-TU-ASES {
+        text-align  : center;
+        color       : #009245;
+        font-family : Poppins !important;
+        font-size   : 8vmin;
+        font-weight : 900;
+        font-stretch: normal;
+        font-style  : normal;
+        line-height : 1.1;
+      }
+
+      .textD {
+        margin-top: 5%;
+        text-align: center;
+        font-size : 3vmin;
+        color     : #a6a6a6;
+      }
+
+      .textD1 {
+        text-align: center;
+        font-size : 3.5vmin;
+        margin-top: 5%;
+      }
+
+      .Boton-Nombre-d {
+        background-color: #d6d6d6;
+        border-radius   : 2em;
+        width           : 50%;
+        height          : 2.5em;
+        margin          : 5% 25% 0 25%;
+        text-align      : center;
+        border          : none;
+      }
+
+      .BotonConectarD {
+        background-color: #009245;
+        border-radius   : 2em;
+        width           : 30%;
+        margin          : 5% 35% 5% 35%;
+      }
+    }
   }
 
   .sectionFooter {
