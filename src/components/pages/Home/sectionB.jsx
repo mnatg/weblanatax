@@ -21,8 +21,8 @@ function sectionB() {
     <div className='homebackground'>
       <Grid className='sectionB'>
         <div className="GridLefB">
-          <p className='TextB'>La mejor <br />combinación<br />
-          entre personas<br />
+          <p className='TextB'>La mejor combinación
+          entre personas
           + tecnología
         </p>
         </div>
