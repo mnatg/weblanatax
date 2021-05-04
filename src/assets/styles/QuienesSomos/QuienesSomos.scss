@@ -242,7 +242,7 @@
   /* smartphones, iPhone, portrait 480x320 phones */
 
   .Rectangle-quienes {
-    width     : 100vmin;
+    width: 143.3vmax;
     background: none;
   }
 
@@ -257,12 +257,13 @@
 
   .ContainerGridTablet {
     display: block;
+    width: 143.3vmax;
+    background: none;
   }
 
   .GridUp {
     margin-top: 2em;
-    width: 100vmin;
-
+    width: 100%;
     align-items: center;
     background : linear-gradient(180deg, rgba(0, 146, 69, 1) 0%, rgba(0, 172, 97, 1) 50%, rgba(0, 196, 123, 0) 100%);
   }
@@ -285,6 +286,8 @@
 
 
   .GridsUp {
+    margin-top: 2em;
+    width: 100%;
     align-items: center;
   }
 
