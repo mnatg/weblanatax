@@ -236,6 +236,7 @@
       grid-column : 0.5;
 
       .TextB {
+        width      : 50%;
         margin-top : 20%;
         margin-left: 10%;
         align-items: center;
@@ -312,6 +313,14 @@
 
 .hSiCVM:disabled {
   display: none;
+}
+
+.carruselTablet {
+  display: none !important;
+}
+
+.carruselMovil {
+  display: none !important;
 }
 
 .rec {
@@ -839,6 +848,23 @@
       }
     }
 
+    .carrusel {
+      display: none !important;
+    }
+
+    .carruselMovil {
+      display: flex !important;
+
+      .bSWeAW {
+        display: none;
+      }
+    }
+
+    .carruselTablet {
+      display: none !important;
+    }
+
+
     .sectionD {
       grid-template-columns: repeat(1, auto);
       margin-left          : 0%;
@@ -1008,20 +1034,68 @@
           text-align: center;
           margin-top: 3%;
         }
-        .input-form{
-          width: 60%;
+
+        .input-form {
+          width : 60%;
           margin: 3% auto 0px auto;
         }
-        .divbase{
-          width: 30%;
+
+        .divbase {
+          width : 30%;
           margin: 3% auto 0 auto;
         }
       }
     }
+
+    .sectionB {
+      width                : 100%;
+      display              : grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content      : center;
+
+      .TextB {
+        margin-top     : 20%;
+        margin-left    : 25% !important;
+        margin-right   : 25%;
+        text-align     : center;
+        justify-content: center;
+        font-size      : 5vmax;
+
+      }
+
+      .GridRightB {
+        width       : 80%;
+        margin-right: 20%;
+        margin-left : 20%;
+
+        .gridtest {
+          .TEXT {
+            font-size: 3vmin;
+          }
+        }
+      }
+    }
+  }
+  .carrusel{
+    display: none  !important;
+  }
+  .carruselMovil {
+    display: none !important;
+  }
+
+  .carruselTablet {
+    display: flex !important;
+
+    .bSWeAW {
+      display: none;
+    }
   }
 
   .sectionD {
-    grid-template-columns: repeat(1, auto);
+    display: none;
+  }
+  .sectionDMovil{
+    
   }
 
   .sectionFooter {

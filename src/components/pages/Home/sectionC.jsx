@@ -36,6 +36,12 @@ function sectionC() {
       <Carousel itemsToShow={3} className="carrusel">
         {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
       </Carousel>
+      <Carousel itemsToShow={2} className="carruselTablet">
+        {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
+      </Carousel>
+      <Carousel itemsToShow={1} className="carruselMovil">
+        {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
+      </Carousel>
     </div>
   );
 }
