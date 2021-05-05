@@ -778,8 +778,13 @@
   }
 
   .sectionDMovil {
+    margin-top: 10%;
     display              : block;
     grid-template-columns: repeat(1, 1fr);
+    background-image       : url("../../images/Home/sectionD/bg.png");
+    background-position-x  : center;
+    background-repeat      : no-repeat;
+    -webkit-background-size: round;
 
     .GridRight {
       .imageD {
@@ -1032,12 +1037,13 @@
   }
 
   .sectionDMovil {
+    margin-top: 10%;
     display              : block;
     grid-template-columns: repeat(1, 1fr);
     background-image       : url("../../images/Home/sectionD/bg.png");
- 
+    background-position-x  : center;
     background-repeat      : no-repeat;
-    -webkit-background-size: cover;
+    -webkit-background-size: round;
 
     .GridRight {
       .imageD {
