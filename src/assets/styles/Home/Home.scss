@@ -21,6 +21,7 @@
   .GridLeft {
     width  : 100%;
     padding: 0%;
+
   }
 
   .GridRight {
@@ -142,16 +143,20 @@
 }
 
 .homebackground {
-  width       : 90%;
-  margin-left : auto;
-  margin-right: auto;
+  width: 100%;
 
   .sectionA {
-    display              : grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap             : 10px;
-    grid-auto-rows       : minmax(100px, auto);
-    width                : 100%;
+    display                : grid;
+    grid-template-columns  : repeat(2, 1fr);
+    grid-gap               : 10px;
+    grid-auto-rows         : minmax(100px, auto);
+    width                  : 90%;
+    margin                 : 5% auto;
+    background             : url("../../images/Home/sectionD/bginit.png");
+    background-position-x  : center;
+    background-repeat      : no-repeat;
+    -webkit-background-size: cover;
+    padding: 5%;
 
     .imageA {
       width: 100%;
@@ -362,64 +367,78 @@
 }
 
 
+.homebackground {
+  width: 100%;
 
-.sectionD {
-  display              : grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap             : 10px;
-  grid-auto-rows       : minmax(100px, auto);
+  .sectionD {
+    width                  : 100%;
+    margin-top             : 10%;
+    display                : grid;
+    grid-template-columns  : repeat(2, 1fr);
+    grid-gap               : 10px;
+    grid-auto-rows         : minmax(100px, auto);
+    background-image       : url("../../images/Home/sectionD/bg.png");
+    background-position-x  : center;
+    background-repeat      : no-repeat;
+    -webkit-background-size: cover;
 
-  .CONECTAR-CON-TU-ASES {
-    margin        : 5%;
-    font-size     : 59px;
-    font-weight   : 900;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : 1.1;
-    letter-spacing: normal;
-    color         : #009245;
-  }
+    .CONECTAR-CON-TU-ASES {
+      margin        : 5%;
+      font-size     : 59px;
+      font-weight   : 900;
+      font-stretch  : normal;
+      font-style    : normal;
+      line-height   : 1.1;
+      letter-spacing: normal;
+      color         : #009245;
+    }
 
-  .textD {
-    width       : 100%;
-    color       : #a6a6a6;
-    margin      : 5%;
-    font-size   : 1.2vmax;
-    font-weight : bold;
-    font-stretch: normal;
-    font-style  : normal;
-    font-weight : 600;
-    font-family : Poppins;
-  }
+    .textD {
+      width       : 100%;
+      color       : #a6a6a6;
+      margin      : 5%;
+      font-size   : 1.2vmax;
+      font-weight : bold;
+      font-stretch: normal;
+      font-style  : normal;
+      font-weight : 600;
+      font-family : Poppins;
+    }
 
-  .textD1 {
-    margin        : 5%;
-    font-family   : Poppins;
-    font-size     : 1.5vmax;
-    font-weight   : 600;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : normal;
-    letter-spacing: normal;
-    color         : #2f281e;
-  }
+    .textD1 {
+      margin        : 5%;
+      font-family   : Poppins;
+      font-size     : 1.5vmax;
+      font-weight   : 600;
+      font-stretch  : normal;
+      font-style    : normal;
+      line-height   : normal;
+      letter-spacing: normal;
+      color         : #2f281e;
+    }
 
-  .Boton-Nombre-d {
-    width           : 50%;
-    height          : 3em;
-    padding-left    : 3em;
-    margin-left     : 5%;
-    border-radius   : 23px;
-    background-color: #d6d6d6;
-    border          : none;
-  }
+    .Boton-Nombre-d {
+      width           : 50%;
+      height          : 3em;
+      padding-left    : 3em;
+      margin-left     : 5%;
+      border-radius   : 23px;
+      background-color: #d6d6d6;
+      border          : none;
+    }
 
-  .BotonConectarD {
-    border-radius   : 3em;
-    width           : 20%;
-    background-color: #008f45;
-    margin-left     : 20%;
-    margin-top      : 1em;
+    .BotonConectarD {
+      border-radius   : 3em;
+      width           : 20%;
+      background-color: #008f45;
+      margin-left     : 20%;
+      margin-top      : 1em;
+      color           : #ffffff;
+    }
+
+    .GridRight {
+      text-align: center;
+    }
   }
 }
 
@@ -575,12 +594,13 @@
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
-    background-image: url('../../images/Home/init/photoMobile.png');
-    background-position: center;
-    max-width: 450px;
-    height: 44em;
+    background-image     : url('../../images/Home/init/photoMobile.png');
+    background-position  : center;
+    max-width            : 450px;
+    height               : 44em;
     grid-template-columns: repeat(1, auto);
-    .GridLeft{
+
+    .GridLeft {
       display: none;
     }
 
@@ -589,35 +609,38 @@
     }
 
     .no-te {
-      font-size: 2.0625em;
-      width: 60%;
-      margin-top: 10em;
-      margin-inline: auto;
-      font-family: $Helvetica-RB !important;
+      font-size     : 2.0625em;
+      width         : 60%;
+      margin-top    : 10em;
+      margin-inline : auto;
+      font-family   : $Helvetica-RB !important;
       letter-spacing: 2.14px;
     }
 
     .impuestos {
-      font-size: 2.0625em;
-      width: 60%;
-      margin-inline: auto;
-      font-family: $Helvetica-RB !important;
+      font-size     : 2.0625em;
+      width         : 60%;
+      margin-inline : auto;
+      font-family   : $Helvetica-RB !important;
       letter-spacing: 2.14px;
     }
+
     .Nos-encargamos {
-      margin-inline: auto;
-      width: 60%;
-      font-family: $Helvetica-RB !important;
+      margin-inline : auto;
+      width         : 60%;
+      font-family   : $Helvetica-RB !important;
       letter-spacing: 0.5px;
     }
+
     .Ven-a {
       margin-inline: auto;
-      width: 60%;
-      font-family: $Modeco !important;
+      width        : 60%;
+      font-family  : $Modeco !important;
     }
+
     .empezar-gratis {
       margin-inline: auto;
-      width: fit-content;
+      width        : fit-content;
     }
   }
 
@@ -643,26 +666,27 @@
       grid-template-columns: repeat(1, 1fr);
 
       .form-container {
-        width: 90%;
-        max-width: 600px;
+        width        : 90%;
+        max-width    : 600px;
         padding-right: 0;
-        padding-left: 0;
-        margin-top: 1em;
+        padding-left : 0;
+        margin-top   : 1em;
         margin-inline: auto;
+
         .TUS-IMPUESTOS {
-          font-size : 2.61vmax;
-          text-align: center;
+          font-size    : 2.61vmax;
+          text-align   : center;
           margin-bottom: 1.5em;
         }
 
         .Nuestra-videollamada {
-          text-align: center;
-          margin-top: 3%;
+          text-align   : center;
+          margin-top   : 3%;
           margin-bottom: 2em;
         }
 
         .input-form {
-          width: 70%;
+          width : 70%;
           margin: 1em auto 0px auto;
           height: 2.5em;
         }
@@ -672,10 +696,11 @@
           margin: 3% auto 0 auto;
         }
       }
+
       .GridLeft {
-        width: 90%;
+        width        : 90%;
         padding-right: 0;
-        padding-left: 0;
+        padding-left : 0;
       }
     }
 
@@ -696,9 +721,9 @@
       }
 
       .GridRightB {
-        width: 80%;
-        margin-left: 20%;
-        padding-right: 0;
+        width                : 80%;
+        margin-left          : 20%;
+        padding-right        : 0;
         grid-template-columns: repeat(1, auto);
 
         .gridtest {
@@ -788,7 +813,7 @@
     grid-template-columns: repeat(1, auto);
 
     .LANA-FOOTER {
-      margin: 0;
+      margin      : 0;
       margin-block: 1em;
     }
 
@@ -806,8 +831,8 @@
 
     .third {
       .suscribete {
-        width        : 10.5em;
-        margin       : 0;
+        width       : 10.5em;
+        margin      : 0;
         margin-block: 2em;
       }
 
@@ -822,7 +847,8 @@
       }
     }
   }
-  .sectionFooter > a {
+
+  .sectionFooter>a {
     margin-inline: auto;
   }
 
@@ -834,14 +860,14 @@
       margin-top     : 2em;
       justify-content: center;
       text-align     : center;
-      margin-inline: auto;
+      margin-inline  : auto;
     }
 
     .icons {
-      margin-left: 0;
-      margin-top : 1em;
+      margin-left  : 0;
+      margin-top   : 1em;
       margin-inline: auto;
-      padding-left: 5%;
+      padding-left : 5%;
 
       .apple {
         margin      : 0;
