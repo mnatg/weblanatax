@@ -18,6 +18,7 @@ import 'firebase/firestore';
 import firebase from 'firebase/app';
 //import { useCollectionData, useDocument } from 'react-firebase-hooks/firestore'
 //import NetInfo from "@react-native-community/netinfo";
+import videoCall from '../../../components/pages/Videollamada/VideoCall';
 
 function ContactoAsesor (props)  {
 
@@ -63,6 +64,7 @@ function ContactoAsesor (props)  {
         firestore().collection('TalkSession').doc(first_session.sessionid).update({
           avaliable: false
         })
+        
 
         /*
         navigation.replace('VideoCall', {

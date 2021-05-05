@@ -574,7 +574,7 @@
   .Photo {
     margin   : 5em 0 0 0;
     max-width: 960px;
-
+    background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat;
     .no-te {
       font-size: 3.0625em;
     }
@@ -737,7 +737,7 @@
   }
 
   .sectionFooter {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
 
     .LANA-FOOTER {
       margin-left : 1.75em;
