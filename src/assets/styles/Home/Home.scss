@@ -163,7 +163,6 @@
 
       .TUS-IMPUESTOS {
         width         : 100%;
-        font-family   : "Poppins", sans-serif !important;
         font-size     : 3vmax;
         font-weight   : 900;
         font-stretch  : normal;
@@ -181,7 +180,6 @@
 
       .Nuestra-videollamada {
         width         : 100%;
-        font-family   : "Poppins", sans-serif !important;
         font-size     : 1.5vmax;
         font-weight   : 600;
         font-stretch  : normal;
@@ -285,7 +283,6 @@
 
   .Millones-nos-Respald {
     width         : 100%;
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 2.5vmax;
     font-weight   : bold;
     font-stretch  : normal;
@@ -296,7 +293,6 @@
   }
 
   .nase-a-especialista {
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 1em;
     font-weight   : 500;
     font-stretch  : normal;
@@ -329,6 +325,11 @@
 
 .carruselMovil {
   display: none !important;
+}
+
+.cetQhm {
+  background-color: #008f45 !important;
+  box-shadow      : 0 0 1px 3px #009245 !important;
 }
 
 .rec {
@@ -543,7 +544,6 @@
     width         : 20.75em;
     height        : 1.3125em;
     margin        : 1.25em 0 0.875em 0;
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 0.9375em;
     font-weight   : 600;
     font-stretch  : normal;
@@ -598,7 +598,7 @@
   }
 
   .base {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width                : 100%;
     max-width            : 960px;
 
@@ -709,7 +709,6 @@
       .CONECTAR-CON-TU-ASES {
         text-align  : center;
         color       : #009245;
-        font-family : Poppins !important;
         font-size   : 8vmin;
         font-weight : 900;
         font-stretch: normal;
@@ -791,7 +790,7 @@
   }
 
   .redes-sociales {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(1, 50%);
 
     .MA-Tax-Group {
       font-size      : 1em;
@@ -815,6 +814,7 @@
 /*-----------Responsive tablet--------------*/
 @media (min-width: 600px) and (max-width: 960px) {
   .Photo {
+    width    : 100%;
     margin   : 5em 0 0 0;
     max-width: 960px;
 
@@ -870,11 +870,13 @@
           margin: 3% auto 0 auto;
         }
       }
+
       .GridLeft {
         padding: 0;
-        width: max-content;
+        width  : max-content;
+
         .imageA {
-          width: 85%;
+          width      : 85%;
           margin-left: 15%;
         }
       }
@@ -945,7 +947,6 @@
       .CONECTAR-CON-TU-ASES {
         text-align  : center;
         color       : #009245;
-        font-family : Poppins !important;
         font-size   : 8vmin;
         font-weight : 900;
         font-stretch: normal;
