@@ -128,7 +128,6 @@
   }
 
   .servicios-lanatax {
-    font-family    : 'Poppins', sans-serif !important;
     font-size      : 1em;
     font-weight    : 600;
     font-stretch   : normal;
@@ -207,15 +206,14 @@
         background-color: #009245;
         padding         : 1em;
         text-align      : center;
-        width           : 30%;
+        width           : 20%;
         border-radius   : 3em;
         margin-top      : 0.625em;
         margin-bottom   : 0.625em;
-        margin-left     : 70%;
+        margin-left     : 75%;
         margin-right    : auto;
         object-fit      : contain;
         cursor          : pointer;
-
         p {
           color          : #ffffff;
           text-decoration: none;
@@ -243,7 +241,6 @@
         margin-left: 10%;
         align-items: center;
         font-size  : 3vmax;
-        font-family: "Poppins", sans-serif !important;
         color      : #009245;
       }
     }
@@ -351,7 +348,6 @@
 
   .news-title {
     margin        : 12px 54px 0 0;
-    font-family   : 'PT SANS';
     font-size     : 24px;
     font-weight   : bold;
     font-stretch  : normal;
@@ -576,12 +572,11 @@
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
-    background-image: url('../../images/Home/init/photoMobile.png');
     background-position: center;
-    max-width: 450px;
-    height: 44em;
-    grid-template-columns: repeat(1, auto);
-    .GridLeft{
+    margin             : 5em 0 0 0;
+    max-width          : 960px;
+
+    .GridLeft {
       display: none;
     }
 
@@ -590,31 +585,11 @@
     }
 
     .no-te {
-      font-size: 2.0625em;
-      width: 93%;
-      margin-top: 10em;
-      margin-inline: auto;
+      font-size: 3.0625em;
     }
 
     .impuestos {
-      font-size: 2.0625em;
-      width: 93%;
-      margin-inline: auto;
-    }
-    .Nos-encargamos {
-      margin-inline: auto;
-      width: 93%;
-    }
-    .Ven-a {
-      margin-inline: auto;
-      width: 93%;
-    }
-    .empezar-gratis {
-      margin-inline: auto;
-      width: fit-content;
-      .Logo-store {
-        margin-inline: 1%;
-      }
+      font-size: 3.0625em;
     }
   }
 
@@ -640,12 +615,8 @@
       grid-template-columns: repeat(1, 1fr);
 
       .form-container {
-        width: 90%;
-        max-width: 2048px;
-        padding-right: 0;
-        padding-left: 2%;
         .TUS-IMPUESTOS {
-          font-size : 3vmax;
+          font-size : 6vmax;
           text-align: center;
         }
 
@@ -664,11 +635,6 @@
           width : 30%;
           margin: 3% auto 0 auto;
         }
-      }
-      .GridLeft {
-        width: 90%;
-        padding-right: 0;
-        padding-left: 0;
       }
     }
 
@@ -689,10 +655,9 @@
       }
 
       .GridRightB {
-        width: 80%;
-        margin-left: 20%;
-        padding-right: 0;
-        grid-template-columns: repeat(1, auto);
+        width       : 80%;
+        margin-right: 20%;
+        margin-left : 20%;
 
         .gridtest {
           .TEXT {
@@ -728,6 +693,8 @@
     grid-template-columns: repeat(1, 1fr);
 
     .GridRight {
+      width: 100%;
+
       .imageD {
         width : 60%;
         margin: 10% 20% 5% 20%;
@@ -778,7 +745,7 @@
   }
 
   .sectionFooter {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(3, auto);
 
     .LANA-FOOTER {
       margin-left : 1.75em;
@@ -798,6 +765,8 @@
     }
 
     .third {
+      grid-column: 2;
+
       .suscribete {
         width        : 10.5em;
         margin       : 0;
@@ -817,10 +786,10 @@
   }
 
   .redes-sociales {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, 50%);
 
     .MA-Tax-Group {
-      font-size      : 0.6em;
+      font-size      : 1em;
       margin-top     : 2em;
       justify-content: center;
       text-align     : center;
@@ -839,7 +808,7 @@
 }
 
 /*-----------Responsive tablet--------------*/
-@media (min-width: 601px) and (max-width: 960px) {
+@media (min-width: 600px) and (max-width: 960px) {
   .Photo {
     width    : 100%;
     margin   : 5em 0 0 0;
@@ -899,11 +868,11 @@
       }
 
       .GridLeft {
-        padding: 0;
+        padding   : 0;
         text-align: center;
 
         .imageA {
-          width      : 80%;
+          width: 80%;
         }
       }
     }
