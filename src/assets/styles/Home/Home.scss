@@ -693,6 +693,7 @@
         width        : 90%;
         padding-right: 0;
         padding-left : 0;
+        margin-inline: auto;
       }
     }
 
@@ -747,10 +748,7 @@
       margin: 12px 54px 0 5%;
       font-size: 24px;
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.42;
-      letter-spacing: normal;
       color: #d9e021;
     }
   }
@@ -820,9 +818,9 @@
       .Boton-Nombre-d {
         background-color: #d6d6d6;
         border-radius   : 2em;
-        width           : 50%;
-        height          : 2.5em;
-        margin          : 5% 25% 0 25%;
+        width           : 70%;
+        height: 2.5em;
+        margin: 5% 15% 0 15%;
         text-align      : center;
         border          : none;
       }
@@ -830,9 +828,11 @@
       .BotonConectarD {
         background-color: #009245;
         border-radius   : 2em;
-        width           : 30%;
-        margin          : 5% 35% 5% 35%;
+        width           : 40%;
+        margin: 5% 30% 5% 30%;
         color: #fff;
+        font-size: 0.8em;
+        text-transform: capitalize;
       }
     }
   }
