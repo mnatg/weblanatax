@@ -9,7 +9,7 @@ import SectionC from '../EmpiezaGratis/SectionC'
 function EmpiezaGratis() {
   return (
     <>
-      <SectionA />
+      <SectionA/>
       <Footer />
     </>
   );
