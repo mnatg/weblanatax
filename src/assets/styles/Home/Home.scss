@@ -250,6 +250,7 @@
         align-items: center;
         font-size  : 3vmax;
         color      : #009245;
+        font-weight: 600;
       }
     }
 
@@ -592,7 +593,7 @@
     background-image     : url('../../images/Home/init/photoMobile.png');
     background-position  : center;
     max-width            : 450px;
-    height               : 44em;
+    height               : 48.8em;
     grid-template-columns: repeat(1, auto);
 
     .GridLeft {
@@ -713,7 +714,7 @@
 
       .GridRightB {
         width                : 80%;
-        margin-left          : 20%;
+        margin-inline: auto;
         padding-right        : 0;
         grid-template-columns: repeat(1, auto);
 
@@ -721,8 +722,36 @@
           .TEXT {
             font-size: 3vmin;
           }
+          .ICON-left {
+            margin-left: -12%;
+          }
         }
       }
+    }
+  }
+
+  .title-carousel {
+    .Millones-nos-Respald,
+    .nase-a-especialista {
+      text-align: center;
+    }
+  }
+
+  .news-autor,
+  .rec.rec-carousel-item.rec-carousel-item-1.rec-carousel-item-visible .news-two-title {
+    margin-left: 5%;
+  }
+
+  .rec {
+    .news-title {
+      margin: 12px 54px 0 5%;
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.42;
+      letter-spacing: normal;
+      color: #d9e021;
     }
   }
 
@@ -742,8 +771,10 @@
     display: none !important;
   }
 
-  .sectionD {
-    display: none;
+  .homebackground {
+    .sectionD {
+      display: none;
+    }
   }
 
   .sectionDMovil {
@@ -752,8 +783,8 @@
 
     .GridRight {
       .imageD {
-        width : 60%;
-        margin: 10% 20% 5% 20%;
+        width: 85%;
+        margin-left: 10%;
       }
     }
 
@@ -796,8 +827,13 @@
         border-radius   : 2em;
         width           : 30%;
         margin          : 5% 35% 5% 35%;
+        color: #fff;
       }
     }
+  }
+
+  .line-copy {
+    width: 100%;
   }
 
   .sectionFooter {
@@ -818,6 +854,10 @@
         height: 0.625em;
         margin: 2.1875em 0 0.3125em 0;
       }
+    }
+
+    .first, .second, .third {
+      margin-left: 10%;
     }
 
     .third {
@@ -985,8 +1025,10 @@
     }
   }
 
-  .sectionD {
-    display: none;
+  .homebackground {
+    .sectionD {
+      display: none;
+    }
   }
 
   .sectionDMovil {

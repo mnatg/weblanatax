@@ -32,7 +32,7 @@ function sectionB() {
             <p className='TEXT'> Videollamada Gratis. </p>
           </div>
           <div className='gridtest'>
-            <img className="ICON" src={ahorratiempo} alt="bolsitadinero" />
+            <img className="ICON ICON-left" src={ahorratiempo} alt="bolsitadinero" />
             <p className='TEXT'>Ahorra Tiempo.</p>
           </div>
           <div className='gridtest'>
