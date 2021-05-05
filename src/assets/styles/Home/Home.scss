@@ -684,8 +684,9 @@
         }
 
         .divbase {
-          width : 30%;
+          width : 40%;
           margin: 3% auto 0 auto;
+          padding: 0.5em;
         }
       }
 
@@ -850,7 +851,7 @@
     }
 
     .Legales {
-      margin-top: 1em;
+      margin-top: 2em;
     }
 
     .link-decoration {
@@ -875,10 +876,12 @@
       .signup-now-button {
         width       : 9.375em;
         margin-right: 0;
+        border-radius: 6px;
+        border: none;
       }
 
       .Rectangle-5-Copy {
-        width : 13.3125em;
+        width : 17.3125em;
         height: 2em;
       }
     }
