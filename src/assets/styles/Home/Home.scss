@@ -850,7 +850,7 @@
 
       .form-container {
         .TUS-IMPUESTOS {
-          font-size : 6vmax;
+          font-size : 5vmax;
           text-align: center;
         }
 
@@ -868,6 +868,14 @@
         .divbase {
           width : 30%;
           margin: 3% auto 0 auto;
+        }
+      }
+      .GridLeft {
+        padding: 0;
+        width: max-content;
+        .imageA {
+          width: 85%;
+          margin-left: 15%;
         }
       }
     }
@@ -891,7 +899,7 @@
       .GridRightB {
         width       : 80%;
         margin-right: 20%;
-        margin-left : 20%;
+        margin-left : 15%;
 
         .gridtest {
           .TEXT {
@@ -927,8 +935,6 @@
     grid-template-columns: repeat(1, 1fr);
 
     .GridRight {
-      width: 100%;
-
       .imageD {
         width : 60%;
         margin: 10% 20% 5% 20%;
