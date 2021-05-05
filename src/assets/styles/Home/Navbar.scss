@@ -4,10 +4,12 @@
   justify-content: center;
   align-items: center;
   width: 2vmax;
+  
   .navbar-container {
     align-items: center;
     height: 4.875em;
     margin: auto;
+
     .LANA {
       width: 6.75em;
       height: 2.125em;
@@ -165,7 +167,7 @@
   
       .LANA {
         margin     : auto;
-        margin-left: 50%;
+        margin-left: auto;
         width: 20.75em;
       }
     }

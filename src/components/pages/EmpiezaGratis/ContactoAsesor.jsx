@@ -12,18 +12,24 @@ import callBtn from '../../../assets/images/EmpiezaGratis/callBtn.png';
 import imagenB from '../../../assets/images/QuienesSomos/free-phone-12-mockup.png'
 //Services
 import GetTalkSessionsService from '../../../Services/TalkSession/GetTalkSessions'
-import ListTaxes from '../../../Services/Taxes/ListTaxes'
 import SendNotification from '../../../Services/Notication/SendNotification'
-import { onAddTaxes } from '../../../Store/actions/Taxes'
+
 // Util
 import Toast from '../../../utils/Toast';
 import 'firebase/firestore';
 import firebase from 'firebase/app';
-import { useCollectionData, useDocument } from 'react-firebase-hooks/firestore'
+import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { useFirestore } from 'reactfire';
-//import NetInfo from "@react-native-community/netinfo";
 
-function ContactoAsesor() {
+function ContactoAsesor(props) {
+
+  const name = props.name;
+  const apellido = props.apellido;
+
+  console.log("nombre: ", name);
+  console.log("apellido: ", apellido);
+
+
 
   const [loading, setLoading] = useState(false);
   const talkSessionRef = useFirestore().collection('TalkSession');
@@ -36,7 +42,6 @@ function ContactoAsesor() {
   let history = useHistory();
 
   const handleContacWithUs = async () => {
-    console.log(user);
     if (talkSessions.length > 0) {
       setLoading(true);
       setOffRedirect(true);
@@ -63,11 +68,6 @@ function ContactoAsesor() {
             employee: talkSession.receptionist
           }
         );
-
-        /*
-        navigation.replace('VideoCall', {
-          
-        });*/
         break;
       }
     } else {
@@ -110,15 +110,7 @@ function ContactoAsesor() {
 
       </Grid>
     </div>
-
-
-
   );
 }
 
 export default ContactoAsesor;
-
-
-
-
-
