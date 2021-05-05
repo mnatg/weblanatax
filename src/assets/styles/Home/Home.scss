@@ -163,7 +163,6 @@
 
       .TUS-IMPUESTOS {
         width         : 100%;
-        font-family   : "Poppins", sans-serif !important;
         font-size     : 3vmax;
         font-weight   : 900;
         font-stretch  : normal;
@@ -181,7 +180,6 @@
 
       .Nuestra-videollamada {
         width         : 100%;
-        font-family   : "Poppins", sans-serif !important;
         font-size     : 1.5vmax;
         font-weight   : 600;
         font-stretch  : normal;
@@ -285,7 +283,6 @@
 
   .Millones-nos-Respald {
     width         : 100%;
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 2.5vmax;
     font-weight   : bold;
     font-stretch  : normal;
@@ -296,7 +293,6 @@
   }
 
   .nase-a-especialista {
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 1em;
     font-weight   : 500;
     font-stretch  : normal;
@@ -329,6 +325,11 @@
 
 .carruselMovil {
   display: none !important;
+}
+
+.cetQhm {
+  background-color: #008f45 !important;
+  box-shadow      : 0 0 1px 3px #009245 !important;
 }
 
 .rec {
@@ -543,7 +544,6 @@
     width         : 20.75em;
     height        : 1.3125em;
     margin        : 1.25em 0 0.875em 0;
-    font-family   : "Poppins", sans-serif !important;
     font-size     : 0.9375em;
     font-weight   : 600;
     font-stretch  : normal;
@@ -576,14 +576,12 @@
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
-    margin   : 5em 0 0 0;
-    max-width: 960px;
-    background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat;
+    background-image: url('../../images/Home/init/photoMobile.png');
     background-position: center;
-    margin             : 5em 0 0 0;
-    max-width          : 960px;
-
-    .GridLeft {
+    max-width: 450px;
+    height: 44em;
+    grid-template-columns: repeat(1, auto);
+    .GridLeft{
       display: none;
     }
 
@@ -592,16 +590,36 @@
     }
 
     .no-te {
-      font-size: 3.0625em;
+      font-size: 2.0625em;
+      width: 93%;
+      margin-top: 10em;
+      margin-inline: auto;
     }
 
     .impuestos {
-      font-size: 3.0625em;
+      font-size: 2.0625em;
+      width: 93%;
+      margin-inline: auto;
+    }
+    .Nos-encargamos {
+      margin-inline: auto;
+      width: 93%;
+    }
+    .Ven-a {
+      margin-inline: auto;
+      width: 93%;
+    }
+    .empezar-gratis {
+      margin-inline: auto;
+      width: fit-content;
+      .Logo-store {
+        margin-inline: 1%;
+      }
     }
   }
 
   .base {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width                : 100%;
     max-width            : 960px;
 
@@ -622,8 +640,12 @@
       grid-template-columns: repeat(1, 1fr);
 
       .form-container {
+        width: 90%;
+        max-width: 2048px;
+        padding-right: 0;
+        padding-left: 2%;
         .TUS-IMPUESTOS {
-          font-size : 6vmax;
+          font-size : 3vmax;
           text-align: center;
         }
 
@@ -642,6 +664,11 @@
           width : 30%;
           margin: 3% auto 0 auto;
         }
+      }
+      .GridLeft {
+        width: 90%;
+        padding-right: 0;
+        padding-left: 0;
       }
     }
 
@@ -662,9 +689,10 @@
       }
 
       .GridRightB {
-        width       : 80%;
-        margin-right: 20%;
-        margin-left : 20%;
+        width: 80%;
+        margin-left: 20%;
+        padding-right: 0;
+        grid-template-columns: repeat(1, auto);
 
         .gridtest {
           .TEXT {
@@ -700,8 +728,6 @@
     grid-template-columns: repeat(1, 1fr);
 
     .GridRight {
-      width: 100%;
-
       .imageD {
         width : 60%;
         margin: 10% 20% 5% 20%;
@@ -712,7 +738,6 @@
       .CONECTAR-CON-TU-ASES {
         text-align  : center;
         color       : #009245;
-        font-family : Poppins !important;
         font-size   : 8vmin;
         font-weight : 900;
         font-stretch: normal;
@@ -773,8 +798,6 @@
     }
 
     .third {
-      grid-column: 2;
-
       .suscribete {
         width        : 10.5em;
         margin       : 0;
@@ -794,10 +817,10 @@
   }
 
   .redes-sociales {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(1, auto);
 
     .MA-Tax-Group {
-      font-size      : 1em;
+      font-size      : 0.6em;
       margin-top     : 2em;
       justify-content: center;
       text-align     : center;
@@ -816,8 +839,9 @@
 }
 
 /*-----------Responsive tablet--------------*/
-@media (min-width: 600px) and (max-width: 960px) {
+@media (min-width: 601px) and (max-width: 960px) {
   .Photo {
+    width    : 100%;
     margin   : 5em 0 0 0;
     max-width: 960px;
 
@@ -873,11 +897,13 @@
           margin: 3% auto 0 auto;
         }
       }
+
       .GridLeft {
         padding: 0;
-        width: max-content;
+        width  : max-content;
+
         .imageA {
-          width: 85%;
+          width      : 85%;
           margin-left: 15%;
         }
       }
@@ -948,7 +974,6 @@
       .CONECTAR-CON-TU-ASES {
         text-align  : center;
         color       : #009245;
-        font-family : Poppins !important;
         font-size   : 8vmin;
         font-weight : 900;
         font-stretch: normal;
