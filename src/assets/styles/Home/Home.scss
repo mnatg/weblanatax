@@ -333,7 +333,7 @@
   display: none !important;
 }
 
-.cetQhm {
+button.sc-gKckTs.cetQhm.rec.rec-dot.rec.rec-dot_active {
   background-color: #008f45 !important;
   box-shadow      : 0 0 1px 3px #009245 !important;
 }
@@ -761,9 +761,10 @@
   .carruselMovil {
     display: flex !important;
 
-    .bSWeAW {
-      display: none;
-    }
+  }
+  
+  .bSWeAW {
+    display: none;
   }
 
   .carruselTablet {
@@ -1028,9 +1029,10 @@
   .carruselTablet {
     display: flex !important;
 
-    .bSWeAW {
-      display: none;
-    }
+
+  }
+  .bSWeAW {
+    display: none;
   }
 
   .homebackground {
