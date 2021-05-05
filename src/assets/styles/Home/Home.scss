@@ -1,10 +1,12 @@
 * {
-  margin: 0;
+  margin     : 0;
+  font-family: sans-serif !important;
 }
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
-  width                : 100%;
+  width                : 90%;
+  height               : 45.875em;
   margin-top           : 5em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,16 +17,18 @@
   margin-right         : auto;
 
   .GridLeft {
-    width: 100%;
+    width  : 100%;
+    padding: 0%;
   }
 
   .GridRight {
+    padding    : 0%;
     width      : 100%;
     align-items: flex-end;
   }
 
   .no-te {
-    font-family   : 'HelveticaRounded', sans-serif !important;
+    margin-top    : 20%;
     font-size     : 4.0625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -35,7 +39,6 @@
   }
 
   .impuestos {
-    font-family   : 'HelveticaRounded', sans-serif !important;
     font-size     : 4.0625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -47,7 +50,6 @@
 
   .Nos-encargamos {
 
-    font-family   : 'HelveticaRounded', sans-serif !important;
     font-size     : 1.5625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -139,7 +141,9 @@
 }
 
 .homebackground {
-  width: 100%;
+  width       : 90%;
+  margin-left : auto;
+  margin-right: auto;
 
   .sectionA {
     display              : grid;
@@ -575,6 +579,18 @@
     margin   : 5em 0 0 0;
     max-width: 960px;
     background: url('../../images/Home/init/photoMobile.png') center center/cover no-repeat;
+    background-position: center;
+    margin             : 5em 0 0 0;
+    max-width          : 960px;
+
+    .GridLeft {
+      display: none;
+    }
+
+    .GridRight {
+      align-items: center;
+    }
+
     .no-te {
       font-size: 3.0625em;
     }
@@ -837,7 +853,7 @@
 
       .form-container {
         .TUS-IMPUESTOS {
-          font-size : 6vmax;
+          font-size : 5vmax;
           text-align: center;
         }
 
@@ -855,6 +871,14 @@
         .divbase {
           width : 30%;
           margin: 3% auto 0 auto;
+        }
+      }
+      .GridLeft {
+        padding: 0;
+        width: max-content;
+        .imageA {
+          width: 85%;
+          margin-left: 15%;
         }
       }
     }
@@ -878,7 +902,7 @@
       .GridRightB {
         width       : 80%;
         margin-right: 20%;
-        margin-left : 20%;
+        margin-left : 15%;
 
         .gridtest {
           .TEXT {
@@ -914,8 +938,6 @@
     grid-template-columns: repeat(1, 1fr);
 
     .GridRight {
-      width: 100%;
-
       .imageD {
         width : 60%;
         margin: 10% 20% 5% 20%;
