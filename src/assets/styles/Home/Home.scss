@@ -214,6 +214,7 @@
         margin-right    : auto;
         object-fit      : contain;
         cursor          : pointer;
+
         p {
           color          : #ffffff;
           text-decoration: none;
@@ -386,12 +387,10 @@
     font-stretch: normal;
     font-style  : normal;
     font-weight : 600;
-    font-family : Poppins;
   }
 
   .textD1 {
     margin        : 5%;
-    font-family   : Poppins;
     font-size     : 1.5vmax;
     font-weight   : 600;
     font-stretch  : normal;
@@ -417,6 +416,7 @@
     background-color: #008f45;
     margin-left     : 20%;
     margin-top      : 1em;
+    color           : #ffffff;
   }
 }
 
