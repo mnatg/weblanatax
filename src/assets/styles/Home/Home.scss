@@ -1,11 +1,12 @@
 * {
-  margin: 0;
-  font-family: sans-serif  !important;
+  margin     : 0;
+  font-family: sans-serif !important;
 }
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
-  width                : 100%;
+  width                : 90%;
+  height               : 45.875em;
   margin-top           : 5em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,18 +17,18 @@
   margin-right         : auto;
 
   .GridLeft {
-    width: 100%;
+    width  : 100%;
     padding: 0%;
   }
 
   .GridRight {
-    padding: 0%;
+    padding    : 0%;
     width      : 100%;
     align-items: flex-end;
   }
 
   .no-te {
-    font-family   : 'HelveticaRounded', sans-serif !important;
+    margin-top    : 20%;
     font-size     : 4.0625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -38,7 +39,6 @@
   }
 
   .impuestos {
-    font-family   : 'HelveticaRounded', sans-serif !important;
     font-size     : 4.0625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -50,7 +50,6 @@
 
   .Nos-encargamos {
 
-    font-family   : 'HelveticaRounded', sans-serif !important;
     font-size     : 1.5625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -142,7 +141,9 @@
 }
 
 .homebackground {
-  width: 100%;
+  width       : 90%;
+  margin-left : auto;
+  margin-right: auto;
 
   .sectionA {
     display              : grid;
@@ -576,14 +577,17 @@
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
     background-position: center;
-    margin   : 5em 0 0 0;
-    max-width: 960px;
-    .GridLeft{
+    margin             : 5em 0 0 0;
+    max-width          : 960px;
+
+    .GridLeft {
       display: none;
     }
-    .GridRight{
+
+    .GridRight {
       align-items: center;
     }
+
     .no-te {
       font-size: 3.0625em;
     }
