@@ -242,7 +242,7 @@
   /* smartphones, iPhone, portrait 480x320 phones */
 
   .Rectangle-quienes {
-    width: 143.3vmax;
+    width: 100%;
     background: none;
   }
 
@@ -257,7 +257,7 @@
 
   .ContainerGridTablet {
     display: block;
-    width: 143.3vmax;
+    width: 100%;
     background: none;
   }
 
@@ -335,6 +335,7 @@
     line-height   : normal;
     letter-spacing: normal;
     color         : #a6a6a6;
+    background-color: #ffffff8c;
   }
 
   .ContainerSectionC {
@@ -343,7 +344,6 @@
     grid-gap             : 10px;
     grid-auto-rows       : minmax(100px, auto);
     background-image     : url(../../images/QuienesSomos/shutterstock-104304026.png);
-    width                : 960px;
     background-repeat    : no-repeat;
     background-position-x: center;
 
@@ -351,7 +351,7 @@
 
     .Container {
       margin: 45% 0% 0% 0%;
-      width: 100vmin;
+      width: 100%;
       background: none;
       text-align: -webkit-center;
     }

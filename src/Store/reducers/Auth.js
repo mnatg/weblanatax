@@ -40,28 +40,6 @@ const authReducer = (state = initialState, action) => {
         ...state,
         user: { ...state.user, ...action.payload }
       };
-    case GOOGLE_SIGN_IN:
-      return {
-        ...state,
-        user: { ...state.user, ...action.payload }
-      };
-
-    case FACEBOOK_SIGN_IN:
-      return {
-        ...state,
-        user: { ...state.user, ...action.payload }
-      };
-    case GOOGLE_SIGN_UP:
-      return {
-        ...state,
-        user: { ...state.user, ...action.payload }
-      };
-
-    case FACEBOOK_SIGN_UP:
-      return {
-        ...state,
-        user: { ...state.user, ...action.payload }
-      };
     case ERROR:
       return {
         ...state,
