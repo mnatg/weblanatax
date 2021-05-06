@@ -10,6 +10,8 @@ import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
 import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
 import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
 import videoCallObject from '../components/pages/EmpiezaGratis/ContactoAsesor';
+import Loading from '../components/loading/loadingEmotic';
+
 
 //--firebase
 //Auth
@@ -19,6 +21,8 @@ import { useUser } from 'reactfire';
 
 function AppRouter() {
   var user = useUser();
+  
+
   return (
    
 
@@ -34,8 +38,7 @@ function AppRouter() {
           <Route path='/sign-in' component={SignIn} />
           <Route path='/quienes-somos' component={QuienesSomos} />
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
-          <Route path='/empieza-gratis-videollamada/:name/:apellido'  component={EmpiezaGratisVideollamada} />
-        
+          <Route path='/empieza-gratis-videollamada/:name/:apellido'  component={EmpiezaGratisVideollamada} />    
         </Switch>
     
       </Router>

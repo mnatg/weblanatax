@@ -17,12 +17,13 @@ import 'firebase/auth';
 import { useFirebaseApp } from 'reactfire';
 
 import { useUser } from 'reactfire';
-import Navbar from '../Home/Navbar';
+import HomeP from '../Home/Home';
 
 
 //Auth Redux
 import { useDispatch } from 'react-redux'
 import { onSignUp } from '../../../Store/actions/Auth'
+import { Home } from '@material-ui/icons';
 
 
 //---------- data de usuario
@@ -50,6 +51,8 @@ const SignUp = () => {
 
     const firebase = useFirebaseApp();
     const provider = new firebaseG.auth.GoogleAuthProvider();
+    var user = useUser();
+    var autenticacion = false;
 
     const validation = async () => {
         if (email.length === 0 || password.length === 0) {
@@ -84,6 +87,7 @@ const SignUp = () => {
           setTimeout(() => {
             //setLoading(false)
           }, 5000);
+        
         } catch (error) {
           //setLoading(false);
         }
@@ -108,11 +112,14 @@ const SignUp = () => {
       setOpen(false);
     };
 
-    var user = useUser();
+   
 
     console.log("hola sign in");
     {user.data?console.log("usuario: "+user.data):console.log("no hay usuario")}
 
+
+
+   if(!autenticacion){
     return (
         <div className='signin-background'>
 
@@ -135,11 +142,13 @@ const SignUp = () => {
                 <button className="button-green" onClick={validation}>! Registrarse</button>
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
-
-
-
         </div>
-    )
+    )}
+    else{
+      return(
+        <HomeP></HomeP>
+      )
+    }
 
 }
 

@@ -9,25 +9,25 @@ const Toast = ( message, type ) => {
     if(type === "error"){
         toast.error(message, {
             position: toast.POSITION.TOP_CENTER,
-            autoClose: 1500,
+            autoClose: 5500,
             hideProgressBar: true
         });
     } else if(type === "warning"){
         toast.warn(message, {
             position: toast.POSITION.TOP_CENTER,
-            autoClose: 1500,
+            autoClose: 5000,
             hideProgressBar: true
         });
     } else if(type === "success"){
         toast.success(message, {
             position: toast.POSITION.TOP_CENTER,
-            autoClose: 1500,
+            autoClose: 10000,
             hideProgressBar: true
         });
     } else if(type === "info"){
         toast.info(message, {
             position: toast.POSITION.TOP_CENTER,
-            autoClose: 1500,
+            autoClose: 5500,
             hideProgressBar: true
         });
     }

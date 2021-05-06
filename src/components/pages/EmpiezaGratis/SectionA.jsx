@@ -9,6 +9,10 @@ import { Grid, Paper } from '@material-ui/core';
 import '../../../assets/styles/Home/Home.scss'
 import initbutton from '../../../assets/images/EmpiezaGratis/button_empieza-ya-es-gratis.png'
 
+import { useFirebaseApp, useUser } from 'reactfire';
+import SignIn from '../../../components/pages/SignIn/SignIn';
+import Toast from '../../../utils/Toast';
+
 
 function SectionA() {
 
@@ -18,8 +22,36 @@ function SectionA() {
   const showImageAp = () => setClick(false);
 
 
+  var autenticacion = false;
 
+  var user = useUser();
+  var email = "";
+
+  const messageToast = async (mensaje) => {
+   
+      Toast(mensaje,"error")
+    
+  }
+
+
+
+
+  if(user.data == null){
+    console.log("usuario no está definido");
+    //messageToast("Registrate y/o Ingresa antes de comenzar")
+  } else {
+    console.log("usuario está definido",user);
+    email = user.data.email;
+    //console.log("usuario está definido",user.data.email);
+    autenticacion = true;
+  }
+
+
+
+  if(autenticacion){
   return (
+
+
     <div className='Rectangle-quienes'>
       <Grid className="ContainerGrid">
         <div className="GridLeft">
@@ -57,9 +89,26 @@ function SectionA() {
       </Grid>
     </div>
 
+  
+    
+    
+    );
+  }
+  else{
+    
+    return (
+      <div>
 
 
-  );
+      <SignIn></SignIn>
+
+      </div>
+
+    );
+  }
+
+
+
 }
 
 export default SectionA;

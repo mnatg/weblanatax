@@ -9,9 +9,31 @@ import '../../../assets/styles/Home/Home.scss'
 import initbutton from '../../../assets/images/Home/init/boton-empezar.png'
 import storelabels from '../../../assets/images/Home/init/app-store.png'
 import storelabels2 from '../../../assets/images/Home/init/google-play.png'
-
+import { useUser } from 'reactfire';
+import Toast from '../../../utils/Toast';
 
 function HeroSection() {
+
+
+  var user = useUser();
+  var autenticacion = false;
+
+
+  const validateHome = () => {
+
+  if(user.data == null){
+    console.log("validateHome");
+    Toast("Resgistrate y/o Ingresa Gratis","error")
+  } else {
+    console.log("validateHome",user);
+    //console.log("usuario está definido",user.data.email);
+    Toast("Ingreso exitoso, Empieza Gratis","success")
+    autenticacion = true;
+  }
+
+  }
+
+
   return (
     <Grid className='Photo'>
       <div className="GridLeft"></div>
@@ -24,7 +46,7 @@ function HeroSection() {
         <p className='Ven-a'>Ven a recibir la mejor atención</p>
         <div className='empezar-gratis'>
           <Link to='/empieza-gratis' >
-            <img className="btn-start" src={initbutton} alt="initbutton" />
+            <img className="btn-start" onClick={validateHome} src={initbutton} alt="initbutton" />
           </Link>
         </div>
 

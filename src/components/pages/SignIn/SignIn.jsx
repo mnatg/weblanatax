@@ -1,5 +1,6 @@
 // React
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // Components
 import { Grid } from '@material-ui/core';
 import Toast from '../../../utils/Toast';
@@ -25,6 +26,9 @@ import LoginService from '../../../Services/User/LogIn'
 
 import { useUser } from 'reactfire';
 import Navbar from '../Home/Navbar';
+import Home from '../Home/Home';
+
+import LoadingEmotic from '../../loading/loadingEmotic';
 
 //---------- data de usuario
 export const homeObjOne = {
@@ -49,11 +53,21 @@ const SignIn = () => {
     const dispatch = useDispatch()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [loadingB, setLoadingB] = useState(false);
 
     const firebase = useFirebaseApp();
     const provider = new firebaseG.auth.GoogleAuthProvider();
 
+    var autenticacion = false;
+    var user = useUser();
+  
+
+
+
+
+
     const validation = async () => {
+      
         if (email.length === 0 || password.length === 0) {
             return Toast('Todos los campos son requeridos.', "error");
         }
@@ -66,7 +80,7 @@ const SignIn = () => {
     }
 
     const signIn = async () => {
- 
+    setLoadingB(true);
         console.log("hola sign in");
         if (email == '' || password == '') { 
           Toast("Debe ingresar usuario y constraseña","error");
@@ -82,10 +96,24 @@ const SignIn = () => {
                 strategy: "email"
               }));
               setTimeout(() => {
-               // //setLoading(false)
+                
+              setLoadingB(false);
               }, 5000);
+
+
+              if(user.data == null){
+                console.log("usuario no está definido");
+              } else {
+                console.log("usuario está definido",user);
+                //console.log("usuario está definido",user.data.email);
+               Toast("Ingreso exitoso, Empieza Gratis","success")
+                autenticacion = true;
+              }
+              
+             
             } catch (error) {
               //setLoading(false)
+              
               return Toast(error,"error")
             }
           } else {
@@ -93,6 +121,8 @@ const SignIn = () => {
             //setLoading(false);
           }
         }
+       
+
       }
 
     // Ingreso por google de usuario
@@ -114,10 +144,14 @@ const SignIn = () => {
     };
 
   
- 
-
+  
+    
+    if(!autenticacion){
+     
     return (
+      
         <div className='signin-background'>
+          {loadingB && <LoadingEmotic></LoadingEmotic>}  
             <Grid container direction="column" justify="center" alignItems="center" className="sign-in-parent" >
                 <div className="imgs">
                     <img className="logo-lana" src={logoLana} alt="LANA TAX logo"/>
@@ -133,10 +167,22 @@ const SignIn = () => {
                 </Grid>
                 <button className="button-green" onClick={validation}>Ingresar</button>
                 <button className="forgot-password"  onClick={handleClickOpen}>¿Olvidaste tu contraseña?</button>
+                <Link to="/sign-up" ><button className="forgot-password"  onClick={handleClickOpen}>No tienes usuario, Registrate Aqui!</button>
+                </Link>
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
+             
         </div>
-    )
+    )}
+    else{
+// 
+      return(
+        <div>
+   
+      <Home></Home>
+        </div>
+      )
+    }
 
 }
 

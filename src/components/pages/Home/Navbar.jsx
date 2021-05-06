@@ -55,9 +55,9 @@ const Navbar = ({ user }) => {
   var email = "";
 
   if(user.data == null){
-    console.log("usuario no está definido");
+    console.log("usuario no está definido NavBar");
   } else {
-    console.log("usuario está definido",user);
+    console.log("usuario está definido NavBar",user);
     email = user.data.email;
     //console.log("usuario está definido",user.data.email);
     autenticacion = true;
