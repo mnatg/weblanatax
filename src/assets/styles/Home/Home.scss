@@ -321,12 +321,7 @@
   line-height : 1.42;
 }
 
-.hSiCVM:disabled {
-  display: none;
-}
-.itZICr{
-  display: none;
-}
+
 
 .carruselTablet {
   display: none !important;
@@ -335,16 +330,15 @@
 .carruselMovil {
   display: none !important;
 }
-.cetQhm{
+
+
+.rec-dot_active{
   background-color: #008f45 !important;
   box-shadow      : 0 0 1px 3px #009245 !important;
 }
-
-.kdqAEL {
-  background-color: #008f45 !important;
-  box-shadow      : 0 0 1px 3px #009245 !important;
+.rec.rec-arrow:disabled {
+  visibility: hidden;
 }
-
 
 .rec {
   .news-title {
