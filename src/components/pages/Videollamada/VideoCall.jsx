@@ -331,6 +331,7 @@ class VideoCall extends React.Component {
                     "userid": this.uid,
                     "receptionist": this.employeeId
                 }
+                console.log('Create lobby!!!')
                 await CreateLobbyService(lobby);
                 await CloseTalkSessionService(this.sessionId);
             } catch (err) {
