@@ -155,7 +155,7 @@
     background-position-x  : center;
     background-repeat      : no-repeat;
     -webkit-background-size: cover;
-    padding: 5%;
+    padding                : 5%;
 
     .imageA {
       width: 100%;
@@ -330,10 +330,11 @@
   display: none !important;
 }
 
-.rec-dot_active{
+.rec-dot_active {
   background-color: #008f45 !important;
   box-shadow      : 0 0 1px 3px #009245 !important;
 }
+
 .rec.rec-arrow:disabled {
   visibility: hidden;
 }
@@ -449,6 +450,7 @@
   margin-top      : 2.375em;
   opacity         : 0.5;
   background-color: #008f45;
+  margin-left     : 3em;
 }
 
 .sectionFooter {
@@ -456,7 +458,7 @@
   display              : grid;
   grid-template-columns: repeat(4, auto);
   background           : #fff;
-  margin-left: 2em;
+  margin-left          : 3em;
 
   .LANA-FOOTER {
     width     : 8.375em;
@@ -566,6 +568,7 @@
     line-height   : normal;
     letter-spacing: normal;
     color         : #a6a6a6;
+    margin-left   : 3em;
   }
 
   .icons {
@@ -685,8 +688,8 @@
         }
 
         .divbase {
-          width : 40%;
-          margin: 3% auto 0 auto;
+          width  : 40%;
+          margin : 3% auto 0 auto;
           padding: 0.5em;
         }
       }
@@ -717,7 +720,7 @@
 
       .GridRightB {
         width                : 80%;
-        margin-inline: auto;
+        margin-inline        : auto;
         padding-right        : 0;
         grid-template-columns: repeat(1, auto);
 
@@ -725,6 +728,7 @@
           .TEXT {
             font-size: 3vmin;
           }
+
           .ICON-left {
             margin-left: -12%;
           }
@@ -734,6 +738,7 @@
   }
 
   .title-carousel {
+
     .Millones-nos-Respald,
     .nase-a-especialista {
       text-align: center;
@@ -747,11 +752,11 @@
 
   .rec {
     .news-title {
-      margin: 12px 54px 0 5%;
-      font-size: 24px;
+      margin     : 12px 54px 0 5%;
+      font-size  : 24px;
       font-weight: bold;
       line-height: 1.42;
-      color: #d9e021;
+      color      : #d9e021;
     }
   }
 
@@ -763,7 +768,7 @@
     display: flex !important;
 
   }
-  
+
   .bSWeAW {
     display: none;
   }
@@ -779,9 +784,9 @@
   }
 
   .sectionDMovil {
-    margin-top: 10%;
-    display              : block;
-    grid-template-columns: repeat(1, 1fr);
+    margin-top             : 10%;
+    display                : block;
+    grid-template-columns  : repeat(1, 1fr);
     background-image       : url("../../images/Home/sectionD/bg.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
@@ -789,7 +794,7 @@
 
     .GridRight {
       .imageD {
-        width: 85%;
+        width      : 85%;
         margin-left: 10%;
       }
     }
@@ -822,8 +827,8 @@
         background-color: #d6d6d6;
         border-radius   : 2em;
         width           : 70%;
-        height: 2.5em;
-        margin: 5% 15% 0 15%;
+        height          : 2.5em;
+        margin          : 5% 15% 0 15%;
         text-align      : center;
         border          : none;
       }
@@ -832,10 +837,10 @@
         background-color: #009245;
         border-radius   : 2em;
         width           : 40%;
-        margin: 5% 30% 5% 30%;
-        color: #fff;
-        font-size: 0.8em;
-        text-transform: capitalize;
+        margin          : 5% 30% 5% 30%;
+        color           : #fff;
+        font-size       : 0.8em;
+        text-transform  : capitalize;
       }
     }
   }
@@ -864,7 +869,9 @@
       }
     }
 
-    .first, .second, .third {
+    .first,
+    .second,
+    .third {
       margin-left: 10%;
     }
 
@@ -876,10 +883,10 @@
       }
 
       .signup-now-button {
-        width       : 9.375em;
-        margin-right: 0;
+        width        : 9.375em;
+        margin-right : 0;
         border-radius: 6px;
-        border: none;
+        border       : none;
       }
 
       .Rectangle-5-Copy {
@@ -1032,6 +1039,7 @@
 
 
   }
+
   .bSWeAW {
     display: none;
   }
@@ -1043,9 +1051,9 @@
   }
 
   .sectionDMovil {
-    margin-top: 10%;
-    display              : block;
-    grid-template-columns: repeat(1, 1fr);
+    margin-top             : 10%;
+    display                : block;
+    grid-template-columns  : repeat(1, 1fr);
     background-image       : url("../../images/Home/sectionD/bg.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
