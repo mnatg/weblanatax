@@ -19,6 +19,10 @@ import { FirebaseAppProvider } from 'reactfire';
 import fireConfig from '../firebase-config';
 import { useUser } from 'reactfire';
 
+import {
+ preloadScript
+} from 'opentok-react';
+
 function AppRouter() {
   var user = useUser();
   

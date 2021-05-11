@@ -22,10 +22,14 @@ import {
     OTSession,
     OTPublisher,
     OTSubscriber,
-    OTSubscriberView,preloadScript
+    OTSubscriberView,preloadScript,
+    OTStreams
 } from 'opentok-react';
 
 //opentok
+import ConnectionStatus from './ConnectionStatus';
+import Publisher from './Publisher';
+import Subscriber from './Subscriber';
 
 
 //Services
@@ -100,8 +104,7 @@ class VideoCall extends React.Component {
         console.log("parametros videoCall: ",this.props.location);
         this.apiKey = "46527582";
         this.sessionId = this.props.location.state.sessionId;
-        console.log("sessionId: ",this.sessionId);
-        
+        console.log("sessionId: ",this.sessionId);        
         this.token = this.props.location.state.token;
         this.uid = this.props.location.state.uid;
         this.type = this.props.location.state.type;
@@ -121,6 +124,22 @@ class VideoCall extends React.Component {
         };
         this.confirmation = this.confirmation.bind(this);
         this.TypeLogic();
+
+
+        //Example props
+
+    this.state = {
+      error: null,
+      connected: false
+    };
+    this.sessionEvents = {
+      sessionConnected: () => {
+        this.setState({ connected: true });
+      },
+      sessionDisconnected: () => {
+        this.setState({ connected: false });
+      }
+    };
 
        
 
@@ -554,34 +573,25 @@ class VideoCall extends React.Component {
        }
    </div>
    <div style={styles.fullView}>
-       <OTSession
-           apiKey={this.apiKey}
-           sessionId={this.sessionId}
-           token={this.token}
-           eventHandlers={this.sessionEventHandlers}>
-           <div style={styles.publisherStyle}>
-               {this.renderLoading()
-               }
-               <OTPublisher
-                   properties={this.publisherProperties}
-                   eventHandlers={this.publisherEventHandlers}
-                   style={styles.publisher}
-               />
-               <div style={styles.borderPublisher}></div>
-           </div>
-           <div style={styles.subscriberContainer} >
-               {/* <OTSubscriber style={[styles.subscriber, this.state.sharedScreen && styles.sharedScreen]}
-                   eventHandlers={this.subscriberEventHandlers}
-                   streamProperties={this.state.streamProperties}
-                   properties={{ fitMode: "cover", insertMode: 'append' }}
-               >
-               </OTSubscriber> */}
-               {this.renderLoading()}
-               <OTSubscriber>
-                   {this.renderSubscribers}
-               </OTSubscriber>
-           </div>
-       </OTSession>
+   <OTSession
+        apiKey={this.apiKey}
+        sessionId={this.sessionId}
+        token={this.token}
+        eventHandlers={this.sessionEvents}
+        onError={this.onError}
+        >
+
+        {this.state.error ? <div id="error">{this.state.error}</div> : null}
+
+        <ConnectionStatus connected={this.state.connected} />
+
+        <Publisher />
+
+        <OTStreams>
+          <Subscriber />
+        </OTStreams>
+
+      </OTSession>
    </div>
    
            
