@@ -31,7 +31,7 @@ const RedirectContainer = ({ resolution }) => {
 
     const userStateQuery = useFirestore().doc('userState/' + "4j70DGXhFDNnyAwe7IHGbSUaln23");
     const [userState] = useDocument(userStateQuery);
-    
+    console.log("ContactoAsesor useEfffect userState: ",userState);
 
     let history = useHistory();
 
