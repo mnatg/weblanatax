@@ -1,0 +1,20 @@
+.fullView{
+    display                : grid;
+    grid-template-columns  : repeat(2,auto);
+    grid-gap               : 10px;
+    grid-auto-rows         : minmax(100px, auto);
+    width                  : 90%;
+    margin                 : 5% auto;
+    padding                : 5%;
+}
+
+.publisher{
+width: 20%;
+height: 50%;
+
+}
+
+.suscriber{
+    width: 70%;
+    height: 50%;
+}

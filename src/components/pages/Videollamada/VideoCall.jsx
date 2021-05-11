@@ -37,7 +37,9 @@ import CreateLobbyService from '../../../Services/Lobby/CreateLobby';
 import GetEmployeeService from '../../../Services/Adviser/GetAdviser';
 import CloseTalkSessionService from '../../../Services/TalkSession/CloseTalkSession';
 
+
 // Styles
+import '../../../assets/styles/General/videoCall.scss';
 
 /*
 import {
@@ -561,7 +563,7 @@ class VideoCall extends React.Component {
         );
     };
 
-
+//Recepcionista es el suscriber, usuario es publisher
     videoViewTest = () => {
         return (
             <>
@@ -572,31 +574,42 @@ class VideoCall extends React.Component {
                <RedirectComponent  resolution={this.resolution} /> : null
        }
    </div>
-   <div>
-   <OTSession
-        apiKey={this.apiKey}
-        sessionId={this.sessionId}
-        token={this.token}
-        eventHandlers={this.sessionEvents}
-        onError={this.onError}
-        >
 
-        {this.state.error ? <div id="error">{this.state.error}</div> : null}
-
-        <ConnectionStatus connected={this.state.connected} />
-        <Publisher
+   
+       <OTSession
+              apiKey={this.apiKey}
+              sessionId={this.sessionId}
+              token={this.token}
+              eventHandlers={this.sessionEvents}
+              onError={this.onError}>
+ <ConnectionStatus connected={this.state.connected} />
+ <div className='fullView'>
+           <div className='publisher'>
+               {this.renderLoading()}
+              
+               <Publisher
                    properties={this.publisherProperties}
                    eventHandlers={this.publisherEventHandlers}
                    style={styles.publisher}
                />
-
-        <OTStreams>
-       
+        
+           </div>
+           <div className='suscriber' >
+               {/* <OTSubscriber style={[styles.subscriber, this.state.sharedScreen && styles.sharedScreen]}
+                   eventHandlers={this.subscriberEventHandlers}
+                   streamProperties={this.state.streamProperties}
+                   properties={{ fitMode: "cover", insertMode: 'append' }}
+               >
+               </OTSubscriber> */}
+               {this.renderLoading()}
+               <OTStreams>
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
+           </div>
+           </div>
 
-      </OTSession>
-   </div>
+       </OTSession>
+   
    
            
 
@@ -674,8 +687,8 @@ const styles = {
         zIndex: 6
     },
     fullView: {
-        height: 1400 * 0.9,
-        width: 1400,
+        height: 1200 * 0.9,
+        width: 1200,
         position: 'absolute',
         backgroundColor: 'black'
     },
@@ -687,11 +700,11 @@ const styles = {
         textAlign: 'right',
     },
     publisherStyle: {
-        width: 1400 * 0.30,
-        height: MetricsSizes.maxLarge * 3.6,
+        width: 1200,
+        height: 1200,
         position: 'absolute',
         bottom: '18%',
-        left: MetricsSizesW.tinyW,
+        left: 0,
         zIndex: 20
     },
     mainSubscriberStyle: {

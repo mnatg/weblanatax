@@ -26,11 +26,11 @@ import { useFirestore } from 'reactfire';
 
 function ContactoAsesor(props) {
 
-  const name = props.name;
+  /*const name = props.name;
   const apellido = props.apellido;
 
   console.log("nombre: ", name);
-  console.log("apellido: ", apellido);
+  console.log("apellido: ", apellido);*/
 
 
 

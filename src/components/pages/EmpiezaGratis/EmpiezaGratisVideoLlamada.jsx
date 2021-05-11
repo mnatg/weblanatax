@@ -8,15 +8,15 @@ import { useHistory, useParams } from 'react-router-dom'
 
 function EmpiezaGratisVideollamada(props) {
   
-  let { name } = useParams();
+  /*let { name } = useParams();
   let { apellido } = useParams();
 
   
   console.log("name: ",name)
-  console.log("apellido: ",apellido)
+  console.log("apellido: ",apellido)*/
   return (
     <>
-      <ContactoAsesor name={name} apellido={apellido}/>
+      <ContactoAsesor/>
       <Footer />
     </>
   );

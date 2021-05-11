@@ -42,7 +42,7 @@ function AppRouter() {
           <Route path='/sign-in' component={SignIn} />
           <Route path='/quienes-somos' component={QuienesSomos} />
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
-          <Route path='/empieza-gratis-videollamada/:name/:apellido'  component={EmpiezaGratisVideollamada} />
+          <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
 
           <Route exact path="/video-call" render={props => <VideoCall {...props} /> } />
         </Switch>
