@@ -572,7 +572,7 @@ class VideoCall extends React.Component {
                <RedirectComponent  resolution={this.resolution} /> : null
        }
    </div>
-   <div style={styles.fullView}>
+   <div>
    <OTSession
         apiKey={this.apiKey}
         sessionId={this.sessionId}
@@ -584,11 +584,15 @@ class VideoCall extends React.Component {
         {this.state.error ? <div id="error">{this.state.error}</div> : null}
 
         <ConnectionStatus connected={this.state.connected} />
-
-        <Publisher />
+        <Publisher
+                   properties={this.publisherProperties}
+                   eventHandlers={this.publisherEventHandlers}
+                   style={styles.publisher}
+               />
 
         <OTStreams>
-          <Subscriber />
+       
+        <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
 
       </OTSession>
