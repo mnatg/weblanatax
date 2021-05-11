@@ -1,4 +1,4 @@
-import { Config } from '@/Config'
+import { Config } from '../../Config/config'
 import axios from 'axios'
 
 export default (sessionId) => {

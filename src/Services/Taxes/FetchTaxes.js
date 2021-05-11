@@ -1,5 +1,5 @@
-import api, { handleError } from '@/Services'
-import { Config } from '@/Config'
+import api, { handleError } from '../../Services/index'
+import { Config } from '../../Config/config'
 
 export default async () => {
   try {

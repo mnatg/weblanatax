@@ -21,6 +21,9 @@ import firebase from 'firebase/app';
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { useFirestore } from 'reactfire';
 
+
+
+
 function ContactoAsesor(props) {
 
   const name = props.name;
@@ -41,11 +44,41 @@ function ContactoAsesor(props) {
 
   let history = useHistory();
 
+
+
+  const getResolution = async () =>{
+
+    return "1920x1080";
+
+}
+
   const handleContacWithUs = async () => {
+
+    console.log("handleContactWithUs: talk sessions: ",talkSessions.length);
+
+   /*
+    history.push({
+      pathname:'/video-call',
+      search: '',
+      state:{
+
+        sessionId: "first_session.sessionid",
+        token: "first_session.usertoken",
+        uid: user.uid,
+        type: 'reception',
+        employee: "talkSession.receptionist" }
+  });
+*/
+ 
+
+
+  
     if (talkSessions.length > 0) {
+    
+
       setLoading(true);
       setOffRedirect(true);
-
+      let resolution = await getResolution();
       for (let talkSession of talkSessions) {
         let first_session = await GetTalkSessionsService(talkSession.receptionist);
         let message = {
@@ -53,29 +86,40 @@ function ContactoAsesor(props) {
           content: "Revisa tú lobby.",
           to: talkSession.receptionist
         }
-        SendNotification(message);
+       /*SendNotification(message);
         const firestore = firebase.firestore();
         firestore.collection('TalkSession').doc(first_session.sessionid).update({
           avaliable: false
-        });
+        });*/
 
-        history.push('videoLlamada',
-          {
+        console.log("handleContactWithUs: messageNotification: ",message);
+        console.log("handleContactWithUs: sessionId: ",first_session.sessionid);
+        console.log("handleContactWithUs: token: ",first_session.usertoken);
+        console.log("handleContactWithUs: uid: ",user.uid);
+        console.log("handleContactWithUs: talk sessions: ",user.uid);
+        console.log("handleContactWithUs: employee: ", talkSession.receptionist);
+
+        history.push({
+          pathname:'/video-call',
+          search: '',
+          state:{
             sessionId: first_session.sessionid,
             token: first_session.usertoken,
             uid: user.uid,
             type: 'reception',
-            employee: talkSession.receptionist
-          }
-        );
+            employee: talkSession.receptionist,
+            resolution: resolution}
+      });
         break;
       }
+
     } else {
       Toast("En este momento ninguno de nuestros recepcionistas esta disponible por favor intente nuevamente mas tarde", "error")
     }
   }
 
   return (
+    <>
     <div className='Rectangle-quiene'>
       <Grid className="ContainerGrid">
         <div className="GridLeft">
@@ -87,9 +131,9 @@ function ContactoAsesor(props) {
           <br></br>
           Disponibles todo el año<br></br>¡Comencemos!</p>
           <br></br>
-          <Link to={{ pathname: '/empieza-gratis-videollamada/7' }}>
+         
             <img onClick={handleContacWithUs} className="btn-start" src={callBtn} alt="callBtn" />
-          </Link>
+          
         </div>
 
       </Grid>
@@ -103,13 +147,14 @@ function ContactoAsesor(props) {
           <br></br>
           Disponibles todo el año<br></br>¡Comencemos!</p>
           <br></br>
-          <Link to={{ pathname: '/empieza-gratis-videollamada/7' }}>
+          
             <img onClick={handleContacWithUs} className="btn-start" src={callBtn} alt="callBtn" />
-          </Link>
+         
         </div>
 
       </Grid>
     </div>
+    </>
   );
 }
 

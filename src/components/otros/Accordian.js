@@ -27,7 +27,8 @@ export default class Accordian extends Component {
             planImageE: props.planImageE,
             expanded: false,
         }
-        if (Platform.OS === 'android') {
+        //if (Platform.OS === 'android') {
+            if (true) {
             UIManager.setLayoutAnimationEnabledExperimental(true);
         }
     }
