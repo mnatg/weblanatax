@@ -4,12 +4,26 @@ import imageOne from '../../../assets/images/Home/sectionC/NoticeOne/image.png'
 import imageTwo from '../../../assets/images/Home/sectionC/NoticeTwo/image.png'
 import imageThree from '../../../assets/images/Home/sectionC/NoticeThree/image.png'
 import { Link } from 'react-router-dom';
-import { Grid } from '@material-ui/core';
-import Carousel from 'react-elastic-carousel'
-import Item from 'react-elastic-carousel'
-import { render } from '@testing-library/react';
+import CarouselDeprecate  from 'react-elastic-carousel'
+import Carousel from 'react-multi-carousel';
 
 function sectionC() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 960 },
+      items: 3,
+      slidesToSlide: 3
+    },
+    tablet: {
+      breakpoint: { max: 960, min: 600 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 600, min: 0 },
+      items: 1,
+    }
+  };
+
   const items = [
     {
       id: 1, boddy: <Link to='/' > <img src={imageOne} className="image-carousel" alt="imageOne" /></Link>,
@@ -33,13 +47,17 @@ function sectionC() {
         <h1 className='Millones-nos-Respald'>Millones nos Respaldan</h1>
         <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>
       </div>
-      <Carousel itemsToShow={3} className="carrusel">
+      <CarouselDeprecate  itemsToShow={3} className="carrusel">
         {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
-      </Carousel>
-      <Carousel itemsToShow={2} className="carruselTablet">
+      </CarouselDeprecate >
+      <CarouselDeprecate  itemsToShow={2} className="carruselTablet">
         {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
-      </Carousel>
-      <Carousel itemsToShow={1} className="carruselMovil">
+      </CarouselDeprecate >
+      <CarouselDeprecate  itemsToShow={1} className="carruselMovil">
+        {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
+      </CarouselDeprecate >
+
+      <Carousel className='carousel' arrows={false} showDots={true} responsive={responsive} >
         {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
       </Carousel>
     </div>
