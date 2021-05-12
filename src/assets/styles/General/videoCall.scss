@@ -2,6 +2,7 @@
 @import './variables.scss';
 @import './fonts.scss';
 
+
 body {
     overflow: hidden;
 }
@@ -37,11 +38,74 @@ body {
     width: 60%;
 }
 
+.image-background-video{
+    background             : url("../../images/Common/callBottom.png");
+
+    height: 400;
+        width: '100%';
+        position: 'absolute';
+        bottom: 0;
+        left: 0;
+        justify-Content: 'center';
+        align-Content: 'center';
+    
+    
+}
+
+.iconStyle-video {
+    font-size: 10;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: '2%';
+    margin-left: '5%';
+    background-color: 'transparent';
+    /* borderRadius: 50 */
+}
+
+.finishBtn-video {
+    font-Size: 10;
+    margin-right: '5%';
+    margin-left: '5%';
+    width: 1400 * 1.5;
+    height: 1400 * 1.5;
+    align-items: 'center';
+    justify-content: 'center';
+    border-radius: 50;
+    background-color: red;
+    color: 'white';
+    z-Index: 6;
+}
+
+.space-video {
+    font-Size: 10;
+    margin-right: '5%';
+    margin-left: '5%';
+}
+
+.employeeInfo-video {
+    position: 'absolute';
+    bottom: '25%';
+    left: '5%';
+}
+
+.employeeName {
+    color: 'white';
+    font-Weight: 'bold';
+    font-Size: 10;
+}
+
+.employeeCharge {
+    font-family: 'Roboto';
+    font-size: 10;
+    font-Weight: '500';
+    color: 'white';
+}
 .video-container {
     width           : 100%;
     height          : 39em;
     background-color: $green;
-    margin          : 1em;
+    margin          : auto;
+    margin-bottom: 5%;
     border-radius   : 20px;
 
     .subcriber {
@@ -57,7 +121,7 @@ body {
     }
 
     .subcriber div:first-child {
-        height: 100%;
+        //height: 100%;
     }
 
     .publisher {
@@ -76,7 +140,7 @@ body {
         }
         .Screentrue{
             width: 100%;
-            height: 100%;
+            //height: 100%;
         }
         .OT_widget-container {
             width : 23em !important;
@@ -85,7 +149,7 @@ body {
     }
 
     .publisher div:first-child {
-        height: 100%;
+        //height: 100%;
     }
 
     .buttons {

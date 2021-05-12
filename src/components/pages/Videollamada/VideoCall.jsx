@@ -1,5 +1,6 @@
 //React
 import React, { Component, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import {
     StyleSheet,
     View,
@@ -127,6 +128,7 @@ class VideoCall extends React.Component {
         this.confirmation = this.confirmation.bind(this);
         this.TypeLogic();
 
+      
 
         //Example props
 
@@ -324,7 +326,9 @@ class VideoCall extends React.Component {
         
     }
 
- 
+    chatRoom =() => {
+        //history.push('ChatRoom', { adviserId: this.employeeId })} disabled={this.employeeId == undefined};
+    }
 
     async  TypeLogic() {
         if (this.type == 'reception') {
@@ -494,7 +498,6 @@ class VideoCall extends React.Component {
        </OTSession>
    </div>
 
-
    <ImageBackground source={Images.callBottom} style={[styles.buttonView]}>
        <TouchableOpacity style={styles.iconStyle} onPress={this.toggleAudio}>
            <ThreeDRotation
@@ -556,6 +559,9 @@ class VideoCall extends React.Component {
 
    </ImageBackground>
 
+
+
+
             </>
         );
     };
@@ -591,6 +597,8 @@ class VideoCall extends React.Component {
         </OTStreams>
        </OTSession>
        </div>
+
+      
    
            
 
