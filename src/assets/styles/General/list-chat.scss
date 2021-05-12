@@ -1,0 +1,138 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+.list-chat {
+    padding: 0.5%;
+    width  : 100%;
+
+    span {
+        font-family: $AvenirN-M;
+    }
+
+    .photo {
+        width: 2em;
+    }
+
+    .MuiTab-wrapper {
+        font-family: $AvenirN-D;
+
+    }
+
+    .header {
+        color           : black;
+        background-color: $greyc;
+        border-radius   : 9px;
+        padding         : 0.5em 0.5em 0.5em 0.5em;
+        font-size       : 0.6em;
+        position        : inherit;
+        align-items     : center;
+    }
+    .no-center {
+        align-items: inherit;
+    }
+
+    .MuiTabs-indicator {
+        display: none;
+    }
+
+    .chat-page {
+        width       : 55%;
+        margin-right: 1%;
+
+        .chat {
+            border-radius: 0.5em !important;
+            margin-left  : 5%;
+        }
+    }
+
+    .chat-page-chat {
+        width       : 55%;
+        margin-right: 1%;
+        margin-top  : 0.3em;
+
+        .chat-title {
+            width        : 95%;
+            margin-left  : 5%;
+            border-radius: 0.5em 0.5em 0em 0em;
+            margin-bottom: -1em;
+        }
+
+        .chat {
+            border-radius: 0.5em !important;
+            margin-left  : 5%;
+        }
+    }
+
+    .list {
+        margin-left     : 1%;
+        border          : #d4d4d6 1px solid;
+        width           : 40%;
+        background-color: $whitent;
+        border-radius   : 0.5em;
+        margin-top      : 0.3em;
+        .option {
+            color           : white;
+            background-color: $green;
+            border-radius   : 15px;
+
+        }
+        .options {
+            width: 50%;
+        }
+        .list-employees {
+            border-bottom: $grey solid 1px;
+        }
+    }
+}
+
+/******************** Responsive css (chat) ****************************/
+@media screen and (min-height: 1537px) {
+    .list-chat {
+        .chat-page .chat-height, .chat-page-chat .chat-height {
+            height: 108.5em;
+            .chat {
+                .chat-text {
+                    height  : 97%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-height: 1200px) and (max-height: 1536px) {
+    .list-chat {
+        .chat-page .chat-height, .chat-page-chat .chat-height {
+            height: 81.5em;
+            .chat {
+                .chat-text {
+                    height  : 96%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-height: 1024px) and (max-height: 1199px) {
+    .list-chat {
+        .chat-page .chat-height, .chat-page-chat .chat-height {
+            height: 69.5em;
+            .chat {
+                .chat-text {
+                    height  : 95%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-height: 900px) and (max-height: 1023px) {
+    .list-chat {
+        .chat-page .chat-height, .chat-page-chat .chat-height {
+            height: 58.5em;
+        }
+    }
+}
+@media screen and (min-height: 800px) and (max-height: 899px) {
+    .list-chat {
+        .chat-page .chat-height, .chat-page-chat .chat-height {
+            height: 53.5em;
+        }
+    }
+}

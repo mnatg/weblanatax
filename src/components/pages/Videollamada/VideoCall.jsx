@@ -579,30 +579,16 @@ class VideoCall extends React.Component {
               token={this.token}
               eventHandlers={this.sessionEvents}
               onError={this.onError}>
- <ConnectionStatus connected={this.state.connected} />
- <div className='fullView'>
-
-           <div className='publisher'>
-               {this.renderLoading()}
-              
+               {this.renderLoading()}   
                <Publisher
                    properties={this.publisherProperties}
                    eventHandlers={this.publisherEventHandlers}
                    style={styles.publisher}
                />
-        
-           </div>
-
-           <div className='suscriber' >
                {this.renderLoading()}
                <OTStreams>
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
-           </div>
-
-
-</div>
-
        </OTSession>
        </div>
    

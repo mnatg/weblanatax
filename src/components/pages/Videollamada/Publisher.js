@@ -6,6 +6,8 @@ import Timer from './Timer';
 
 import { IconButton, Tooltip } from '@material-ui/core';
 
+import '../../../assets/styles/General/videoCall.scss';
+
 //Icons
 import {
     MicNoneOutlined,

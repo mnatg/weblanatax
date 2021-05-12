@@ -1,0 +1,95 @@
+@import './colors.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.side-menu-parent {
+    .open {
+        button {
+            padding-right: 0;
+        }
+
+        span,
+        svg {
+            margin-right: 0 !important;
+        }
+
+        svg {
+            margin-top: -2.1em;
+        }
+    }
+
+    .MuiDrawer-paper {
+        border-right: none !important;
+        overflow-x  : hidden;
+    }
+
+    .active {
+
+        background-color: $white !important;
+
+        svg,
+        span {
+            color: $green;
+        }
+    }
+
+    .user-data {
+        padding-top: $min-space;
+
+        img {
+            max-width : 3.4375em;
+            max-height: 3.4375em;
+        }
+
+        label {
+            margin-left: 0.6em;
+
+            span {
+                font-size: 0.875em;
+            }
+        }
+
+        .MuiTypography-body1 {
+            color      : $green;
+            font-family: $AvenirN-M;
+        }
+
+        #userData {
+            padding-left: $min-space;
+            max-width   : 7.5em;
+            margin-right: -1em;
+
+            p {
+                margin-bottom: $min-space;
+                color        : $green;
+                font-size    : 1em;
+            }
+
+            ;
+
+            span {
+                margin   : 0;
+                color    : $grey-dark;
+                opacity  : $low-opacity;
+                font-size: 0.875em;
+            }
+        }
+    }
+}
+
+.slide-items-parent {
+    padding-top: 0 !important;
+    svg,
+    span {
+        color       : $whitent;
+        font-family : $AvenirN-M;
+        margin-right: 0.2em;
+    }
+    .green {
+        color: $green;
+    }
+}
+
+.slide-items-parent:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
