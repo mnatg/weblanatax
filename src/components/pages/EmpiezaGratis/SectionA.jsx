@@ -3,7 +3,7 @@ import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/QuienesSomos/QuienesSomos.scss'
 import imagenA from '../../../assets/images/EmpiezaGratis/plan1.png'
 import imagenAp from '../../../assets/images/EmpiezaGratis/plan1E.png'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Grid, Paper } from '@material-ui/core';
 
 import '../../../assets/styles/Home/Home.scss'
@@ -12,6 +12,8 @@ import initbutton from '../../../assets/images/EmpiezaGratis/button_empieza-ya-e
 import { useFirebaseApp, useUser } from 'reactfire';
 import SignIn from '../../../components/pages/SignIn/SignIn';
 import Toast from '../../../utils/Toast';
+
+
 
 
 function SectionA() {
@@ -27,6 +29,8 @@ function SectionA() {
   var user = useUser();
   var email = "";
 
+  let history = useHistory();
+
   const messageToast = async (mensaje) => {
    
       Toast(mensaje,"error")
@@ -39,16 +43,18 @@ function SectionA() {
   if(user.data == null){
     console.log("usuario no está definido");
     //messageToast("Registrate y/o Ingresa antes de comenzar")
+    history.push('/sign-in');
   } else {
     console.log("usuario está definido",user);
     email = user.data.email;
     //console.log("usuario está definido",user.data.email);
     autenticacion = true;
+  
   }
 
 
 
-  if(autenticacion){
+ 
   return (
 
 
@@ -60,7 +66,7 @@ function SectionA() {
 </p>
 {!click && <div className='empezar-gratis-videollamada'>
   
-        <Link to='/empieza-gratis-videollamada/:Edna/:Ortega' >
+        <Link to='/empieza-gratis-videollamada/' >
           <img className="btn-start" src={initbutton} alt="initbutton"/>
         </Link>
 
@@ -93,21 +99,7 @@ function SectionA() {
     
     
     );
-  }
-  else{
-    
-    return (
-      <div>
-
-
-      <SignIn></SignIn>
-
-      </div>
-
-    );
-  }
-
-
+  
 
 }
 

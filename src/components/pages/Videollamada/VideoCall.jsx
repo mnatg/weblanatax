@@ -386,10 +386,6 @@ class VideoCall extends React.Component {
     
      componentDidMount() {
        // this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => this.confirmation(this.type));
-       const script = document.createElement("script");
-       script.src = "https://static.opentok.com/v2/js/opentok.min.js";
-       script.async = true;
-       document.body.appendChild(script);
     }
      componentWillUnmount() {
        // this.backHandler.remove();
@@ -576,7 +572,7 @@ class VideoCall extends React.Component {
        }
    </div>
 
-   
+   <div className="video-container">
        <OTSession
               apiKey={this.apiKey}
               sessionId={this.sessionId}
@@ -585,6 +581,7 @@ class VideoCall extends React.Component {
               onError={this.onError}>
  <ConnectionStatus connected={this.state.connected} />
  <div className='fullView'>
+
            <div className='publisher'>
                {this.renderLoading()}
               
@@ -595,22 +592,19 @@ class VideoCall extends React.Component {
                />
         
            </div>
+
            <div className='suscriber' >
-               {/* <OTSubscriber style={[styles.subscriber, this.state.sharedScreen && styles.sharedScreen]}
-                   eventHandlers={this.subscriberEventHandlers}
-                   streamProperties={this.state.streamProperties}
-                   properties={{ fitMode: "cover", insertMode: 'append' }}
-               >
-               </OTSubscriber> */}
                {this.renderLoading()}
                <OTStreams>
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
            </div>
-           </div>
+
+
+</div>
 
        </OTSession>
-   
+       </div>
    
            
 

@@ -9,7 +9,7 @@ import {
   Toolbar,
   IconButton
 } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Button } from './Button';
 import { ButtonSignUp } from './ButtonSignUp';
 import { ButtonSignOut } from './ButtonSignOut';
@@ -54,14 +54,21 @@ const Navbar = ({ user }) => {
   var user = useUser();
   var email = "";
 
+  let history = useHistory();
+
   if(user.data == null){
     console.log("usuario no está definido NavBar");
+    
   } else {
     console.log("usuario está definido NavBar",user);
     email = user.data.email;
     //console.log("usuario está definido",user.data.email);
     autenticacion = true;
   }
+
+  setTimeout(() => {
+    // //setLoading(false)
+   }, 5000);
 
   const signOut = async () => {
     console.log("hola sign out");

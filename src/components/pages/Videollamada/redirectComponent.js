@@ -19,6 +19,7 @@ import { onAddTaxes } from '../../../Store/actions/Taxes'
 
 //Navigation
 import { Link, useHistory } from 'react-router-dom';
+import { Navigation } from '@material-ui/icons';
 
 
 const RedirectContainer = ({ resolution }) => {

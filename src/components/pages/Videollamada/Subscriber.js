@@ -1,9 +1,11 @@
-import React from 'react';
 
-import { OTSubscriber } from 'opentok-react';
-import CheckBox from './CheckBox';
+//React
+import React, { Component } from 'react';
 
-class Subscriber extends React.Component {
+//Frameworks
+import { OTSubscriber } from 'opentok-react'
+
+export default class Subscriber extends Component {
   constructor(props) {
     super(props);
 
@@ -14,12 +16,12 @@ class Subscriber extends React.Component {
     };
   }
 
-  setAudio = (audio) => {
-    this.setState({ audio });
+  setAudio = () => {
+    this.setState({ audio: !this.state.audio });
   }
 
-  setVideo = (video) => {
-    this.setState({ video });
+  setVideo = () => {
+    this.setState({ video: !this.state.video });
   }
 
   onError = (err) => {
@@ -28,33 +30,22 @@ class Subscriber extends React.Component {
 
   render() {
     return (
-      <div className="subscriber">
-        Subscriber
-
-        {this.state.error ? <div id="error">{this.state.error}</div> : null}
-
+      <div className="subcriber">
+        {this.state.error ? <div>{this.state.error}</div> : null}
         <OTSubscriber
           properties={{
             subscribeToAudio: this.state.audio,
-            subscribeToVideo: this.state.video
+            subscribeToVideo: this.state.video,
+            fitMode: "contain"
           }}
+          properties={{ insertMode: "append", width: '100%', height: '100%' }}
           onError={this.onError}
+          retry={true}
+          maxRetryAttempts={3}
+          retryAttemptTimeout={2000}
         />
-
-        <CheckBox
-          label="Subscribe to Audio"
-          initialChecked={this.state.audio}
-          onChange={this.setAudio}
-        />
-
-        <CheckBox
-          label="Subscribe to Video"
-          initialChecked={this.state.video}
-          onChange={this.setVideo}
-        />
-        
       </div>
+      
     );
   }
 }
-export default Subscriber;

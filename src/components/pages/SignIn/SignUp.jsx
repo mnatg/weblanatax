@@ -25,6 +25,8 @@ import { useDispatch } from 'react-redux'
 import { onSignUp } from '../../../Store/actions/Auth'
 import { Home } from '@material-ui/icons';
 
+import LoadingEmotic from '../../loading/loadingEmotic';
+import { Link, useHistory } from 'react-router-dom';
 
 //---------- data de usuario
 export const homeObjOne = {
@@ -53,7 +55,20 @@ const SignUp = () => {
     const provider = new firebaseG.auth.GoogleAuthProvider();
     var user = useUser();
     var autenticacion = false;
+    const [loading, setLoading] = useState(false);
+    let history = useHistory();
+  
 
+
+    if(user.data == null){
+      console.log("usuario no está definido SIgnIn");
+    } else {
+      console.log("usuario está definido SIgnIn",user);
+      //console.log("usuario está definido",user.data.email);
+     Toast("Ingreso exitoso, Empieza Gratis","success")
+      autenticacion = true;
+      history.push('/empieza-gratis');
+    }
     const validation = async () => {
         if (email.length === 0 || password.length === 0) {
             return Toast('Todos los campos son requeridos.', "error");
@@ -68,14 +83,14 @@ const SignUp = () => {
 
     // Registro de usuario
     const handleForm = async () => {
-        //setLoading(true);
+        setLoading(true);
         if (email == '' || password == '' || fullName == '') {
           Toast("Todos los campos son requridos","error");
-          //setLoading(false);
+          setLoading(false);
           return
         } else if ( password.length < 6 ) {
           Toast("La contraseña debe tener 6 caracteres minimo","error");
-          //setLoading(false);
+          setLoading(false);
           return
         }
         try {
@@ -85,11 +100,13 @@ const SignUp = () => {
             fullName: fullName
           }));
           setTimeout(() => {
-            //setLoading(false)
+            setLoading(false)
           }, 5000);
+
+         
         
         } catch (error) {
-          //setLoading(false);
+          setLoading(false);
         }
       }
 
@@ -115,14 +132,14 @@ const SignUp = () => {
    
 
     console.log("hola sign in");
-    {user.data?console.log("usuario: "+user.data):console.log("no hay usuario")}
+    {user.data? console.log("usuario: "+user.data):console.log("no hay usuario")}
 
 
 
-   if(!autenticacion){
+   
     return (
         <div className='signin-background'>
-
+            {loading && <LoadingEmotic></LoadingEmotic>} 
             <Grid container direction="column" justify="center" alignItems="center" className="sign-in-parent" >
                 <div className="imgs">
                     <img className="logo-lana" src={logoLana} alt="LANA TAX logo"/>
@@ -143,12 +160,8 @@ const SignUp = () => {
             </Grid>
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
         </div>
-    )}
-    else{
-      return(
-        <HomeP></HomeP>
-      )
-    }
+    )
+    
 
 }
 

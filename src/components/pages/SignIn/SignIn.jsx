@@ -1,6 +1,6 @@
 // React
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 // Components
 import { Grid } from '@material-ui/core';
 import Toast from '../../../utils/Toast';
@@ -60,11 +60,21 @@ const SignIn = () => {
 
     var autenticacion = false;
     var user = useUser();
+
+    let history = useHistory();
   
 
 
 
-
+    if(user.data == null){
+      console.log("usuario no está definido");
+    } else {
+      console.log("usuario está definido",user);
+      //console.log("usuario está definido",user.data.email);
+     Toast("Ingreso exitoso, Empieza Gratis","success")
+      autenticacion = true;
+      history.push('/empieza-gratis');
+    }
 
     const validation = async () => {
       
@@ -96,29 +106,21 @@ const SignIn = () => {
                 strategy: "email"
               }));
               setTimeout(() => {
-                
               setLoadingB(false);
               }, 5000);
 
 
-              if(user.data == null){
-                console.log("usuario no está definido");
-              } else {
-                console.log("usuario está definido",user);
-                //console.log("usuario está definido",user.data.email);
-               Toast("Ingreso exitoso, Empieza Gratis","success")
-                autenticacion = true;
-              }
+             
               
              
             } catch (error) {
-              //setLoading(false)
+              setLoadingB(false)
               
               return Toast(error,"error")
             }
           } else {
            return Toast("Ingrese un correo en un formato valido","error")
-            //setLoading(false);
+            setLoadingB(false);
           }
         }
        
@@ -146,7 +148,7 @@ const SignIn = () => {
   
   
     
-    if(!autenticacion){
+   
      
     return (
       
@@ -173,18 +175,14 @@ const SignIn = () => {
             <PopUpForgot open={open}  onClose={handleClose} title='Recuperar Contraseña'  />
              
         </div>
-    )}
-    else{
-// 
-      return(
-        <div>
-   
-      <Home></Home>
-        </div>
-      )
-    }
+    )
+  
+  
+  }
 
-}
+
+
+
 
 
 export default SignIn;
