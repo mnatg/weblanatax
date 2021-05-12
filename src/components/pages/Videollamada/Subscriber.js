@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 //Frameworks
 import { OTSubscriber } from 'opentok-react'
 
+import '../../../assets/styles/General/videoCall.scss';
+
 export default class Subscriber extends Component {
   constructor(props) {
     super(props);

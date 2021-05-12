@@ -596,11 +596,7 @@ class VideoCall extends React.Component {
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
        </OTSession>
-       </div>
-
-      
-   
-           
+       </div>        
 
             </>
         );
