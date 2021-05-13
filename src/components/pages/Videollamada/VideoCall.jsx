@@ -65,7 +65,10 @@ import {
 } from '../../../Theme';
 
 //Se reeemplazo Icon de rect native
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
+import {ThreeDRotation,Chat,VolumeMute,Call,CallEnd,Videocam,VolumeOff,VolumeUp,
+VideocamOff} from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
+
 import { useLocation } from "react-router-dom";
 
 const mainSubscribersResolution = { width: 1400 * 25.6, height: 720 };
@@ -529,7 +532,7 @@ class VideoCall extends React.Component {
        }
 
        {
-           this.employee && (this.state.subscriberIds.length >= 1) ?
+           (true) ?
                <div style={styles.employeeInfo}>
                    <Text style={styles.employeeName}>
                        {this.employee.fullname}
@@ -556,6 +559,7 @@ class VideoCall extends React.Component {
     };
 
 //Recepcionista es el suscriber, usuario es publisher
+//Chat,VolumeMute,Call,CallEnd,Videocam
     videoViewTest = () => {
         return (
             <>
@@ -588,42 +592,37 @@ class VideoCall extends React.Component {
        </div>       
 
        <div className='image-background-video'>
-       <button className="iconStyle-video" onClick={this.toggleAudio}>
-           <ThreeDRotation
-               color="white"
-               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
-       </button>
+       <Button className="iconStyle-video" onClick={this.toggleAudio}>
+       {this.state.localPublishAudio?<VolumeOff/>:<VolumeUp/>}
+       </Button>
        <div className='space-video'></div>
        {
            (this.type == 'consultancy') ?
-               <button className='finishBtn-video' onClick={this.endCall}>
-                   <ThreeDRotation
+               <Button className='finishBtn-video' onClick={this.endCall}>
+                   <CallEnd
                        name='phone'
                        color="white"
                        size={MetricsSizes.large}
                    />
-               </button>
+               </Button>
                :
                null
        }
-       <button className="iconStyle-video" onClick={this.toggleVideo}>
-           <ThreeDRotation
-               color="white"
-               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
-       </button>
+       <Button className="iconStyle-video" onClick={this.toggleVideo}>
+           
+           {this.state.localPublishVideo?<Videocam />:<VideocamOff/>}
+       </Button>
        {
            (this.type == 'consultancy') ?
-               <button className="iconStyle-video" onClick={this.chatRoom}>
-                   <ThreeDRotation
+               <Button className="iconStyle-video" onClick={this.chatRoom}>
+
+                   
+                   <Chat
                        color="white"
                        name='sms'
                        size={MetricsSizes.regularMoreLarge}
                    />
-               </button>
+               </Button>
                :
                null
        }
