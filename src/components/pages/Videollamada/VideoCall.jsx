@@ -104,6 +104,7 @@ class VideoCall extends React.Component {
     constructor (props) {
         
         super(props);
+        
         console.log("parametros videoCall: ",this.props.location);
         this.apiKey = "46527582";
         this.sessionId = this.props.location.state.sessionId;
@@ -114,7 +115,6 @@ class VideoCall extends React.Component {
         this.employeeId = this.props.location.state.employee;
         this.resolution = this.props.location.state.resolution;
         this.state = {
-            loadingVideo : true,
             // subscribers: 0,
             subscriberIds: [], // Array for storing subscribers
             localPublishAudio: true, // Local Audio state
@@ -123,27 +123,15 @@ class VideoCall extends React.Component {
             streamProperties: {}, // Handle individual stream properties,
             mainSubscriberStreamId: null,
             redirectOk: false,
+            error: null,
+      connected: false
             // sharedScreen: false
         };
         this.confirmation = this.confirmation.bind(this);
         this.TypeLogic();
 
-      
+    
 
-        //Example props
-
-    this.state = {
-      error: null,
-      connected: false
-    };
-    this.sessionEvents = {
-      sessionConnected: () => {
-        this.setState({ connected: true });
-      },
-      sessionDisconnected: () => {
-        this.setState({ connected: false });
-      }
-    };
 
        
 
@@ -346,6 +334,7 @@ class VideoCall extends React.Component {
         }
         let response = await GetEmployeeService(this.employeeId);
         this.employee = response;
+        console.log("employee info: ",this.employee);
     }
 
  
@@ -596,7 +585,68 @@ class VideoCall extends React.Component {
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
        </OTSession>
-       </div>        
+       </div>       
+
+       <div className='image-background-video'>
+       <button className="iconStyle-video" onClick={this.toggleAudio}>
+           <ThreeDRotation
+               color="white"
+               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </button>
+       <div className='space-video'></div>
+       {
+           (this.type == 'consultancy') ?
+               <button className='finishBtn-video' onClick={this.endCall}>
+                   <ThreeDRotation
+                       name='phone'
+                       color="white"
+                       size={MetricsSizes.large}
+                   />
+               </button>
+               :
+               null
+       }
+       <button className="iconStyle-video" onClick={this.toggleVideo}>
+           <ThreeDRotation
+               color="white"
+               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </button>
+       {
+           (this.type == 'consultancy') ?
+               <button className="iconStyle-video" onClick={this.chatRoom}>
+                   <ThreeDRotation
+                       color="white"
+                       name='sms'
+                       size={MetricsSizes.regularMoreLarge}
+                   />
+               </button>
+               :
+               null
+       }
+
+       {
+           this.employee && (this.state.subscriberIds.length >= 1) ?
+               <div className='employeeInfo-video'>
+                   <p className='employeeName'>
+                       {this.employee.fullname}
+                   </p>
+                   <p className='employeeCharge'>
+                       {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
+                   </p>
+               </div>
+               :
+               <div className='employeeInfo-video'>
+                   <p className='employeeCharge'>
+                       Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
+                   </p>
+               </div>
+       }
+
+   </div> 
 
             </>
         );
