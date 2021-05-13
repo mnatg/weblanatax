@@ -64,6 +64,15 @@ import {
     Images
 } from '../../../Theme';
 
+import {
+    LocalPhone,
+    VolumeMute,
+    CallEnd,
+    Chat
+  } from '@material-ui/icons';
+
+  import Button from '@material-ui/core/Button';
+
 //Se reeemplazo Icon de rect native
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 import { useLocation } from "react-router-dom";
@@ -114,7 +123,7 @@ class VideoCall extends React.Component {
         this.employeeId = this.props.location.state.employee;
         this.resolution = this.props.location.state.resolution;
         this.state = {
-            loadingVideo : true,
+            
             // subscribers: 0,
             subscriberIds: [], // Array for storing subscribers
             localPublishAudio: true, // Local Audio state
@@ -123,6 +132,10 @@ class VideoCall extends React.Component {
             streamProperties: {}, // Handle individual stream properties,
             mainSubscriberStreamId: null,
             redirectOk: false,
+            error: null,
+      connected: false,
+      error: null,
+      connected: false
             // sharedScreen: false
         };
         this.confirmation = this.confirmation.bind(this);
@@ -132,18 +145,7 @@ class VideoCall extends React.Component {
 
         //Example props
 
-    this.state = {
-      error: null,
-      connected: false
-    };
-    this.sessionEvents = {
-      sessionConnected: () => {
-        this.setState({ connected: true });
-      },
-      sessionDisconnected: () => {
-        this.setState({ connected: false });
-      }
-    };
+
 
        
 
@@ -583,7 +585,7 @@ class VideoCall extends React.Component {
               apiKey={this.apiKey}
               sessionId={this.sessionId}
               token={this.token}
-              eventHandlers={this.sessionEvents}
+              eventHandlers={this.sessionEventHandlers}
               onError={this.onError}>
                {this.renderLoading()}   
                <Publisher
@@ -596,7 +598,69 @@ class VideoCall extends React.Component {
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
        </OTSession>
-       </div>        
+       </div>   
+
+       <div className='image-background-video'>
+       <Button className="iconStyle-video" onClick={this.toggleAudio}>
+           <VolumeMute
+               color="white"
+               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </Button>
+       <div className='space-video'></div>
+       {
+           (this.type == 'consultancy') ?
+               <Button className='finishBtn-video' onClick={this.endCall}>
+                   <CallEnd
+                       name='phone'
+                       color="white"
+                       size={MetricsSizes.large}
+                   />
+               </Button>
+               :
+               null
+       }
+       <Button className="iconStyle-video" onClick={this.toggleVideo}>
+           <VideoCall
+               color="white"
+               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </Button>
+       {
+           (this.type == 'consultancy') ?
+               <Button className="iconStyle-video" onClick={this.chatRoom}>
+                   <Chat
+                       color="white"
+                       name='sms'
+                       size={MetricsSizes.regularMoreLarge}
+                   />
+               </Button>
+               :
+               null
+       }
+        {
+           this.employee && (this.state.subscriberIds.length >= 1) ?
+               <div className='employeeInfo-video'>
+                   <p className='employeeName'>
+                       {this.employee.fullname}
+                   </p>
+                   <p className='employeeCharge'>
+                       {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
+                   </p>
+               </div>
+               :
+               <div className='employeeInfo-video'>
+                   <p className='employeeCharge'>
+                       Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
+                   </p>
+               </div>
+       }
+
+              
+   </div>
+     
 
             </>
         );

@@ -43,7 +43,7 @@ function AppRouter() {
           <Route path='/quienes-somos' component={QuienesSomos} />
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
           <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
-          <Route path="/video-call" component={VideoCall}  />
+          <Route path="/video-call" location={props.location} render={props => <VideoCall {...props}/> }  />
         </Switch>
       </Router>
       </FirebaseAppProvider>

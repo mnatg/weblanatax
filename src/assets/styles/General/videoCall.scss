@@ -100,6 +100,8 @@ body {
     font-Weight: '500';
     color: 'white';
 }
+
+
 .video-container {
     width           : 100%;
     height          : 39em;
@@ -147,6 +149,7 @@ body {
             height: 13em !important;
         }
     }
+    
 
     .publisher div:first-child {
         height: 100%;
@@ -154,8 +157,8 @@ body {
 
     .buttons {
         position   : relative;
-        margin-top : 16.5em;
-        margin-left: 16em;
+        margin-top : 20.5em;
+        margin-left: 40em;
         display    : -webkit-inline-box;
 
         .spaceee {
@@ -409,7 +412,7 @@ body {
             margin-top: -42.2em;
         }
         .buttons {
-            margin-left: 21em;
+            margin-left: 40em;
             .content-timer {
                 .timer {
                     bottom: 34.9em;

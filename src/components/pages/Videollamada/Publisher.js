@@ -84,7 +84,7 @@ export default class Publisher extends Component {
         const { publishScreen } = this.state;
         return (
 
-            <div className="">
+            <div >
 
                 <div className="publisher">
 
@@ -118,6 +118,7 @@ export default class Publisher extends Component {
                         null
                     }
                 </div>
+
                 <div className="buttons">
                     {!this.props.consultancy &&
                         <div className="spaceee" />
@@ -162,6 +163,9 @@ export default class Publisher extends Component {
                         <Timer />
                     </>}
                 </div>
+
+
+
             </div>
         );
     }

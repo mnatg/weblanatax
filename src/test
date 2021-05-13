@@ -1,0 +1,29 @@
+<div className='image-background-video'>
+       <button className="iconStyle-video" onClick={this.toggleAudio}>
+           <ThreeDRotation
+               color="white"
+               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </button>
+       <div className='space-video'></div>
+       {
+           (this.type == 'consultancy') ?
+               <button className='finishBtn-video' onClick={this.endCall}>
+                   <ThreeDRotation
+                       name='phone'
+                       color="white"
+                       size={MetricsSizes.large}
+                   />
+               </button>
+               :
+               null
+       }
+       <button className="iconStyle-video" onClick={this.toggleVideo}>
+           <ThreeDRotation
+               color="white"
+               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
+               size={MetricsSizes.regularMoreLarge}
+           />
+       </button>
+   </div>
