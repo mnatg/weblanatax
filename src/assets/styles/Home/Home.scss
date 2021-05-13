@@ -1,20 +1,22 @@
 @import '../General/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+
 
 * {
   margin     : 0;
-  font-family: sans-serif !important;
+  font-family: Poppins !important;
 }
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
   width                : 90%;
-  height               : 45.875em;
+  height               : 65em;
   margin-top           : 5em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  max-width            : 2048px;
+  max-width            : 1600px;
   margin-left          : auto;
   margin-right         : auto;
 
@@ -31,7 +33,7 @@
   }
 
   .no-te {
-    margin-top    : 20%;
+    margin-top    : 40%;
     font-size     : 4.0625em;
     font-weight   : bold;
     font-stretch  : normal;
@@ -64,7 +66,7 @@
   }
 
   .Ven-a {
-    font-family   : "Modeco", sans-serif;
+    font-family   : Poppins;
     font-size     : 1.125em;
     font-weight   : normal;
     font-stretch  : normal;
@@ -110,7 +112,7 @@
   margin-left          : auto;
   margin-right         : auto;
   object-fit           : contain;
-  max-width            : 2048px;
+  max-width            : 1600px;
 
   .center-services {
     align-items          : center;
@@ -164,7 +166,7 @@
     .form-container {
       width     : 90%;
       margin-top: 5em;
-      max-width : 2048px;
+      max-width : 1600px;
 
       .TUS-IMPUESTOS {
         width         : 100%;

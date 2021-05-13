@@ -1,7 +1,7 @@
 @import './colors.scss';
 @import './variables.scss';
 @import './fonts.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
 
 body {
     //overflow: hidden;
@@ -40,7 +40,6 @@ body {
 
 .image-background-video{
     background             : url("../../images/Common/callBottom.png");
-
     height: 400;
         width: '100%';
         position: 'absolute';
