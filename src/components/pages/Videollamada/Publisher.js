@@ -123,30 +123,7 @@ export default class Publisher extends Component {
                     {!this.props.consultancy &&
                         <div className="spaceee" />
                     }
-                    <IconButton onClick={this.setAudio}>
-                        {
-                            this.state.audio ?
-                                <Tooltip title="Desactivar microfono" arrow >
-                                    <MicNoneOutlined />
-                                </Tooltip>
-                                :
-                                <Tooltip title="Activar microfono" arrow >
-                                    <MicOffOutlined />
-                                </Tooltip>
-                        }
-                    </IconButton>
-                    <IconButton onClick={this.setVideo}>
-                        {
-                            this.state.video ?
-                                <Tooltip title="Desactivar cámara" arrow >
-                                    <VideocamOutlined />
-                                </Tooltip>
-                                :
-                                <Tooltip title="Activar cámara" arrow >
-                                    <VideocamOffOutlined />
-                                </Tooltip>
-                        }
-                    </IconButton>
+            
                     {this.props.consultancy && <>
                         <IconButton onClick={this.onShareScreen}>
                             {

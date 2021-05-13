@@ -64,17 +64,12 @@ import {
     Images
 } from '../../../Theme';
 
-import {
-    LocalPhone,
-    VolumeMute,
-    CallEnd,
-    Chat
-  } from '@material-ui/icons';
-
-  import Button from '@material-ui/core/Button';
 
 //Se reeemplazo Icon de rect native
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
+import {ThreeDRotation,Chat,VolumeMute,Call,CallEnd,Videocam,VolumeOff,VolumeUp,
+VideocamOff} from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
+
 import { useLocation } from "react-router-dom";
 
 const mainSubscribersResolution = { width: 1400 * 25.6, height: 720 };
@@ -113,6 +108,7 @@ class VideoCall extends React.Component {
     constructor (props) {
         
         super(props);
+        
         console.log("parametros videoCall: ",this.props.location);
         this.apiKey = "46527582";
         this.sessionId = this.props.location.state.sessionId;
@@ -123,7 +119,6 @@ class VideoCall extends React.Component {
         this.employeeId = this.props.location.state.employee;
         this.resolution = this.props.location.state.resolution;
         this.state = {
-            
             // subscribers: 0,
             subscriberIds: [], // Array for storing subscribers
             localPublishAudio: true, // Local Audio state
@@ -133,18 +128,13 @@ class VideoCall extends React.Component {
             mainSubscriberStreamId: null,
             redirectOk: false,
             error: null,
-      connected: false,
-      error: null,
       connected: false
             // sharedScreen: false
         };
         this.confirmation = this.confirmation.bind(this);
         this.TypeLogic();
 
-      
-
-        //Example props
-
+    
 
 
        
@@ -348,6 +338,7 @@ class VideoCall extends React.Component {
         }
         let response = await GetEmployeeService(this.employeeId);
         this.employee = response;
+        console.log("employee info: ",this.employee);
     }
 
  
@@ -542,7 +533,7 @@ class VideoCall extends React.Component {
        }
 
        {
-           this.employee && (this.state.subscriberIds.length >= 1) ?
+           (true) ?
                <div style={styles.employeeInfo}>
                    <Text style={styles.employeeName}>
                        {this.employee.fullname}
@@ -569,6 +560,7 @@ class VideoCall extends React.Component {
     };
 
 //Recepcionista es el suscriber, usuario es publisher
+//Chat,VolumeMute,Call,CallEnd,Videocam
     videoViewTest = () => {
         return (
             <>
@@ -598,15 +590,11 @@ class VideoCall extends React.Component {
         <Subscriber>{this.renderSubscribers}</Subscriber>
         </OTStreams>
        </OTSession>
-       </div>   
+       </div>       
 
        <div className='image-background-video'>
        <Button className="iconStyle-video" onClick={this.toggleAudio}>
-           <VolumeMute
-               color="white"
-               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
+       {this.state.localPublishAudio?<VolumeOff/>:<VolumeUp/>}
        </Button>
        <div className='space-video'></div>
        {
@@ -622,15 +610,14 @@ class VideoCall extends React.Component {
                null
        }
        <Button className="iconStyle-video" onClick={this.toggleVideo}>
-           <VideoCall
-               color="white"
-               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
+           
+           {this.state.localPublishVideo?<Videocam />:<VideocamOff/>}
        </Button>
        {
            (this.type == 'consultancy') ?
                <Button className="iconStyle-video" onClick={this.chatRoom}>
+
+                   
                    <Chat
                        color="white"
                        name='sms'
@@ -640,7 +627,8 @@ class VideoCall extends React.Component {
                :
                null
        }
-        {
+
+       {
            this.employee && (this.state.subscriberIds.length >= 1) ?
                <div className='employeeInfo-video'>
                    <p className='employeeName'>
@@ -658,9 +646,7 @@ class VideoCall extends React.Component {
                </div>
        }
 
-              
-   </div>
-     
+   </div> 
 
             </>
         );

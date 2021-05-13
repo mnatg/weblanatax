@@ -54,25 +54,8 @@ function ContactoAsesor(props) {
 
   const handleContacWithUs = async () => {
 
-    console.log("handleContactWithUs: talk sessions: ",talkSessions.length);
+    console.log("handleContactWithUs: talk sessions: ",talkSessions);
 
-   /*
-    history.push({
-      pathname:'/video-call',
-      search: '',
-      state:{
-
-        sessionId: "first_session.sessionid",
-        token: "first_session.usertoken",
-        uid: user.uid,
-        type: 'reception',
-        employee: "talkSession.receptionist" }
-  });
-*/
- 
-
-
-  
     if (talkSessions.length > 0) {
     
 
