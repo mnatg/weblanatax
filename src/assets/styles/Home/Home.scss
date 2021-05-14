@@ -490,7 +490,6 @@
   margin-top      : 2.375em;
   opacity         : 0.5;
   background-color: #008f45;
-  margin-left     : 3em;
 }
 
 .sectionFooter {
@@ -498,7 +497,6 @@
   display              : grid;
   grid-template-columns: repeat(4, auto);
   background           : #fff;
-  margin-left          : 3em;
 
   .LANA-FOOTER {
     width     : 8.375em;
@@ -889,6 +887,10 @@
   .sectionFooter {
     grid-template-columns: repeat(1, auto);
 
+    .Enlaces-rpidos {
+      width: 9em;
+    } 
+
     .LANA-FOOTER {
       margin      : 0;
       margin-block: 1em;
@@ -900,7 +902,7 @@
 
     .link-decoration {
       .About-Us {
-        width : 8em;
+        width : 9em;
         height: 0.625em;
         margin: 2.1875em 0 0.3125em 0;
       }
