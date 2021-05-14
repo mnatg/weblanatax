@@ -637,6 +637,9 @@
     max-width            : 450px;
     height               : 48.8em;
     grid-template-columns: repeat(1, auto);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 
     .GridLeft {
       display: none;
@@ -667,6 +670,7 @@
       margin-inline : auto;
       width         : 60%;
       letter-spacing: 0.5px;
+      font-size: 1.15em;
     }
 
     .Ven-a {
