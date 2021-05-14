@@ -1,3 +1,12 @@
+@import '../index.css';
+
+
+* {
+  margin     : 0;
+  font-family: 'Poppins';
+}
+
+
 .navbar {
   background: #fff !important;
   height: 5em;
@@ -38,9 +47,9 @@
           justify-items: left;
           align-items: center;
           text-decoration: none;
-          font-family: 'Poppins', sans-serif !important;
+          font-family: 'Poppins' !important;
           font-size: 0.875em;
-          font-weight: normal;
+          font-weight: 600;
           font-stretch: normal;
           font-style: normal;
           line-height: 2;
@@ -74,9 +83,9 @@
   color: #000;
   align-items: center;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins' !important;
   font-size: 0.875em;
-  font-weight: normal;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
