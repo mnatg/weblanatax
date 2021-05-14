@@ -18,7 +18,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  max-width            : 1600px;
+  max-width            : 1900px;
   margin-left          : auto;
   margin-right         : auto;
   font-family: 'HelveticaRounded' !important;
@@ -121,7 +121,7 @@
   margin-left          : auto;
   margin-right         : auto;
   object-fit           : contain;
-  max-width            : 1600px;
+  max-width            : 1900px;
 
   .center-services {
     align-items          : center;
@@ -175,7 +175,7 @@
     .form-container {
       width     : 90%;
       margin-top: 5em;
-      max-width : 1600px;
+      max-width : 1900px;
 
       .TUS-IMPUESTOS {
         width         : 100%;
