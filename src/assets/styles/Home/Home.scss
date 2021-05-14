@@ -21,7 +21,8 @@
   max-width            : 1900px;
   margin-left          : auto;
   margin-right         : auto;
-  font-family: 'HelveticaRounded' !important;
+  font-family          : 'HelveticaRounded' !important;
+
   .GridLeft {
     width  : 100%;
     padding: 0%;
@@ -34,8 +35,8 @@
     align-items: flex-end;
   }
 
-  .Logo-store{
-    margin:auto;
+  .Logo-store {
+    margin      : auto;
     margin-right: 1em;
   }
 
@@ -48,7 +49,7 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #ffffff;
-    font-family: 'HelveticaRounded' !important;
+    font-family   : 'HelveticaRounded' !important;
   }
 
   .impuestos {
@@ -59,7 +60,7 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #009245;
-    font-family: 'HelveticaRounded' !important;
+    font-family   : 'HelveticaRounded' !important;
   }
 
   .Nos-encargamos {
@@ -187,7 +188,7 @@
         letter-spacing: normal;
         text-align    : right;
         color         : #009245;
-        font-family: 'PoppinsExtraBold' !important;
+        font-family   : 'PoppinsExtraBold' !important;
 
         .text-style-1 {
           color    : #cb2222;
@@ -243,25 +244,30 @@
   }
 
   .sectionB {
-    width                : 90%;
+    width                : 100%;
     display              : grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap             : 10px;
     grid-auto-rows       : minmax(100px, auto);
     margin-bottom        : 10%;
+    max-width            : 1600px;
+    margin-left          : auto;
+    margin-right         : auto;
 
     .GridLefB {
       padding-left: 5%;
       grid-column : 0.5;
 
       .TextB {
-        width      : 50%;
-        margin-top : 20%;
-        margin-left: 10%;
-        align-items: center;
-        font-size  : 3vmax;
-        color      : #009245;
-        font-weight: 600;
+        width       : 50%;
+        margin-top  : 20%;
+        margin-right: 10%;
+        align-items : center;
+        font-size   : 3vmax;
+        color       : #009245;
+        font-weight : 600;
+        margin-left : auto;
+        margin-right: auto;
       }
     }
 
@@ -283,9 +289,9 @@
         align-items          : flex-end;
 
         .TEXT {
-          font-size : 3vmin;
-          align-self: center;
-          color     : #a6a6a6;
+          font-size  : 3vmin;
+          align-self : center;
+          color      : #a6a6a6;
           font-family: 'Poppins' !important;
 
         }
@@ -334,21 +340,24 @@
 }
 
 .destockItems {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: space-around;
 }
 
 .carruselMovil {
   display: none !important;
+
   .CarouselItem {
-    width: 40%;
+    width        : 40%;
     margin-inline: auto;
+
     .itemCarousel {
       width: 20em;
     }
+
     .news-title {
-      margin: 12px 0 0 0.1em;
+      margin     : 12px 0 0 0.1em;
       font-size  : 24px;
       font-weight: bold;
       line-height: 1.42;
@@ -366,7 +375,8 @@
   visibility: hidden;
 }
 
-.rec, .CarouselItem {
+.rec,
+.CarouselItem {
   .news-title {
     margin        : 25px 118px 12px 0;
     font-size     : 16px;
@@ -394,6 +404,7 @@
     color         : #d9e021;
   }
 }
+
 .CarouselItem {
   .news-two-title {
     margin        : 12px 54px 0 0;
@@ -432,7 +443,7 @@
       line-height   : 1.1;
       letter-spacing: normal;
       color         : #009245;
-      font-family: 'PoppinsExtraBold' !important;
+      font-family   : 'PoppinsExtraBold' !important;
     }
 
     .textD {
@@ -490,7 +501,6 @@
   margin-top      : 2.375em;
   opacity         : 0.5;
   background-color: #008f45;
-  margin-left     : 3em;
 }
 
 .sectionFooter {
@@ -498,7 +508,6 @@
   display              : grid;
   grid-template-columns: repeat(4, auto);
   background           : #fff;
-  margin-left          : 3em;
 
   .LANA-FOOTER {
     width     : 8.375em;
@@ -639,6 +648,9 @@
     max-width            : 450px;
     height               : 48.8em;
     grid-template-columns: repeat(1, auto);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 
     .GridLeft {
       display: none;
@@ -654,7 +666,7 @@
       margin-top    : 10em;
       margin-inline : auto;
       letter-spacing: 2.14px;
-      font-family: 'HelveticaRounded' !important;
+      font-family   : 'HelveticaRounded' !important;
     }
 
     .impuestos {
@@ -662,13 +674,14 @@
       width         : 60%;
       margin-inline : auto;
       letter-spacing: 2.14px;
-      font-family: 'HelveticaRounded' !important;
+      font-family   : 'HelveticaRounded' !important;
     }
 
     .Nos-encargamos {
       margin-inline : auto;
       width         : 60%;
       letter-spacing: 0.5px;
+      font-size: 1.15em;
     }
 
     .Ven-a {
@@ -715,7 +728,7 @@
           font-size    : 2.61vmax;
           text-align   : center;
           margin-bottom: 1.5em;
-          font-family: 'PoppinsExtraBold' !important;
+          font-family  : 'PoppinsExtraBold' !important;
         }
 
         .Nuestra-videollamada {
@@ -788,7 +801,8 @@
     }
   }
 
-  .rec, .CarouselItem {
+  .rec,
+  .CarouselItem {
     .news-title {
       margin     : 12px 54px 0 5%;
       font-size  : 24px;
@@ -808,6 +822,7 @@
 
   .carruselMovil {
     display: block !important;
+
     .CarouselItem {
       width: 60%;
     }
@@ -844,7 +859,7 @@
         font-stretch: normal;
         font-style  : normal;
         line-height : 1.1;
-        font-family: 'PoppinsExtraBold' !important;
+        font-family : 'PoppinsExtraBold' !important;
       }
 
       .textD {
@@ -889,6 +904,10 @@
   .sectionFooter {
     grid-template-columns: repeat(1, auto);
 
+    .Enlaces-rpidos {
+      width: 9em;
+    } 
+
     .LANA-FOOTER {
       margin      : 0;
       margin-block: 1em;
@@ -900,7 +919,7 @@
 
     .link-decoration {
       .About-Us {
-        width : 8em;
+        width : 9em;
         height: 0.625em;
         margin: 2.1875em 0 0.3125em 0;
       }
@@ -970,12 +989,12 @@
     max-width: 960px;
 
     .no-te {
-      font-size: 3.0625em;
+      font-size  : 3.0625em;
       font-family: 'HelveticaRounded' !important;
     }
 
     .impuestos {
-      font-size: 3.0625em;
+      font-size  : 3.0625em;
       font-family: 'HelveticaRounded' !important;
     }
   }
@@ -1003,8 +1022,8 @@
 
       .form-container {
         .TUS-IMPUESTOS {
-          font-size : 5vmax;
-          text-align: center;
+          font-size  : 5vmax;
+          text-align : center;
           font-family: 'PoppinsExtraBold' !important;
         }
 
@@ -1109,7 +1128,7 @@
         font-stretch: normal;
         font-style  : normal;
         line-height : 1.1;
-        font-family: 'PoppinsExtraBold' !important;
+        font-family : 'PoppinsExtraBold' !important;
       }
 
       .textD {
