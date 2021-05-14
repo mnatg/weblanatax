@@ -1,11 +1,13 @@
 @import '../General/fonts.scss';
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+@import '../index.css';
 
 
 * {
   margin     : 0;
-  font-family: Poppins !important;
+  font-family: 'Poppins';
 }
+
+
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
@@ -19,7 +21,7 @@
   max-width            : 1600px;
   margin-left          : auto;
   margin-right         : auto;
-
+  font-family: 'HelveticaRounded' !important;
   .GridLeft {
     width  : 100%;
     padding: 0%;
@@ -32,6 +34,11 @@
     align-items: flex-end;
   }
 
+  .Logo-store{
+    margin:auto;
+    margin-right: 1em;
+  }
+
   .no-te {
     margin-top    : 40%;
     font-size     : 4.0625em;
@@ -41,6 +48,7 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #ffffff;
+    font-family: 'HelveticaRounded' !important;
   }
 
   .impuestos {
@@ -51,6 +59,7 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #009245;
+    font-family: 'HelveticaRounded' !important;
   }
 
   .Nos-encargamos {
@@ -66,7 +75,7 @@
   }
 
   .Ven-a {
-    font-family   : Poppins;
+    font-family   : 'Modeco' !important;
     font-size     : 1.125em;
     font-weight   : normal;
     font-stretch  : normal;
@@ -178,6 +187,7 @@
         letter-spacing: normal;
         text-align    : right;
         color         : #009245;
+        font-family: 'PoppinsExtraBold' !important;
 
         .text-style-1 {
           color    : #cb2222;
@@ -273,9 +283,10 @@
         align-items          : flex-end;
 
         .TEXT {
-          font-size : 2vmin;
+          font-size : 3vmin;
           align-self: center;
           color     : #a6a6a6;
+          font-family: 'Poppins' !important;
 
         }
       }
@@ -421,6 +432,7 @@
       line-height   : 1.1;
       letter-spacing: normal;
       color         : #009245;
+      font-family: 'PoppinsExtraBold' !important;
     }
 
     .textD {
@@ -432,12 +444,12 @@
       font-stretch: normal;
       font-style  : normal;
       font-weight : 600;
-      font-family : Poppins;
+      font-family : 'Poppins';
     }
 
     .textD1 {
       margin        : 5%;
-      font-family   : Poppins;
+      font-family   : 'Poppins';
       font-size     : 1.5vmax;
       font-weight   : 600;
       font-stretch  : normal;
@@ -642,6 +654,7 @@
       margin-top    : 10em;
       margin-inline : auto;
       letter-spacing: 2.14px;
+      font-family: 'HelveticaRounded' !important;
     }
 
     .impuestos {
@@ -649,6 +662,7 @@
       width         : 60%;
       margin-inline : auto;
       letter-spacing: 2.14px;
+      font-family: 'HelveticaRounded' !important;
     }
 
     .Nos-encargamos {
@@ -701,6 +715,7 @@
           font-size    : 2.61vmax;
           text-align   : center;
           margin-bottom: 1.5em;
+          font-family: 'PoppinsExtraBold' !important;
         }
 
         .Nuestra-videollamada {
@@ -829,6 +844,7 @@
         font-stretch: normal;
         font-style  : normal;
         line-height : 1.1;
+        font-family: 'PoppinsExtraBold' !important;
       }
 
       .textD {
@@ -955,10 +971,12 @@
 
     .no-te {
       font-size: 3.0625em;
+      font-family: 'HelveticaRounded' !important;
     }
 
     .impuestos {
       font-size: 3.0625em;
+      font-family: 'HelveticaRounded' !important;
     }
   }
 
@@ -987,6 +1005,7 @@
         .TUS-IMPUESTOS {
           font-size : 5vmax;
           text-align: center;
+          font-family: 'PoppinsExtraBold' !important;
         }
 
         .Nuestra-videollamada {
@@ -1090,6 +1109,7 @@
         font-stretch: normal;
         font-style  : normal;
         line-height : 1.1;
+        font-family: 'PoppinsExtraBold' !important;
       }
 
       .textD {

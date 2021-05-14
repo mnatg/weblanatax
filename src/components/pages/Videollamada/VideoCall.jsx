@@ -52,9 +52,7 @@ import {
     MetricsSizesW,
     Images
 } from '../../../Theme';
-
 */
-
 
 import {
     Colors,
