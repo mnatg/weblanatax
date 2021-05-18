@@ -11,7 +11,7 @@ import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
 import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
 import VideoCall from '../components/pages/Videollamada/VideoCall';
 import Loading from '../components/loading/loadingEmotic';
-import Index from '../components/pages/Tax/Index';
+import Taxes from '../components/pages/Tax/Index';
 
 
 //--firebase
@@ -48,7 +48,7 @@ function AppRouter() {
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
           <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
           <Route path="/video-call"  component={VideoCall}/>
-          <Route path='/documents' component={Index} />
+          <Route path='/documents' component={Taxes} />
         </Switch>
       </Router>
       </FirebaseAppProvider>
