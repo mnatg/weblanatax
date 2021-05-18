@@ -1,8 +1,9 @@
 // React
 import React from 'react';
+// Assets
 import callBtn from '../../../assets/images/EmpiezaGratis/callBtn.png';
 
-const AdviserLobby = ({adviser}) => {
+const AdviserLobby = ({adviser, onCall}) => {
     return (
         <div style={{ marginTop: '5.5em', paddingLeft: '1em' }} >
             <p style={{color:"gray", fontSize:"3.5em"}}>{adviser.fullname}</p>
@@ -17,8 +18,9 @@ const AdviserLobby = ({adviser}) => {
                 marginBottom: '1%'}} >
             </div>
 
-            <button style={{border:"none", background:"none"}}><img src={callBtn}></img></button>
-
+            <button style={{border:"none", background:"none", cursor: 'pointer'}} onClick={onCall} >
+                <img src={callBtn}/>
+            </button>
         </div>
     )
 }

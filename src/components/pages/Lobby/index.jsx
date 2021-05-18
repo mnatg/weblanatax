@@ -5,6 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { onAddTaxes } from '../../../Store/actions/Taxes';
 // Components
 import AdviserLobby from './AdviserLobby';
+import {
+    Dialog,
+    DialogTitle,
+    DialogActions,
+    Button
+} from '@material-ui/core';
 // Auth
 import { useFirestore } from 'reactfire';
 import 'firebase/firestore';
@@ -72,10 +78,12 @@ const Lobby = () => {
         setConsultancyRoom(consultancy);
         let adviser = await GetAviserService(consultancy.adviserid);
         setAdviser(adviser);
-        if (!adviserPopUp && consultancyRoom.state) {
+        console.log('consultancyRoom: ||||')
+        console.log(consultancy)
+        if (!adviserPopUp && consultancy.state) {
             setAdviserPopUp(true);
-            alert(
-                "Se le acaba de asignar un asesor"//,
+            // alert(
+                // "Se le acaba de asignar un asesor",
                 // "Desea entrar a video llamada con el",
                 // [
                 //     {
@@ -89,8 +97,12 @@ const Lobby = () => {
                 //     }
                 // ],
                 // { cancelable: false }
-            );
+            // );
         }
+    }
+
+    const onClose = () => {
+        setAdviserPopUp(false);
     }
 
     const videoCall = async () => {
@@ -131,8 +143,22 @@ const Lobby = () => {
             <p style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#009245' }} >¡Comencemos!</p>
         </div>
         : // OR
-        <AdviserLobby adviser={adviser}/>
-
+        <>
+        <AdviserLobby adviser={adviser}onCall={videoCall} />
+        <Dialog
+            onClose={onClose} aria-labelledby="simple-dialog-title" open={adviserPopUp}>
+            <DialogTitle>Se le acaba de asignar un asesor</DialogTitle>
+            <p style={{ textAlign: 'center' }} >¿Desea entrar a video llamada?</p>
+            <DialogActions style={{ justifyContent: 'center' }} >
+                <Button onClick={onClose} variant="outlined" style={{ color: '#e02020', borderColor: '#e02020' }} >
+                    No
+                </Button>
+                <Button onClick={videoCall} variant="outlined" style={{ color: '#009245', borderColor: '#009245' }} >
+                    Sí
+                </Button>
+            </DialogActions>
+        </Dialog>
+        </>
     )
 }
 
