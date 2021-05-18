@@ -13,6 +13,7 @@ import avatar from '../../../assets/images/Common/avatar.png';
 
 //Navigation
 import { Link, useHistory } from 'react-router-dom';
+import { ContactSupportOutlined } from '@material-ui/icons';
 
 const Lobby = () => {
     const dispatch = useDispatch();
@@ -25,6 +26,7 @@ const Lobby = () => {
     let history = useHistory();
 
     useEffect(() => {
+        console.log("Lobby userid",user.uid);
         if (user) {
             setName(user.name);
             setPhotoURL(user.photoURL);
@@ -33,6 +35,7 @@ const Lobby = () => {
 
     useEffect(() => {
         console.log("Lobby useEfffect userState: ",userState);
+        console.log("Lobby userid",user.uid);
         if(userState){
             if (userState.data().state == 'initial') {
                 history.push('/empieza-gratis');
