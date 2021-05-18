@@ -1,19 +1,20 @@
+// React
 import React, { useState, useEffect } from 'react';
+// Redux
 import { useSelector, useDispatch } from 'react-redux';
+import { onAddTaxes } from '../../../Store/actions/Taxes';
 // Auth
-import { useFirestore, useFirebaseApp, useAuth } from 'reactfire';
+import { useFirestore } from 'reactfire';
 import 'firebase/firestore';
 import { useDocument } from 'react-firebase-hooks/firestore';
-import { useIdleTimer } from 'react-idle-timer';
+// Services
 // import GetConsultancyRoomService from '../../../Services/ConsultancyRoom/GetConsultancyRoom';
 // import GetAviserService from '../../../Services/Adviser/GetAdviser';
 import ListTaxes from '../../../Services/Taxes/ListTaxes';
-import { onAddTaxes } from '../../../Store/actions/Taxes';
+// Assets
 import avatar from '../../../assets/images/Common/avatar.png';
-
 //Navigation
-import { Link, useHistory } from 'react-router-dom';
-import { ContactSupportOutlined } from '@material-ui/icons';
+import { useHistory } from 'react-router-dom';
 
 const Lobby = () => {
     const dispatch = useDispatch();
@@ -101,14 +102,27 @@ const Lobby = () => {
     }
 
     return (
-        <div>
+        <div style={{ marginTop: '5.5em', paddingLeft: '1em' }} >
             {
                 photoURL != null ?
-                    <img source={{ uri: photoURL }} ></img>
+                    <img src={{ uri: photoURL }} ></img>
                     :
-                    <img source={avatar} ></img>
+                    <img src={avatar} ></img>
             }
-            <h1 > Bienvenido {name} </h1>
+            <h2 > Bienvenido {name} </h2>
+            <h5 style={{ color: '#9b9b9b' }} >Tus impuestos serán más simples con el asesoramiento que te damos.</h5>
+            <div style={{
+                width: '2.5em',
+                borderBottom: 'solid #f5bf21' ,
+                marginTop: '1%',
+                marginBottom: '1%'}} >
+            </div>
+            <p style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#009245' }} >
+                Aun no se ha asignado un asesor, en un momento estaremos con usted.
+            </p>
+            <p style={{ fontWeight: 'bold', color: '#808080' }} >Expertos dedicados a tus impuestos de principio a fin.</p>
+            <p style={{ fontSize: '0.85em', fontWeight: 600, color: '#808080' }} >Disponibilidad todo el año.</p>
+            <p style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#009245' }} >¡Comencemos!</p>
         </div>
     )
 }
