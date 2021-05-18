@@ -16,10 +16,18 @@ import SendNotification from '../../../Services/Notication/SendNotification'
 
 // Util
 import Toast from '../../../utils/Toast';
+import ListTaxes from '../../../Services/Taxes/ListTaxes'
+
+
+// Auth
+import { useFirestore, useFirebaseApp, useAuth } from 'reactfire';
 import 'firebase/firestore';
-import firebase from 'firebase/app';
-import { useCollectionData } from 'react-firebase-hooks/firestore'
-import { useFirestore } from 'reactfire';
+import { useDocument,useCollectionData  } from 'react-firebase-hooks/firestore';
+import { useIdleTimer } from 'react-idle-timer';
+
+//Auth Redux
+import { useDispatch } from 'react-redux'
+import { onAddTaxes } from '../../../Store/actions/Taxes'
 
 
 
@@ -40,9 +48,46 @@ function ContactoAsesor(props) {
   const [talkSessions] = useCollectionData(talkSessionquery, { idField: 'sessionId' });
 
   const [offRedirect, setOffRedirect] = useState(false);
+
+
   const user = useSelector((state) => state.auth.user)
+ 
+  const [redirectOk, setRedirectOk] = useState(false);
+  const userStateQuery = useFirestore().doc('userState/' + user.uid);
+  //const userStateQuery = useFirestore().doc('userState/' + "4j70DGXhFDNnyAwe7IHGbSUaln23");
+  const [userState] = useDocument(userStateQuery);
 
   let history = useHistory();
+  const dispatch = useDispatch();
+
+
+
+  useEffect(() => {
+    console.log("Contacto asesor useEffect userstate: ",userState);
+    console.log("ContactoAsesor userId: ",user.uid);
+    if (!offRedirect) {
+      if (userState) {
+        if (userState.data().state == 'lobby' || userState.data().state == 'consultancy') {
+         history.push('/lobby');
+        } else if (userState.data().state == 'tax') {
+          addTaxes();
+        }
+      }
+    }
+  }, [userState]);
+
+
+  const addTaxes = async () => {
+    let taxes = await ListTaxes(user.uid);
+    if (taxes && taxes.length > 0) {
+      try {
+        await dispatch(onAddTaxes(taxes));
+        history.push('/taxes');
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }
 
 
 

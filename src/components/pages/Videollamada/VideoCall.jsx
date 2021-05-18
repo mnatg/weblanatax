@@ -259,7 +259,7 @@ class VideoCall extends React.Component {
         if (joinCall) {
             this.setState({ joinCall: !joinCall });
         }
-        this.props.navigation.replace('Lobby');
+        history.push('/lobby');
     };
     /**
      * // todo check if the selected is a publisher. if so, return

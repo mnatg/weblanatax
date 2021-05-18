@@ -1,7 +1,6 @@
 // React
 import React, { useEffect, useState } from 'react'
-// Redux
-import { useSelector } from 'react-redux'
+
 //Components
 import { loadingEmotic } from   '../../loading/loadingEmotic'
 // Services
@@ -14,13 +13,14 @@ import { useFirestore, useFirebaseApp, useAuth } from 'reactfire';
 import 'firebase/firestore';
 import { useDocument } from 'react-firebase-hooks/firestore';
 import { useIdleTimer } from 'react-idle-timer';
-//Auth Redux
-import { useDispatch } from 'react-redux'
+// Redux
+import { useSelector,useDispatch } from 'react-redux'
 import { onAddTaxes } from '../../../Store/actions/Taxes'
 
 //Navigation
 import { Link, useHistory } from 'react-router-dom';
 import { Navigation } from '@material-ui/icons';
+
 
 
 const RedirectContainer = ({ resolution }) => {
@@ -32,7 +32,7 @@ const RedirectContainer = ({ resolution }) => {
     const userStateQuery = useFirestore().doc('userState/' + user.uid);
     //const userStateQuery = useFirestore().doc('userState/' + "4j70DGXhFDNnyAwe7IHGbSUaln23");
     const [userState] = useDocument(userStateQuery);
-    console.log("ContactoAsesor userState: ",userState);
+    console.log("Redirect Component userState: ",userState);
 
     let history = useHistory();
 
@@ -40,7 +40,7 @@ const RedirectContainer = ({ resolution }) => {
     useEffect(() => { }, []);
 
     useEffect(() => {
-        console.log("ContactoAsesor useEfffect userState: ",userState);
+        console.log("Redirect Component useEfffect userState: ",userState);
         if (userState) {
             if (userState.data().state == 'initial') {
                 //navigation.replace('Dashboard');
