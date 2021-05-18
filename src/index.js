@@ -13,6 +13,8 @@ import {Provider} from 'react-redux';
 import {store,persistor} from './Store/index'
 
 
+
+
 ReactDOM.render(
   <Provider store={store}>
   <React.StrictMode>

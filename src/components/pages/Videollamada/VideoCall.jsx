@@ -222,7 +222,8 @@ class VideoCall extends React.Component {
 
     renderLoading = () => {
         console.log('status video '+ this.state.loadingVideo)
-        if(this.state.loadingVideo){
+       if(this.state.loadingVideo){
+           //if(true){
             return (<ActivityIndicator size="large" color="#00ff00" style={{zIndex:0, position: 'absolute', alignSelf: 'center', top: 50 }}/>)
         } else {
             return null;

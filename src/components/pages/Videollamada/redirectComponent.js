@@ -9,10 +9,11 @@ import ListTaxes from '../../../Services/Taxes/ListTaxes'
 import GetConsultancyRoomService from '../../../Services/ConsultancyRoom/GetConsultancyRoom';
 // Util
 import Toast from '../../../utils/Toast';
+// Auth
+import { useFirestore, useFirebaseApp, useAuth } from 'reactfire';
 import 'firebase/firestore';
-import firebase from 'firebase/app';
-import { useFirestore } from 'reactfire';
-import { useCollectionData, useDocument } from 'react-firebase-hooks/firestore'
+import { useDocument } from 'react-firebase-hooks/firestore';
+import { useIdleTimer } from 'react-idle-timer';
 //Auth Redux
 import { useDispatch } from 'react-redux'
 import { onAddTaxes } from '../../../Store/actions/Taxes'
@@ -28,11 +29,10 @@ const RedirectContainer = ({ resolution }) => {
     const user = useSelector((state) => state.auth.user)
     //console.log("ContactoAsesor user: ",user.uid);
     const [redirectOk, setRedirectOk] = useState(false);
-    //const userStateQuery = useFirestore().doc('userState/' + user.uid);
-
-    const userStateQuery = useFirestore().doc('userState/' + "4j70DGXhFDNnyAwe7IHGbSUaln23");
+    const userStateQuery = useFirestore().doc('userState/' + user.uid);
+    //const userStateQuery = useFirestore().doc('userState/' + "4j70DGXhFDNnyAwe7IHGbSUaln23");
     const [userState] = useDocument(userStateQuery);
-    console.log("ContactoAsesor useEfffect userState: ",userState);
+    console.log("ContactoAsesor userState: ",userState);
 
     let history = useHistory();
 
