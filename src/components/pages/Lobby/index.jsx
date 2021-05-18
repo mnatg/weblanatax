@@ -131,7 +131,8 @@ const Lobby = () => {
             <p style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#009245' }} >¡Comencemos!</p>
         </div>
         : // OR
-        <AdviserLobby />
+        <AdviserLobby adviser={adviser}/>
+
     )
 }
 

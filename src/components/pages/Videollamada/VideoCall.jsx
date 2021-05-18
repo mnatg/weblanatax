@@ -76,7 +76,7 @@ const DEFAULT_SCRIPT_URL = 'https://static.opentok.com/v2/js/opentok.min.js';
 
 class VideoCall extends React.Component {
 
-   
+ 
    
 
    
@@ -259,7 +259,7 @@ class VideoCall extends React.Component {
         if (joinCall) {
             this.setState({ joinCall: !joinCall });
         }
-        history.push('/lobby');
+        // history.push('/lobby');
     };
     /**
      * // todo check if the selected is a publisher. if so, return
