@@ -144,11 +144,6 @@ const SignIn = () => {
     const handleClose = () => {
       setOpen(false);
     };
-
-  
-  
-    
-   
      
     return (
       
