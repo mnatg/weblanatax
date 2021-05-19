@@ -78,8 +78,6 @@ const Lobby = () => {
         setConsultancyRoom(consultancy);
         let adviser = await GetAviserService(consultancy.adviserid);
         setAdviser(adviser);
-        console.log('consultancyRoom: ||||')
-        console.log(consultancy)
         if (!adviserPopUp && consultancy.state) {
             setAdviserPopUp(true);
             // alert(
@@ -108,13 +106,16 @@ const Lobby = () => {
     const videoCall = async () => {
         // const resolution = await getResolution();
         const resolution = '1280x720';
-        history.push('/video-call', {
-            sessionId: consultancyRoom.sessionid,
-            token: consultancyRoom.usertoken,
-            uid: user.uid,
-            type: 'consultancy',
-            employee: consultancyRoom.adviserid,
-            resolution: resolution
+        history.push({
+            pathname:'/video-call',
+            state: {
+                sessionId: consultancyRoom.sessionid,
+                token: consultancyRoom.usertoken,
+                uid: user.uid,
+                type: 'consultancy',
+                employee: consultancyRoom.adviserid,
+                resolution: resolution
+            }
         });
     }
 
