@@ -11,9 +11,9 @@ import {
     Alert,
     ActivityIndicator
 } from 'react';
-
 //Components
 import RedirectComponent from './redirectComponent';
+import Chat from '../../Chat/index';
 import { Loading } from '../../loading/loadingEmotic'
 import Safe from "react-safe"
 import LoadingEmotic from '../../loading/loadingEmotic';
@@ -31,34 +31,16 @@ import {
     OTSubscriberView,preloadScript,
     OTStreams
 } from 'opentok-react';
-
 //opentok
 import ConnectionStatus from './ConnectionStatus';
 import Publisher from './Publisher';
 import Subscriber from './Subscriber';
-
-
 //Services
 import CreateLobbyService from '../../../Services/Lobby/CreateLobby';
 import GetEmployeeService from '../../../Services/Adviser/GetAdviser';
 import CloseTalkSessionService from '../../../Services/TalkSession/CloseTalkSession';
-
-
 // Styles
 import '../../../assets/styles/General/videoCall.scss';
-
-/*
-import {
-    Colors,
-    Layout,
-    FontSize,
-    dimensions,
-    MetricsSizes,
-    MetricsSizesW,
-    Images
-} from '../../../Theme';
-*/
-
 import {
     Colors,
     dimensions,
@@ -66,25 +48,25 @@ import {
     MetricsSizesW,
     Images
 } from '../../../Theme';
-
-
 //Se reeemplazo Icon de rect native
-import {ThreeDRotation,Chat,VolumeMute,Call,CallEnd,Videocam,VolumeOff,VolumeUp,
-VideocamOff} from '@material-ui/icons';
+import {
+    ThreeDRotation,
+    ChatOutlined,
+    VolumeMute,
+    Call,
+    CallEnd,
+    Videocam,
+    VolumeOff,
+    VolumeUp,
+    VideocamOff
+} from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
-
-import { useLocation } from "react-router-dom";
 
 const mainSubscribersResolution = { width: 1400 * 25.6, height: 720 };
 const secondarySubscribersResolution = { width: 1400 * 7.04, height: 288 };
 const DEFAULT_SCRIPT_URL = 'https://static.opentok.com/v2/js/opentok.min.js';
 
 class VideoCall extends React.Component {
-
- 
-   
-
-   
         //const state = props.location.state
         //console.log("videoCall: History state", props.location.state);
 
@@ -103,11 +85,6 @@ class VideoCall extends React.Component {
             console.log(location.state); // result: 'some_value'
          }, [location]);
 */
-    
-    
-
-   
-
     constructor (props) {
         
         super(props);
@@ -131,11 +108,12 @@ class VideoCall extends React.Component {
             mainSubscriberStreamId: null,
             redirectOk: false,
             error: null,
-      connected: false
+            connected: false,
+            chatOpen: false
             // sharedScreen: false
         };
-        this.confirmation = this.confirmation.bind(this);
-        this.TypeLogic();       
+        // this.confirmation = this.confirmation.bind(this);
+        this.TypeLogic();
 
         this.sessionEventHandlers = {
             streamCreated: (event) => {
@@ -266,7 +244,6 @@ class VideoCall extends React.Component {
      * // todo check if the selected is a publisher. if so, return
      * @param {*} subscribers 
      */
-
     
     handleSubscriberSelection = (subscribers, streamId) => {
         console.log("handleSubscriberSelection", streamId);
@@ -315,11 +292,12 @@ class VideoCall extends React.Component {
             }
             return { streamProperties: newStreamProps }
         })
-        
     }
 
     chatRoom =() => {
         //history.push('ChatRoom', { adviserId: this.employeeId })} disabled={this.employeeId == undefined};
+        const { chatOpen } = this.state;
+        this.setState({ chatOpen: !chatOpen });
     }
 
     async  TypeLogic() {
@@ -340,8 +318,6 @@ class VideoCall extends React.Component {
         this.employee = response;
         console.log("employee info: ",this.employee);
     }
-
- 
 
     // renderSubscribers = (subscribers) => {
     //     console.log("renderSubscribers", subscribers);
@@ -379,9 +355,7 @@ class VideoCall extends React.Component {
     // };
 
     // Backprevent
-
-    
-     componentDidMount() {
+    componentDidMount() {
        // this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => this.confirmation(this.type));
        //this.joinCall = this.joinCall;
        this.fetchMessages();
@@ -572,126 +546,106 @@ class VideoCall extends React.Component {
        }
 
    </ImageBackground>
-
-
-
-
             </>
         );
     };
 
-//Recepcionista es el suscriber, usuario es publisher
-//Chat,VolumeMute,Call,CallEnd,Videocam
+    //Recepcionista es el suscriber, usuario es publisher
+    //Chat,VolumeMute,Call,CallEnd,Videocam
     videoViewTest = () => {
         return (
             <>
-           
-            <div>
-       {
-           (this.type != 'consultancy') ?
-               <RedirectComponent  resolution={this.resolution} /> : null
-       }
-   </div>
+                <div>
+                    {
+                        (this.type != 'consultancy') ?
+                            <RedirectComponent  resolution={this.resolution} /> : null
+                    }
+                </div>
+                <div className="video-container">
+                   <OTSession
+                        apiKey={this.apiKey}
+                        sessionId={this.sessionId}
+                        token={this.token}
+                        eventHandlers={this.sessionEventHandlers}
+                        onError={this.onError}>
+                        {this.renderLoading()}   
+                        <Publisher
+                            properties={this.publisherProperties}
+                            eventHandlers={this.publisherEventHandlers}
+                            style={styles.publisher}
+                        />
+                        {this.renderLoading()}
+                    <OTStreams>
+                    <Subscriber>{this.renderSubscribers}</Subscriber>
+                    </OTStreams>
+                   </OTSession>
+                </div>       
 
-   <div className="video-container">
-       <OTSession
-              apiKey={this.apiKey}
-              sessionId={this.sessionId}
-              token={this.token}
-              eventHandlers={this.sessionEventHandlers}
-              onError={this.onError}>
-               {this.renderLoading()}   
-               <Publisher
-                   properties={this.publisherProperties}
-                   eventHandlers={this.publisherEventHandlers}
-                   style={styles.publisher}
-               />
-               {this.renderLoading()}
-               <OTStreams>
-        <Subscriber>{this.renderSubscribers}</Subscriber>
-        </OTStreams>
-       </OTSession>
-       </div>       
+                <div className='image-background-video'>
+                   <Button className="iconStyle-video" onClick={this.toggleAudio}>
+                   {this.state.localPublishAudio?<VolumeOff/>:<VolumeUp/>}
+                   </Button>
+                   <div className='space-video'></div>
+                   {
+                       (this.type == 'consultancy') ?
+                           <Button className='finishBtn-video' onClick={this.endCall}>
+                               <CallEnd
+                                   name='phone'
+                                   color="white"
+                                   size={MetricsSizes.large}
+                               />
+                           </Button>
+                           :
+                           null
+                   }
+                   <Button className="iconStyle-video" onClick={this.toggleVideo}>
+               
+                       {this.state.localPublishVideo?<Videocam />:<VideocamOff/>}
+                   </Button>
+                   {
+                       (this.type == 'consultancy') ?
+                           <Button className="iconStyle-video" onClick={this.chatRoom}>
+                           
+                
+                               <ChatOutlined
+                                   color="white"
+                                   name='sms'
+                                   size={MetricsSizes.regularMoreLarge}
+                               />
+                           </Button>
+                           :
+                           null
+                   }
 
-       <div className='image-background-video'>
-       <Button className="iconStyle-video" onClick={this.toggleAudio}>
-       {this.state.localPublishAudio?<VolumeOff/>:<VolumeUp/>}
-       </Button>
-       <div className='space-video'></div>
-       {
-           (this.type == 'consultancy') ?
-               <Button className='finishBtn-video' onClick={this.endCall}>
-                   <CallEnd
-                       name='phone'
-                       color="white"
-                       size={MetricsSizes.large}
-                   />
-               </Button>
-               :
-               null
-       }
-       <Button className="iconStyle-video" onClick={this.toggleVideo}>
-           
-           {this.state.localPublishVideo?<Videocam />:<VideocamOff/>}
-       </Button>
-       {
-           (this.type == 'consultancy') ?
-               <Button className="iconStyle-video" onClick={this.chatRoom}>
-
-                   
-                   <Chat
-                       color="white"
-                       name='sms'
-                       size={MetricsSizes.regularMoreLarge}
-                   />
-               </Button>
-               :
-               null
-       }
-
-       {
-           this.employee && (this.state.subscriberIds.length >= 1) ?
-               <div className='employeeInfo-video'>
-                   <p className='employeeName'>
-                       {this.employee.fullname}
-                   </p>
-                   <p className='employeeCharge'>
-                       {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
-                   </p>
-               </div>
-               :
-               <div className='employeeInfo-video'>
-                   <p className='employeeCharge'>
-                       Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
-                   </p>
-               </div>
-       }
-
-   </div> 
-
+                   {
+                       this.employee && (this.state.subscriberIds.length >= 1) ?
+                           <div className='employeeInfo-video'>
+                               <p className='employeeName'>
+                                   {this.employee.fullname}
+                               </p>
+                               <p className='employeeCharge'>
+                                   {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
+                               </p>
+                           </div>
+                           :
+                           <div className='employeeInfo-video'>
+                               <p className='employeeCharge'>
+                                   Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
+                               </p>
+                           </div>}
+                </div>
+                <Chat userId={this.uid} adviserId={this.employeeId} open={this.state.chatOpen} handleClose={this.chatRoom} />
             </>
-        );
-    };
-
-render() {
-
-   
-        return this.state.joinCall ? this.videoViewTest() : null;
-
-        //return (<> </>);
-    
-   
-}
+            );
+        };
 
 
 
        
+    render() {
+        return this.state.joinCall ? this.videoViewTest() : null;
+    }
 }
-
-
-
-
-
 
 // todo remember to twick the styles to not copy agora
 
