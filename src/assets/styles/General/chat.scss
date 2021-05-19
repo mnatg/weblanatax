@@ -21,7 +21,7 @@
 }
 
 .chat {
-    background-color: $whitent;
+    background-color: $grey;
     padding         : 1em;
     border          : $grey 1px solid;
     border-radius   : 0.5em;
@@ -35,28 +35,30 @@
 
         .user-message {
             width           : 65%;
-            background-color: $light-orange;
+            float           : right;
+            background-color: #dcf8c6;
+            text-align      : right;
+            border          : $whitent 1px solid;
+            border-radius   : 6px;
+            margin          : 0.3em;
+           
+        }
+
+        .adviser-message {
+            width           : 65%;
+            background-color: #f0f0f0;
             padding         : 0.5em;
             margin          : 0.3em;
             border          : 1px solid $whitent;
             border-radius   : 6px;
             float           : left;
-        }
 
-        .adviser-message {
-            width           : 65%;
-            float           : right;
-            background-color: $bluec;
-            text-align      : right;
-            border          : $whitent 1px solid;
-            border-radius   : 6px;
-            margin          : 0.3em;
         }
 
         .end-messages {
             width           : 65%;
-            background-color: $whitent;
-            color           : $whitent;
+            background-color: $grey;
+            color           : $grey;
             margin          : 0.3em;
             float           : left;
         }
