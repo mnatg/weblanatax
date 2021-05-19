@@ -372,10 +372,15 @@ class VideoCall extends React.Component {
           snapshot.docChanges().forEach((change) => {
             const messageObj = {}
             messageObj.data = change.doc.data()
-            console.log("videoCall userState: ",messageObj.data.state)
+            
             messageObj.id = change.doc.id
-            console.log("videoCall userId: ",messageObj.id)
-            if(this.uid=messageObj.id){ this.type=messageObj.data.state}
+            
+            if(this.uid==messageObj.id){ this.type=messageObj.data.state
+                console.log("videoCall userId: ",messageObj.id)
+                console.log("videoCall userState: ",messageObj.data.state)
+            }
+
+
             
           })
         })
