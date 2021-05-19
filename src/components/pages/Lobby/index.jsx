@@ -108,7 +108,7 @@ const Lobby = () => {
     const videoCall = async () => {
         // const resolution = await getResolution();
         const resolution = '1280x720';
-        history.push('VideoCall', {
+        history.push('/video-call', {
             sessionId: consultancyRoom.sessionid,
             token: consultancyRoom.usertoken,
             uid: user.uid,

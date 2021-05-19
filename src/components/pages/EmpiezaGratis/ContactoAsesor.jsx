@@ -69,6 +69,7 @@ function ContactoAsesor(props) {
       if (userState) {
         if (userState.data().state == 'lobby' || userState.data().state == 'consultancy') {
          history.push('/lobby');
+         //addTaxes();
         } else if (userState.data().state == 'tax') {
           addTaxes();
         }

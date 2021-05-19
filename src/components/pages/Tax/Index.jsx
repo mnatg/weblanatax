@@ -34,6 +34,8 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import ImageIcon from '@material-ui/icons/Image';
 
+import '../../../assets/styles/General/tax-detail.scss';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -79,11 +81,14 @@ const Index = () => {
     };
 
     return (
+        <> 
+        <div className='space-taxes'></div>
         <Grid 
         container
         direction="row"
         justify="space-evenly"
-        alignItems="center" >
+        alignItems="center" 
+        >
             <Avatar></Avatar>
             <CssBaseline />
             <Container fixed maxWidth="sm" >
@@ -129,6 +134,7 @@ const Index = () => {
                 </Paper>
             </Container>
         </Grid>
+        </>
     )
 }
 

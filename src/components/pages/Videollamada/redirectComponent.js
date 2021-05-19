@@ -57,7 +57,7 @@ const RedirectContainer = ({ resolution }) => {
         if (taxes && taxes.length > 0) {
             try {
                 await dispatch(onAddTaxes(taxes));
-                history.push('/Main');
+                history.push('/taxes');
             } catch (error) {
                 console.error(error);
             }
