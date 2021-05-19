@@ -60,8 +60,8 @@ const Index = () => {
     }, [])
 
     const getFiles = async () => {
-        //let user = userInfo.uid;//dev-lanatax.appspot.com/CnzP2qPcd6UCm71UbxN4tmpO7TZ2/126/182-1826910_png-dessin-de-mega-gardevoir.png
-        let file = await GetFileStorageUtil('CnzP2qPcd6UCm71UbxN4tmpO7TZ2' + "/" + '126');
+        let user = userInfo.uid;
+        let file = await GetFileStorageUtil(user + "/" + "126");
         console.log("Files-object:[" + file + "]");
         setFiles(file);
     }
