@@ -2,7 +2,9 @@
 @import './fonts.scss';
 
 .chat-height {
-    height: 48.5em;
+    height: 80%;
+    width: 35%;
+    margin-inline: auto;
 }
 
 .chat-title {
@@ -51,6 +53,14 @@
             margin          : 0.3em;
         }
 
+        .end-messages {
+            width           : 65%;
+            background-color: $whitent;
+            color           : $whitent;
+            margin          : 0.3em;
+            float           : left;
+        }
+
         p.date {
             font-size   : 0.7em;
             color       : $grey;
@@ -67,17 +77,17 @@
         display: flex;
 
         input {
-            padding         : 0.7em;
-            padding-left    : 1.5em;
-            border-radius   : 12px;
-            border          : none;
-            width           : 100%;
-            background-color: $white-blue;
-            height          : 3.625em;
-            box-shadow      : 0 2px 4px 0 rgb(0 0 0 / 10%);
-            font-family     : $AvenirN-M;
-            font-size       : 0.875em;
-            padding-right   : 15%;
+            padding: 0.1em;
+            padding-left: 1.5em;
+            border-radius: 12px;
+            border: none;
+            width: 80%;
+            background-color: #e0e5f0;
+            height: 2.625em;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+            font-family: AvenirNext;
+            font-size: 0.875em;
+            padding-right: 15%;
         }
 
         input:focus {
@@ -85,8 +95,8 @@
         }
 
         div {
-            margin-top : 0.3em;
-            margin-left: -3.625em;
+            margin-top: 0.15em;
+            margin-left: -2.625em;
 
             button {
                 color           : $white;
@@ -120,4 +130,8 @@
             color: $green;
         }
     }
+}
+
+.chat:focus-visible, .chat-height:focus-visible {
+    outline: none;
 }
