@@ -20,6 +20,8 @@ import { onAddTaxes } from '../../../Store/actions/Taxes'
 //Navigation
 import { Link, useHistory } from 'react-router-dom';
 import { Navigation } from '@material-ui/icons';
+//Loading
+import LoadingEmotic from '../../loading/loadingEmotic';
 
 
 
@@ -41,6 +43,8 @@ const RedirectContainer = ({ resolution }) => {
 
     useEffect(() => {
         console.log("Redirect Component useEfffect userState: ",userState);
+        console.log("Redirect Component redirect: ",redirectOk);
+        console.log("userState: ",userState);
         if (userState) {
             if (userState.data().state == 'initial') {
                 //navigation.replace('Dashboard');
@@ -83,9 +87,11 @@ const RedirectContainer = ({ resolution }) => {
         }, 3000);
     }
 
-   // <LoadingEmotic show={redirectOk} />
+  
     return (
-        <loadingEmotic/>
+        <>
+        {redirectOk && <LoadingEmotic/>}
+        </>
     );
 }
 

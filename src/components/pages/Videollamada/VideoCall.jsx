@@ -16,6 +16,11 @@ import {
 import RedirectComponent from './redirectComponent';
 import { Loading } from '../../loading/loadingEmotic'
 import Safe from "react-safe"
+import LoadingEmotic from '../../loading/loadingEmotic';
+
+//Firebase
+import 'firebase/firestore';
+import firebase from 'firebase/app'
 
 //FrameWorks - No quitar libreria que aparecen no usadas
 import {
@@ -130,12 +135,7 @@ class VideoCall extends React.Component {
             // sharedScreen: false
         };
         this.confirmation = this.confirmation.bind(this);
-        this.TypeLogic();
-
-    
-
-
-       
+        this.TypeLogic();       
 
         this.sessionEventHandlers = {
             streamCreated: (event) => {
@@ -259,7 +259,8 @@ class VideoCall extends React.Component {
         if (joinCall) {
             this.setState({ joinCall: !joinCall });
         }
-        history.push('/lobby');
+        console.log("joincall: ",this.state.joinCall);
+        this.props.history.push('/lobby');
     };
     /**
      * // todo check if the selected is a publisher. if so, return
@@ -328,7 +329,7 @@ class VideoCall extends React.Component {
                     "userid": this.uid,
                     "receptionist": this.employeeId
                 }
-                console.log('Create lobby!!!')
+                console.log('Create lobby!!! userState change to lobby')
                 await CreateLobbyService(lobby);
                 await CloseTalkSessionService(this.sessionId);
             } catch (err) {
@@ -382,10 +383,31 @@ class VideoCall extends React.Component {
     
      componentDidMount() {
        // this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => this.confirmation(this.type));
+       //this.joinCall = this.joinCall;
+       this.fetchMessages();
     }
      componentWillUnmount() {
        // this.backHandler.remove();
+       //this.joinCall = this.joinCall;
     }
+
+    fetchMessages = () => {
+       const db = firebase.firestore();
+        const query = db.collection('userState');
+        query.onSnapshot((snapshot) => {
+          snapshot.docChanges().forEach((change) => {
+            const messageObj = {}
+            messageObj.data = change.doc.data()
+            console.log("videoCall userState: ",messageObj.data.state)
+            messageObj.id = change.doc.id
+            console.log("videoCall userId: ",messageObj.id)
+            if(this.uid=messageObj.id){ this.type=messageObj.data.state}
+            
+          })
+        })
+      }
+
+
      confirmation(type) {
         if (type == 'reception') {
             Alert.alert(
@@ -654,7 +676,7 @@ class VideoCall extends React.Component {
 render() {
 
    
-        return this.joinCall ? this.videoViewTest() : null;
+        return this.state.joinCall ? this.videoViewTest() : null;
 
         //return (<> </>);
     
