@@ -41,7 +41,7 @@ function ChatRoom({ userId, adviserId }) {
 
   const [messages] = useCollectionData(query, { idField: 'id' });
   const [formValue, setFormValue] = useState('');
-  const [file, setFile] = useState({});
+  const [file, setFile] = useState(null);
 
   const scrollToBottom = () => {
     endChat.current.scrollIntoView({ behavior: "smooth" })
@@ -58,6 +58,7 @@ function ChatRoom({ userId, adviserId }) {
     let path = null;
 
     if(file) {
+      setFormValue('');
       let fileType = file.type.split('/');
       try {
         let currentDate = moment().format('yyyy-MM-DD');
@@ -85,7 +86,7 @@ function ChatRoom({ userId, adviserId }) {
       type: messageType
     })
 
-    setFile({});
+    setFile(null);
     setFormValue('');
     await SendNotificationService({
       tittle: `Nuevo Mensaje de ${displayName}`,
