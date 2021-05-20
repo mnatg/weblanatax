@@ -71,6 +71,7 @@ const RedirectContainer = ({ resolution }) => {
     const redirect = async () => {
         const consultancyRoom = await GetConsultancyRoomService(user.uid);
         setRedirectOk(true);
+        console.log("redireccionando consultancy")
         setTimeout(() => {
             history.push({
                 pathname:'/video-call',
@@ -84,6 +85,7 @@ const RedirectContainer = ({ resolution }) => {
                     employee: consultancyRoom.adviserid,
                     resolution: resolution }
             });
+            setRedirectOk(false);
         }, 3000);
     }
 
