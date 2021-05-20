@@ -1242,3 +1242,32 @@
     }
   }
 }
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .Photo {
+    background           : url('../../images/Home/init/pick-header.png') center center/cover no-repeat;
+    width                : 1400px;
+    height               : 70em;
+    margin-top           : 5em;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap             : 10px;
+    grid-auto-rows       : minmax(100px, auto);
+    max-width            : 1200px;
+    margin-left          : auto;
+    margin-right         : auto;
+    font-family          : 'HelveticaRounded' !important;
+  }
+
+  .line-copy {
+    width           : 80%;
+    height          : 1px;
+    margin-top      : 2.375em;
+    margin-left: 6em;
+    opacity         : 0.5;
+    background-color: #008f45;
+  }
+
+
+}
