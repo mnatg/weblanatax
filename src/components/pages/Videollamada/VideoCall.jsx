@@ -39,6 +39,7 @@ import Subscriber from './Subscriber';
 import CreateLobbyService from '../../../Services/Lobby/CreateLobby';
 import GetEmployeeService from '../../../Services/Adviser/GetAdviser';
 import CloseTalkSessionService from '../../../Services/TalkSession/CloseTalkSession';
+import GetConsultancyRoomService from '../../../Services/ConsultancyRoom/GetConsultancyRoom';
 // Styles
 import '../../../assets/styles/General/videoCall.scss';
 import {
@@ -321,6 +322,7 @@ class VideoCall extends React.Component {
         console.log("employee info: ",this.employee);
     }
 
+
     // renderSubscribers = (subscribers) => {
     //     console.log("renderSubscribers", subscribers);
     //     console.log("this.state.subscriberIds", this.state.subscriberIds);
@@ -380,6 +382,7 @@ class VideoCall extends React.Component {
             if(this.uid==messageObj.id){ this.type=messageObj.data.state
                 console.log("videoCall userId: ",messageObj.id)
                 console.log("videoCall userState: ",messageObj.data.state)
+                if(messageObj.data.state=='consultancy'){this.redirect()}
             }
 
 
@@ -387,6 +390,26 @@ class VideoCall extends React.Component {
           })
         })
       }
+
+      redirect = () => {
+        const consultancyRoom = GetConsultancyRoomService(this.uid);
+        console.log("redireccionando consultancy")
+        const resolution = '1280x720';
+        setTimeout(() => {
+          
+                this.state.sessionId=consultancyRoom.sessionid
+                this.state.token= consultancyRoom.usertoken
+                this.state.uid= this.uid
+                this.state.type= 'consultancy'
+                this.state.employee= consultancyRoom.adviserid
+                this.state.resolution= resolution 
+              
+           
+
+        }, 3000);
+
+    }
+
 
 
      confirmation(type) {
@@ -564,7 +587,7 @@ class VideoCall extends React.Component {
             <>
                 <div>
                     {
-                        (this.type != 'consultancy') ?
+                        (this.type != 'initial') ?
                             <RedirectComponent  resolution={this.resolution} /> : null
                     }
                 </div>
