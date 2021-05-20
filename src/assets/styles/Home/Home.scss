@@ -293,7 +293,7 @@
           align-self : center;
           color      : #a6a6a6;
           font-family: 'Poppins' !important;
-
+          width: 14.3em;
         }
       }
     }
@@ -781,7 +781,8 @@
 
         .gridtest {
           .TEXT {
-            font-size: 3vmin;
+            font-size: 4.7vmin;
+            width: 10em;
           }
 
           .ICON-left {
@@ -1072,11 +1073,11 @@
       .GridRightB {
         width       : 80%;
         margin-right: 20%;
-        margin-left : 15%;
+        margin-left : 10%;
 
         .gridtest {
           .TEXT {
-            font-size: 3vmin;
+            width: 10.6em;
           }
         }
       }
