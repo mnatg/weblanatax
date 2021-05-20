@@ -18,7 +18,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { onAddTaxes } from '../../../Store/actions/Taxes'
 
 //Navigation
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, withRouter } from 'react-router-dom';
 import { Navigation } from '@material-ui/icons';
 //Loading
 import LoadingEmotic from '../../loading/loadingEmotic';
@@ -38,13 +38,13 @@ const RedirectContainer = ({ resolution }) => {
 
     let history = useHistory();
 
-
-    useEffect(() => { }, []);
-
     useEffect(() => {
-        console.log("Redirect Component useEfffect userState: ",userState);
-        console.log("Redirect Component redirect: ",redirectOk);
-        console.log("userState: ",userState);
+        if(userState != undefined){
+     
+       
+            console.log("Redirect Component useEfffect userState: ",userState.data().state);
+            console.log("Redirect Component redirect: ",redirectOk);
+        }
         if (userState) {
             if (userState.data().state == 'initial') {
                 //navigation.replace('Dashboard');
@@ -71,19 +71,12 @@ const RedirectContainer = ({ resolution }) => {
     const redirect = async () => {
         const consultancyRoom = await GetConsultancyRoomService(user.uid);
         setRedirectOk(true);
-        console.log("redireccionando consultancy")
+        console.log("redireccionando consultancy redirect component")
+        console.log("redirect component consultancy room: ", consultancyRoom)
         setTimeout(() => {
             history.push({
-                pathname:'/video-call',
-                search: '',
-                state:{
-          
-                    sessionId: consultancyRoom.sessionid,
-                    token: consultancyRoom.usertoken,
-                    uid: user.uid,
-                    type: 'consultancy',
-                    employee: consultancyRoom.adviserid,
-                    resolution: resolution }
+                pathname:'/Lobby',
+                search: ''
             });
             setRedirectOk(false);
         }, 3000);
@@ -97,4 +90,4 @@ const RedirectContainer = ({ resolution }) => {
     );
 }
 
-export default RedirectContainer
+export default withRouter(RedirectContainer)

@@ -63,8 +63,10 @@ function ContactoAsesor(props) {
 
 
   useEffect(() => {
-    console.log("Contacto asesor useEffect userstate: ",userState);
+    if(userState != undefined && user != undefined){
+    console.log("Contacto asesor useEffect userstate: ",userState.data().state);
     console.log("ContactoAsesor userId: ",user.uid);
+    }
     if (!offRedirect) {
       if (userState) {
         if (userState.data().state == 'lobby' || userState.data().state == 'consultancy') {
