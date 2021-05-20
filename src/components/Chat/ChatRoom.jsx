@@ -85,7 +85,7 @@ function ChatRoom({ userId, adviserId }) {
       type: messageType
     })
 
-    file && setFile({});
+    setFile({});
     setFormValue('');
     await SendNotificationService({
       tittle: `Nuevo Mensaje de ${displayName}`,
@@ -106,7 +106,7 @@ function ChatRoom({ userId, adviserId }) {
     }
     setFile(uploadFile);
     setFormValue(uploadFile.name);
-}
+  }
 
   return (
     <div className="chat">
