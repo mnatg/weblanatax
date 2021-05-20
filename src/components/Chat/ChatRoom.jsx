@@ -91,7 +91,7 @@ function ChatRoom({ userId, adviserId }) {
     await SendNotificationService({
       tittle: `Nuevo Mensaje de ${displayName}`,
       content: !path ? formValue : path,
-      to: userId,
+      to: adviserId,
       redirect: '/chats'
     });
   }
