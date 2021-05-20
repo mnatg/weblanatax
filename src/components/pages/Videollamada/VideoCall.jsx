@@ -200,7 +200,7 @@ class VideoCall extends React.Component {
     };
 
     renderLoading = () => {
-        console.log('status video '+ this.state.loadingVideo)
+        //console.log('status video '+ this.state.loadingVideo)
        if(this.state.loadingVideo){
            //if(true){
             return (<ActivityIndicator size="large" color="#00ff00" style={{zIndex:0, position: 'absolute', alignSelf: 'center', top: 50 }}/>)
@@ -362,8 +362,14 @@ class VideoCall extends React.Component {
     componentDidMount() {
        // this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => this.confirmation(this.type));
        //this.joinCall = this.joinCall;
-       this.fetchMessages();
+       //this.fetchMessages();
     }
+
+    componentDidUpdate() {
+        // this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => this.confirmation(this.type));
+        //this.joinCall = this.joinCall;
+        //this.fetchMessages();
+     }
      componentWillUnmount() {
        // this.backHandler.remove();
        //this.joinCall = this.joinCall;
@@ -393,7 +399,7 @@ class VideoCall extends React.Component {
 
       redirect = () => {
         const consultancyRoom = GetConsultancyRoomService(this.uid);
-        console.log("redireccionando consultancy")
+        console.log("redireccionando consultancy video call")
         const resolution = '1280x720';
         setTimeout(() => {
           
@@ -587,7 +593,7 @@ class VideoCall extends React.Component {
             <>
                 <div>
                     {
-                        (this.type != 'initial') ?
+                        (this.type != 'consultancy') ?
                             <RedirectComponent  resolution={this.resolution} /> : null
                     }
                 </div>
