@@ -15,7 +15,7 @@ import '../../../assets/styles/Home/Navbar.scss'
 
 function Footer() {
   return (
-    <div className='homebackground movilbackground-footer'>
+    <div className='homebackground'>
       <p className='line-copy'></p>
       <div className='sectionFooter'>
         <Link to='/'  >
