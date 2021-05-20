@@ -12,11 +12,20 @@ import firebaseConfig from '../../firebase-config';
 //Hooks
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+// Components
+import { IconButton } from '@material-ui/core';
+
 // Icons
-import { DescriptionOutlined, SendOutlined } from '@material-ui/icons';
+import {
+  DescriptionOutlined,
+  SendOutlined,
+  AttachFileOutlined
+} from '@material-ui/icons';
 
 //Utils
 import Moment from 'react-moment';
+import moment from "moment";
+import Toast from '../../utils/Toast';
 
 //Service
 import SendNotificationService from '../../Services/Notication/SendNotification';
@@ -32,6 +41,7 @@ function ChatRoom({ userId, adviserId }) {
 
   const [messages] = useCollectionData(query, { idField: 'id' });
   const [formValue, setFormValue] = useState('');
+  const [file, setFile] = useState(null);
 
   const scrollToBottom = () => {
     endChat.current.scrollIntoView({ behavior: "smooth" })
@@ -44,23 +54,59 @@ function ChatRoom({ userId, adviserId }) {
 
     const { displayName } = auth.currentUser;
 
+    let messageType = 'text';
+    let path = null;
+
+    if(file) {
+      setFormValue('');
+      let fileType = file.type.split('/');
+      try {
+        let currentDate = moment().format('yyyy-MM-DD');
+        let storageRef = firebase.storage().ref(userId + "/" + currentDate + "/" + file.name);
+        await storageRef.put(file);
+        path = await storageRef.getDownloadURL();
+        if (fileType[0] == 'image') {
+          messageType = 'image';
+        } else {
+          messageType = 'document';
+        }
+      } catch (error) {
+          console.error(error);
+          return Toast("Error al cargar el fichero: " + file.name, "error");
+      }
+    }
+
     await messagesRef.add({
       user: displayName,
-      body: formValue,
+      body: !path ? formValue : path,
       createdAt: new Date(),
       adviserId: adviserId,
       userId: userId,
-      from: 'client',
-      type: 'text'
+      from: 'user',
+      type: messageType
     })
 
+    setFile(null);
     setFormValue('');
     await SendNotificationService({
       tittle: `Nuevo Mensaje de ${displayName}`,
-      content: formValue,
+      content: !path ? formValue : path,
       to: userId,
       redirect: '/chats'
     });
+  }
+
+  const hadleFileUpload = (e) => {
+    let uploadFile = {};
+    for (let file of e.target.files) {
+        if (file.size < 20000000) {
+            uploadFile = file;
+        } else {
+            Toast("El fichero [" + file.name + "] excede el limite de tamaño permitido.", "error");
+        }
+    }
+    setFile(uploadFile);
+    setFormValue(uploadFile.name);
   }
 
   return (
@@ -71,6 +117,19 @@ function ChatRoom({ userId, adviserId }) {
       </div>
 
       <form onSubmit={sendMessage} className="chat-input">
+        <IconButton
+          className="file-input"
+          component="label"
+        >
+          <AttachFileOutlined style={{ color: '#009245' }} />
+          <input
+            type="file"
+            multiple={false}
+            hidden
+            onChange={(e) => hadleFileUpload(e)}
+          />
+        </IconButton>
+        {/* <input type="file" className="file-input" onChange={(e) => hadleFileUpload(e)} max-size="20480" /> */}
         <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Escribe tu mensaje..." />
         <div>
           <button type="submit" disabled={!formValue}>

@@ -297,8 +297,10 @@ class VideoCall extends React.Component {
 
     chatRoom =() => {
         //history.push('ChatRoom', { adviserId: this.employeeId })} disabled={this.employeeId == undefined};
-        const { chatOpen } = this.state;
-        this.setState({ chatOpen: !chatOpen });
+        if(this.employeeId != undefined) {
+            const { chatOpen } = this.state;
+            this.setState({ chatOpen: !chatOpen });
+        }
     }
 
     async  TypeLogic() {
