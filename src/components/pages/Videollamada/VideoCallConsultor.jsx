@@ -485,103 +485,100 @@ class VideoCall extends React.Component {
         return (
             <>
                <div>
-       {
-           (this.type != 'consultancy') ?
-               <RedirectComponent  resolution={this.resolution} /> : null
+                   {
+                       (this.type != 'consultancy') ?
+                        <RedirectComponent  resolution={this.resolution} /> : null
+                   }
+                </div>
+                <div style={styles.fullView}>
+                    <OTSession
+                        apiKey={this.apiKey}
+                        sessionId={this.sessionId}
+                        token={this.token}
+                        eventHandlers={this.sessionEventHandlers}>
+                        <div style={styles.publisherStyle}>
+                            {this.renderLoading()
+                            }
+                            <OTPublisher
+                                properties={this.publisherProperties}
+                                eventHandlers={this.publisherEventHandlers}
+                                style={styles.publisher}
+                            />
+                            <div style={styles.borderPublisher}></div>
+                        </div>
+                        <div style={styles.subscriberContainer} >
+                            {/* <OTSubscriber style={[styles.subscriber, this.state.sharedScreen && styles.sharedScreen]}
+                                eventHandlers={this.subscriberEventHandlers}
+                                streamProperties={this.state.streamProperties}
+                                properties={{ fitMode: "cover", insertMode: 'append' }}
+                            >
+                            </OTSubscriber> */}
+                            {this.renderLoading()}
+                            <OTSubscriber>
+                                {this.renderSubscribers}
+                            </OTSubscriber>
+                        </div>
+                    </OTSession>
+                </div>
 
-       }
-   </div>
-   <div style={styles.fullView}>
-       <OTSession
-           apiKey={this.apiKey}
-           sessionId={this.sessionId}
-           token={this.token}
-           eventHandlers={this.sessionEventHandlers}>
-           <div style={styles.publisherStyle}>
-               {this.renderLoading()
-               }
-               <OTPublisher
-                   properties={this.publisherProperties}
-                   eventHandlers={this.publisherEventHandlers}
-                   style={styles.publisher}
-               />
-               <div style={styles.borderPublisher}></div>
-           </div>
-           <div style={styles.subscriberContainer} >
-               {/* <OTSubscriber style={[styles.subscriber, this.state.sharedScreen && styles.sharedScreen]}
-                   eventHandlers={this.subscriberEventHandlers}
-                   streamProperties={this.state.streamProperties}
-                   properties={{ fitMode: "cover", insertMode: 'append' }}
-               >
-               </OTSubscriber> */}
-               {this.renderLoading()}
-               <OTSubscriber>
-                   {this.renderSubscribers}
-               </OTSubscriber>
-           </div>
-       </OTSession>
-   </div>
-
-   <ImageBackground source={Images.callBottom} style={[styles.buttonView]}>
-       <TouchableOpacity style={styles.iconStyle} onPress={this.toggleAudio}>
-           <ThreeDRotation
-               color="white"
-               name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
-       </TouchableOpacity>
-       <div style={styles.space}></div>
-       {
-           (this.type == 'consultancy') ?
-               <TouchableOpacity style={styles.finishBtn} onPress={this.endCall}>
-                   <ThreeDRotation
-                       name='phone'
-                       color="white"
-                       size={MetricsSizes.large}
-                   />
-               </TouchableOpacity>
-               :
-               null
-       }
-       <TouchableOpacity style={styles.iconStyle} onPress={this.toggleVideo}>
-           <ThreeDRotation
-               color="white"
-               name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
-               size={MetricsSizes.regularMoreLarge}
-           />
-       </TouchableOpacity>
-       {
-           (this.type == 'consultancy') ?
-               <TouchableOpacity style={styles.iconStyle} onPress={() => this.props.navigation.navigate('ChatRoom', { adviserId: this.employeeId })} disabled={this.employeeId == undefined}>
-                   <ThreeDRotation
-                       color="white"
-                       name='sms'
-                       size={MetricsSizes.regularMoreLarge}
-                   />
-               </TouchableOpacity>
-               :
-               null
-       }
-
-       {
-           (true) ?
-               <div style={styles.employeeInfo}>
-                   <Text style={styles.employeeName}>
-                       {this.employee.fullname}
-                   </Text>
-                   <Text style={styles.employeeCharge}>
-                       {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
-                   </Text>
-               </div>
-               :
-               <div style={styles.employeeInfo}>
-                   <Text style={styles.employeeCharge}>
-                       Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
-                   </Text>
-               </div>
-       }
-
-   </ImageBackground>
+                <ImageBackground source={Images.callBottom} style={[styles.buttonView]}>
+                    <TouchableOpacity style={styles.iconStyle} onPress={this.toggleAudio}>
+                        <ThreeDRotation
+                            color="white"
+                            name={this.state.localPublishAudio ? 'volume-down' : 'volume-off'}
+                            size={MetricsSizes.regularMoreLarge}
+                        />
+                    </TouchableOpacity>
+                    <div style={styles.space}></div>
+                    {
+                        (this.type == 'consultancy') ?
+                            <TouchableOpacity style={styles.finishBtn} onPress={this.endCall}>
+                                <ThreeDRotation
+                                    name='phone'
+                                    color="white"
+                                    size={MetricsSizes.large}
+                                />
+                            </TouchableOpacity>
+                            :
+                            null
+                    }
+                    <TouchableOpacity style={styles.iconStyle} onPress={this.toggleVideo}>
+                        <ThreeDRotation
+                            color="white"
+                            name={this.state.localPublishVideo ? 'videocam' : 'videocam-off'}
+                            size={MetricsSizes.regularMoreLarge}
+                        />
+                    </TouchableOpacity>
+                    {
+                        (this.type == 'consultancy') ?
+                            <TouchableOpacity style={styles.iconStyle} onPress={() => this.props.navigation.navigate('ChatRoom', { adviserId: this.employeeId })} disabled={this.employeeId == undefined}>
+                                <ThreeDRotation
+                                    color="white"
+                                    name='sms'
+                                    size={MetricsSizes.regularMoreLarge}
+                                />
+                            </TouchableOpacity>
+                            :
+                            null
+                    }   
+                    {
+                        (true) ?
+                            <div style={styles.employeeInfo}>
+                                <Text style={styles.employeeName}>
+                                    {this.employee.fullname}
+                                </Text>
+                                <Text style={styles.employeeCharge}>
+                                    {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'} {' Comercial de M&A TAX GROUP'}
+                                </Text>
+                            </div>
+                            :
+                            <div style={styles.employeeInfo}>
+                                <Text style={styles.employeeCharge}>
+                                    Conectando con su {this.type == 'consultancy' ? 'Asesor' : 'Recepcionista'}
+                                </Text>
+                            </div>
+                    }   
+                </ImageBackground>
             </>
         );
     };

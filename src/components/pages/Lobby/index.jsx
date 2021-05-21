@@ -107,7 +107,7 @@ const Lobby = () => {
         // const resolution = await getResolution();
         const resolution = '1280x720';
         history.push({
-            pathname:'/video-call',
+            pathname:'/video-call-consultor',
             state: {
                 sessionId: consultancyRoom.sessionid,
                 token: consultancyRoom.usertoken,
