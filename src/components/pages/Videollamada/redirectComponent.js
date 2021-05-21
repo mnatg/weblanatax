@@ -69,14 +69,26 @@ const RedirectContainer = ({ resolution }) => {
     }
 
     const redirect = async () => {
+        const resolution = '1280x720';
         const consultancyRoom = await GetConsultancyRoomService(user.uid);
         setRedirectOk(true);
         console.log("redireccionando consultancy redirect component")
         console.log("redirect component consultancy room: ", consultancyRoom)
         setTimeout(() => {
-            history.push({
+            /*history.push({
                 pathname:'/Lobby',
                 search: ''
+            });*/
+            history.push({
+                pathname:'/video-call-consultor',
+                state: {
+                    sessionId: consultancyRoom.sessionid,
+                    token: consultancyRoom.usertoken,
+                    uid: user.uid,
+                    type: 'consultancy',
+                    employee: consultancyRoom.adviserid,
+                    resolution: resolution
+                }
             });
             setRedirectOk(false);
         }, 3000);

@@ -10,6 +10,7 @@ import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
 import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
 import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
 import VideoCall from '../components/pages/Videollamada/VideoCall';
+import VideoCallConsultor from '../components/pages/Videollamada/VideoCallConsultor';
 import Loading from '../components/loading/loadingEmotic';
 import Taxes from '../components/pages/Tax/Index';
 import Lobby from '../components/pages/Lobby/index';
@@ -49,6 +50,7 @@ function AppRouter() {
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
           <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
           <Route path="/video-call" forceRefresh={true} component={VideoCall}/>
+          <Route path="/video-call-consultor" forceRefresh={true} component={VideoCallConsultor}/>
           <Route path='/taxes' component={Taxes} />
           <Route path='/lobby' component={Lobby} />
         </Switch>
