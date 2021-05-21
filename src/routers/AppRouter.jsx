@@ -11,7 +11,7 @@ import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
 import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
 import VideoCall from '../components/pages/Videollamada/VideoCall';
 import Loading from '../components/loading/loadingEmotic';
-import Tax from '../components/pages/Tax';
+import Tax from '../components/pages/Tax/index';
 import Taxes from '../components/pages/Taxes/index';
 import Lobby from '../components/pages/Lobby/index';
 
