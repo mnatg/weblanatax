@@ -71,9 +71,12 @@ const RedirectContainer = ({ resolution }) => {
     const redirect = async () => {
         const resolution = '1280x720';
         const consultancyRoom = await GetConsultancyRoomService(user.uid);
-        setRedirectOk(true);
+        if(consultancyRoom!= undefined || consultancyRoom!= null  ){
+     
+            setRedirectOk(true);
         console.log("redireccionando consultancy redirect component")
         console.log("redirect component consultancy room: ", consultancyRoom)
+
         setTimeout(() => {
             /*history.push({
                 pathname:'/Lobby',
@@ -92,6 +95,9 @@ const RedirectContainer = ({ resolution }) => {
             });
             setRedirectOk(false);
         }, 3000);
+        }
+   
+        else{console.log("consultancy room undefined intenta de nuevo")}
     }
 
   

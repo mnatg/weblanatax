@@ -375,6 +375,8 @@ class VideoCall extends React.Component {
        //this.joinCall = this.joinCall;
     }
 
+    /*
+
     fetchMessages = () => {
        const db = firebase.firestore();
         const query = db.collection('userState');
@@ -415,7 +417,7 @@ class VideoCall extends React.Component {
         }, 3000);
 
     }
-
+*/
 
 
      confirmation(type) {
