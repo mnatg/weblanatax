@@ -47,12 +47,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Index = () => {
+const Index = (props) => {
+    console.log('Tax', props.location.taxProps);
     const classes = useStyles();
     const [files, setFiles] = useState([]);
     const userInfo = useSelector((state) => state.auth.user);
     console.log(userInfo);
-    const [taxId, setTaxId] = useState('');
+    console.log('id del tax:'+props.id);
+    const taxId  = props.location.taxProps.taxId;
     const [value, setValue] = React.useState(0);
 
     useEffect(() => {
@@ -61,7 +63,7 @@ const Index = () => {
 
     const getFiles = async () => {
         let user = userInfo.uid;
-        let file = await GetFileStorageUtil(user + "/" + "126");
+        let file = await GetFileStorageUtil(user + "/" + taxId);
         console.log("Files-object:[" + file + "]");
         setFiles(file);
     }

@@ -11,7 +11,8 @@ import EmpiezaGratis from '../components/pages/EmpiezaGratis/EmpiezaGratis';
 import EmpiezaGratisVideollamada from '../components/pages/EmpiezaGratis/EmpiezaGratisVideoLlamada';
 import VideoCall from '../components/pages/Videollamada/VideoCall';
 import Loading from '../components/loading/loadingEmotic';
-import Taxes from '../components/pages/Tax/Index';
+import Tax from '../components/pages/Tax';
+import Taxes from '../components/pages/Taxes/index';
 import Lobby from '../components/pages/Lobby/index';
 
 
@@ -22,7 +23,7 @@ import fireConfig from '../firebase-config';
 import { useUser } from 'reactfire';
 import {
   TaxController
-} from '../components/pages/Tax/Index';
+} from '../components/pages/Tax';
 
 import {
  preloadScript
@@ -49,6 +50,7 @@ function AppRouter() {
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
           <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
           <Route path="/video-call" forceRefresh={true} component={VideoCall}/>
+          <Route path='/tax' component={Tax} />
           <Route path='/taxes' component={Taxes} />
           <Route path='/lobby' component={Lobby} />
         </Switch>
