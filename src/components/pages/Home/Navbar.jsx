@@ -108,7 +108,7 @@ const Navbar = ({ user }) => {
               Que hacemos
             </Link>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item hide'>
             <Link
               to='/products'
               className='nav-links'
@@ -117,7 +117,7 @@ const Navbar = ({ user }) => {
               Cómo Pensamos
             </Link>
           </li>
-          <li>
+          <li className='hide'>
             <Link
               to='/sign-in'
               className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
@@ -128,7 +128,7 @@ const Navbar = ({ user }) => {
            </li>
            <li>
             <Link
-              to='/sign-up'
+              to='/home'
               className={autenticacion ? 'nav-links-mobile' : 'hide' } 
               onClick={signOut}
             >
@@ -136,7 +136,7 @@ const Navbar = ({ user }) => {
             </Link>
             {!button &&<h1 className='user-avatar-mobile'>{email}</h1>}
            </li>
-           <li>
+           <li className='hide'>
             <Link
               to='/sign-up'
               className= {!autenticacion ? 'nav-links-mobile' : 'hide' } 
@@ -145,16 +145,16 @@ const Navbar = ({ user }) => {
               Sign Up
             </Link>
           </li>
-          <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
+          <li className='hide'>
             {button && <Button onClick={closeMobileMenu} buttonStyle='btn--outline'>Sing In</Button>}
           </li>
-          <li className={autenticacion ? 'user-avatar' : 'hide' }>
+          <li className='hide' >
           {button && <h1 className='user-avatar'>{email}</h1>}
           </li>
-          <li className={autenticacion ? 'user-avatar' : 'hide' }>
+          <li className= 'hide'>
           {button &&<ButtonSignOut onClick={signOut} buttonStyle='btn--outlinetest' buttonSize='btn--large'>SignOut</ButtonSignOut>}
           </li>
-          <li className={autenticacion ? 'hide' : 'nav-item nav-btn' }>
+          <li className= 'hide'>
             {button && <ButtonSignUp onClick={closeMobileMenu} buttonStyle='btn--outlinetest' buttonSize='btn--large'>Sing Up</ButtonSignUp>}
           </li>
         </ul>

@@ -45,9 +45,7 @@ function HeroSection() {
         <h1 className='Nos-encargamos'>todo por ti</h1>
         <p className='Ven-a'>Ven a recibir la mejor atención</p>
         <div className='empezar-gratis'>
-          <Link to='/empieza-gratis' >
-            <img className="btn-start" onClick={validateHome} src={initbutton} alt="initbutton" />
-          </Link>
+            <p className='caja' >Empieza Gratis Descarga nuestras apps moviles: </p>
         </div>
 
         <div className='empezar-gratis icons'>
