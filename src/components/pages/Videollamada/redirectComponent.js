@@ -71,7 +71,7 @@ const RedirectContainer = ({ resolution }) => {
     const redirect = async () => {
         const resolution = '1280x720';
         const consultancyRoom = await GetConsultancyRoomService(user.uid);
-        if(consultancyRoom!= undefined || consultancyRoom!= null  ){
+        if(consultancyRoom!= undefined && consultancyRoom!= null  ){
      
             setRedirectOk(true);
         console.log("redireccionando consultancy redirect component")
