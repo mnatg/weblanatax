@@ -11,6 +11,7 @@ import storelabels from '../../../assets/images/Home/init/app-store.png'
 import storelabels2 from '../../../assets/images/Home/init/google-play.png'
 import { useUser } from 'reactfire';
 import Toast from '../../../utils/Toast';
+import ImpuestosCarousel from '../../pages/Home/ImpuestosCarousel';
 
 function HeroSection() {
 
@@ -40,15 +41,13 @@ function HeroSection() {
       <div className="GridRight">
         {/*<video src='/videos/video-1.mp4' autoPlay loop muted /> */}
         <p className='no-te'>UNA MEJOR EXPERIENCIA EN:</p>
-        <p className='impuestos'>IMPUESTOS</p>
+        <ImpuestosCarousel></ImpuestosCarousel>
         <h1 className='Nos-encargamos'>Nos encargamos de</h1>
         <h1 className='Nos-encargamos'>todo por ti</h1>
         <p className='Ven-a'>Ven a recibir la mejor atención</p>
-        <div className='empezar-gratis'>
-            <p className='caja' >Empieza Gratis Descarga nuestras apps moviles: </p>
-        </div>
 
-        <div className='empezar-gratis icons'>
+        <div className='icons'>
+          <p className='descarga-apps' >Descarga Gratis nuestas apps: </p>
           <a href='https://apps.apple.com/co/app/lanatax/id1556736650' >
             <img className="Logo-store" src={storelabels} alt="storelabels" />
           </a>
