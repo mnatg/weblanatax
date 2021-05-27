@@ -48,6 +48,7 @@
     align-items: flex-end;
   }
 
+
   .Logo-store {
     margin      : auto;
     margin-right: 1em;
@@ -222,11 +223,11 @@
 
 .homebackground {
   width: 100%;
-  max-width            : 1700px;
   .Una-experiencia-dife {
-    width: 966px;
-    height: 140px;
-    margin: auto;
+    height: 1em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Poppins' !important;
     font-size: 65px;
     font-weight: 800;
@@ -238,8 +239,8 @@
     color: #009245;
   }
   .pasos-a-seguir {
-    width: 792px;
-    height: 48px;
+    width: 25em;
+    height: 1.5em;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -255,7 +256,72 @@
   }
 
   .flip-cards-grid{
-    grid-template-columns  : repeat(3, 1fr);
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns  : repeat(2, auto);
+    justify-content: center;
+  }
+
+  .front-card{
+    width: 22vmax;
+    height: 30vmax;
+    margin: 1em;
+    padding: 10px 37px 50px 38px;
+    border-radius: 8px;
+    background-color: #009245;
+  }
+
+
+  .space{
+    width: 1em;
+    height: 1em;
+    margin-top:2em;
+  }
+
+  .center-text{
+    justify-content: center;
+  }
+  .card-text{
+    width: 15.6em;
+    height: 9.75;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins' !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .card-number{
+
+    width:2em;
+    font-family: 'Poppins' !important;
+    font-size: 7em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -5.66px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #009245;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .sectionA {
@@ -365,7 +431,7 @@
         margin-top  : 20%;
         margin-right: 10%;
         align-items : center;
-        font-size   : 3vmax;
+        font-size   : 2vmax;
         color       : #009245;
         font-weight : 600;
         margin-left : auto;
@@ -523,7 +589,6 @@
 
 .homebackground {
   width: 100%;
-  max-width: 1700px;
   .sectionD {
     width                  : 100%;
     margin-top             : 10%;
@@ -601,7 +666,8 @@
   width           : 90%;
   height          : 1px;
   margin-top      : 2.375em;
-  margin-left: 12em;
+  margin-left: auto;
+  margin-right: auto;
   opacity         : 0.5;
   background-color: #008f45;
 }

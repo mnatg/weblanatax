@@ -8,16 +8,25 @@ import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.p
 
 import { Link } from 'react-router-dom';
 import FlipCards from './FlipCards';
+import FlipCardsTwo from './FlipCardsTwo';
 
 function sectionA() {
   return (
     <div className='homebackground'>
-      <Grid >
+      <div >
+        <div className='center-text'>
      <p className='Una-experiencia-dife'>Una experiencia diferente con lanatax</p>
+     </div>
      <p className='pasos-a-seguir'>pasos a seguir</p>
-     </Grid>
+     </div>
     
+  <Grid className='flip-cards-grid'>
      <FlipCards></FlipCards>
+     <FlipCardsTwo></FlipCardsTwo>
+     <div className='space'></div>
+     </Grid>
+
+   
     </div>
   );
 }
