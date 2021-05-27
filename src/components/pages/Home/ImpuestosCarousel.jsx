@@ -22,10 +22,6 @@ function sectionC() {
   ]
   return (
     <div className='homebackground'>
-      <div className="title-carousel">
-        <h1 className='Millones-nos-Respald'>Miles nos Respaldan</h1>
-        <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>
-      </div>
       <Carousel  autoPlay={true} navButtonsAlwaysInvisible animation='slide' indicatorIconButtonProps={{style: {color: '#efefef'}}} activeIndicatorIconButtonProps={{style: {color: '#009245'}}} > 
         {items.map(item => <div key={item.id} className='itemCarousel' >{item.boddy}{item.title}{item.subtitle}</div>)}
       </Carousel>

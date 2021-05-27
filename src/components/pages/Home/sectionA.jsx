@@ -7,36 +7,17 @@ import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.p
 
 
 import { Link } from 'react-router-dom';
+import FlipCards from './FlipCards';
 
 function sectionA() {
   return (
     <div className='homebackground'>
-      <Grid className='sectionA'>
-        <div className="GridLeft">
-          <img className="imageA" src={imageA} alt="imageA" />
-        </div>
-        <div className='form-container GridRight' >
-          <h1 className='TUS-IMPUESTOS'>
-            TODOS EMPIEZAN <br />
-            COMPLETAMENTE <br />
-            <p className='TUS-IMPUESTOS text-style-1'>GRATIS</p>
-          </h1>
-          <h1 className='Nuestra-videollamada'>
-            Nuestra videollamada es Simple, Fácil y Segura.
-          </h1>
-          <Grid container>
-            <input className="input-form" placeholder="Nombre" />
-          </Grid>
-          <Grid container>
-            <input className="input-form" placeholder="Correo Electronico" />
-          </Grid>
-          <div className='divbase'>
-            <Link to='/' >
-              <p>Conectar</p>
-            </Link>
-          </div>
-        </div>
-      </Grid>
+      <Grid >
+     <p className='Una-experiencia-dife'>Una experiencia diferente con lanatax</p>
+     <p className='pasos-a-seguir'>pasos a seguir</p>
+     </Grid>
+    
+     <FlipCards></FlipCards>
     </div>
   );
 }

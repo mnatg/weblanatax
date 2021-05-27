@@ -127,35 +127,74 @@
 
 .base {
   display              : grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
   width                : 90%;
   margin-top           : 10%;
   margin-left          : auto;
   margin-right         : auto;
-  object-fit           : contain;
   max-width            : 1700px;
+  justify-content: center;
 
   .center-services {
     align-items          : center;
     text-align           : center;
     display              : grid;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap             : 10px;
+    justify-content: right;
+  }
+
+  .center-servicesA {
+    align-items          : center;
+    text-align           : center;
+    display              : grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap             : 10px;
+    justify-content: left;
   }
 
   .iconServices {
-    width         : 5vmax;
-    grid-auto-rows: minmax(100px, auto);
+    width         :5vmax;
+    height: 8vmax;
+    margin: -4em 1em 112px -5em;
+    padding: 16px 12px 12px 22px;
+    border-radius: 8px;
+    background-color: #009245;
+  }
+
+  .iconServices-taxes {
+    width         :5vmax;
+    height: 8vmax;
+  }
+
+  .iconServices-audits {
+    width         : 6vmax;
+    height: 9vmax;
+  
   }
 
   .extraicon {
-    width: 8vmax;
+    width         : 6vmax;
+    height: 9vmax;
+    margin: -4em 12px 112px 55px;
+    border-radius: 8px;
+    background-color: #009245;
+  }
+
+  .caja-services{
+    width: 445px;
+    height: 183px;
+    margin: 55px 30px 21px 0;
+    padding: 0px 24px 28px 31px;
+    border-radius: 8px;
+    background-color: #d8d8d8;
   }
 
   .servicios-lanatax {
-    font-size      : 1em;
+    font-size      : 2em;
     font-weight    : 600;
     font-stretch   : normal;
     font-style     : normal;
@@ -163,11 +202,61 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
+    margin-top: -3em;
+    margin-left: 5em;
+  }
+
+  .servicios-lanatax-des {
+    width: auto;
+    font-size      : 1em;
+    font-weight    : normal;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : normal;
+    letter-spacing : normal;
+    color          : #009245;
+    text-decoration: none;
+    margin-top:-9em;
   }
 }
 
 .homebackground {
   width: 100%;
+  max-width            : 1700px;
+  .Una-experiencia-dife {
+    width: 966px;
+    height: 140px;
+    margin: auto;
+    font-family: 'Poppins' !important;
+    font-size: 65px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: -1.74px;
+    text-align: center;
+    color: #009245;
+  }
+  .pasos-a-seguir {
+    width: 792px;
+    height: 48px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins' !important;
+    font-size: 39px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.47px;
+    text-align: center;
+    color: #a6a6a6;
+  }
+
+  .flip-cards-grid{
+    grid-template-columns  : repeat(3, 1fr);
+  }
 
   .sectionA {
     display                : grid;

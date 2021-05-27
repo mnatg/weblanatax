@@ -101,7 +101,7 @@ const Navbar = ({ user }) => {
           </li>
           <li className='nav-item'>
             <Link
-              to='/services'
+              to='/que-hacemos'
               className='nav-links'
               onClick={closeMobileMenu}
             >

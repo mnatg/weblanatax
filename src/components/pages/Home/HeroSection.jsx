@@ -42,8 +42,7 @@ function HeroSection() {
         {/*<video src='/videos/video-1.mp4' autoPlay loop muted /> */}
         <p className='no-te'>UNA MEJOR EXPERIENCIA EN:</p>
         <ImpuestosCarousel></ImpuestosCarousel>
-        <h1 className='Nos-encargamos'>Nos encargamos de</h1>
-        <h1 className='Nos-encargamos'>todo por ti</h1>
+        <h1 className='Nos-encargamos'>Nos encargamos de todo por ti</h1>
         <p className='Ven-a'>Ven a recibir la mejor atención</p>
 
         <div className='icons'>
