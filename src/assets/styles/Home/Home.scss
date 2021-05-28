@@ -130,7 +130,7 @@
   display              : grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(1, 1fr);
-  grid-gap             : 10px;
+  grid-gap             : 5em;
   grid-auto-rows       : minmax(100px, auto);
   width                : 90%;
   margin-top           : 10%;
@@ -186,9 +186,9 @@
   }
 
   .caja-services{
-    width: 445px;
-    height: 183px;
-    margin: 55px 30px 21px 0;
+    width: 27em;
+    height: 12em;
+    margin: auto;
     padding: 0px 24px 28px 31px;
     border-radius: 8px;
     background-color: #d8d8d8;
@@ -260,7 +260,7 @@
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns  : repeat(2, auto);
+    grid-template-columns  : repeat(3, auto);
     justify-content: center;
   }
 
@@ -290,7 +290,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins' !important;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -301,8 +301,7 @@
   }
 
   .card-number{
-
-    width:2em;
+    width:3em;
     font-family: 'Poppins' !important;
     font-size: 7em;
     font-weight: bold;
@@ -315,7 +314,6 @@
     background-color: #009245;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .center-button{
@@ -881,23 +879,204 @@
   }
 
   .base {
-    grid-template-columns: repeat(2, 1fr);
-    width                : 100%;
-    max-width            : 960px;
-
-    .iconServices {
-      width         : 7vmax;
-      margin-top    : 5%;
-      grid-auto-rows: minmax(100px, auto);
+    display              : grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap             : 5em;
+    grid-auto-rows       : minmax(100px, auto);
+    width                : 90%;
+    margin-top           : 10%;
+    margin-left          : auto;
+    margin-right         : auto;
+    max-width            : 1700px;
+    justify-content: center;
+    .center-services {
+      align-items          : center;
+      text-align           : center;
+      display              : grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap             : 10px;
+      justify-content: right;
     }
-
+  
+    .center-servicesA {
+      align-items          : center;
+      text-align           : center;
+      display              : grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap             : 10px;
+      justify-content: left;
+    }
+  
+    .iconServices {
+      width         :5vmax;
+      height: 8vmax;
+      margin: -2em 1em 112px 2em;
+      padding: 8px 6px 6px 11px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+    .iconServices-taxes {
+      width         :5vmax;
+      height: 8vmax;
+    }
+  
+    .iconServices-audits {
+      width         : 6vmax;
+      height: 9vmax;
+    
+    }
+  
     .extraicon {
-      margin-top: 10%;
-      width     : 12vmax;
+      width         : 7vmax;
+      height: 10vmax;
+      margin: -2em 12px 112px 55px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+    .caja-services{
+      width: 15em;
+      height: 10em;
+      margin: auto;
+      padding: 0px 24px 28px 31px;
+      border-radius: 8px;
+      background-color: #d8d8d8;
+    }
+  
+    .servicios-lanatax {
+      font-size      : 1em;
+      font-weight    : 600;
+      font-stretch   : normal;
+      font-style     : normal;
+      line-height    : normal;
+      letter-spacing : normal;
+      color          : #009245;
+      text-decoration: none;
+      margin-top: -1em;
+      margin-left: 5em;
+    }
+  
+    .servicios-lanatax-des {
+      width: auto;
+      font-size      : 1em;
+      font-weight    : normal;
+      font-stretch   : normal;
+      font-style     : normal;
+      line-height    : normal;
+      letter-spacing : normal;
+      color          : #009245;
+      text-decoration: none;
+      margin-top:-5em;
+     
     }
   }
 
   .homebackground {
+    max-width: 100%;
+    .Una-experiencia-dife {
+      height: 1em;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 38px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.08;
+      letter-spacing: -1.74px;
+      text-align: center;
+      color: #009245;
+    }
+    .pasos-a-seguir {
+      width: 10em;
+      height: 1.5em;
+      //Only this
+      margin-top: 4em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 30px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.47px;
+      text-align: center;
+      color: #a6a6a6;
+    }
+  
+    .flip-cards-grid{
+      margin-top: 3em;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      //oNLY THAT
+      grid-template-columns  : repeat(1, auto);
+      justify-content: center;
+    }
+  
+    .front-card{
+      width: 24vmax;
+      height: 30vmax;
+      margin: 1em;
+      padding: 10px 37px 50px 38px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+  
+    .space{
+      width: 1em;
+      height: 1em;
+      margin-top:2em;
+    }
+  
+    .center-text{
+      justify-content: center;
+    }
+    .card-text{
+      width: 12em;
+      height: 9.75;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 1em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    .card-number{
+  
+      width:3em;
+      font-family: 'Poppins' !important;
+      font-size: 2em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -5.66px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #009245;
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+  
+    .center-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .sectionA {
       grid-template-columns: repeat(1, 1fr);
 
@@ -1229,6 +1408,110 @@
   }
 
   .homebackground {
+    max-width: 100%;
+    .Una-experiencia-dife {
+      width: 10em;
+      height: 1em;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 4em;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.08;
+      letter-spacing: -1.74px;
+      text-align: center;
+      color: #009245;
+    }
+    .pasos-a-seguir {
+      width: 10em;
+      height: 1.5em;
+      //Only this
+      margin-top: 5em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 39px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -1.47px;
+      text-align: center;
+      color: #a6a6a6;
+    }
+  
+    .flip-cards-grid{
+      margin-top: 3em;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      //oNLY THAT
+      grid-template-columns  : repeat(1, auto);
+      justify-content: center;
+    }
+  
+    .front-card{
+      width: 35vmax;
+      height: 30vmax;
+      margin: 1em;
+      padding: 10px 37px 50px 38px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+  
+    .space{
+      width: 1em;
+      height: 1em;
+      margin-top:2em;
+    }
+  
+    .center-text{
+      justify-content: center;
+    }
+    .card-text{
+      width: 15.6em;
+      height: 9.75;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins' !important;
+      font-size: 1em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: -0.6px;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    .card-number{
+  
+      width:3em;
+      font-family: 'Poppins' !important;
+      font-size: 2em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -5.66px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #009245;
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+  
+    .center-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .sectionA {
       grid-template-columns: repeat(1, 1fr);
 
@@ -1310,6 +1593,7 @@
   }
 
   .homebackground {
+    width: 100%;
     .sectionD {
       display: none;
     }
@@ -1436,6 +1720,100 @@
       }
     }
   }
+
+  .base {
+    display              : grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap             : 5em;
+    grid-auto-rows       : minmax(100px, auto);
+    width                : 90%;
+    margin-top           : 10%;
+    margin-left          : auto;
+    margin-right         : auto;
+    max-width            : 1700px;
+    justify-content: center;
+    .center-services {
+      align-items          : center;
+      text-align           : center;
+      display              : grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap             : 10px;
+      justify-content: right;
+    }
+  
+    .center-servicesA {
+      align-items          : center;
+      text-align           : center;
+      display              : grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap             : 10px;
+      justify-content: left;
+    }
+  
+    .iconServices {
+      width         :5vmax;
+      height: 8vmax;
+      margin: -4em 1em 112px -5em;
+      padding: 16px 12px 12px 22px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+    .iconServices-taxes {
+      width         :5vmax;
+      height: 8vmax;
+    }
+  
+    .iconServices-audits {
+      width         : 6vmax;
+      height: 9vmax;
+    
+    }
+  
+    .extraicon {
+      width         : 6vmax;
+      height: 9vmax;
+      margin: -4em 12px 112px 55px;
+      border-radius: 8px;
+      background-color: #009245;
+    }
+  
+    .caja-services{
+      width: 27em;
+      height: 12em;
+      margin: auto;
+      padding: 0px 24px 28px 31px;
+      border-radius: 8px;
+      background-color: #d8d8d8;
+    }
+  
+    .servicios-lanatax {
+      font-size      : 2em;
+      font-weight    : 600;
+      font-stretch   : normal;
+      font-style     : normal;
+      line-height    : normal;
+      letter-spacing : normal;
+      color          : #009245;
+      text-decoration: none;
+      margin-top: -1em;
+      margin-left: 5em;
+    }
+  
+    .servicios-lanatax-des {
+      width: auto;
+      font-size      : 1em;
+      font-weight    : normal;
+      font-stretch   : normal;
+      font-style     : normal;
+      line-height    : normal;
+      letter-spacing : normal;
+      color          : #009245;
+      text-decoration: none;
+      margin-top:-9em;
+    }
+  }
 }
 
 @media (min-width: 2000px) and (max-width: 3000px) {
@@ -1448,6 +1826,8 @@
 
 
 @media (min-width: 1200px) and (max-width: 1600px) {
+
+
   .Photo {
     background           : url('../../images/Home/init/pick-header.png') center center/cover no-repeat;
     width                : 1400px;
@@ -1471,6 +1851,101 @@
     opacity         : 0.5;
     background-color: #008f45;
   }
+
+
+.base {
+  display              : grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap             : 10px;
+  grid-auto-rows       : minmax(100px, auto);
+  width                : 90%;
+  margin-top           : 10%;
+  margin-left          : auto;
+  margin-right         : auto;
+  max-width            : 1700px;
+  justify-content: center;
+  .center-services {
+    align-items          : center;
+    text-align           : center;
+    display              : grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap             : 10px;
+    justify-content: right;
+  }
+
+  .center-servicesA {
+    align-items          : center;
+    text-align           : center;
+    display              : grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap             : 10px;
+    justify-content: left;
+  }
+
+  .iconServices {
+    width         :5vmax;
+    height: 8vmax;
+    margin: -4em 1em 112px -5em;
+    padding: 16px 12px 12px 22px;
+    border-radius: 8px;
+    background-color: #009245;
+  }
+
+  .iconServices-taxes {
+    width         :5vmax;
+    height: 8vmax;
+  }
+
+  .iconServices-audits {
+    width         : 6vmax;
+    height: 9vmax;
+  
+  }
+
+  .extraicon {
+    width         : 6vmax;
+    height: 9vmax;
+    margin: -4em 12px 112px 55px;
+    border-radius: 8px;
+    background-color: #009245;
+  }
+
+  .caja-services{
+    width: 27em;
+    height: 12em;
+    margin: auto;
+    padding: 0px 24px 28px 31px;
+    border-radius: 8px;
+    background-color: #d8d8d8;
+  }
+
+  .servicios-lanatax {
+    font-size      : 2em;
+    font-weight    : 600;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : normal;
+    letter-spacing : normal;
+    color          : #009245;
+    text-decoration: none;
+    margin-top: -1em;
+    margin-left: 5em;
+  }
+
+  .servicios-lanatax-des {
+    width: auto;
+    font-size      : 1em;
+    font-weight    : normal;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : normal;
+    letter-spacing : normal;
+    color          : #009245;
+    text-decoration: none;
+    margin-top:-9em;
+  }
+}
 
 
 }
