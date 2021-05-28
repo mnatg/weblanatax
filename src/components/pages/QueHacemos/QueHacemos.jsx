@@ -1,11 +1,7 @@
 import React from 'react';
-import Cards from '../Home/Cards';
-import HeroSection from '../Home/HeroSection';
 import Footer from '../Home/Footer';
-import SectionA from '../QuienesSomos/SectionA'
-import SectionB from '../QuienesSomos/SectionB'
-import SectionC from '../QuienesSomos/SectionC'
-import SectionD from '../Home/sectionD'
+import SectionA from './SectionA';
+import SectionB from './SectionB';
 
 
 
@@ -14,7 +10,6 @@ function QueHacemos() {
     <>
       <SectionA />
       <SectionB/>
-      <SectionC/>
       <Footer />
     </>
   );

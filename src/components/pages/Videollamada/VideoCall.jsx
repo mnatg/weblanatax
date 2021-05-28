@@ -44,7 +44,6 @@ import GetConsultancyRoomService from '../../../Services/ConsultancyRoom/GetCons
 import '../../../assets/styles/General/videoCall.scss';
 import {
     Colors,
-    dimensions,
     MetricsSizes,
     MetricsSizesW,
     Images
