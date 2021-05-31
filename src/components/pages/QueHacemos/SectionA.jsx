@@ -11,7 +11,7 @@ import plan2 from '../../../assets/images/WeDo/card-small-basic.webp';
 import plan3 from '../../../assets/images/WeDo/card-small-premium.webp';
 import plan4 from '../../../assets/images/WeDo/card-small-deluxe.webp';
 import plan5 from '../../../assets/images/WeDo/card-small-deluxe-copy.webp';
-
+import bgWeDodesktop from '../../../assets/images/WeDo/shutterstock-1606546729.webp';
 
 function SectionA() {
   const useStyles = makeStyles((theme) => ({
@@ -34,17 +34,24 @@ function SectionA() {
     },
     p: {
       color: '#009245',
-      padding: '6em',
+      padding: '12%',
       textAlign: 'justify',
     },
+    paper:{
+      backgroundColor: 'rgba(233, 233, 233, 0.7)'
+    },
     content: {
-      marginTop: 0,
+      marginTop: '-0.8%',
       backgroundColor: '#e9e9e9',
+      backgroundImage: `url(${bgWeDodesktop})`,
+      backgroundSize:'cover',
+      backgroundPosition:'center'
     },
     contentTex: {
       marginLeft: '5em',
       marginTop: '5em',
-      marginBottom: '5em'
+      marginBottom: '5em',
+      
     },
     Balls: {
       marginTop: '-18em',
@@ -53,13 +60,52 @@ function SectionA() {
       marginRight: '10%'
     },
     plan: {
-      marginTop:'-7%',
-      width: '95%'
+      marginTop: '-7%',
+      width: '90%',
+      marginBottom: '2em',
+      [theme.breakpoints.down('lg')]: {
+        width: '95%',
+        marginBottom: '2em',
+        marginTop: '-7%',
+      },
+      [theme.breakpoints.down('md')]: {
+        width: '80%',
+        marginTop: '0',
+        marginLeft:'10%',
+        marginRight:'10%'
+      },
+      [theme.breakpoints.down('xs')]: {
+        width: '90%',
+        marginBottom: '2em',
+      },
     },
     plan2: {
-      width: '95%',
-      marginBottom:'5em'
+      width: '90%',
+      marginBottom: '2em',
+      [theme.breakpoints.down('lg')]: {
+        width: '95%',
+        marginBottom: '2em',
+      },
+      [theme.breakpoints.down('md')]: {
+        width: '80%',
+        marginTop: '0',
+        marginLeft:'10%',
+        marginRight:'10%'
+      },
+      [theme.breakpoints.down('xs')]: {
+        width: '90%',
+        marginBottom: '2em',
+      },
     },
+
+    destop: {
+      [theme.breakpoints.down('md')]: {
+        display:'none'
+      },
+      [theme.breakpoints.down('xs')]: {
+        display:'none'
+      },
+    }
 
   }));
   const classes = useStyles();
@@ -86,21 +132,21 @@ function SectionA() {
                                                                          cada tipo de persona.</p></Paper>
         </Grid>
       </Grid>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={3}>
+      <Grid container direction="row" justify="center" alignItems="center" >
+        <Grid item xs={9} md={9} lg={3}>
           <img src={plan1} alt="card-small-free" className={classes.plan} />
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={9} md={6} lg={3}>
           <img src={plan2} alt="card-small-basic" className={classes.plan} />
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={9} md={6} lg={3} >
           <img src={plan3} alt="card-small-premium" className={classes.plan} />
         </Grid>
-        <hr></hr>
-        <Grid item xs={3}>
+        <hr className={classes.destop}></hr>
+        <Grid item xs={9} md={6} lg={3} >
           <img src={plan4} alt="card-small-deluxe" className={classes.plan2} />
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={9} md={6} lg={3}>
           <img src={plan5} alt="card-small-deluxe-copy" className={classes.plan2} />
         </Grid>
       </Grid>
