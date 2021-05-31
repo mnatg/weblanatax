@@ -2,7 +2,9 @@
 import React from 'react';
 // Assets
 import rocket from '../../../assets/images/WeDo/rocket.webp';
-import defaultImage from '../../../assets/images/QuienesSomos/shutterstock-104304026.png';
+import background from '../../../assets/images/WeDo/sectionBbg.webp';
+import backgroundTablet from '../../../assets/images/WeDo/sectionBbgTablet.webp';
+import backgroundMovil from '../../../assets/images/WeDo/sectionBbgMovil.webp';
 // Styles
 import '../../../assets/styles/WeDo/SectionB.scss'
 import { Colors } from '../../../Theme/index';
@@ -13,35 +15,75 @@ import {
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
+  header: {
+    height: '16.125em',
+    [theme.breakpoints.down('xs')]: {
+      height: '9.625em'
+    }
+  },
   title: {
-    fontSize: '4.375em',
+    fontSize: '4.8125em',
     textAlign: 'center',
     fontWeight: 'bold',
     fontFamily: 'PoppinsExtraBold',
     width: '70%',
+    paddingTop: '1em',
     [theme.breakpoints.up('xl')]: {
       width: '80%'
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '3.4375em'
+      fontSize: '3.4375em',
+      paddingTop: '1.69091em'
     },
     [theme.breakpoints.down('xs')]: {
-      width: '100%'
+      width: '100%',
+      fontSize: '2.5em',
+      paddingTop: '1.225em'
     }
   },
   rocket: {
     position: 'absolute',
-    height: '24.25em',
-    width: '25.66875em',
+    height: '35.25em',
+    width: '36.66875em',
     marginLeft: '50%',
-    marginTop: '-14em',
+    marginTop: '-19em',
     [theme.breakpoints.down('sm')]: {
-      height: '18.25em',
-      width: '19.66875em',
-      marginTop: '-10.5em',
+      height: '29.625em',
+      width: '30.125em',
+      marginTop: '-16em',
     },
     [theme.breakpoints.down('xs')]: {
       display: 'none'
+    }
+  },
+  content: {
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    marginBottom: '-2.375em',
+    justifyContent: 'flex-end',
+    [theme.breakpoints.down('sm')]: {
+      backgroundImage: `url(${backgroundTablet})`,
+      justifyContent: 'center'
+    },
+    [theme.breakpoints.down('xs')]: {
+      backgroundImage: `url(${backgroundMovil})`
+    }
+  },
+  card: { paddingRight: '22.125em' },
+  contentTextCard: {
+    backgroundColor: 'rgba(233, 233, 233, 0.7)',
+    width: '33.75em',
+    textAlign: 'right',
+    fontSize: '1em',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '48.0625em',
+      textAlign: 'center'
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '42.3125em',
+      width: '23.34em',
+      fontSize: '0.75em'
     }
   }
 }));
@@ -55,14 +97,16 @@ const SectionA = () => {
   return (
     <Grid container  >
       <Grid item xs={12} >
-        <Box color={Colors.aquamarine} bgcolor={Colors.shadowGray} flexDirection='row' py={4.8125} >
+        <Box className={classes.header}
+          color={Colors.aquamarine} bgcolor={Colors.shadowGray} flexDirection='row' >
           <h1 className={classes.title} >AUDITORÍAS</h1>
           <img src={rocket} alt="Rocket" className={classes.rocket} />
         </Box>
       </Grid>
-      <Grid item xs={12} style={{ backgroundImage: `url(${defaultImage})`, backgroundRepeat: 'round', marginBottom: '-2.375em' }} >
-        <Grid item xs={6} style={{ marginInlineStart: 'auto' }} >
-          <Box color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} style={{ backgroundColor: 'rgba(233, 233, 233, 0.7)', width: '33.75em', textAlign: 'right', fontSize: '1em' }} >
+      <Grid item container xs={12} className={classes.content} >
+        <Grid item xs={6} className={classes.card} >
+          <Box className={classes.contentTextCard}
+            color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
             <p>{textContentP1}</p>
             <p>{textContentP2}</p>
           </Box>
