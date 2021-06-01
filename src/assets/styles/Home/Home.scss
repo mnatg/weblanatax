@@ -20,7 +20,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  max-width            : 1700px;
+
   margin-left          : auto;
   margin-right         : auto;
   font-family          : 'HelveticaRounded' !important;
@@ -49,13 +49,6 @@
     width      : 100%;
     align-items: flex-end;
   }
-
-
-  .Logo-store {
-    margin      : auto;
-    margin-right: 1em;
-  }
-
   .no-te {
     margin-top    : 40%;
     font-size     : 4.0625em;
@@ -104,21 +97,6 @@
     margin-top    : 5%;
   }
 
-  .empezar-gratis {
-    height    : 2.7em;
-    margin-top: 3%;
-
-    .btn-start {
-      margin-top: 3%;
-      object-fit: contain;
-    }
-  }
-
-  .icons {
-    margin-top: 10em;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
 
 }
 
@@ -527,9 +505,6 @@
 
     .itemCarousel {
       width: 20em;
-      img {
-        width: 90%;
-      }
     }
 
     .news-title {
@@ -839,7 +814,6 @@
   .Photo {
     background-image     : url('../../images/Home/init/photoMobile.png');
     background-position  : center;
-    max-width            : 450px;
     height               : 48.8em;
     grid-template-columns: repeat(1, auto);
     margin-left: 0;
@@ -898,7 +872,7 @@
     margin-top           : 10%;
     margin-left          : auto;
     margin-right         : auto;
-    max-width            : 1700px;
+
     justify-content: center;
     .center-services {
       align-items          : center;
@@ -1201,7 +1175,6 @@
 
     .CarouselItem {
       width: 60%;
-      margin-inline-start: 1.35em;
     }
   }
 
@@ -1386,10 +1359,9 @@
   .Photo {
     background-image     : url('../../images/Home/init/pick-header.png');
     background-position  : center;
-    width: 768px;
-  height: 734px;
+    height: 734px;
     margin   : 5em 0 0 0;
-    max-width: 960px;
+    
 
     .no-te {
       font-size  : 3.0625em;
@@ -1405,7 +1377,7 @@
   .base {
     grid-template-columns: repeat(3, 1fr);
     width                : 100%;
-    max-width            : 960px;
+  
 
     .iconServices {
       width         : 7vmax;
@@ -1581,12 +1553,12 @@
 
       .GridRightB {
         width       : 80%;
-        margin-inline: auto;
+        margin-right: 20%;
+        margin-left : 10%;
 
         .gridtest {
           .TEXT {
-            width: 14.3em;
-            font-size: 2vmin;
+            width: 10.6em;
           }
         }
       }
@@ -1744,7 +1716,6 @@
     margin-top           : 10%;
     margin-left          : auto;
     margin-right         : auto;
-    max-width            : 1700px;
     justify-content: center;
     .center-services {
       align-items          : center;
@@ -1842,18 +1813,7 @@
 
 
   .Photo {
-    background           : url('../../images/Home/init/pick-header.png') center center/cover no-repeat;
-    width                : 1400px;
-    height               : 70em;
-    margin-top           : 5em;
-    display              : grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap             : 10px;
-    grid-auto-rows       : minmax(100px, auto);
-    max-width            : 1200px;
-    margin-left          : auto;
-    margin-right         : auto;
-    font-family          : 'HelveticaRounded' !important;
+    width                : 90%;
   }
 
   .line-copy {
@@ -1876,7 +1836,7 @@
   margin-top           : 10%;
   margin-left          : auto;
   margin-right         : auto;
-  max-width            : 1700px;
+
   justify-content: center;
   .center-services {
     align-items          : center;
