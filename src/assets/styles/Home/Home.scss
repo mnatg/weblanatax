@@ -527,6 +527,9 @@
 
     .itemCarousel {
       width: 20em;
+      img {
+        width: 90%;
+      }
     }
 
     .news-title {
@@ -1578,12 +1581,12 @@
 
       .GridRightB {
         width       : 80%;
-        margin-right: 20%;
-        margin-left : 10%;
+        margin-inline: auto;
 
         .gridtest {
           .TEXT {
-            width: 10.6em;
+            width: 14.3em;
+            font-size: 2vmin;
           }
         }
       }
