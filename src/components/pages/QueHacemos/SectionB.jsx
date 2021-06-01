@@ -17,6 +17,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   header: {
     height: '16.125em',
+    marginTop: '2em',
     [theme.breakpoints.down('xs')]: {
       height: '9.625em'
     }
