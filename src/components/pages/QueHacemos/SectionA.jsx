@@ -11,7 +11,7 @@ import plan2 from '../../../assets/images/WeDo/card-small-basic.webp';
 import plan3 from '../../../assets/images/WeDo/card-small-premium.webp';
 import plan4 from '../../../assets/images/WeDo/card-small-deluxe.webp';
 import plan5 from '../../../assets/images/WeDo/card-small-deluxe-copy.webp';
-import bgWeDodesktop from '../../../assets/images/WeDo/shutterstock-1606546729.webp';
+import bgWeDodesktop from '../../../assets/images/WeDo/shutterstock-1606546729.png';
 import bgWeDoTablet from '../../../assets/images/WeDo/bgatablet.webp';
 import bgWeDoMovil from '../../../assets/images/WeDo/gbamovil.png';
 
@@ -39,7 +39,7 @@ function SectionA() {
     p: {
       color: '#009245',
       padding: '12%',
-      textAlign: 'justify',
+      textAlign: 'center',
     },
     paper: {
       backgroundColor: 'rgba(233, 233, 233, 0.7)'
@@ -81,7 +81,10 @@ function SectionA() {
       marginTop: '-18em',
       width: '79%',
       marginLeft: '10%',
-      marginRight: '10%'
+      marginRight: '10%',
+      [theme.breakpoints.down('xs')]: {
+        display:'none',
+      },
     },
     plan: {
       marginTop: '-7%',
