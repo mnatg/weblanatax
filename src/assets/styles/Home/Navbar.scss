@@ -18,13 +18,12 @@
     align-items: center;
     height: 4.875em;
     margin: auto;
-    margin-left: 0em;
 
     .LANA {
       width: 6.75em;
       height: 2.125em;
       margin: auto;
-      margin-left: 10em;
+      margin-left: 10%;
       object-fit: contain;
       justify-content: center;
     }
@@ -44,7 +43,6 @@
         height: 2em;
         margin: auto;
         width: max-content;
-        margin-left: 10em;
         .nav-links {
           justify-items: left;
           align-items: center;
@@ -58,7 +56,6 @@
           letter-spacing: normal;
           color: #a6a6a6;
           margin-right: 3em;
-          margin-left: 10em;
         }
         .nav-links:hover {
           color: #009245;
@@ -97,100 +94,6 @@
   margin-right: 3em;
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
-  .navbar {
-    background: #fff !important;
-    height: 5em;
-    justify-content: center;
-    align-items: center;
-    width: 2vmax;
-    
-    .navbar-container {
-      align-items: center;
-      height: 4.875em;
-      margin: auto;
-      margin-left: 0em;
-  
-      .LANA {
-        width: 6.75em;
-        height: 2.125em;
-        margin: auto;
-        margin-left: 10em;
-        object-fit: contain;
-        justify-content: center;
-      }
-      .menu-icon {
-        display: none;
-        .fa-bars {
-          color: #000;
-        }
-      }
-      .nav-menu {
-        display: flex;
-        grid-gap: 0.625em;
-        list-style: none;
-        text-align: center;
-        margin-left: 12%;
-        .nav-item {
-          height: 1em;
-          margin: auto;
-          width: max-content;
-          margin-left: 5em;
-          .nav-links {
-            justify-items: left;
-            align-items: center;
-            text-decoration: none;
-            font-family: 'Poppins' !important;
-            font-size: 0.875em;
-            font-weight: 600;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 2;
-            letter-spacing: normal;
-            color: #a6a6a6;
-            margin-right: 3em;
-            margin-left: 5em;
-          }
-          .nav-links:hover {
-            color: #009245;
-            transition: all 0.2s ease-out;
-          }
-        }
-        .nav-links-mobile {
-          display: none;
-        }
-        .nav-btn {
-          margin-top: -0.4em;
-        }
-        .hide{
-          display: none;
-        }
-      }
-    }
-  }
-  
-  .hideIcon{
-    display: none;
-  }
-  .user-avatar{
-    justify-items: left;
-    color: #000;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Poppins' !important;
-    font-size: 0.875em;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    color: #a6a6a6;
-    margin-right: 3em;
-  }
-  
-
-}
-
 //Compartidos entre tablet y movil
 @media screen and (max-width: 960px) {
   .navbar {
@@ -204,20 +107,18 @@
       display: flex;
       flex-direction: column;
       width: 75%;
-      height: 69vh;
+      height: 85vh;
       position: fixed;
-      top: 1em;
+      top: 5em;
       left: -200%;
       opacity: 1;
       transition: all 0.5s ease;
       .nav-item {
-        margin-left: 0em;
         .nav-links {
           text-align: center;
           width: 100%;
           display: table;
           font-size: 1.5em;
-          margin-left: 0em;
         }
       }
       .nav-links-mobile {
@@ -225,7 +126,7 @@
         text-align: center;
         margin: 2rem auto;
         border-radius: 4px;
-        width: 70%;
+        width: 80%;
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
@@ -260,22 +161,6 @@
   .left {
     margin-inline-start: auto;
     margin-inline-end: 15%;
-  }
-
-  .user-avatar{
-    justify-items: left;
-    color: #000;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Poppins' !important;
-    font-size: 1em;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    color: #a6a6a6;
-    margin-right: 3em;
   }
 }
 
