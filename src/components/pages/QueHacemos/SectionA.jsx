@@ -27,8 +27,14 @@ function SectionA() {
       alignContent: 'center',
       textAlign: 'center',
       backgroundColor: '#e9e9e9',
-      paddingTop: '8em',
-      paddingBottom: '8em'
+      paddingTop: '10%',
+      paddingBottom: '10%',
+      marginTop:'5%',
+      [theme.breakpoints.down('xs')]: {
+        paddingTop: '20%',
+        paddingBottom: '20%',
+        marginTop:'15%',
+      },
 
     },
     title: {
