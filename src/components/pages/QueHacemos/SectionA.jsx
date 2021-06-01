@@ -38,7 +38,7 @@ function SectionA() {
       color: '#009245',
       fontSize: '6em',
       [theme.breakpoints.down('xs')]: {
-        fontSize: '4em',
+        fontSize: '3em',
       },
     },
     p: {
@@ -106,6 +106,9 @@ function SectionA() {
       width: '95%',
       marginLeft: '2.5%',
       marginRight: '2.5%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      display: 'none'
     },
   },
     plan: {
