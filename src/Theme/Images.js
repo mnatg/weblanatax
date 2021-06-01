@@ -39,4 +39,6 @@ export default {
   plansBg : require('../assets/images/Common/plansBg.png'),
   characterPlans : require('../assets/images/Common/characterPlans.png'),
   loading: require('../assets/images/Common/loading-money.gif'),
+
+  
 }
