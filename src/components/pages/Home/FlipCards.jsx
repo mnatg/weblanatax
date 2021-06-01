@@ -22,23 +22,12 @@ class FlipCards extends React.Component {
              <Grid >
           
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical" onClick={this.handleClick}>
+        
+         <button  onClick={this.handleClick} className='card-number'>1.</button>
+     
           <div className='front-card'>
-
-            <div className='center-button'>
-         <button  onClick={this.handleClick} className='card-number'>1 .</button>
-         </div>
-          <p className='card-text'>Usted podrá exponer su caso con el consultor quien está disponible siempre para usted,de esta manera entenderemos mejor el caso, recuerde que la consulta es
+         <p onClick={this.handleClick}  className='card-text'>Usted podrá exponer su caso con el consultor quien está disponible siempre para usted,de esta manera entenderemos mejor el caso, recuerde que la consulta es
  totalmente gratis</p>
-          
-          </div>
-  
-          <div className='front-card'>
-          <div className='center-button'>
-         <button  onClick={this.handleClick} className='card-number'>2.</button>
-         </div>
-          <p className='card-text'>Se realiza el diagnóstico
- investigando a fondo el caso para proveer las mejores soluciones posibles, de esta manera otorgarte las tres mejores opciones</p>
-            
           </div>
         </ReactCardFlip>
         

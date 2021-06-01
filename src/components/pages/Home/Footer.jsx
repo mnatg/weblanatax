@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/Home/init/lana@3x.png';
@@ -14,6 +14,12 @@ import '../../../assets/styles/Home/Navbar.scss'
 
 
 function Footer() {
+ 
+  const [acceptPolicy, setAcceptPolicy] = useState(false);
+
+  const handleClickFooter = () => setAcceptPolicy(!acceptPolicy);
+
+
   return (
     <div className='homebackground'>
       <p className='line-copy'></p>
@@ -21,7 +27,7 @@ function Footer() {
         <Link to='/'  >
           <img className="LANA-FOOTER" src={logo} alt="logo"/>
         </Link>
-        <div className='first'>
+        <div className='first hide'>
           <p className='Enlaces-rpidos'>Enlaces Rápidos</p>
           <Link className='link-decoration' to='/' >
             <p className='About-Us'>About Us</p>
@@ -30,16 +36,6 @@ function Footer() {
             <p className='About-Us'>Blog</p>
           </Link>
           <Link className='link-decoration' to='/' >
-            <p className='About-Us'>Contact</p>
-          </Link>
-          <Link className='link-decoration' to='/' >
-            <p className='About-Us'>FAQ</p>
-          </Link>
-        </div>
-        <div className='second'>
-          <p className='Legales'>Legales</p>
-          <Link className='link-decoration' to='/' >
-            <p className='About-Us'>Disclaimer</p>
           </Link>
           <Link className='link-decoration' to='/' >
             <p className='About-Us'>Financing</p>
@@ -51,12 +47,27 @@ function Footer() {
             <p className='About-Us'>Terms of Service</p>
           </Link>
         </div>
+        <div className='second'>
+          <p className='Legales'>Legales</p>
+          <a className='link-decoration' href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a' >
+            <p className='About-Us'>Privacy Policy</p>
+          </a>
+        </div>
         <div className='third'>
           <p className='suscribete'>Suscribete a nuestro <br/>Newslatter</p>
           <Grid container>
             <input className="Rectangle-5-Copy" placeholder="Email" />
+
+           <Grid container direction="row" justify="center" alignItems="​center" >
+            <input onChange={handleClickFooter} type='checkbox'/>
+            <a href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
+¿ Aceptas nuestras Politicas de Privacidad ?
+            </a>
+            </Grid>
+            
+           
           </Grid>
-          <button className='signup-now-button'>Registrar</button>
+          <button disable={acceptPolicy} className='signup-now-button'>Registrar</button>
         </div>
       </div>
       <p className='line-copy'></p>

@@ -7,7 +7,9 @@
   font-family: 'Poppins';
 }
 
-
+.hide{
+  display: none;
+}
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
@@ -113,7 +115,9 @@
   }
 
   .icons {
-    margin-top: 12%;
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
 }
@@ -228,6 +232,7 @@
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
     font-family: 'Poppins' !important;
     font-size: 65px;
     font-weight: 800;
@@ -265,8 +270,8 @@
   }
 
   .front-card{
-    width: 22vmax;
-    height: 30vmax;
+    width: 17vmax;
+    height: 14vmax;
     margin: 1em;
     padding: 10px 37px 50px 38px;
     border-radius: 8px;
@@ -286,7 +291,7 @@
   .card-text{
     width: 15.6em;
     height: 9.75;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins' !important;
@@ -302,6 +307,8 @@
 
   .card-number{
     width:3em;
+    height: 2.5em;
+    margin-top: 2em;
     font-family: 'Poppins' !important;
     font-size: 7em;
     font-weight: bold;
@@ -312,7 +319,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #009245;
-    margin-left: auto;
+    margin-left: 1em;
     margin-right: auto;
   }
 
@@ -1019,7 +1026,7 @@
     }
   
     .front-card{
-      width: 24vmax;
+      width: 28vmax;
       height: 30vmax;
       margin: 1em;
       padding: 10px 37px 50px 38px;
@@ -1038,13 +1045,13 @@
       justify-content: center;
     }
     .card-text{
-      width: 12em;
+      width: 10em;
       height: 9.75;
-      margin-top: 2em;
+      margin-top: 0em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
-      font-size: 1em;
+      font-size: 0.8em;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -1057,8 +1064,9 @@
     .card-number{
   
       width:3em;
+      height: 3.5em;
       font-family: 'Poppins' !important;
-      font-size: 2em;
+      font-size: 3em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -1266,7 +1274,7 @@
     width: 100%;
     width           : 90%;
   height          : 1px;
-  margin-top      : 2.375em;
+  margin-top      : 8.375em;
   margin-left: 0em;
   opacity         : 0.5;
   background-color: #008f45;
@@ -1491,9 +1499,10 @@
   
     .card-number{
   
-      width:3em;
+      width: 4em;
+      height: 4em;
       font-family: 'Poppins' !important;
-      font-size: 2em;
+      font-size: 5em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;

@@ -19,31 +19,15 @@ class FlipCards extends React.Component {
     render() {
       return (
           <>
-             <Grid>
-               
+             <Grid>    
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical" onClick={this.handleClick}>
-          <div className='front-card'>
-          <div className='center-button'>
+        
          <button  onClick={this.handleClick} className='card-number'>2.</button>
-         </div>
-
        
-           <p className='card-text'>Se realiza el diagnóstico
- investigando a fondo el caso para proveer las mejores soluciones posibles, de esta manera otorgarte las tres mejores opciones</p> 
-
-            
-          </div>
-  
           <div className='front-card'>
-          <div className='center-button'>
-         <button  onClick={this.handleClick} className='card-number'>3.</button>
-         </div>
-
-          <p className='card-text'>De esta manera, queda a tu 
-disposición tres escenarios donde puedes escoger la solución que más te convenga</p>
-            
+         <p onClick={this.handleClick}  className='card-text'>Se realiza el diagnóstico
+ investigando a fondo el caso para proveer las mejores soluciones posibles, de esta manera otorgarte las tres mejores opciones</p>
           </div>
-
         </ReactCardFlip>
    
 </Grid>
