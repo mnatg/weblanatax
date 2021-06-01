@@ -12,6 +12,9 @@ import plan3 from '../../../assets/images/WeDo/card-small-premium.webp';
 import plan4 from '../../../assets/images/WeDo/card-small-deluxe.webp';
 import plan5 from '../../../assets/images/WeDo/card-small-deluxe-copy.webp';
 import bgWeDodesktop from '../../../assets/images/WeDo/shutterstock-1606546729.webp';
+import bgWeDoTablet from '../../../assets/images/WeDo/bgatablet.webp';
+import bgWeDoMovil from '../../../assets/images/WeDo/gbamovil.png';
+
 
 function SectionA() {
   const useStyles = makeStyles((theme) => ({
@@ -27,6 +30,7 @@ function SectionA() {
 
     },
     title: {
+      width: '100%',
       fontFamily: 'PoppinsExtraBold',
       fontWeight: 'bold',
       color: '#009245',
@@ -37,21 +41,41 @@ function SectionA() {
       padding: '12%',
       textAlign: 'justify',
     },
-    paper:{
+    paper: {
       backgroundColor: 'rgba(233, 233, 233, 0.7)'
     },
     content: {
       marginTop: '-0.8%',
-      backgroundColor: '#e9e9e9',
+      backgroundColor: 'none',
       backgroundImage: `url(${bgWeDodesktop})`,
-      backgroundSize:'cover',
-      backgroundPosition:'center'
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      [theme.breakpoints.down('md')]: {
+        backgroundImage: `url(${bgWeDoTablet})`,
+        backgroundPosition: 'top',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+      [theme.breakpoints.down('xs')]: {
+        backgroundImage: `url(${bgWeDoMovil})`,
+        },
+
+      }
     },
     contentTex: {
+      fontSize: '1em',
       marginLeft: '5em',
       marginTop: '5em',
       marginBottom: '5em',
-      
+      [theme.breakpoints.down('md')]: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: '80%',
+        textAlign: 'center',
+        [theme.breakpoints.down('xs')]: {
+          marginTop: '120%',
+        },
+      },
+
     },
     Balls: {
       marginTop: '-18em',
@@ -71,8 +95,8 @@ function SectionA() {
       [theme.breakpoints.down('md')]: {
         width: '80%',
         marginTop: '0',
-        marginLeft:'10%',
-        marginRight:'10%'
+        marginLeft: '10%',
+        marginRight: '10%'
       },
       [theme.breakpoints.down('xs')]: {
         width: '90%',
@@ -89,8 +113,8 @@ function SectionA() {
       [theme.breakpoints.down('md')]: {
         width: '80%',
         marginTop: '0',
-        marginLeft:'10%',
-        marginRight:'10%'
+        marginLeft: '10%',
+        marginRight: '10%'
       },
       [theme.breakpoints.down('xs')]: {
         width: '90%',
@@ -100,10 +124,10 @@ function SectionA() {
 
     destop: {
       [theme.breakpoints.down('md')]: {
-        display:'none'
+        display: 'none'
       },
       [theme.breakpoints.down('xs')]: {
-        display:'none'
+        display: 'none'
       },
     }
 
@@ -118,7 +142,7 @@ function SectionA() {
       </Grid>
       <Grid item xs={12} className={classes.content}>
         <img src={Balls} alt="Balls" className={classes.Balls} />
-        <Grid item xs={4} className={classes.contentTex}>
+        <Grid item lg={3} md={9} xs={9} className={classes.contentTex}>
           <Paper className={classes.paper}><p className={classes.p} >Hasta para los servicios básicos necesitamos tener al día nuestras cuentas de taxes (impuestos)
           y debido a que en nuestros países latinos no es un tema relevante, chocamos cuando ya viviendo
           en EEUU las cosas con los impuestos cambian, ya que como persona natural  debes declarar tanto tus
