@@ -65,13 +65,18 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `url(${backgroundTablet})`,
-      justifyContent: 'center'
+      justifyContent: 'flex-start'
     },
     [theme.breakpoints.down('xs')]: {
       backgroundImage: `url(${backgroundMovil})`
     }
   },
-  card: { paddingRight: '22.125em' },
+  card: {
+    paddingRight: '22.125em',
+    [theme.breakpoints.down('sm')]: {
+      paddingRight: 0
+    },
+  },
   contentTextCard: {
     backgroundColor: 'rgba(233, 233, 233, 0.7)',
     width: '33.75em',
@@ -79,7 +84,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '1em',
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
-      textAlign: 'center'
+      textAlign: 'center',
+      marginInline: 'auto'
     },
     [theme.breakpoints.down('xs')]: {
       marginTop: '42.3125em',
@@ -105,7 +111,7 @@ const SectionA = () => {
         </Box>
       </Grid>
       <Grid item container xs={12} className={classes.content} >
-        <Grid item xs={6} className={classes.card} >
+        <Grid item xs={12} md={6} className={classes.card}  >
           <Box className={classes.contentTextCard}
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
             <p>{textContentP1}</p>
