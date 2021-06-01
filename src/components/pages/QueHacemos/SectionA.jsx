@@ -164,7 +164,7 @@ const classes = useStyles();
 
 return (
 
-  <Grid container spacing={3}>
+  <Grid container>
     <Grid item xs={12}>
       <Paper className={classes.header}><p className={classes.title} >TAXES</p></Paper>
     </Grid>
