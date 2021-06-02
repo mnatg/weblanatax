@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'HelveticaRounded';
+  src: local('HelveticaRounded'), url(../fonts/helveticaroundedltstdbd/HelveticaRoundedLTStd-Bd.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Modeco';
+  src: local('Modeco'), url(../fonts/modeco/ModecoTrial-ExtraLight.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsExtraBold';
+  src: local('PoppinsExtraBold'), url(../fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
+}
+

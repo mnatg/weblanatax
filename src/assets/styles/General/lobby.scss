@@ -1,0 +1,32 @@
+
+@import './colors.scss';
+@import './fonts.scss';
+@import './variables.scss';
+
+.lobby {
+    padding-top  : 1em;
+    margin-left  : 1em;
+    margin-bottom: 1em;
+    width        : 100%;
+    p {
+        padding-left: 1em;
+        color       : $green;
+        font-size   : 1em;
+        font-family : $AvenirN-D;
+    }
+    th, td {
+        font-family: $AvenirN-M;
+        color      : $new-grey;
+    }
+    .red {
+        color: $red-font;
+    }
+    .MuiTableContainer-root {
+        background-color: $whitent;
+        border-radius   : 6px;
+    }
+    .name {
+        color: $green;
+    }
+
+}

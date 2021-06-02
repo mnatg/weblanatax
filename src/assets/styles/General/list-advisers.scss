@@ -1,0 +1,36 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './variables.scss';
+
+.list-advisers {
+    margin-left     : 1em;
+    margin-bottom   : 1em;
+    background-color: $whitent;
+    border-radius   : 6px;
+    width           : 100%;
+    p {
+        padding-left: 1em;
+        color       : $green;
+        font-size   : 1em;
+        font-family : $AvenirN-D;
+    }
+    th,
+    td {
+        font-family: $AvenirN-M;
+        color      : $new-grey;
+    }
+    .green {
+        color: $green-ligth;
+    }
+    .name {
+        color: $green
+    }
+    .button-asignar {
+        padding         : 0.1em 2em;
+        background-color: $green-ligth;
+        color           : $white;
+        font-size       : 0.75em;
+        border-radius   : 10.5px;
+    }
+    
+}

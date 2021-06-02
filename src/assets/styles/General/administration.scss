@@ -1,0 +1,43 @@
+@import './colors.scss';
+@import './variables.scss';
+
+.administration-page {
+    padding: 1% 2%;
+    .MuiTabs-indicator {
+        background-color: $whitent;
+    }
+
+    .header {
+        background-color: $green;
+        align-items     : center;
+        border-radius   : 5px 5px 0px 0px;
+
+        .table-header {
+            width: 100%;
+
+            .tables {
+                width      : 20%;
+                margin-left: 8%;
+            }
+
+            .add-button {
+                color      : $whitent;
+                width      : 10%;
+                margin-left: 6%;
+            }
+        }
+    }
+
+    .table-container {
+        border          : $grey solid 1px;
+        background-color: $whitent;
+        border-radius   : 0 0 5px 5px;
+        .edit-button {
+            color: $blue;
+        }
+        .delete-button {
+            color: $red;
+        }
+    }
+
+}

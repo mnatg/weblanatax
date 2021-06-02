@@ -1,0 +1,44 @@
+@import './colors.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.consultancies-table {
+    background-color: $whitent;
+    border-radius   : 6px;
+    margin-left     : 1em;
+    padding         : 2em;
+    margin-top      : 1em;
+    height          : 98%;
+    width           : 98% !important;
+    p {
+        padding-left: 1em;
+        color       : $green;
+        font-size   : 1em;
+        font-family : $AvenirN-D;
+        margin-top  : 0;
+    }
+    th, td {
+        font-family: $AvenirN-M;
+        color      : $new-grey;
+    }
+    .green {
+        color: $green;
+    }
+    .vigente {
+        background-color: $green-ligth;
+        color           : $white;
+        svg {
+            color: $green-dark;
+        }
+    }
+    .vencido {
+        background-color: $red-font;
+        color           : $white;
+        svg {
+            color: black;
+        }
+    }
+    .MuiTableContainer-root {
+        width: 98%;
+    }
+}

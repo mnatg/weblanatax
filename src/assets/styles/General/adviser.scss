@@ -1,0 +1,50 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './variables.scss';
+
+.adviser-container {
+    width        : 90%;
+    margin       : auto;
+    margin-top   : 1em;
+    margin-bottom: 1em;
+
+    .container-adviser {
+        border-radius   : 15px;
+        background-color: $whitent;
+        margin-top      : 1.5em;
+    }
+
+    p {
+        padding-left: 1em;
+        color       : $green;
+        font-size   : 1em;
+        font-family : $AvenirN-D;
+    }
+
+    th,
+    td {
+        font-family: $AvenirN-M;
+        color      : $new-grey;
+    }
+
+    .blue {
+        color: $grey-blue;
+    }
+
+    .green {
+        color: $green-ligth;
+    }
+
+    .red {
+        color: $red-font;
+    }
+
+    .name {
+        color: $green;
+    }
+
+    .img-client {
+        width       : 2em;
+        margin-right: -9em;
+    }
+}

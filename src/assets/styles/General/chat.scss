@@ -1,0 +1,143 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+.chat-height {
+    height: 80%;
+    width: 35%;
+    margin-inline: auto;
+}
+
+.chat-title {
+    border-radius: 0.5em 0.5em 0em 0em;
+    margin-bottom: -1em;
+    position     : relative;
+    text-align   : center;
+    padding      : 0.5em;
+    background   : $green;
+    width        : 100%;
+    text-align   : center;
+    border       : 1px #070c0070 solid;
+    color        : $whitent;
+}
+
+.chat {
+    background-color: $grey;
+    padding         : 1em;
+    border          : $grey 1px solid;
+    border-radius   : 0.5em;
+    margin-top      : 0.3em;
+    height          : 100%;
+
+    .chat-text {
+        height  : 93%;
+        width   : 100%;
+        overflow: auto;
+
+        .user-message {
+            width           : 65%;
+            float           : right;
+            background-color: #dcf8c6;
+            text-align      : right;
+            border          : $whitent 1px solid;
+            border-radius   : 6px;
+            margin          : 0.3em;
+           
+        }
+
+        .adviser-message {
+            width           : 65%;
+            background-color: #f0f0f0;
+            padding         : 0.5em;
+            margin          : 0.3em;
+            border          : 1px solid $whitent;
+            border-radius   : 6px;
+            float           : left;
+
+        }
+
+        .end-messages {
+            width           : 65%;
+            background-color: $grey;
+            color           : $grey;
+            margin          : 0.3em;
+            float           : left;
+        }
+
+        p.date {
+            font-size   : 0.7em;
+            color       : $grey;
+            margin-right: 0.3em;
+        }
+
+        p.text {
+            margin-right: 0.3em;
+            word-break  : break-all;
+        }
+    }
+
+    .chat-input {
+        display: flex;
+        margin-left: -5%;
+        input {
+            padding: 0.1em;
+            padding-left: 1.5em;
+            border-radius: 12px;
+            border: none;
+            width: 80%;
+            background-color: #e0e5f0;
+            height: 2.625em;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+            font-family: AvenirNext;
+            font-size: 0.875em;
+            padding-right: 15%;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        div {
+            margin-top: 0.15em;
+            margin-left: -2.625em;
+
+            button {
+                color           : $white;
+                background-color: $green;
+                padding-left    : 0.6em;
+                border          : none;
+                border-radius   : 12px;
+                width           : 2.6875em;
+                height          : 2.6875em;
+            }
+        }
+
+        svg {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .chat-image {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        border-radius: 5px;
+    }
+
+    .chat-document {
+        display: flex;
+
+        p {
+            margin-top     : 0.2em;
+            text-decoration: underline;
+        }
+
+        svg {
+            color: $green;
+        }
+    }
+}
+
+.chat:focus-visible, .chat-height:focus-visible {
+    outline: none;
+}

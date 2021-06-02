@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src/"],
+      "alias": {
+        "StoreTypes": "./Store/",
+        "underscore": "lodash",
+        "main":"./",
+        "services":"./src/Services"
+      }
+    }]
+  ]
+}
+
+
