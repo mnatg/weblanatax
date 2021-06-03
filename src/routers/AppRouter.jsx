@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/pages/Home/Navbar';
 import Home from '../components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import QueHacemos from '../components/pages/QueHacemos/QueHacemos';
@@ -22,25 +21,26 @@ import Lobby from '../components/pages/Lobby/index';
 import { FirebaseAppProvider } from 'reactfire';
 import fireConfig from '../firebase-config';
 import { useUser } from 'reactfire';
-import {
-  TaxController
-} from '../components/pages/Tax';
 
 import {
- preloadScript
+  preloadScript
 } from 'opentok-react';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './../themeConfig'
+import ContainerGeneral from '../components/pages/Home/ContainerGeneral';
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import BackToTop from '../components/pages/Home/BackToTop';
 
 function AppRouter() {
   var user = useUser();
-  
 
   return (
-   
-
-<FirebaseAppProvider firebaseConfig={fireConfig}>
+    <FirebaseAppProvider firebaseConfig={fireConfig}>
       <Router>
-     
-        <Navbar user={user} />
+        <ThemeProvider theme={theme}>
+          <ContainerGeneral />
+        </ThemeProvider>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/que-hacemos' component={QueHacemos} />
@@ -49,17 +49,22 @@ function AppRouter() {
           <Route path='/sign-in' component={SignIn} />
           <Route path='/quienes-somos' component={QuienesSomos} />
           <Route path='/empieza-gratis' component={EmpiezaGratis} />
-          <Route path='/empieza-gratis-videollamada/'  component={EmpiezaGratisVideollamada} />
-          <Route path="/video-call" component={VideoCall}/>
-          <Route path="/video-call-consultor" component={VideoCallConsultor}/>
+          <Route path='/empieza-gratis-videollamada/' component={EmpiezaGratisVideollamada} />
+          <Route path="/video-call" component={VideoCall} />
+          <Route path="/video-call-consultor" component={VideoCallConsultor} />
           <Route path='/tax' component={Tax} />
           <Route path='/taxes' component={Taxes} />
           <Route path='/lobby' component={Lobby} />
         </Switch>
+          <BackToTop>
+            <Fab color="green" size="small" aria-label="scroll back to top">
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </BackToTop>
       </Router>
-      </FirebaseAppProvider>
-     
- 
+    </FirebaseAppProvider>
+
+
   );
 }
 
