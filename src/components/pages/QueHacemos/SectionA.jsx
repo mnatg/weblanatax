@@ -29,11 +29,9 @@ function SectionA() {
       backgroundColor: '#e9e9e9',
       paddingTop: '5%',
       paddingBottom: '5%',
-      marginTop:'4%',
       [theme.breakpoints.down('xs')]: {
         paddingTop: '15%',
         paddingBottom: '15%',
-        marginTop:'12%',
       },
 
     },
