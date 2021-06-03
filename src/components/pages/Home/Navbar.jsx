@@ -41,12 +41,13 @@ const useStyles = makeStyles(theme =>
       background: '#ffffff'
     },
     navBarButton: {
-      [theme.breakpoints.down('xs')]: {
+      [theme.breakpoints.down('sm')]: {
         display: 'none',
       },
     },
     logo: {
-      width: 65
+      width: 95,
+      marginLeft: '5%'
     }
   }),
 );
