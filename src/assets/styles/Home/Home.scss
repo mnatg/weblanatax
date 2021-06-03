@@ -1068,13 +1068,13 @@
       justify-content: center;
     }
     .card-text{
-      width: 17.6em;
+      width: 18em;
       height: 23em;
-      margin-top: 2em;
+      margin-block: 2em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
-      font-size: 0.8em;
+      font-size: 1em;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -1980,7 +1980,6 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
-    margin-top:-9em;
   }
 }
 
