@@ -6,6 +6,20 @@
   margin     : 0;
   font-family: 'Poppins';
 }
+.nav-links {
+  justify-items: left;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Poppins' !important;
+  font-size: 0.875em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #a6a6a6;
+  margin-right: 3em;
+}
 
 .hide{
   display: none;
@@ -21,10 +35,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  max-width: 1700px;
+  max-width: 1600px;
   margin-left          : auto;
   margin-right         : auto;
-  font-family          : 'HelveticaRounded' !important;
+  font-family          : 'Poppins' !important;
 
   .descarga-apps{
 
@@ -59,7 +73,7 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #ffffff;
-    font-family   : 'HelveticaRounded' !important;
+    font-family   : 'PoppinsBold' !important;
     width: 8em;
   }
 
@@ -276,10 +290,10 @@
     justify-content: center;
   }
   .card-text{
-    width: 15.6em;
-    height: 9.75;
-    margin-top: 3em;
-    margin-left: auto;
+    width: 21.6em;
+    height: 32em;
+    margin-top: 0em;
+    margin-left: 5em;
     margin-right: auto;
     font-family: 'Poppins' !important;
     font-size: 1em;
@@ -685,7 +699,7 @@
   .LANA-FOOTER {
     width     : 8.375em;
     height    : 2.625em;
-    margin    : 2.875em 0.75em 12.0625em 15.125em;
+    margin    : 2.875em 0.75em 12.0625em 10.125em;
     object-fit: contain;
   }
 
@@ -1054,9 +1068,9 @@
       justify-content: center;
     }
     .card-text{
-      width: 10em;
-      height: 9.75;
-      margin-top: 0em;
+      width: 17.6em;
+      height: 23em;
+      margin-top: 2em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
@@ -1072,10 +1086,10 @@
   
     .card-number{
   
-      width:3em;
-      height: 3.5em;
+      width: 3em;
+      height: 4em;
       font-family: 'Poppins' !important;
-      font-size: 3em;
+      font-size: 6em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -1401,11 +1415,11 @@
     background-image     : url('../../images/Home/init/pick-header.png');
     background-position  : center;
     height: 734px;
-    margin   : 5em 0 0 0;
+    margin   : -2em 0 0 0;
     
 
     .no-te {
-      font-size  : 3.0625em;
+      font-size  : 2.5em;
       font-family: 'HelveticaRounded' !important;
     }
 
@@ -1498,8 +1512,8 @@
       justify-content: center;
     }
     .card-text{
-      width: 15.6em;
-      height: 9.75;
+      width: 17.6em;
+      height: 23em;
       margin-top: 2em;
       margin-left: auto;
       margin-right: auto;
@@ -1516,10 +1530,10 @@
   
     .card-number{
   
-      width: 4em;
+      width: 3em;
       height: 4em;
       font-family: 'Poppins' !important;
-      font-size: 5em;
+      font-size: 6em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;

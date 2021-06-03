@@ -32,3 +32,9 @@ code {
   src: local('PoppinsExtraBold'), url(../fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
 }
 
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: local('PoppinsBold'), url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+

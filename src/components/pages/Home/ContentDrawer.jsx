@@ -2,6 +2,8 @@ import React from 'react';
 import {
     List, ListItem, ListItemText
 } from '@material-ui/core';
+// Styles
+import '../../../assets/styles/Home/Home.scss'
 
 const ContentDrawer = () => {
 
@@ -9,10 +11,10 @@ const ContentDrawer = () => {
         <div>
             <List component='nav'>
                 <ListItemLink href='/quienes-somos'>
-                    <ListItemText primary='QUIENES SOMOS' />
+                    <ListItemText class="nav-links" primary='Quienes Somos' />
                 </ListItemLink>
                 <ListItemLink href='/que-hacemos'>
-                    <ListItemText primary='QUE SOMOS' />
+                    <ListItemText primary='Que Hacemos' />
                 </ListItemLink>
             </List>
         </div>

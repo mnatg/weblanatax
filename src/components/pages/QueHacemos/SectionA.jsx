@@ -27,13 +27,11 @@ function SectionA() {
       alignContent: 'center',
       textAlign: 'center',
       backgroundColor: '#e9e9e9',
-      paddingTop: '10%',
-      paddingBottom: '10%',
-      marginTop:'5%',
+      paddingTop: '5%',
+      paddingBottom: '5%',
       [theme.breakpoints.down('xs')]: {
-        paddingTop: '20%',
-        paddingBottom: '20%',
-        marginTop:'15%',
+        paddingTop: '15%',
+        paddingBottom: '15%',
       },
 
     },
@@ -61,10 +59,12 @@ function SectionA() {
       backgroundImage: `url(${bgWeDodesktop})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
+      [theme.breakpoints.down('lg')]: {
+        marginTop: '-0.8%',
+      },
       [theme.breakpoints.down('md')]: {
         backgroundImage: `url(${bgWeDoTablet})`,
-        backgroundPosition: 'top',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('xs')]: {
           backgroundImage: `url(${bgWeDoMovil})`,
@@ -192,9 +192,10 @@ return (
       </Grid>
     </Grid>
     <Grid container direction="row" justify="center" alignItems="center" >
-      <Grid item xs={9} sm={9} lg={3}>
+      <Grid item xs={9} sm={6} lg={3}>
         <img src={plan1} alt="card-small-free" className={classes.plan} />
       </Grid>
+      <hr className={classes.tablet}></hr>
       <Grid item xs={9} sm={6} lg={3}>
         <img src={plan2} alt="card-small-basic" className={classes.plan} />
       </Grid>

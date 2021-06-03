@@ -30,7 +30,7 @@ const ContainerGeneral = (props) => {
                     open={openState}
                     onClose={handleDrawerToggle} />
             </Hidden>
-            <div id="back-to-top-anchor" ></div>
+            <div id="back-to-top-anchor" className={classes.toolbar} ></div>
         </div>
     )
 }

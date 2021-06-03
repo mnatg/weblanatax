@@ -41,12 +41,24 @@ const useStyles = makeStyles(theme =>
       background: '#ffffff'
     },
     navBarButton: {
-      [theme.breakpoints.down('xs')]: {
+      [theme.breakpoints.down('sm')]: {
         display: 'none',
       },
+     
+      fontfamily: 'Poppins',
+      fontSize: '0.875em',
+      fontWeight: '600',
+      fontStretch: 'normal',
+      fontStyle: 'normal',
+      lineHeight: '2',
+      letterSpacing: 'normal',
+      color: '#a6a6a6',
+      marginRight: '10em',
+      textTransform:'none'
     },
     logo: {
-      width: 65
+      width: '6.5em',
+      marginLeft: '10%'
     }
   }),
 );
@@ -72,12 +84,12 @@ const Navbar = (props) => {
             <img className={classes.logo} src={logo} alt="logo" />
           </Link>
           <Button variant='text' href='/quienes-somos' className={classes.navBarButton} size="large"  
-          color="primary">
+          color="primary" >
             Quienes somos
             </Button>
           <Button variant='text' href='/que-hacemos' className={classes.navBarButton} size="large"
             color="primary">
-            Que somos
+            Que Hacemos
             </Button>
           
         </Toolbar>
