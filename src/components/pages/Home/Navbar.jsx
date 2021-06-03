@@ -41,6 +41,9 @@ const useStyles = makeStyles(theme =>
       background: '#ffffff'
     },
     navBarButton: {
+      color: theme.palette.primary.main,
+      textDecoration: 'none',
+      marginLeft: '0.5em',
       [theme.breakpoints.down('sm')]: {
         display: 'none',
       },
@@ -72,14 +75,12 @@ const Navbar = (props) => {
           <Link to='/' className={classes.title}>
             <img className={classes.logo} src={logo} alt="logo" />
           </Link>
-          <Button variant='text' href='/quienes-somos' className={classes.navBarButton} size="large"  
-          color="primary">
+          <Link to='/quienes-somos' className={classes.navBarButton} >
             Quienes somos
-            </Button>
-          <Button variant='text' href='/que-hacemos' className={classes.navBarButton} size="large"
-            color="primary">
+          </Link>
+          <Link to='/que-hacemos' className={classes.navBarButton} >
             Que somos
-            </Button>
+          </Link>
           
         </Toolbar>
       </AppBar>
