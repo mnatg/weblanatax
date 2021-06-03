@@ -6,6 +6,20 @@
   margin     : 0;
   font-family: 'Poppins';
 }
+.nav-links {
+  justify-items: left;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Poppins' !important;
+  font-size: 0.875em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #a6a6a6;
+  margin-right: 3em;
+}
 
 .hide{
   display: none;
@@ -16,14 +30,15 @@
   background           : url('../../images/Home/init/Home.webp') center center/cover no-repeat;
   width                : 100%;
   height               : 70em;
+  margin-top           : 0em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-  max-width: 1700px;
+  max-width: 1600px;
   margin-left          : auto;
   margin-right         : auto;
-  font-family          : 'HelveticaRounded' !important;
+  font-family          : 'Poppins' !important;
 
   .descarga-apps{
 
@@ -58,7 +73,8 @@
     line-height   : 0.97;
     letter-spacing: 4.1px;
     color         : #ffffff;
-    font-family   : 'HelveticaRounded' !important;
+    font-family   : 'PoppinsBold' !important;
+    width: 8em;
   }
 
   .impuestos {
@@ -180,21 +196,22 @@
   }
 
   .servicios-lanatax {
-    font-size      : 2em;
-    font-weight    : 600;
-    font-stretch   : normal;
-    font-style     : normal;
-    line-height    : normal;
-    letter-spacing : normal;
-    color          : #009245;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #009245;
     text-decoration: none;
-    margin-top: -3em;
-    margin-left: 5em;
+    margin-top: -2em;
+    margin-left: 3.3em;
+    font-family: "PoppinsExtraBold" !important;
   }
 
   .servicios-lanatax-des {
     width: auto;
-    font-size      : 1em;
+    font-size      : 1.15em;
     font-weight    : normal;
     font-stretch   : normal;
     font-style     : normal;
@@ -202,7 +219,7 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
-    margin-top:-9em;
+    margin-top:-7em;
   }
 }//------------photo
 
@@ -273,10 +290,10 @@
     justify-content: center;
   }
   .card-text{
-    width: 15.6em;
-    height: 9.75;
-    margin-top: 3em;
-    margin-left: auto;
+    width: 21.6em;
+    height: 32em;
+    margin-top: 0em;
+    margin-left: 5em;
     margin-right: auto;
     font-family: 'Poppins' !important;
     font-size: 1em;
@@ -682,7 +699,7 @@
   .LANA-FOOTER {
     width     : 8.375em;
     height    : 2.625em;
-    margin    : 2.875em 0.75em 12.0625em 15.125em;
+    margin    : 2.875em 0.75em 12.0625em 10.125em;
     object-fit: contain;
   }
 
@@ -810,7 +827,7 @@
 
 
 .icons-stores{
-  margin-top: 4em;
+  margin-top: 10em;
   display:grid;
   grid-template-columns: repeat(3,auto);
   grid-gap: 2em;
@@ -1051,13 +1068,13 @@
       justify-content: center;
     }
     .card-text{
-      width: 10em;
-      height: 9.75;
-      margin-top: 0em;
+      width: 18em;
+      height: 23em;
+      margin-block: 2em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
-      font-size: 0.8em;
+      font-size: 1em;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -1069,10 +1086,10 @@
   
     .card-number{
   
-      width:3em;
-      height: 3.5em;
+      width: 3em;
+      height: 4em;
       font-family: 'Poppins' !important;
-      font-size: 3em;
+      font-size: 6em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -1083,6 +1100,7 @@
       background-color: #009245;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 1em;
   
     }
   
@@ -1397,11 +1415,11 @@
     background-image     : url('../../images/Home/init/pick-header.png');
     background-position  : center;
     height: 734px;
-    margin   : 5em 0 0 0;
+    margin   : -2em 0 0 0;
     
 
     .no-te {
-      font-size  : 3.0625em;
+      font-size  : 2.5em;
       font-family: 'HelveticaRounded' !important;
     }
 
@@ -1494,8 +1512,8 @@
       justify-content: center;
     }
     .card-text{
-      width: 15.6em;
-      height: 9.75;
+      width: 17.6em;
+      height: 23em;
       margin-top: 2em;
       margin-left: auto;
       margin-right: auto;
@@ -1512,10 +1530,10 @@
   
     .card-number{
   
-      width: 4em;
+      width: 3em;
       height: 4em;
       font-family: 'Poppins' !important;
-      font-size: 5em;
+      font-size: 6em;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
@@ -1526,6 +1544,7 @@
       background-color: #009245;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 1em;
   
     }
   
@@ -1781,8 +1800,8 @@
     }
   
     .iconServices {
-      width         :5vmax;
-      height: 8vmax;
+      width         :7vmax;
+      height: 12vmax;
       margin: -4em 1em 112px -5em;
       padding: 16px 12px 12px 22px;
       border-radius: 8px;
@@ -1790,19 +1809,19 @@
     }
   
     .iconServices-taxes {
-      width         :5vmax;
-      height: 8vmax;
+      width         :7vmax;
+      height:11vmax;
     }
   
     .iconServices-audits {
-      width         : 6vmax;
-      height: 9vmax;
+      width         : 9vmax;
+      height: 14vmax;
     
     }
   
     .extraicon {
-      width         : 6vmax;
-      height: 9vmax;
+      width         : 12vmax;
+      height: 15vmax;
       margin: -4em 12px 112px 55px;
       border-radius: 8px;
       background-color: #009245;
@@ -1826,7 +1845,7 @@
       letter-spacing : normal;
       color          : #009245;
       text-decoration: none;
-      margin-top: -1em;
+      margin-top: 0em;
       margin-left: 5em;
     }
   
@@ -1840,7 +1859,7 @@
       letter-spacing : normal;
       color          : #009245;
       text-decoration: none;
-      margin-top:-9em;
+      margin-top:-4em;
     }
   }
 }
@@ -1947,7 +1966,7 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
-    margin-top: -1em;
+    margin-top: 0em;
     margin-left: 5em;
   }
 
@@ -1961,7 +1980,6 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
-    margin-top:-9em;
   }
 }
 
