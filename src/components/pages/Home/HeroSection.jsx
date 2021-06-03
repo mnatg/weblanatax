@@ -46,12 +46,15 @@ function HeroSection() {
 
         <div className='icons-stores'>
           <p className='descarga-apps' >Descarga Gratis nuestas apps: </p>
+          <div>
+              {'\n'}
           <a href='https://apps.apple.com/co/app/lanatax/id1556736650' >
             <img className="Logo-store" src={storelabels} alt="storelabels" />
           </a>
           <a href='https://play.google.com/store/apps/details?id=com.lanatax' >
             <img className="Logo-store" src={storelabels2} alt="storelabels2" />
           </a>
+          </div>
         </div>
 
       </div>
