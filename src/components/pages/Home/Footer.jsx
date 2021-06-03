@@ -10,14 +10,36 @@ import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/Home/Navbar.scss'
+import SendEmail from '../../../Services/NewsLatter/SendEmail';
 
 
 
 function Footer() {
+
+  let email = React.createRef();
+
+  const message ="";
  
   const [acceptPolicy, setAcceptPolicy] = useState(false);
 
   const handleClickFooter = () => setAcceptPolicy(!acceptPolicy);
+
+  const Send = async() => {
+    console.log('enviar email')
+    try {
+      let request = {
+          "email": email.current.value,
+           "message": message
+      }
+      console.log('enviando mail: ',request)
+     
+      await SendEmail(request);
+
+  } catch (err) {
+      console.error("Error al enviar mensaje", err);
+  }
+    
+}
 
 
   return (
@@ -27,7 +49,7 @@ function Footer() {
         <Link to='/'  >
           <img className="LANA-FOOTER" src={logo} alt="logo"/>
         </Link>
-        <div className='first hide'>
+        <div className='first'>
           <p className='Enlaces-rpidos'>Enlaces Rápidos</p>
           <Link className='link-decoration' to='/' >
             <p className='About-Us'>About Us</p>
@@ -56,9 +78,9 @@ function Footer() {
         <div className='third'>
           <p className='suscribete'>Suscribete a nuestro <br/>Newslatter</p>
           <Grid container>
-            <input className="Rectangle-5-Copy" placeholder="Email" />
+            <input ref={email} className="Rectangle-5-Copy" placeholder="Email" />
 
-           <Grid container direction="row" justify="center" alignItems="​center" >
+           <Grid container direction="row" justify="left" alignItems="​center" >
             <input onChange={handleClickFooter} type='checkbox'/>
             <a href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
 ¿ Aceptas nuestras Politicas de Privacidad ?
@@ -67,7 +89,7 @@ function Footer() {
             
            
           </Grid>
-          <button disable={acceptPolicy} className='signup-now-button'>Registrar</button>
+          <button disable={acceptPolicy} onClick={Send} className='signup-now-button'>Registrar</button>
         </div>
       </div>
       <p className='line-copy'></p>

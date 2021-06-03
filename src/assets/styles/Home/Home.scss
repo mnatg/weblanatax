@@ -10,6 +10,7 @@
 .hide{
   display: none;
 }
+//--Photo Styles
 
 .Photo {
   background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
@@ -20,7 +21,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap             : 10px;
   grid-auto-rows       : minmax(100px, auto);
-
+  max-width: 1700px;
   margin-left          : auto;
   margin-right         : auto;
   font-family          : 'HelveticaRounded' !important;
@@ -100,6 +101,8 @@
 
 }
 
+//------------------
+
 .empezar-gratis-videollamada {
   width     : 14.3125em;
   height    : 2.875em;
@@ -108,6 +111,7 @@
 
 }
 
+//--Base Styles
 .base {
   display              : grid;
   grid-template-columns: repeat(2, auto);
@@ -201,7 +205,9 @@
     text-decoration: none;
     margin-top:-9em;
   }
-}
+}//------------photo
+
+//--homebackground Styles
 
 .homebackground {
   width: 100%;
@@ -248,9 +254,10 @@
   }
 
   .front-card{
-    width: 17vmax;
-    height: 14vmax;
-    margin: 1em;
+    width: 17em;
+    height: 27.5em;
+    margin-top: 0em;
+    margin-left: 7em;
     padding: 10px 37px 50px 38px;
     border-radius: 8px;
     background-color: #009245;
@@ -284,9 +291,9 @@
   }
 
   .card-number{
-    width:3em;
-    height: 2.5em;
-    margin-top: 2em;
+    width: 3em;
+    height: 4.5em;
+    margin-top: 0em;
     font-family: 'Poppins' !important;
     font-size: 7em;
     font-weight: bold;
@@ -306,7 +313,7 @@
     justify-content: center;
     align-items: center;
   }
-
+   //---SectionA Styles
   .sectionA {
     display                : grid;
     grid-template-columns  : repeat(2, 1fr);
@@ -323,7 +330,7 @@
     .imageA {
       width: 100%;
     }
-
+     //-- Form container styles
     .form-container {
       width     : 90%;
       margin-top: 5em;
@@ -346,7 +353,7 @@
           font-size: 1em;
         }
       }
-
+      
       .Nuestra-videollamada {
         width         : 100%;
         font-size     : 1.5vmax;
@@ -390,10 +397,12 @@
           text-decoration: none;
           display        : -webkit-inline-box;
         }
-      }
-    }
-  }
+      } //------------------------form container
+    }//--section A
+  }//--homebackground
 
+
+//--SectionB styles
   .sectionB {
     width                : 100%;
     display              : grid;
@@ -448,8 +457,11 @@
         }
       }
     }
-  }
-}
+    
+  }//GridB
+}//SectionB
+
+//--Tiitle carousel styles
 
 .title-carousel {
   width        : 90%;
@@ -476,7 +488,7 @@
     letter-spacing: normal;
     color         : #a6a6a6;
   }
-}
+}//tiitle carousel
 
 .sectionDMovil {
   display: none;
@@ -496,6 +508,7 @@
   justify-content: space-around;
 }
 
+//--Carousel-movil styles
 .carruselMovil {
   display: none !important;
 
@@ -515,7 +528,7 @@
       color      : #d9e021;
     }
   }
-}
+}//Carousel-movil
 
 .rec-dot_active {
   background-color: #008f45 !important;
@@ -569,6 +582,8 @@
   }
 }
 
+
+//--homebackground 2 styles
 
 .homebackground {
   width: 100%;
@@ -643,7 +658,7 @@
       text-align: center;
     }
   }
-}
+}//homebackground 2
 
 .line-copy {
   width           : 90%;
@@ -655,6 +670,7 @@
   background-color: #008f45;
 }
 
+//-- SectionFooter styles
 .sectionFooter {
   margin-top           : 1em;
   display              : grid;
@@ -751,8 +767,9 @@
       color           : #ffffff;
     }
   }
-}
+}//SectionFooter
 
+//--redes-sociales styles
 .redes-sociales {
   display              : grid;
   grid-template-columns: repeat(2, auto);
@@ -773,7 +790,7 @@
   }
 
   .icons {
-    margin-top : 0.5em;
+    margin-top : 1em;
     margin-left: 5em;
 
     .icon {
@@ -787,7 +804,17 @@
       margin-left: 24.375em;
     }
   }
+}//redes-sociales
+
+
+.icons-stores{
+  margin-top: 4em;
+  display:grid;
+  grid-template-columns: repeat(3,auto);
+  grid-gap: 2em;
+  justify-content: left;
 }
+
 
 .caja { 
   font-family: 'Poppins' !important;
@@ -1003,9 +1030,9 @@
     }
   
     .front-card{
-      width: 28vmax;
-      height: 30vmax;
-      margin: 1em;
+      width: 3em;
+      height: 4.5em;
+      margin-top: 0em;
       padding: 10px 37px 50px 38px;
       border-radius: 8px;
       background-color: #009245;
@@ -1290,7 +1317,7 @@
     .third {
       .suscribete {
         width       : 10.5em;
-        margin      : 0;
+        margin-top      : 1em;
         margin-block: 2em;
       }
 
@@ -1334,6 +1361,14 @@
         margin-right: 1em;
       }
     }
+  }
+
+  .icons-stores{
+    margin-top: 4em;
+    display:grid;
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 2em;
+    justify-content: left;
   }
 
   .caja { 
@@ -1669,7 +1704,7 @@
 
       .suscribete {
         width        : 10.5em;
-        margin       : 0;
+        margin-top       : 2em;
         margin-bottom: 2em;
       }
 
@@ -1704,6 +1739,14 @@
         margin-right: 1em;
       }
     }
+  }
+
+  .icons-stores{
+    margin-top: 4em;
+    display:grid;
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 2em;
+    justify-content: left;
   }
 
   .base {
