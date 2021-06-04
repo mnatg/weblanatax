@@ -11,6 +11,7 @@ import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/Home/Navbar.scss'
 import SendEmail from '../../../Services/NewsLatter/SendEmail';
+import Toast from '../../../utils/Toast';
 
 
 
@@ -25,7 +26,14 @@ function Footer() {
   const handleClickFooter = () => setAcceptPolicy(!acceptPolicy);
 
   const Send = async() => {
-    console.log('enviar email')
+    console.log('enviar email', email.current.value)
+
+
+    if(email.current.value==null || email.current.value ==undefined || email.current.value == ""){
+
+      Toast("Debe ingresar un correo","error");
+    }else
+    {
     try {
       let request = {
           "email": email.current.value,
@@ -34,11 +42,13 @@ function Footer() {
       console.log('enviando mail: ',request)
      
       await SendEmail(request);
-
+      Toast("Suscripción exitosa","success");
   } catch (err) {
+    Toast("Ha ocurrido un error, contacte al administardor: ",err);
       console.error("Error al enviar mensaje", err);
   }
     
+}
 }
 
 

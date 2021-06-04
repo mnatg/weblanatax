@@ -5,6 +5,7 @@ import textA from '../../../assets/images/Home/sectionA/textA.png'
 import { Button, Grid } from '@material-ui/core';
 import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.png'
 import SendSms from '../../../Services/NewsLatter/SendSms';
+import Toast from '../../../utils/Toast';
 
 
 import { Link } from 'react-router-dom';
@@ -15,15 +16,27 @@ function sectionD() {
   let mobile2 = React.createRef();
 
   const message = "☺¡Muchas gracias por suscribirte! Te damos la bienvenida a la familia de Lanatax, expertos ayudando a latinos en sus impuestos y auditorías, si no has descargado la app ingresa aquí 👉Para dispositivos iOS https://apps.apple.com/co/app/lanatax/id1556736650 Para dispostivos Android  https://play.google.com/store/apps/details?id=com.lanatax  y empieza a disfrutar de nuestros servicios. ";
-  var mobileNumber="";
+  
   const Send = async() => {
-    console.log('enviar sms')
-    if(mobile!=null && mobile !=undefined){
-      mobileNumber = mobile.current.value
+    var mobileNumber='';
+    console.log("current value mobile",mobile.current.value);
+    console.log("current value mobile2",mobile2.current.value);
+
+    if(mobile.current.value!=null && mobile.current.value !=undefined && mobile.current.value != ""){
+
+      console.log("if mobile")
+      mobileNumber = mobile.current.value;
     }
-    if(mobile2!=null && mobile2 !=undefined){
-      mobileNumber=mobile2.current.value
+  else{
+      console.log("else mobile2")
+      mobileNumber=mobile2.current.value;
     }
+    console.log('enviar sms: ',mobileNumber);
+
+    if (mobileNumber=='') { 
+      Toast("Debe ingresar un número movil","error");
+    }else
+    {
     try {
       let request = {
           "phoneNumber": mobileNumber,
@@ -32,10 +45,14 @@ function sectionD() {
       console.log('enviando sms: ',request)
      
       await SendSms(request);
+      Toast("Suscripción exitosa","success");
 
   } catch (err) {
+    Toast("Ha ocurrido un error, contacte al administardor","error");
       console.error("Error al enviar mensaje", err);
   }
+
+}
     
 }
 
