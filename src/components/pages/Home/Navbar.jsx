@@ -35,6 +35,9 @@ const useStyles = makeStyles(theme =>
     },
     title: {
       flexGrow: 1,
+      [theme.breakpoints.down('xs')]: {
+        textAlign: 'end',
+      },
     },
     appBar: {
       display:'inline-block',
@@ -56,7 +59,7 @@ const useStyles = makeStyles(theme =>
       lineHeight: '2',
       letterSpacing: 'normal',
       color: '#a6a6a6',
-      marginRight: '10em',
+      marginRight: '2em',
       textTransform:'none'
     },
     logo: {
