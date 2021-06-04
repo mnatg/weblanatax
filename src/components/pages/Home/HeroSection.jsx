@@ -43,7 +43,6 @@ function HeroSection() {
         <p className='no-te'>UNA MEJOR EXPERIENCIA EN:</p>
         <ImpuestosCarousel></ImpuestosCarousel>
         <h1 className='Nos-encargamos'>Nos encargamos de todo por ti</h1>
-
         <div className='icons-stores'>
           <p className='descarga-apps' >Descarga Gratis nuestas apps: </p>
           <div>

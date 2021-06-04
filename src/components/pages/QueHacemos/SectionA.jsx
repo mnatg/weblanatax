@@ -48,7 +48,7 @@ function SectionA() {
     p: {
       color: '#009245',
       padding: '12%',
-      textAlign: 'center',
+      textAlign: 'left',
     },
     paper: {
       backgroundColor: 'rgba(233, 233, 233, 0.7)'
@@ -81,7 +81,7 @@ function SectionA() {
         marginLeft: 'auto',
         marginRight: 'auto',
         marginTop: '80%',
-        textAlign: 'center',
+        textAlign: 'left',
       },
       [theme.breakpoints.down('xs')]: {
         marginTop: '120%',

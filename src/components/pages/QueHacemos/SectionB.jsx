@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
   contentTextCard: {
     backgroundColor: 'rgba(233, 233, 233, 0.7)',
     width: '33.75em',
-    textAlign: 'right',
+    textAlign: 'left',
     fontSize: '1em',
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',

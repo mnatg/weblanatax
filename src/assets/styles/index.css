@@ -38,3 +38,8 @@ code {
   src: local('PoppinsBold'), url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+

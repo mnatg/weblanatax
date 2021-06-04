@@ -65,15 +65,12 @@ function sectionD() {
             RESOLVIENDO <br/>CON <br />TRANSPARENCIA<br />
           </h1>
           <h1 className='textD'>
-            Conéctate con los expertos en impuestos que han servido <br />a la comunidad hispana por más de 20 años.
+            Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
           </h1>
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
           </h1>
-          <h1 className='textD2'>
-            IndicativoNúmero ejemplo: 14046383472
-          </h1>
-          <input ref={mobile} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
+          <input ref={mobile} className="Boton-Nombre-d"  placeholder="Example : 14********" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
         </div>
         <div className="GridRight ">
@@ -89,15 +86,12 @@ function sectionD() {
             RESOLVIENDO <br/>CON <br />TRANSPARENCIA<br />
           </h1>
           <h1 className='textD'>
-            Conéctate con los expertos en impuestos que han servido <br />a la comunidad hispana por más de 20 años.
+            Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
           </h1>
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
           </h1>
-          <h1 className='textD2'>
-            IndicativoNúmero ejemplo: 14046383472
-          </h1>
-          <input ref={mobile2} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
+          <input ref={mobile2} className="Boton-Nombre-d" placeholder="Example : 14********" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
         </div>
       </Grid>
