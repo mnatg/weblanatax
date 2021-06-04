@@ -41,7 +41,7 @@ function sectionB() {
           </div>
           <div className='gridtest'>
             <img className="TORTA" src={torta} alt="torta" />
-            <p className='TEXT'> Obtén una revisión y análisis<br />completo.</p>
+            <p className='TEXT'> Obtén una revisión y análisis completo.</p>
           </div>
           <div className='gridtest'>
             <img className="ICON" src={personas} alt="personas" />

@@ -422,7 +422,7 @@
   .sectionB {
     width                : 100%;
     display              : grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 35%);
     grid-gap             : 10px;
     margin-bottom        : 10%;
 
@@ -437,7 +437,7 @@
         align-items : center;
         font-size   : 2vmax;
         color       : #009245;
-        font-weight : 600;
+        font-weight : bold;
         margin-left : auto;
         margin-right: auto;
       }
@@ -464,7 +464,7 @@
           align-self : center;
           color      : #a6a6a6;
           font-family: 'Poppins' !important;
-          width: 13.3em;
+          width: 14em;
         }
       }
     }
@@ -556,14 +556,14 @@
 .rec,
 .CarouselItem {
   .news-title {
-    margin        : 25px 118px 12px 0;
-    font-size     : 16px;
-    font-weight   : normal;
+    margin        : 12px 118px 12px 0;
+    font-size     : 24px;
+    font-weight   : bold;
     font-stretch  : normal;
     font-style    : normal;
     line-height   : 1.75;
     letter-spacing: normal;
-    color         : #544837;
+    color         : #a6a6a6;
   }
 }
 
