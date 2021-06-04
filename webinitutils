@@ -35,4 +35,13 @@ play.google.com/store/apps/details?id=com.lanatax
 https://apps.apple.com/co/app/lanatax/id1556736650
 
 
+SMS issues:
+
+https://stackoverflow.com/questions/36055456/invalidparameterexception-while-confirming-sns-notification-using-java-spring-cl
+
+https://docs.aws.amazon.com/es_es/sns/latest/dg/sms_publish-to-topic.html
+https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/examples-simple-notification-service.html
+
+//Amazon PinPoint
+https://docs.aws.amazon.com/sns/latest/dg/channels-sms-us-requirements.html
 

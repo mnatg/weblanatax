@@ -70,6 +70,9 @@ function sectionD() {
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
           </h1>
+          <h1 className='textD2'>
+            IndicativoNúmero ejemplo: 14046383472
+          </h1>
           <input ref={mobile} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
         </div>
@@ -90,6 +93,9 @@ function sectionD() {
           </h1>
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
+          </h1>
+          <h1 className='textD2'>
+            IndicativoNúmero ejemplo: 14046383472
           </h1>
           <input ref={mobile2} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>

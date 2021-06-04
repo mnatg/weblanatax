@@ -23,8 +23,10 @@ function Footer() {
  
   const [acceptPolicy, setAcceptPolicy] = useState(false);
 
-  const handleClickFooter = () => setAcceptPolicy(!acceptPolicy);
-
+  const handleClickFooter = () => {
+    setAcceptPolicy(!acceptPolicy);
+    console.log("accept policy: ",acceptPolicy)
+  }
   const Send = async() => {
     console.log('enviar email', email.current.value)
 
@@ -73,9 +75,6 @@ function Footer() {
             <p className='About-Us'>Financing</p>
           </Link>
           <Link className='link-decoration' to='/' >
-            <p className='About-Us'>Privacy Policy</p>
-          </Link>
-          <Link className='link-decoration' to='/' >
             <p className='About-Us'>Terms of Service</p>
           </Link>
         </div>
@@ -91,9 +90,8 @@ function Footer() {
             <input ref={email} className="Rectangle-5-Copy" placeholder="Email" />
 
            <Grid container direction="row" justify="left" alignItems="​center" >
-            <input onChange={handleClickFooter} type='checkbox'/>
             <a href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
-¿ Aceptas nuestras Politicas de Privacidad ?
+¿Ya leiste nuestras politicas de privacidad ?
             </a>
             </Grid>
             
