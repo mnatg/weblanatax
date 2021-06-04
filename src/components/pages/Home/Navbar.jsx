@@ -86,7 +86,6 @@ const Navbar = (props) => {
           <Link to='/' className={classes.title}>
             <img className={classes.logo} src={logo} alt="logo" />
           </Link>
-<<<<<<< HEAD
           <Button variant='text' href='/quienes-somos' className={classes.navBarButton} size="large"  
           color="primary" >
             Quienes somos
@@ -95,14 +94,6 @@ const Navbar = (props) => {
             color="primary">
             Que Hacemos
             </Button>
-=======
-          <Link to='/quienes-somos' className={classes.navBarButton} >
-            Quienes somos
-          </Link>
-          <Link to='/que-hacemos' className={classes.navBarButton} >
-            Que somos
-          </Link>
->>>>>>> b395638e1a002cb34a743ecd0746ec8c22e63db2
           
         </Toolbar>
       </AppBar>

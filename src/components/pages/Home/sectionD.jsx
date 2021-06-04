@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../../assets/styles/Home/Home.scss';
 import imageD from '../../../assets/images/Home/sectionD/photo-cel.png'
 import textA from '../../../assets/images/Home/sectionA/textA.png'
@@ -11,14 +11,20 @@ import { Link } from 'react-router-dom';
 
 function sectionD() {
 
-  let mobileNumber = React.createRef();
+  let mobile = React.createRef();
+  let mobile2 = React.createRef();
   const message = "☺¡Muchas gracias por suscribirte! Te damos la bienvenida a la familia de Lanatax, expertos ayudando a latinos en sus impuestos y auditorías, si no has descargado la app ingresa aquí 👉Para dispositivos iOS https://apps.apple.com/co/app/lanatax/id1556736650 Para dispostivos Android  https://play.google.com/store/apps/details?id=com.lanatax  y empieza a disfrutar de nuestros servicios. ";
 
   const Send = async() => {
     console.log('enviar sms')
+    if(mobile!=null && mobile !=undefined){
+      mobile = mobile
+    }else{
+      mobile=mobile2
+    }
     try {
       let request = {
-          "phoneNumber": mobileNumber.current.value,
+          "phoneNumber": mobile.current.value,
            "message": message
       }
       console.log('enviando sms: ',request)
@@ -45,7 +51,7 @@ function sectionD() {
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
           </h1>
-          <input ref={mobileNumber} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
+          <input ref={mobile} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
         </div>
         <div className="GridRight ">
@@ -66,7 +72,7 @@ function sectionD() {
           <h1 className='textD1'>
             SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
           </h1>
-            <input ref={mobileNumber} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
+          <input ref={mobile2} className="Boton-Nombre-d" placeholder="Enter your phone number" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
         </div>
       </Grid>
