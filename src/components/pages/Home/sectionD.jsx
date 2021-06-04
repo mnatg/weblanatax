@@ -13,18 +13,20 @@ function sectionD() {
 
   let mobile = React.createRef();
   let mobile2 = React.createRef();
-  const message = "☺¡Muchas gracias por suscribirte! Te damos la bienvenida a la familia de Lanatax, expertos ayudando a latinos en sus impuestos y auditorías, si no has descargado la app ingresa aquí 👉Para dispositivos iOS https://apps.apple.com/co/app/lanatax/id1556736650 Para dispostivos Android  https://play.google.com/store/apps/details?id=com.lanatax  y empieza a disfrutar de nuestros servicios. ";
 
+  const message = "☺¡Muchas gracias por suscribirte! Te damos la bienvenida a la familia de Lanatax, expertos ayudando a latinos en sus impuestos y auditorías, si no has descargado la app ingresa aquí 👉Para dispositivos iOS https://apps.apple.com/co/app/lanatax/id1556736650 Para dispostivos Android  https://play.google.com/store/apps/details?id=com.lanatax  y empieza a disfrutar de nuestros servicios. ";
+  var mobileNumber="";
   const Send = async() => {
     console.log('enviar sms')
     if(mobile!=null && mobile !=undefined){
-      mobile = mobile
-    }else{
-      mobile=mobile2
+      mobileNumber = mobile.current.value
+    }
+    if(mobile2!=null && mobile2 !=undefined){
+      mobileNumber=mobile2.current.value
     }
     try {
       let request = {
-          "phoneNumber": mobile.current.value,
+          "phoneNumber": mobileNumber,
            "message": message
       }
       console.log('enviando sms: ',request)
