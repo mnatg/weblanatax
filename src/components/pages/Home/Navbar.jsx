@@ -29,12 +29,15 @@ const useStyles = makeStyles(theme =>
   createStyles({
     menuButton: {
       marginRight: theme.spacing(2),
-      [theme.breakpoints.up('sm')]: {
+      [theme.breakpoints.up('md')]: {
         display: 'none',
       },
     },
     title: {
       flexGrow: 1,
+      [theme.breakpoints.down('sm')]: {
+        textAlign: 'center',
+      },
       [theme.breakpoints.down('xs')]: {
         textAlign: 'end',
       },
@@ -50,7 +53,6 @@ const useStyles = makeStyles(theme =>
       [theme.breakpoints.down('sm')]: {
         display: 'none',
       },
-     
       fontfamily: 'Poppins',
       fontSize: '0.875em',
       fontWeight: '600',
@@ -64,7 +66,10 @@ const useStyles = makeStyles(theme =>
     },
     logo: {
       width: '6.5em',
-      marginLeft: '10%'
+      marginLeft: '10%',
+      [theme.breakpoints.down('sm')]: {
+        marginLeft: 0,
+      },
     }
   }),
 );
