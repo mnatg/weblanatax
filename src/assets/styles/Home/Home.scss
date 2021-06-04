@@ -27,7 +27,7 @@
 //--Photo Styles
 
 .Photo {
-  background           : url('../../images/Home/init/home.png') center center/cover no-repeat;
+  background           : url('../../images/Home/init/Home.webp') center center/cover no-repeat;
   width                : 100%;
   height               : 70em;
   margin-top           : 0em;
@@ -465,7 +465,7 @@
         align-items          : flex-end;
 
         .TEXT {
-          font-size  : 3vmin;
+          font-size  : 90%;
           align-self : center;
           color      : #a6a6a6;
           font-family: 'Poppins' !important;
@@ -634,7 +634,7 @@
       width       : 100%;
       color       : #a6a6a6;
       margin      : 5%;
-      font-size   : 1.2vmax;
+
       font-weight : bold;
       font-stretch: normal;
       font-style  : normal;
@@ -645,7 +645,7 @@
     .textD1 {
       margin        : 5%;
       font-family   : 'Poppins';
-      font-size     : 1.5vmax;
+      
       font-weight   : 600;
       font-stretch  : normal;
       font-style    : normal;
@@ -1068,13 +1068,13 @@
       justify-content: center;
     }
     .card-text{
-      width: 17.6em;
+      width: 18em;
       height: 23em;
-      margin-top: 2em;
+      margin-block: 2em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
-      font-size: 0.8em;
+      font-size: 1em;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -1386,9 +1386,9 @@
   .icons-stores{
     margin-top: 4em;
     display:grid;
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(1, auto);
     grid-gap: 2em;
-    justify-content: left;
+    justify-content: center;
   }
 
   .caja { 
@@ -1449,7 +1449,6 @@
   .homebackground {
     max-width: 100%;
     .Una-experiencia-dife {
-      width: 10em;
       height: 1em;
       margin-top: 2em;
       margin-left: auto;
@@ -1614,7 +1613,7 @@
         .gridtest {
           .TEXT {
             width: 14.3em;
-            font-size: 2vmin;
+            font-size: 1.8vmin;
           }
         }
       }
@@ -1875,11 +1874,6 @@
 
 @media (min-width: 1200px) and (max-width: 1600px) {
 
-
-  .Photo {
-    width                : 90%;
-  }
-
   .line-copy {
     width           : 80%;
     height          : 1px;
@@ -1980,7 +1974,6 @@
     letter-spacing : normal;
     color          : #009245;
     text-decoration: none;
-    margin-top:-9em;
   }
 }
 

@@ -116,6 +116,7 @@ const SectionA = () => {
           <Box className={classes.contentTextCard}
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
             <p>{textContentP1}</p>
+            <br/>
             <p>{textContentP2}</p>
           </Box>
         </Grid>
