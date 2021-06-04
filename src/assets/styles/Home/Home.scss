@@ -424,11 +424,8 @@
     display              : grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap             : 10px;
-    grid-auto-rows       : minmax(100px, auto);
     margin-bottom        : 10%;
-    max-width            : 1600px;
-    margin-left          : auto;
-    margin-right         : auto;
+
 
     .GridLefB {
       padding-left: 5%;
@@ -437,7 +434,6 @@
       .TextB {
         width       : 50%;
         margin-top  : 20%;
-        margin-right: 10%;
         align-items : center;
         font-size   : 2vmax;
         color       : #009245;
@@ -448,7 +444,6 @@
     }
 
     .GridRightB {
-      padding-right        : 5%;
       display              : grid;
       grid-template-columns: repeat(2, 0.4fr);
       grid-gap             : 30px;
@@ -469,7 +464,7 @@
           align-self : center;
           color      : #a6a6a6;
           font-family: 'Poppins' !important;
-          width: 14.3em;
+          width: 13.3em;
         }
       }
     }
