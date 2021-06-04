@@ -291,9 +291,9 @@
   }
   .card-text{
     width: 21.6em;
-    height: 32em;
+    height: 17.6em;
     margin-top: 0em;
-    margin-left: 5em;
+    margin-left: 0.91em;
     margin-right: auto;
     font-family: 'Poppins' !important;
     font-size: 1em;
@@ -308,7 +308,7 @@
 
   .card-number{
     width: 3em;
-    height: 4.5em;
+    height: 2.5em;
     margin-top: 0em;
     font-family: 'Poppins' !important;
     font-size: 7em;
@@ -320,7 +320,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #009245;
-    margin-left: 1em;
+    margin-left: 0.13em;
     margin-right: auto;
   }
 
@@ -424,11 +424,8 @@
     display              : grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap             : 10px;
-    grid-auto-rows       : minmax(100px, auto);
     margin-bottom        : 10%;
-    max-width            : 1600px;
-    margin-left          : auto;
-    margin-right         : auto;
+
 
     .GridLefB {
       padding-left: 5%;
@@ -437,7 +434,6 @@
       .TextB {
         width       : 50%;
         margin-top  : 20%;
-        margin-right: 10%;
         align-items : center;
         font-size   : 2vmax;
         color       : #009245;
@@ -448,7 +444,6 @@
     }
 
     .GridRightB {
-      padding-right        : 5%;
       display              : grid;
       grid-template-columns: repeat(2, 0.4fr);
       grid-gap             : 30px;
@@ -469,7 +464,7 @@
           align-self : center;
           color      : #a6a6a6;
           font-family: 'Poppins' !important;
-          width: 14.3em;
+          width: 13.3em;
         }
       }
     }
@@ -858,7 +853,7 @@
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
-    background-image     : url('../../images/Home/init/photoMobile.png');
+    background-image     : url('../../images/Home/init/photoMobile.webp');
     background-position  : center;
     height               : 48.8em;
     grid-template-columns: repeat(1, auto);
@@ -1069,7 +1064,7 @@
     }
     .card-text{
       width: 18em;
-      height: 23em;
+      height: 15em;
       margin-block: 2em;
       margin-left: auto;
       margin-right: auto;
@@ -1085,9 +1080,7 @@
     }
   
     .card-number{
-  
       width: 3em;
-      height: 4em;
       font-family: 'Poppins' !important;
       font-size: 6em;
       font-weight: bold;
@@ -1100,8 +1093,7 @@
       background-color: #009245;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 1em;
-  
+      margin-bottom: 0.5em;
     }
   
     .center-button{
@@ -1512,8 +1504,7 @@
     }
     .card-text{
       width: 17.6em;
-      height: 23em;
-      margin-top: 2em;
+      height: 15.5em;
       margin-left: auto;
       margin-right: auto;
       font-family: 'Poppins' !important;
@@ -1525,12 +1516,11 @@
       letter-spacing: -0.6px;
       text-align: center;
       color: #ffffff;
+      margin-bottom: 4em;
     }
   
     .card-number{
-  
       width: 3em;
-      height: 4em;
       font-family: 'Poppins' !important;
       font-size: 6em;
       font-weight: bold;
@@ -1543,8 +1533,7 @@
       background-color: #009245;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 1em;
-  
+      margin-bottom: 0.5em;
     }
   
     .center-button{
@@ -1875,12 +1864,7 @@
 @media (min-width: 1200px) and (max-width: 1600px) {
 
   .line-copy {
-    width           : 80%;
-    height          : 1px;
-    margin-top      : 2.375em;
     margin-left: 6em;
-    opacity         : 0.5;
-    background-color: #008f45;
   }
 
 

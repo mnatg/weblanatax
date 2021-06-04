@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     List, ListItem, ListItemText
 } from '@material-ui/core';
@@ -10,12 +11,12 @@ const ContentDrawer = () => {
     return (
         <div>
             <List component='nav'>
-                <ListItemLink href='/quienes-somos'>
+                <ListItem component={Link} to='/quienes-somos'>
                     <ListItemText class="nav-links" primary='Quienes Somos' />
-                </ListItemLink>
-                <ListItemLink href='/que-hacemos'>
+                </ListItem>
+                <ListItem component={Link} to='/que-hacemos'>
                     <ListItemText primary='Que Hacemos' />
-                </ListItemLink>
+                </ListItem>
             </List>
         </div>
     )
