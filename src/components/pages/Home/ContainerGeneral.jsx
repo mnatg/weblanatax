@@ -24,7 +24,7 @@ const ContainerGeneral = (props) => {
     return (
         <div className={classes.root}>
             <Navbar handleDrawerToggle={handleDrawerToggle} />
-            <Hidden smUp>
+            <Hidden mdUp>
                 <Drawer
                     variant='temporary'
                     open={openState}
