@@ -29,7 +29,7 @@ function sectionC() {
     <div className='homebackground'>
       <div className="title-carousel">
         <h1 className='Millones-nos-Respald'>Miles nos Respaldan</h1>
-        <h2 className='nase-a-especialista'>Únase a especialistas en TAXES y obtenga estrategias probadas de impuestos por correo electrónico</h2>
+        <h2 className='nase-a-especialista'>Nuestros especialistas te ayudarán a obtener los mejores resultados</h2>
       </div>
       <Carousel className='carrusel' autoPlay={false} navButtonsAlwaysInvisible animation='slide' > 
         <div className='destockItems' >

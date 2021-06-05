@@ -16,7 +16,7 @@
 
 .FirstTitle {
   margin        : 28% 5% 0.5em 15%;
-  font-family   : 'PoppinsBold' !important;
+  font-family   : 'PoppinsExtraBold' !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
@@ -74,8 +74,11 @@
 }
 
 .SecondTitle {
-  margin        : 22% 5% 0.5em 15%;
-  font-family   : 'PoppinsBold' !important;
+  margin-top: 22%;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family   : 'PoppinsExtraBold' !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
@@ -85,7 +88,7 @@
 
 .ThirdTitle {
   margin        : 22% 5% 0.5em 15%;
-  font-family   : 'Poppins' !important;
+  font-family   : 'PoppinsExtraBold' !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
@@ -114,7 +117,7 @@
   background-image     : url(../../images/QuienesSomos/shutterstock-104304026@2x.png);
   width                : 100%;
   background-repeat    : round;
-  margin-top           : 10%;
+  margin-top           : 30em;
 
   .Container {
     margin    : 10% 10% 10% 10%;
@@ -203,13 +206,17 @@
   }
 
   .ThirdTitle {
-    margin        : 22% 5% 0.5em 15%;
-    font-family   : 'Poppins' !important;
-    font-size     : 4.5em;
-    font-weight   : 900;
-    line-height   : 1;
+    margin-top: 22%;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "PoppinsExtraBold" !important;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1;
     letter-spacing: normal;
-    color         : #009245;
+    color: #009245;
+    
   }
 
   .ThirdText {
@@ -322,13 +329,16 @@
   }
 
   .ThirdTitle {
-    margin        : 22% 5% 0.5em 15%;
-    font-family   : 'Poppins' !important;
-    font-size : 3em;
-    font-weight   : 900;
-    line-height   : 1;
+    margin-top: 7em;
+    margin-bottom: 0.5em;
+    font-family: "PoppinsExtraBold" !important;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1;
     letter-spacing: normal;
-    color         : #009245;
+    color: #009245;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .ThirdText {

@@ -49,6 +49,13 @@ function SectionA() {
       color: '#009245',
       padding: '12%',
       textAlign: 'left',
+      [theme.breakpoints.down('sm')]: {
+      width: '80%',
+      marginTop: '0',
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    },
+      
     },
     paper: {
       backgroundColor: 'rgba(233, 233, 233, 0.7)'
@@ -68,6 +75,7 @@ function SectionA() {
         backgroundRepeat: 'no-repeat',
         [theme.breakpoints.down('xs')]: {
           backgroundImage: `url(${bgWeDoMovil})`,
+          maxWidth:'100%'
         },
 
       }
@@ -129,8 +137,8 @@ function SectionA() {
     [theme.breakpoints.down('sm')]: {
       width: '80%',
       marginTop: '0',
-      marginLeft: '10%',
-      marginRight: '10%'
+      marginLeft: 'auto',
+      marginRight: 'auto'
     },
     [theme.breakpoints.down('xs')]: {
       width: '90%',
@@ -147,8 +155,8 @@ function SectionA() {
     [theme.breakpoints.down('sm')]: {
       width: '80%',
       marginTop: '0',
-      marginLeft: '10%',
-      marginRight: '10%'
+      marginLeft: 'auto',
+      marginRight: 'auto'
     },
     [theme.breakpoints.down('xs')]: {
       width: '90%',

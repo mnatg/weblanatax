@@ -13,7 +13,7 @@ function SectionA() {
         <div className="GridLeft">
           <img className="imagenBQuienes" src={imagenB} alt="imagenB" /></div>
         <div className="GridRight">
-          <p className='SecondTitle'>Proposito</p>
+          <p className='SecondTitle'>PROPOSITO</p>
           <p className='SecondText'>
             Como corporación es brindar a nuestros clientes facilidad y calidad al momento de llevar a cabo nuestros servicios sin
             la necesidad de tener que acudir a una oficina presencial, de esta manera buscamos no sólo ahorrar tiempo a nuestros clientes sino alinearnos a su beneficio.
@@ -28,7 +28,7 @@ function SectionA() {
         <div className="GridsUp">
           <img className="imagenBQuienes" src={imagenB} alt="imagenB" /></div>
         <div className="GridUnder">
-          <p className='SecondTitle'>Proposito</p>
+          <p className='SecondTitle'>PROPOSITO</p>
           <p className='SecondText'>
             Como corporación es brindar a nuestros clientes facilidad y calidad al momento de llevar a cabo nuestros servicios sin
             la necesidad de tener que acudir a una oficina presencial, de esta manera buscamos no sólo ahorrar tiempo a nuestros clientes sino alinearnos a su beneficio.

@@ -10,7 +10,7 @@ function SectionA() {
     <div className='Rectangle-quiene'>
       <Grid className="ContainerSectionC">
         <div className="Container">
-          <p className='ThirdTitle'>nuestra gente</p>
+          <p className='ThirdTitle'>NUESTRA GENTE</p>
           <p className='ThirdText'>
             Nuestro equipo nos separa de la competencia trayendo un sin par de valores a nuestros clientes.
             <br></br>
