@@ -4,7 +4,7 @@ import React from 'react';
 import rocket from '../../../assets/images/WeDo/rocket.webp';
 import background from '../../../assets/images/WeDo/sectionBbg.webp';
 import backgroundTablet from '../../../assets/images/WeDo/sectionBbgTablet.webp';
-import backgroundMovil from '../../../assets/images/WeDo/sectionBbgMovil.webp';
+import backgroundMovil from '../../../assets/images/WeDo/sectionBbgMovil.png';
 // Styles
 import '../../../assets/styles/WeDo/SectionB.scss'
 import { Colors } from '../../../Theme/index';
@@ -63,13 +63,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginBottom: '-2.375em',
-    justifyContent: 'flex-end',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `url(${backgroundTablet})`,
       justifyContent: 'flex-start'
     },
     [theme.breakpoints.down('xs')]: {
-      backgroundImage: `url(${backgroundMovil})`
+      backgroundImage: `url(${backgroundMovil})`,
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'inherit',
     }
   },
   card: {
@@ -77,10 +79,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       paddingRight: 0
     },
+    [theme.breakpoints.down('xs')]: {
+      paddingRight: 0,
+      marginTop:'110%',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    }
+    
   },
   contentTextCard: {
     backgroundColor: 'rgba(233, 233, 233, 0.7)',
-    width: '33.75em',
     textAlign: 'left',
     fontSize: '1em',
     [theme.breakpoints.down('sm')]: {
@@ -89,9 +97,8 @@ const useStyles = makeStyles((theme) => ({
       marginInline: 'auto'
     },
     [theme.breakpoints.down('xs')]: {
-      marginTop: '42.3125em',
-      width: '23.34em',
-      fontSize: '0.75em'
+      fontSize: '0.75em',
+
     }
   }
 }));
@@ -112,8 +119,8 @@ const SectionA = () => {
         </Box>
       </Grid>
       <Grid item container xs={12} className={classes.content} >
-        <Grid item xs={12} md={6} className={classes.card}  >
-          <Box className={classes.contentTextCard}
+        <Grid item xs={12} md={6} xs={11} className={classes.card}  >
+          <Box  className={classes.contentTextCard}
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
             <p>{textContentP1}</p>
             <br/>
