@@ -21,7 +21,7 @@ class FlipCards extends React.Component {
           <>
              <Grid >
           
-        <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical" onClick={this.handleClick}>
+        <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical" onClick={this.handleClick} style="outline:none;">
         
          <button  onClick={this.handleClick} className='card-number'>1.</button>
      
