@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginBottom: '-2.375em',
+    justifyContent:'flex-end',
     [theme.breakpoints.down('sm')]: {
       backgroundImage: `url(${backgroundTablet})`,
       justifyContent: 'flex-start'
@@ -75,7 +76,13 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   card: {
-    paddingRight: '22.125em',
+    [theme.breakpoints.up('xl')]:{
+      paddingRight: '40.125em',
+    },
+    [theme.breakpoints.down('lg')]:{
+      paddingRight: '15em',
+    },
+    
     [theme.breakpoints.down('sm')]: {
       paddingRight: 0
     },
@@ -89,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
   },
   contentTextCard: {
     backgroundColor: 'rgba(233, 233, 233, 0.7)',
-    textAlign: 'left',
+    textAlign: 'right',
     fontSize: '1em',
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
