@@ -282,6 +282,8 @@
     padding: 10px 37px 50px 38px;
     border-radius: 8px;
     background-color: #009245;
+        border-color: aliceblue;
+    border-bottom-style: none;
   }
 
 
@@ -327,6 +329,8 @@
     background-color: #009245;
     margin-left: 0.13em;
     margin-right: auto;
+    border-color: aliceblue;
+    border-bottom-style: none;
   }
 
   .center-button{
@@ -612,7 +616,7 @@
   width: 100%;
   .sectionD {
     width                  : 100%;
-    margin-top             : 10%;
+    margin-top             : 3em;
     display                : grid;
     grid-template-columns  : repeat(2, 1fr);
     grid-gap               : 10px;
@@ -959,44 +963,46 @@
     }
   
     .iconServices {
-      width         :8vmax;
-      height: 13vmax;
-      margin: -2em 1em 112px 2em;
-      padding: 8px 6px 6px 11px;
-      border-radius: 8px;
-      background-color: #009245;
+      width: 16vmax;
+    height: 17vmax;
+    /* padding: 8px 6px 6px 11px; */
+    border-radius: 8px;
+    background-color: #009245;
+    margin-top: -7em;
+    margin-left: 3em;
     }
   
     .iconServices-taxes {
-      width         :8vmax;
-      height: 13vmax;
+      width         :16vmax;
+      height: 15vmax;
     }
   
     .iconServices-audits {
-      width         : 11vmax;
-      height: 14vmax;
+      width         :17vmax;
+      height: 18vmax;
     
     }
   
     .extraicon {
-      width         : 12vmax;
-      height: 15vmax;
-      margin: -2em 1em 112px 2em;
+      width: 21vmax;
+      height: 21vmax;
+      /* padding: 8px 6px 6px 11px; */
       border-radius: 8px;
       background-color: #009245;
+      margin-top: -7em;
     }
   
     .caja-services{
       width: 18em;
-    height: 11em;
+    height: 16em;
     margin: auto;
-    padding: 1em 1.5em 1.5em 2em;
+    margin-top: 3em;
     border-radius: 8px;
     background-color: #d8d8d8;
     }
   
     .servicios-lanatax {
-      font-size      : 1em;
+      font-size      : 2.5em;
       font-weight    : 600;
       font-stretch   : normal;
       font-style     : normal;
@@ -1004,22 +1010,21 @@
       letter-spacing : normal;
       color          : #009245;
       text-decoration: none;
-      margin-top: -1em;
-      margin-left: 5em;
+      margin-left: -1.8em;
       margin-top: 1em;
     }
   
     .servicios-lanatax-des {
-      width: auto;
-      font-size      : 1em;
-      font-weight    : normal;
-      font-stretch   : normal;
-      font-style     : normal;
-      line-height    : normal;
-      letter-spacing : normal;
-      color          : #009245;
+      font-size: 1.5em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #009245;
       text-decoration: none;
-      margin-top:-5em;
+      margin-top: -1em;
+      margin-left: -2em;
      
     }
   }

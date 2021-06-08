@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../assets/styles/Home/Home.scss';
 import taxes from '../../../assets/images/Home/init/impuestos.svg'
-import audits from '../../../assets/images/Home/init/audito.svg'
+import audits from '../../../assets/images/Home/init/audito.png'
 import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 
