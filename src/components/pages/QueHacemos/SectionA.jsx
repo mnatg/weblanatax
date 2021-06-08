@@ -99,6 +99,7 @@ function SectionA() {
       },
       [theme.breakpoints.down('xs')]: {
         marginTop: '140%',
+        fontSize: '0.75em',
       },
     },
     Balls: {
@@ -106,6 +107,9 @@ function SectionA() {
       width: '79%',
       marginLeft: '10%',
       marginRight: '10%',
+      [theme.breakpoints.up('xl')]: {
+        width: '79%',
+      },
       [theme.breakpoints.down('lg')]: {
         display: 'block'
       },
@@ -117,6 +121,9 @@ function SectionA() {
       },
     },
     BallsMovil: {
+      [theme.breakpoints.up('xl')]: {
+        display: 'none'
+      },
       [theme.breakpoints.down('lg')]: {
         display: 'none'
       },
@@ -177,6 +184,14 @@ function SectionA() {
       [theme.breakpoints.down('xs')]: {
         display: 'none'
       },
+    },
+    plansContainer:{
+      [theme.breakpoints.down('sm')]: {
+        width: '80%',
+        marginTop: '0',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      },
     }
 
   }));
@@ -198,7 +213,7 @@ function SectionA() {
           </Paper>
         </Grid>
       </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" >
+      <Grid container direction="row" justify="center" alignItems="center" className="plansContainer" >
         <Grid item xs={9} sm={6} lg={3}>
           <img src={plan1} alt="card-small-free" className={classes.plan} />
         </Grid>
