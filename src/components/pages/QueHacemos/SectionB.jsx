@@ -44,15 +44,13 @@ const useStyles = makeStyles((theme) => ({
   },
   rocket: {
     position: 'absolute',
-    height: '35.25em',
     width: '36.66875em',
     marginLeft: '50%',
     marginTop: '-19em',
     [theme.breakpoints.down('sm')]: {
-      height: '29.625em',
-      width: '30.125em',
-      marginTop: '-16em',
-      marginLeft: '40%'
+      width: '60%',
+      marginTop: '-30%',
+      marginLeft: '41%'
     },
     [theme.breakpoints.down('xs')]: {
       display: 'none'
