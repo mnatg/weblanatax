@@ -44,15 +44,17 @@ const useStyles = makeStyles((theme) => ({
   },
   rocket: {
     position: 'absolute',
-    height: '35.25em',
-    width: '36.66875em',
-    marginLeft: '50%',
-    marginTop: '-19em',
+    width: '43%',
+    marginLeft: '55%',
+    marginTop: '-23%',
+    [theme.breakpoints.up('xl')]: {
+      width: '36.66875em',
+      marginTop: '-15%'
+    },
     [theme.breakpoints.down('sm')]: {
-      height: '29.625em',
-      width: '30.125em',
-      marginTop: '-16em',
-      marginLeft: '40%'
+      width: '55%',
+      marginLeft: '45%',
+      marginTop: '-30%',
     },
     [theme.breakpoints.down('xs')]: {
       display: 'none'
@@ -80,9 +82,8 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: '20.125em',
     },
     [theme.breakpoints.down('lg')]:{
-      paddingRight: '15em',
+      paddingRight: '1em',
     },
-    
     [theme.breakpoints.down('sm')]: {
       paddingRight: 0
     },
@@ -106,11 +107,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
       textAlign: 'center',
-      marginInline: 'auto'
+      marginLeft: '10%'
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '0.75em',
-
+      marginLeft: 'auto'
     }
   },
   text2: {
