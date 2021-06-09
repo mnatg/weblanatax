@@ -150,14 +150,14 @@ function SectionA() {
       [theme.breakpoints.down('sm')]: {
         width: '80%',
         marginTop: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto'
+        marginLeft: '10%',
+        marginRight: '10%'
       },
       [theme.breakpoints.down('xs')]: {
         width: '90%',
         marginBottom: '2em',
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        marginLeft: '5%',
+        marginRight: '55%',
         display:'block',
       },
     },
@@ -171,14 +171,14 @@ function SectionA() {
       [theme.breakpoints.down('sm')]: {
         width: '80%',
         marginTop: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto'
+        marginLeft: '10%',
+        marginRight: '10%'
       },
       [theme.breakpoints.down('xs')]: {
         width: '90%',
         marginBottom: '2em',
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        marginLeft: '5%',
+        marginRight: '5%',
         display:'block',
       },
     },
