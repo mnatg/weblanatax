@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme =>
       },
       [theme.breakpoints.down('xs')]: {
         textAlign: 'end',
+        marginRight: '2em',
       },
     },
     appBar: {

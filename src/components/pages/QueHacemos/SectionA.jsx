@@ -156,6 +156,9 @@ function SectionA() {
       [theme.breakpoints.down('xs')]: {
         width: '90%',
         marginBottom: '2em',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        display:'block',
       },
     },
     plan2: {
@@ -174,6 +177,9 @@ function SectionA() {
       [theme.breakpoints.down('xs')]: {
         width: '90%',
         marginBottom: '2em',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        display:'block',
       },
     },
 
