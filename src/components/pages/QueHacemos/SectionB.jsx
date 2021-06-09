@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     width: '43%',
     marginLeft: '55%',
     marginTop: '-23%',
+    [theme.breakpoints.up('xl')]: {
+      width: '36.66875em',
+    },
     [theme.breakpoints.down('sm')]: {
       width: '55%',
       marginLeft: '45%',
@@ -78,9 +81,8 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: '40.125em',
     },
     [theme.breakpoints.down('lg')]:{
-      paddingRight: '15em',
+      paddingRight: '1em',
     },
-    
     [theme.breakpoints.down('sm')]: {
       paddingRight: 0
     },
@@ -99,11 +101,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
       textAlign: 'center',
-      marginInline: 'auto'
+      marginLeft: '10%'
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '0.75em',
-
+      marginLeft: 'auto'
     }
   }
 }));
