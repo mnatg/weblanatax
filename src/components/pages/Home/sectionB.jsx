@@ -37,7 +37,7 @@ function sectionB() {
           </div>
           <div className='gridtest'>
             <img className="ICON" src={billetes} alt="billetes" />
-            <p className='TEXT'> Simple, fácil y seguro. </p>
+            <p className='TEXT'> Simple, rápido y seguro. </p>
           </div>
           <div className='gridtest'>
             <img className="TORTA" src={torta} alt="torta" />
@@ -45,7 +45,7 @@ function sectionB() {
           </div>
           <div className='gridtest'>
             <img className="ICON" src={personas} alt="personas" />
-            <p className='TEXT'>Calidad con la que<br />puedes contar.</p>
+            <p className='TEXT'>Calidad al alcance de <br />tu bolsillo.</p>
           </div>
           <div className='gridtest'>
             <img className="ICON" src={estadistica} alt="estadistica" />

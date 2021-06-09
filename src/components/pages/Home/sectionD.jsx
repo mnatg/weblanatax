@@ -68,7 +68,7 @@ function sectionD() {
             Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
           </h1>
           <h1 className='textD1'>
-            SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
+          SUSCRÍBETE  PARA MANTENERTE AL DÍA MEDIANTE SMS
           </h1>
           <input ref={mobile} className="Boton-Nombre-d"  placeholder="Example : 14********" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>
@@ -89,7 +89,7 @@ function sectionD() {
             Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
           </h1>
           <h1 className='textD1'>
-            SUSCRIBETE PARA TENERTE AL DÍA VIA SMS
+          SUSCRÍBETE  PARA MANTENERTE AL DÍA MEDIANTE SMS
           </h1>
           <input ref={mobile2} className="Boton-Nombre-d" placeholder="Example : 14********" /><br/>
             <Button onClick={Send} className="BotonConectarD" >conectar</Button>

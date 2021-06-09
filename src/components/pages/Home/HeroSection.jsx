@@ -44,7 +44,7 @@ function HeroSection() {
         <ImpuestosCarousel></ImpuestosCarousel>
         <h1 className='Nos-encargamos'>Nos encargamos de todo por ti</h1>
         <div className='icons-stores'>
-          <p className='descarga-apps' >Descarga Gratis nuestas apps: </p>
+          <p className='descarga-apps' >Descarga Gratis nuestras apps: </p>
           <div>
               {'\n'}
           <a href='https://apps.apple.com/co/app/lanatax/id1556736650' >

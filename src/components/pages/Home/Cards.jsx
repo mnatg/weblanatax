@@ -23,7 +23,7 @@ function Cards() {
         <Link  to='/' >
           <img className="iconServices-audits" src={audits} alt="audits" />
         </Link>
-        <p className='servicios-lanatax'>AUDITORIAS</p>
+        <p className='servicios-lanatax'>AUDITORÍAS</p>
         </div>
         <p className='servicios-lanatax-des'>¿Te llegó una carta del IRS? con Lanatax será la manera más simple de resolver tus deudas </p>
       </div>

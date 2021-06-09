@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     [theme.breakpoints.up('xl')]:{
-      paddingRight: '40.125em',
+      paddingRight: '20.125em',
     },
     [theme.breakpoints.down('lg')]:{
       paddingRight: '15em',
@@ -98,6 +98,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(233, 233, 233, 0.7)',
     textAlign: 'right',
     fontSize: '1em',
+    [theme.breakpoints.down('lg')]:{
+      marginTop: '48.0625em',
+      textAlign: 'center',
+      marginInline: 'auto',
+    },
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
       textAlign: 'center',
@@ -105,6 +110,18 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '0.75em',
+
+    }
+  },
+  text2: {
+    [theme.breakpoints.down('lg')]:{
+     
+    },
+    [theme.breakpoints.down('sm')]: {
+   
+    },
+    [theme.breakpoints.down('xs')]: {
+ 
 
     }
   }
@@ -131,7 +148,7 @@ const SectionA = () => {
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
             <p>{textContentP1}</p>
             <br/>
-            <p>{textContentP2}</p>
+            <p className={classes.text2}>{textContentP2}</p>
           </Box>
         </Grid>
       </Grid>

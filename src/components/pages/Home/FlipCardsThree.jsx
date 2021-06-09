@@ -24,8 +24,7 @@ class FlipCards extends React.Component {
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical" onClick={this.handleClick}>
          <button  onClick={this.handleClick} className='card-number'>3.</button>
          
-         <button onClick={this.handleClick}  className='card-text front-card'>De esta manera, queda a tu 
-disposición tres escenarios donde puedes escoger la solución que más te convenga</button>
+         <button onClick={this.handleClick}  className='card-text front-card'>Por último, queda a tu disposición tres escenarios  donde puedes escoger la solución que más te convenga.</button>
        
         </ReactCardFlip>
    

@@ -26,8 +26,8 @@ class FlipCards extends React.Component {
          <button  onClick={this.handleClick} className='card-number'>1.</button>
      
           
-         <button onClick={this.handleClick}  className='card-text front-card'>Usted podrá exponer su caso con el consultor quien está disponible siempre para usted,de esta manera entenderemos mejor el caso, recuerde que la consulta es
- totalmente gratis</button>
+         <button onClick={this.handleClick}  className='card-text front-card'>Podrás exponer tu situación con el consultor quien estará disponible siempre, así mismo nuestro compromiso es entender mejor el caso, 
+         <p className='negrilla'>recuerde que la consulta es totalmente gratuita</p></button>
       
         </ReactCardFlip>
         

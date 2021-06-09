@@ -16,7 +16,7 @@ function sectionC() {
     },
     {
       id: 2, boddy: <p></p>,
-      title: <p className='impuestos'>AUDITORIAS</p>,
+      title: <p className='impuestos'>AUDITORÍAS</p>,
       subtitle: <p></p>
     },
     {

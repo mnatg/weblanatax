@@ -12,7 +12,7 @@ function SectionA() {
         <div className="Container">
           <p className='ThirdTitle'>NUESTRA GENTE</p>
           <p className='ThirdText'>
-            Nuestro equipo nos separa de la competencia trayendo un sin par de valores a nuestros clientes.
+          <p className='negrilla'>Nos diferenciamos  de la competencia por los valores y calidez humana que nuestro equipo tiene con los clientes como tu.</p>
             <br></br>
             <br></br>
             La amabilidad y calidad de nuestro equipo nos destaca frente a la competencia, otorgando una experiencia única frente al mercado. </p>

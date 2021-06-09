@@ -36,7 +36,7 @@ function sectionC() {
           {items.map(item => <div key={item.id}>{item.boddy}{item.title}{item.subtitle}</div>)}
         </div>
       </Carousel>
-      <Carousel className='carruselMovil' autoPlay={false} navButtonsAlwaysInvisible animation='slide' indicatorIconButtonProps={{style: {color: '#efefef'}}} activeIndicatorIconButtonProps={{style: {color: '#009245'}}} > 
+      <Carousel className='carruselMovil' autoPlay={false} navButtonsAlwaysInvisible  animation='slide' indicatorIconButtonProps={{style: {color: '#efefef'}}} activeIndicatorIconButtonProps={{style: {color: '#009245'}}} > 
         {items.map(item => <div key={item.id} className='itemCarousel' >{item.boddy}{item.title}{item.subtitle}</div>)}
       </Carousel>
     </div>
