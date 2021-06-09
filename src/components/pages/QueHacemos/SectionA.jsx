@@ -103,7 +103,7 @@ function SectionA() {
       },
     },
     Balls: {
-      marginTop: '-18em',
+      marginTop: '-16%',
       width: '79%',
       marginLeft: '10%',
       marginRight: '10%',
@@ -129,7 +129,7 @@ function SectionA() {
       },
       [theme.breakpoints.down('sm')]: {
         display: 'block',
-        marginTop: '-18em',
+        marginTop: '-24%',
         width: '95%',
         marginLeft: '2.5%',
         marginRight: '2.5%',
@@ -157,7 +157,7 @@ function SectionA() {
         width: '90%',
         marginBottom: '2em',
         marginLeft: '5%',
-        marginRight: '55%',
+        marginRight: '5%',
         display:'block',
       },
     },
