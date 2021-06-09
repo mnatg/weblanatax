@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '-23%',
     [theme.breakpoints.up('xl')]: {
       width: '36.66875em',
+      marginTop: '-15%'
     },
     [theme.breakpoints.down('sm')]: {
       width: '55%',
