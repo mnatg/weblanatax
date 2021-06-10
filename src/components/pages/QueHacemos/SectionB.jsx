@@ -100,10 +100,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'right',
     fontSize: '1em',
     [theme.breakpoints.down('lg')]:{
-      marginTop: '48.0625em',
-      textAlign: 'center',
-      marginInline: 'auto',
-      width: '70%',
+     
     },
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
@@ -113,18 +110,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       fontSize: '0.75em',
       marginLeft: 'auto'
-    }
-  },
-  text2: {
-    [theme.breakpoints.down('lg')]:{
-    
-    },
-    [theme.breakpoints.down('sm')]: {
-   
-    },
-    [theme.breakpoints.down('xs')]: {
- 
-
     }
   }
 }));
@@ -148,9 +133,9 @@ const SectionA = () => {
         <Grid item xs={12} md={6} xs={11} className={classes.card}  >
           <Box  className={classes.contentTextCard}
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
-            <p className={classes.text2}>{textContentP1}</p>
+            <p >{textContentP1}</p>
             <br/>
-            <p className={classes.text2}>{textContentP2}</p>
+            <p >{textContentP2}</p>
           </Box>
         </Grid>
       </Grid>
