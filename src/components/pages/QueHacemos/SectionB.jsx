@@ -2,7 +2,7 @@
 import React from 'react';
 // Assets
 import rocket from '../../../assets/images/WeDo/rocket.webp';
-import background from '../../../assets/images/WeDo/sectionBbg.webp';
+import background from '../../../assets/images/WeDo/sectionBbg2x.png';
 import backgroundTablet from '../../../assets/images/WeDo/sectionBbgTablet.webp';
 import backgroundMovil from '../../../assets/images/WeDo/sectionBbgMovil.png';
 // Styles
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     backgroundImage: `url(${background})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    //backgroundPosition: 'center',
     marginBottom: '-2.375em',
     justifyContent:'flex-end',
     [theme.breakpoints.down('sm')]: {
@@ -103,6 +103,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '48.0625em',
       textAlign: 'center',
       marginInline: 'auto',
+      width: '70%',
     },
     [theme.breakpoints.down('sm')]: {
       marginTop: '48.0625em',
@@ -116,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text2: {
     [theme.breakpoints.down('lg')]:{
-     
+    
     },
     [theme.breakpoints.down('sm')]: {
    
@@ -147,7 +148,7 @@ const SectionA = () => {
         <Grid item xs={12} md={6} xs={11} className={classes.card}  >
           <Box  className={classes.contentTextCard}
             color={Colors.aquamarine} my={21.875} py={6.5} px={4} borderRadius={8} >
-            <p>{textContentP1}</p>
+            <p className={classes.text2}>{textContentP1}</p>
             <br/>
             <p className={classes.text2}>{textContentP2}</p>
           </Box>
