@@ -1,13 +1,9 @@
 import React from 'react';
 import '../../../assets/styles/Home/Home.scss'
-import '../../../assets/styles/QuienesSomos/QuienesSomos.scss'
-import imagenA from '../../../assets/images/QuienesSomos/q-s-celu.png'
-import { Link } from 'react-router-dom';
 import { Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Balls from '../../../assets/images/WeDo/graphics-copy.webp';
 import BallTablet from '../../../assets/images/WeDo/ballstablet.webp';
-
 import plan1 from '../../../assets/images/WeDo/card-small-free.webp';
 import plan2 from '../../../assets/images/WeDo/card-small-basic.webp';
 import plan3 from '../../../assets/images/WeDo/card-small-premium.webp';
