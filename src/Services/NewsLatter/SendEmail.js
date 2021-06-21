@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export default async (data) => {
     return axios({
-        baseURL: Config.API_URL_PROD + "notification/emailnotification",
+        baseURL: Config.API_URL + "notification/emailnotification",
        // baseURL: 'http://localhost:5000/' + "notification-messages/emailnotification",
         method: 'post',
         headers: {
