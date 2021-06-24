@@ -7,15 +7,15 @@ import { Grid } from '@material-ui/core';
 
 function Cards() {
   return (
-    <Grid className='base'>
+    <div className='base'>
       <div className='center-services caja-services'>
         <div className="iconServices">
         <Link  to='/' >
           <img className="iconServices-taxes" src={taxes} alt="taxes" />
         </Link>
-        <p className='servicios-lanatax'>IMPUESTOS</p>
+        <p className='servicios-lanataxone'>IMPUESTOS</p>
         </div>
-        <p className='servicios-lanatax-des'>Nunca fue tan simple, rápido y seguro</p>
+        <p className='servicios-lanatax-desone'>Nunca fue tan simple, rápido y seguro</p>
       </div>
 
       <div className='center-servicesA caja-services' >
@@ -28,7 +28,7 @@ function Cards() {
         <p className='servicios-lanatax-des'>¿Te llegó una carta del IRS? con Lanatax será la manera más simple de resolver tus deudas </p>
       </div>
 
-    </Grid>
+    </div>
   );
 }
 
