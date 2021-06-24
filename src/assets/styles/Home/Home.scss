@@ -347,6 +347,7 @@
     margin-right: auto;
     border-color: aliceblue;
     border-bottom-style: none;
+    letter-spacing: 0.02em;
   }
 
   .center-button{
@@ -516,12 +517,13 @@
     line-height   : normal;
     letter-spacing: normal;
     color         : #009245;
-    font-family: 'Poppins' !important;
+    font-family: 'PoppinsBold' !important;
+    margin-bottom: 1em;
   }
 
   .nase-a-especialista {
-    font-size     : 1em;
-    font-weight   : 500;
+    font-size     : 1.2em;
+    font-weight   : 550;
     font-stretch  : normal;
     font-style    : normal;
     width         : 100%;
@@ -1159,6 +1161,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 0.5em;
+      letter-spacing: 0.02em;
     }
   
     .center-button{
@@ -1216,17 +1219,19 @@
       display              : grid;
       grid-template-columns: repeat(1, 1fr);
       justify-content      : center;
-
+      .GridLefB{
       .TextB {
+        width          : 7em;
         margin-top     : 20%;
-        margin-left    : 25% !important;
-        margin-right   : 25%;
+        margin-left    : auto;
+        margin-right   : auto;
         text-align     : center;
+        font-size      : 4vmax;
         justify-content: center;
         font-size      : 5vmax;
 
       }
-
+    }
       .GridRightB {
         width                : 80%;
         margin-inline        : auto;
@@ -1250,9 +1255,25 @@
 
   .title-carousel {
 
-    .Millones-nos-Respald,
+    .Millones-nos-Respald{
+      font-size: 2em;
+      width: 6em;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      text-align: center;
+      font-family: "PoppinsBold" !important;
+      margin-bottom: 1em;
+      font-weight: bold;
+      line-height: 1em;
+    }
     .nase-a-especialista {
       text-align: center;
+      justify-content: center;
+      font-weight: bold;
+      width: 15em;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -1683,22 +1704,34 @@
       }
     }
 
+    .Millones-nos-Respald{
+      font-size: 2em;
+      width: 14em;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      text-align: center;
+      font-family: "PoppinsBold" !important;
+      margin-bottom: 1em;
+      font-weight: bold;
+      line-height: 1em;
+    }
+
     .sectionB {
       width                : 100%;
       display              : grid;
       grid-template-columns: repeat(1, 1fr);
       justify-content      : center;
-
+      .GridLefB{
       .TextB {
-        margin-top     : 20%;
-        margin-left    : 25% !important;
-        margin-right   : 25%;
+        margin-top     : 1em;
+        margin-left    : auto;
+        margin-right   : auto;
         text-align     : center;
         justify-content: center;
-        font-size      : 5vmax;
-
+        font-size      : 4vmax;
       }
-
+    }
       .GridRightB {
         width       : 80%;
         margin-inline: auto;
