@@ -12,17 +12,17 @@ function sectionC() {
     {
       id: 1, boddy: <Link to='/' > <img src={imageOne} className="image-carousel" alt="imageOne" /></Link>,
       title: <p className='news-autor'> By <strong>Fernanda |</strong>  03 Marzo 2021</p>,
-      subtitle: <p className='news-title news-one-title'> Lana Tax, Facil - Rapido <br /> y seguro</p>
+      subtitle: <p className='news-title news-one-title'>Simple, rápido y seguro<br /> y seguro</p>
     },
     {
       id: 2, boddy: <Link to='/' ><img className="image-carousel" src={imageTwo} alt="imageTwo" /></Link>,
-      title: <p className='news-autor'> By <strong>Maria |</strong> 03 Enero 2021</p>,
+      title: <p className='news-autor'> By <strong>Pedro |</strong> 03 Enero 2021</p>,
       subtitle: <p className='news-title news-two-title'> Los mejores en la <br />comunidad latina  </p>
     },
     {
       id: 3, boddy: <Link to='/' ><img className="image-carousel" src={imageThree} alt="imageThree" /></Link>,
       title: <p className='news-autor'> By <strong>Alejandro |</strong> 03 Diciembre 2019</p>,
-      subtitle: <p className='news-title news-one-title'> Muchas gracias por su <br />asesoria con mi caso</p>
+      subtitle: <p className='news-title news-one-title'>Brindando por más de 20<br /> años la mejor experiencia</p>
     }
   ]
   return (
