@@ -1098,6 +1098,12 @@
       margin-left: -2em;
      
     }
+    .servicios-lanatax-desone {
+      width: auto;
+      font-size      : 1.5em;
+      margin-top: -4em;
+      margin-left: -3em;
+    }
   }
 
   .homebackground {
@@ -1311,19 +1317,23 @@
   }
 
   .rec,
+  .carruselMovil{
   .CarouselItem {
     margin-left: auto;
     margin-right: auto;
     display: block;
     .news-title {
-      margin     : 12px 54px 0 5%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
       font-size  : 24px;
       font-weight: bold;
       line-height: 1.42;
       color         : #a6a6a6;
     }
   }
-
+  }
   .bSWeAW {
     display: none;
   }
