@@ -41,7 +41,7 @@
 .Photo {
   background           : url('../../images/Home/init/home4k.jpg') center center/cover no-repeat;
   width                : 95%;
-  height               : 70em;
+  height               : 734px;
   margin-top           : 0em;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
@@ -82,7 +82,7 @@
     align-items: flex-end;
   }
   .no-te {
-    margin-top: 40%;
+    margin-top: 10%;
     font-size: 5em;
     font-weight: bold;
     font-stretch: normal;
@@ -2061,6 +2061,36 @@
 
 
 @media (min-width: 1200px) and (max-width: 1600px) {
+
+  .Photo {
+    background           : url('../../images/Home/init/home4k.jpg') center center/cover no-repeat;
+    width                : 95%;
+    height               : 734px;
+    margin-top           : 0em;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap             : 10px;
+    grid-auto-rows       : minmax(100px, auto);
+    max-width: 1300px;
+    margin-left          : auto;
+    margin-right         : auto;
+    font-family          : 'Poppins' !important;
+    padding-left: 4em;
+    padding-right: 0em;
+    .no-te {
+      margin-top: 10%;
+      font-size: 5em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.97;
+      letter-spacing: 4.1px;
+      color: #ffffff;
+      font-family: "PoppinsBold" !important;
+      width: 7em;
+      max-width: 7em;
+    }
+  }
 
   .line-copy {
     margin-left: 6em;
