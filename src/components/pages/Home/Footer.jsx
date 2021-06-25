@@ -12,7 +12,7 @@ import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/Home/Navbar.scss'
 import SendEmail from '../../../Services/NewsLatter/SendEmail';
 import Toast from '../../../utils/Toast';
-
+import validator from 'validator'
 
 
 function Footer() {
@@ -29,7 +29,7 @@ function Footer() {
   }
   const Send = async() => {
     console.log('enviar email', email.current.value)
-
+if(emailError=="OK"){
 
     if(email.current.value==null || email.current.value ==undefined || email.current.value == ""){
 
@@ -46,11 +46,29 @@ function Footer() {
       await SendEmail(request);
       Toast("Suscripción exitosa","success");
   } catch (err) {
-    Toast("Ha ocurrido un error, contacte al administardor: ",err);
+    Toast("Ha ocurrido un error, contacte al administardor: ","error");
       console.error("Error al enviar mensaje", err);
   }
     
 }
+
+}
+else{
+  Toast("Por favor ingrese un correo válido","error");
+}
+}
+
+
+const [emailError, setEmailError] = useState('')
+const validateEmail = (e) => {
+  var email = e.target.value
+
+  if (validator.isEmail(email)) {
+    setEmailError('OK')
+    
+  } else {
+    setEmailError('EROR')
+  }
 }
 
 
@@ -87,7 +105,7 @@ function Footer() {
         <div className='third'>
           <p className='suscribete'>Suscribete a nuestro <br/>Newslatter</p>
           <Grid container>
-            <input ref={email} className="Rectangle-5-Copy" placeholder="Email" />
+            <input ref={email} className="Rectangle-5-Copy" placeholder="Email" onChange={(e) => validateEmail(e)}/>
 
            <Grid container direction="row" justify="left" alignItems="​center" >
             <a href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>

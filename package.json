@@ -38,6 +38,7 @@
     "sass": "^1.32.8",
     "styled-components": "^5.2.3",
     "tachyons-components": "^1.0.1",
+    "validator": "^13.6.0",
     "web-vitals": "^1.1.1",
     "yield": "^0.0.6-8"
   },
