@@ -17,7 +17,7 @@ function sectionC() {
     {
       id: 2, boddy: <Link to='/' ><img className="image-carousel" src={imageTwo} alt="imageTwo" /></Link>,
       title: <p className='news-autor'> By <strong>Pedro |</strong> 03 Enero 2021</p>,
-      subtitle: <p className='news-title news-two-title'> Los mejores en la <br />comunidad latina  </p>
+      subtitle: <p className='news-two-title'> Los mejores en la <br />comunidad latina  </p>
     },
     {
       id: 3, boddy: <Link to='/' ><img className="image-carousel" src={imageThree} alt="imageThree" /></Link>,

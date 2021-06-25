@@ -602,11 +602,23 @@
     }
 
     .news-title {
-      margin     : 12px 0 0 0.1em;
+      margin-left:2em;
+      margin-right: auto;
       font-size  : 24px;
       font-weight: bold;
       line-height: 1.42;
        color         : #a6a6a6;
+    }
+    .news-two-title {
+      margin-left:2em;
+      margin-right: auto;
+      font-size     : 24px;
+      font-weight   : bold;
+      font-stretch  : normal;
+      font-style    : normal;
+      line-height   : 1.42;
+      letter-spacing: normal;
+      color         : #d9e021;
     }
   }
 }//Carousel-movil
@@ -1799,6 +1811,17 @@
     display: block !important;
     margin-left: auto;
   margin-right: auto;
+  .CarouselItem .news-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;
+    color: #a6a6a6;
+}
+
   }
 
   .bSWeAW {
