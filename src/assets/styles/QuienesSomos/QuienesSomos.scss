@@ -61,7 +61,7 @@
 }
 
 .SecondText {
-  margin        : 0% 10% 0.5em 15%;
+  margin-right: 12%;
   height        : 186px;
   font-family   : 'Poppins' !important;
   font-size     : 1.2em;
@@ -78,13 +78,14 @@
   margin-top: 22%;
   margin-bottom: 0.5em;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 31%;
   font-family   : 'PoppinsExtraBold' !important;
   font-size     : 4.5em;
   font-weight   : 900;
   line-height   : 1;
   letter-spacing: normal;
   color         : #009245;
+  text-align: right;
 }
 
 .ThirdTitle {
@@ -191,7 +192,10 @@
     width     : 58em;
     margin-top: 3em;
   }
-
+  .SecondTitle {
+    text-align: center;
+    margin-right: auto;
+  }
   .SecondText {
     height        : 14em;
     font-family   : 'Poppins' !important;
@@ -336,6 +340,8 @@
   }
   .SecondTitle {
     font-size     : 3em;
+    text-align: center;
+    margin-right: auto;
   }
 
   .ThirdTitle {
