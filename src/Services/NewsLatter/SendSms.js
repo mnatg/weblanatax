@@ -16,7 +16,7 @@ export default async (data) => {
     }).then(({ data }) => {
         return data
     }).catch((err) => {
-        console.error("Error al enviar mail: ", err)
+        console.error("Error al enviar sms: ", err)
         return (err)
     })
 }
