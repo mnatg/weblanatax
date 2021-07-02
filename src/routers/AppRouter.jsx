@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from '../components/pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import QueHacemos from '../components/pages/QueHacemosV2/QueHacemos';
-import Products from '../components/pages/QuienesSomos/QuienesSomos';
+import QueHacemos from '../components/pages/QueHacemos/QueHacemos';
 import SignUp from '../components/pages/SignIn/SignUp';
 import SignIn from '../components/pages/SignIn/SignIn';
 import QuienesSomos from '../components/pages/QuienesSomos/QuienesSomos';
@@ -44,7 +43,6 @@ function AppRouter() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/que-hacemos' component={QueHacemos} />
-          <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/sign-in' component={SignIn} />
           <Route path='/quienes-somos' component={QuienesSomos} />

@@ -1,15 +1,13 @@
 import React from 'react';
 import Footer from '../Home/Footer';
-import SectionA from './SectionA';
-import SectionB from './SectionB';
+import Header from './Header';
 
 
 
 function QueHacemos() {
   return (
     <>
-      <SectionA />
-      <SectionB/>
+      <Header/>
       <Footer />
     </>
   );
