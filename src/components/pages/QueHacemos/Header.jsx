@@ -92,10 +92,10 @@ const useStyles = makeStyles((theme) => ({
     
     },
     content: {
-      marginTop: '0em',
+      marginTop: '-9em',
       backgroundColor: 'none',
       backgroundImage: `url(${desktopHeader})`,
-      backgroundSize: 'cover',
+      backgroundSize: 'auto',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       height:'62em',
@@ -104,14 +104,15 @@ const useStyles = makeStyles((theme) => ({
       marginRight:'auto',
       border:'0',
       [theme.breakpoints.down('lg')]: {
-        height:'14em',
+        
       },
       [theme.breakpoints.down('md')]: {
         backgroundImage: `url(${tabletHeader})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height:'81em',
-        marginBottom:'14em'
+        marginBottom:'14em',
+        marginTop: '0em',
       },
       [theme.breakpoints.down('xs')]: {
         backgroundImage: `url(${tabletHeader})`,
@@ -135,10 +136,11 @@ const textContentP2 = 'Debido a que cada persona es diferente, Lana tax ha cread
             <p className={classes.titleDescripcion}>Entender el sistema de impuestos de los Estados Unidos de América puede resultar complicado y en la mayoría de los casos desconocemos que la obligación de rendir sus impuestos también representa beneficios para los  contribuyentes activos. </p>
           
         </Grid>
-      </Grid>  
-      <p className={classes.headerDescription}>Nuestra comunidad latina merece tener el mejor servicio en materia de impuestos y de asesoría de negocios en su idioma. Lanatax  garantiza a
+        <p className={classes.headerDescription}>Nuestra comunidad latina merece tener el mejor servicio en materia de impuestos y de asesoría de negocios en su idioma. Lanatax  garantiza a
 nuestra comunidad la asesoría completa en cuestión tributaria para usted y para su negocio. 
 </p>
+      </Grid>  
+    
     </div>
   );
 }
