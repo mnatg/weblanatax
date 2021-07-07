@@ -12,12 +12,90 @@
   width                : 95%;
   height               : auto;
 }
+//Cohete
+.pngcontainer1, .pngcontainer1 img {
+  position: relative;
+  
+}
+.pngcontainer1 img {
+  z-index: 101;
+}
+.pngcontainer1 img:first-child {
+  position: absolute;
+  top: 19em;
+  left: 41em;
+  z-index: 100;
+}
+//Circulos
 
+.circleOne {
+  width: 35px;
+  height: 35px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 3em;
+  margin-left: 6em;
+  background: #f5bf21 no-repeat 0 0;
+  position:absolute;
+}
 
+.circleTwo {
+  width: 99px;
+  height: 99px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 23em;
+  margin-left: 41em;
+  background: #f5bf21 no-repeat 0 0;
+  position:absolute;
+}
+
+.circleThree {
+  width: 105px;
+  height: 105px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 93em;
+  margin-left: 37em;
+  background: #f5bf21 no-repeat 0 0;
+  position:absolute;
+}
+
+.circleFour {
+  width: 49px;
+  height: 49px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 120em;
+  margin-left: 14em;
+  background: #f5bf21 no-repeat 0 0;
+  position:absolute;
+}
+
+.hideCircles{
+  display: none;
+}
 
 /*---------------------Responsive tablet---------------------------*/
 
 @media (min-width: 600px) and (max-width: 960px) {
+
+  .pngcontainer1 img:first-child {
+    position: absolute;
+    top: 45em;
+    left: 10em;
+    width: 30em;
+    height: 30em;
+    z-index: 100;
+  }
+  .hideCircles{
+    display: block;
+  }
+  
  
 }
 
@@ -26,10 +104,59 @@
 @media (min-width: 320px) and (max-width: 600px) {
   /* smartphones, iPhone, portrait 480x320 phones */
 
+  .pngcontainer1 img:first-child {
+    position: absolute;
+    top: 84em;
+    left: 5em;
+    width: 15em;
+    height: 15em;
+    z-index: 100;
+  }
+  .hideCircles{
+    display: block;
+  }
+
+
+.circleOne {
+  width: 35px;
+  height: 35px;
+  margin-top: -1em;
+  margin-left: 2em;
+
+}
+
+.circleTwo {
+  width: 99px;
+  height: 99px;
+  margin-top: 23em;
+  margin-left: 15em;
+
+}
+
+.circleThree {
+  width: 49px;
+  height: 49px;
+  margin-top: 55em;
+  margin-left: 6em;
+
+}
+
+.circleFour {
+  display: none;
+
+}
+
   
 }
 
-@media (min-width: 2000px) and (max-width: 3000px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .pngcontainer1 img:first-child {
+    position: absolute;
+    top: 19em;
+    left: 26em;
+    z-index: 100;
+  }
+
 
 
 }
