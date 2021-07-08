@@ -7,6 +7,14 @@
   font-family: 'Poppins';
 }
 
+.apple-icon{
+  margin-left: 0em;
+}
+a:link{
+  margin-left: -1em;
+  margin-right: auto;
+}
+
 .margen-superior{
   margin-top: 8em;
 }
@@ -792,13 +800,14 @@
 .sectionFooter {
   margin-top           : 1em;
   display              : grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(3, auto);
   background           : #fff;
+  grid-column-gap: 3em;
 
   .LANA-FOOTER {
     width     : 8.375em;
     height    : 2.625em;
-    margin    : 2.875em 0.75em 12.0625em 10.125em;
+    margin    : 2.875em 0.75em 12em 20em;
     object-fit: contain;
   }
 
@@ -890,8 +899,9 @@
 //--redes-sociales styles
 .redes-sociales {
   display              : grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
   background           : #fff;
+  
 
   .MA-Tax-Group {
     width         : 20.75em;
@@ -904,18 +914,18 @@
     line-height   : normal;
     letter-spacing: normal;
     color         : #a6a6a6;
-    margin-left   : 3em;
+    margin-left   : 21em;
   }
 
   .icons {
     margin-top : 1em;
-    margin-left: 5em;
 
     .icon {
       width       : 2.75em;
       height      : 2.75em;
       margin-right: 1em;
       object-fit  : contain;
+      margin-left: 2em;
     }
 
     .apple {
@@ -1481,6 +1491,7 @@
       display: block;
       margin-right: auto;
       margin-bottom: 2em;
+      margin-left: 8em;
     }
 
     .Legales {
@@ -1527,7 +1538,8 @@
   }
 
   .redes-sociales {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, 100%);
+   
 
     .MA-Tax-Group {
       font-size      : 0.6em;
@@ -1535,6 +1547,8 @@
       justify-content: center;
       text-align     : center;
       margin-inline  : auto;
+      margin-left   : auto;
+      margin-right: auto;
     }
 
     .icons {
@@ -1545,7 +1559,7 @@
 
       .apple {
         margin      : 0;
-        margin-right: 1em;
+        margin-right: 0em;
       }
     }
   }
@@ -1916,7 +1930,7 @@
     grid-template-columns: repeat(3, auto);
 
     .LANA-FOOTER {
-      margin-left : 1.75em;
+      margin-left : 8em;
       margin-right: 3em;
     }
 
@@ -1961,6 +1975,7 @@
       margin-top     : 2em;
       justify-content: center;
       text-align     : center;
+      margin-left   : 4em;
     }
 
     .icons {

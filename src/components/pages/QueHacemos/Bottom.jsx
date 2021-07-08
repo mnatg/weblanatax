@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import '../../../assets/styles/QueHacemos/QueHacemos.scss'
 import iconllamada from '../../../assets/images/Home/initA/icon-llamada.png'
 import BottomBackground from '../../../assets/images/WeDo/BottomBackground.jpg'
+import BottomBackgroundTablet from '../../../assets/images/WeDo/ButtonBackgroundTablet.png'
 import BottomBackgroundMobile from '../../../assets/images/WeDo/ButtonBackgroundMobile.png'
 import Cohete from '../../../assets/images/WeDo/cohete.png'
 
@@ -212,7 +213,7 @@ function Bottom() {
 
       },
       [theme.breakpoints.down('md')]: {
-        backgroundImage: `url(${BottomBackground})`,
+        backgroundImage: `url(${BottomBackgroundTablet})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '120em',
