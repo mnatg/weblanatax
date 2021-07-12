@@ -1,7 +1,11 @@
 // React
 import React from 'react';
 // Components
-import { Grid, Box } from '@material-ui/core';
+import {
+  Grid,
+  Box,
+  Hidden
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 // Assets
 import BottomBackground from '../../../assets/images/WeDo/BottomBackground.webp'
@@ -122,6 +126,10 @@ function Bottom() {
       <Grid item xs={12} md={6} className={classes.secondary} >
         {contentBox('¡No queremos que te sientas inseguro en temas tributarios, déjalos en nuestras manos!. Por eso Lanatax está siempre contigo desde tu celular, cerca de ti.')}
       </Grid>
+      <Hidden xsDown mdUp >
+        <Grid item xs={6} className={classes.smallBubble} style={{marginTop: '180em', marginBottom: 0}} />
+        <Grid item xs={6} className={classes.bigBubble} style={{marginTop: '110em', marginBottom: 0}} />
+      </Hidden>
     </Grid>
     <p className={classes.finalText} >Lanatax ha creado planes que se ajustan a tu realidad tributaria, pues no es lo mismo proceso para un contratista, inversionista o un empleado. A continuación te mostraremos el plan que hemos diseñado para cada tipo de situación tributaria.</p>
   </>
