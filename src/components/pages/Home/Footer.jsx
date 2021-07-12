@@ -84,10 +84,14 @@ function Footer() {
       paddingBottom: "2em"
     },
     LogoLana: {
-      width: "10em",
+      width: "40%",
       marginLeft: "1em",
+      [theme.breakpoints.down('sm')]: {
+        width: "60%"
+      },
       [theme.breakpoints.down('xs')]: {
-        marginInline: "40%"
+        marginInline: "40%",
+        width: "40%",
       },
     },
     title: {
