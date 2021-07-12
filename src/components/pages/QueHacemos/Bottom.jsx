@@ -26,6 +26,9 @@ function Bottom() {
         backgroundImage: `url(${BottomBackgroundTablet})`,
         alignItems: 'center',
       },
+      [theme.breakpoints.down('xs')]: {
+        backgroundImage: `url(${BottomBackgroundMobile})`,
+      },
     },
     primaryChange: {
       backgroundColor: 'rgba(0,146,69,0.8)',

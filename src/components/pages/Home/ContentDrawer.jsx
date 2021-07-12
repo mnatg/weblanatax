@@ -7,23 +7,23 @@ import {
 import '../../../assets/styles/Home/Home.scss'
 import { makeStyles } from '@material-ui/core/styles';
 
-const ContentDrawer = () => {
+const ContentDrawer = ({ onClose }) => {
     const useStyles = makeStyles((theme) => ({
         active: {
             marginLeft: "2em",
             fontSize: "1.2em",
-            borderBottom: "1px solid"
+            borderBottom: "1px solid #008f45"
         }
     }))
     const classes = useStyles();
     return (
         <div>
             <List component='nav'>
-                <ListItem component={NavLink} to='/quienes-somos'>
-                    <ListItemText class="nav-links" activeClassName={classes.active} primary='Quienes Somos' />
+                <ListItem component={NavLink} to='/quienes-somos' activeClassName={classes.active} onClick={onClose} >
+                    <ListItemText className="nav-links" primary='Quienes Somos' />
                 </ListItem>
-                <ListItem component={NavLink} to='/que-hacemos'>
-                    <ListItemText class="nav-links" activeClassName="active" primary='Que Hacemos' />
+                <ListItem component={NavLink} to='/que-hacemos' activeClassName={classes.active} onClick={onClose} >
+                    <ListItemText className="nav-links" primary='Que Hacemos' />
                 </ListItem>
             </List>
         </div>
