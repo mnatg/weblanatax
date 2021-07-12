@@ -1,21 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
     List, ListItem, ListItemText
 } from '@material-ui/core';
 // Styles
 import '../../../assets/styles/Home/Home.scss'
+import { makeStyles } from '@material-ui/core/styles';
 
 const ContentDrawer = () => {
-
+    const useStyles = makeStyles((theme) => ({
+        active: {
+            marginLeft: "2em",
+            fontSize: "1.2em",
+            borderBottom: "1px solid"
+        }
+    }))
+    const classes = useStyles();
     return (
         <div>
             <List component='nav'>
-                <ListItem component={Link} to='/quienes-somos'>
-                    <ListItemText class="nav-links" primary='Quienes Somos' />
+                <ListItem component={NavLink} to='/quienes-somos'>
+                    <ListItemText class="nav-links" activeClassName={classes.active} primary='Quienes Somos' />
                 </ListItem>
-                <ListItem component={Link} to='/que-hacemos'>
-                    <ListItemText primary='Que Hacemos' />
+                <ListItem component={NavLink} to='/que-hacemos'>
+                    <ListItemText class="nav-links" activeClassName="active" primary='Que Hacemos' />
                 </ListItem>
             </List>
         </div>
@@ -24,6 +32,6 @@ const ContentDrawer = () => {
 
 function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
-  }
+}
 
 export default ContentDrawer
