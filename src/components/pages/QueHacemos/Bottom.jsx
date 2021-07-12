@@ -26,6 +26,9 @@ function Bottom() {
         backgroundImage: `url(${BottomBackgroundTablet})`,
         alignItems: 'center',
       },
+      [theme.breakpoints.down('xs')]: {
+        backgroundImage: `url(${BottomBackgroundMobile})`,
+      },
     },
     primaryChange: {
       backgroundColor: 'rgba(0,146,69,0.8)',
@@ -63,6 +66,10 @@ function Bottom() {
       [theme.breakpoints.down('sm')]: {
         marginTop: 0,
       },
+      [theme.breakpoints.down('xs')]: {
+        marginTop: '110em',
+        paddingInline: '0.5em',
+      },
     },
     finalText: {
       color: '#d9e021',
@@ -71,6 +78,10 @@ function Bottom() {
       marginBlock: '2em',
       marginInline: 'auto',
       width: '65%',
+      [theme.breakpoints.down('xs')]: {
+        width: '80%',
+        marginTop: 0,
+      },
     },
     smallBubble: {
       position: 'absolute',
@@ -98,7 +109,7 @@ function Bottom() {
     }
   }));
 
-  const contentBox = (text) => (<Box px={{ sm: 25, md: 22 }} py={{ sm: 37, md: 35 }} className={classes.texts} >
+  const contentBox = (text) => (<Box px={{ xs: 5, sm: 25, md: 22 }} py={{ xs: 40, sm: 37, md: 35 }} className={classes.texts} >
     <p >{text}</p>
   </Box>)
 
@@ -117,9 +128,13 @@ function Bottom() {
       </Grid>
       <Grid item xs={12} className={classes.rocket} >
         <Box >
-          <img src={rocket} alt="Rocket" />
+          <img src={rocket} alt="Rocket" style={{ maxWidth: '100%' }} />
         </Box>
       </Grid>
+      <Hidden smUp >
+        <Grid item xs={6} className={classes.smallBubble}
+          style={{ marginBottom: 0, width: '3.0625em', height: '3.0625em', marginLeft: '5em' }} />
+      </Hidden>
       <Grid item xs={12} md={6} className={classes.primary} >
         {contentBox('Adiós a las malas experiencias y si quieres iniciarte en impuestos somos la compañía correcta, Lanatax no te abandona desde el principio hasta el final de tu proceso de impuestos.')}
       </Grid>
@@ -127,8 +142,8 @@ function Bottom() {
         {contentBox('¡No queremos que te sientas inseguro en temas tributarios, déjalos en nuestras manos!. Por eso Lanatax está siempre contigo desde tu celular, cerca de ti.')}
       </Grid>
       <Hidden xsDown mdUp >
-        <Grid item xs={6} className={classes.smallBubble} style={{marginTop: '180em', marginBottom: 0}} />
-        <Grid item xs={6} className={classes.bigBubble} style={{marginTop: '110em', marginBottom: 0}} />
+        <Grid item xs={6} className={classes.smallBubble} style={{ marginTop: '180em', marginBottom: 0 }} />
+        <Grid item xs={6} className={classes.bigBubble} style={{ marginTop: '110em', marginBottom: 0 }} />
       </Hidden>
     </Grid>
     <p className={classes.finalText} >Lanatax ha creado planes que se ajustan a tu realidad tributaria, pues no es lo mismo proceso para un contratista, inversionista o un empleado. A continuación te mostraremos el plan que hemos diseñado para cada tipo de situación tributaria.</p>

@@ -30,7 +30,7 @@ const PanelDrawer = (props) => {
         <div className={classes.toolbar}>
         </div>
         <Divider />
-        <ContentDrawer />
+        <ContentDrawer onClose={props.onClose} />
         </Drawer>
     )
 }
