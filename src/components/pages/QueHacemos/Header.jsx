@@ -25,15 +25,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('lg')]: {
       fontSize: '4em',
     },[theme.breakpoints.down('sm')]: {
-      width: '80%',
+      width: '100%',
       marginInline:'auto',
-      marginTop: '18.3em',
+      marginTop: '14.3em',
       marginBottom: '1.5em',
       textAlign:'center',
-      fontSize: '4.375em',
+      fontSize: '5.5em',
     },[theme.breakpoints.down('xs')]: {
-      marginTop: '10em',
-      fontSize: '4em',
+      marginTop: '22em',
+      marginBottom: '0.8em',
+      fontSize: '3.5em',
       width: '5em',
     }
   },
@@ -52,8 +53,10 @@ const useStyles = makeStyles((theme) => ({
         textAlign:'center',
         width:'75%',
         color:'#a6a6a6',
+        fontSize: '1.3em',
       },[theme.breakpoints.down('xs')]: {
-        width:'17em',
+        width:'80%',
+        fontSize: '1.2em',
       }
     },
    headerDescription: {
@@ -62,22 +65,22 @@ const useStyles = makeStyles((theme) => ({
       fontFamily: 'Poppins',
       color: '#009245',
       fontSize: '2em',
-      marginLeft:'auto',
-      marginRight:'auto',
-      marginBottom:'1em',
-      marginTop:'3em',
+      marginInline:'auto',
+      marginBlock:'3em',
       textAlign:'center',
       fontWeight:'600',
       [theme.breakpoints.down('lg')]: {
         marginBlock:'2em',
         width: '33em',
-      },[theme.breakpoints.down('md')]: {
+      },[theme.breakpoints.down('sm')]: {
         fontSize: '1.7em',
-        width: '15em',
-        width: '27em',
+        width: '85%',
+        marginTop:'12em',
+        marginBottom:'5em',
       },[theme.breakpoints.down('xs')]: {
-        fontSize: '1em',
-        width: '20em',
+        fontSize: '1.2em',
+        width: '80%',
+        marginTop:'17em',
       }
     },
     content: {
@@ -92,7 +95,6 @@ const useStyles = makeStyles((theme) => ({
       },
       [theme.breakpoints.down('xs')]: {
         backgroundImage: `url(${mobileHeader})`,
-        height: 'inherit',
       },
     },
 }));
@@ -103,7 +105,7 @@ const textTitle = 'Entender el sistema de impuestos de los Estados Unidos de Am�
 const textBody = 'Nuestra comunidad latina merece tener el mejor servicio en materia de impuestos y de asesoría de negocios en su idioma. Lanatax  garantiza a nuestra comunidad la asesoría completa en cuestión tributaria para usted y para su negocio.'
 
   return (
-      <Grid container className={classes.root}>
+      <Grid container >
         <Grid item xs={12} className={classes.content} > 
             <p className={classes.title}>QUÉ HACEMOS</p>
             <p className={classes.titleDescripcion}>{textTitle}</p>
