@@ -1,17 +1,13 @@
 import React from 'react';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import '../../../assets/styles/QueHacemos/QueHacemos.scss'
-import iconllamada from '../../../assets/images/Home/initA/icon-llamada.png'
 import desktopHeader from '../../../assets/images/WeDo/sectionAHeader.jpg'
-import tabletHeader from '../../../assets/images/WeDo/tabletHeader.png'
-
-import { Height } from '@material-ui/icons';
+import tabletHeader from '../../../assets/images/WeDo/tabletHeader.webp'
+import mobileHeader from '../../../assets/images/WeDo/mobileHeader.webp'
 
 function Header() {
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
   title: {
     width: '5em',
     heigth: 'auto',
@@ -20,24 +16,25 @@ const useStyles = makeStyles((theme) => ({
     color: '#009245',
     fontSize: '5em',
     lineHeight: '1em',
-    marginTop: '3em',
+    marginTop: '2.53125em',
     marginLeft:'4em',
-    marginBottom:'1em',
+    marginBottom:'0.5em',
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '3.625em'
+    },
     [theme.breakpoints.down('lg')]: {
       fontSize: '4em',
-     
-    },[theme.breakpoints.down('md')]: {
-      marginTop: '19em',
-      width: 'auto',
-      marginLeft:'auto',
-      marginRight:'auto',
+    },[theme.breakpoints.down('sm')]: {
+      width: '80%',
+      marginInline:'auto',
+      marginTop: '18.3em',
+      marginBottom: '1.5em',
       textAlign:'center',
-  
+      fontSize: '4.375em',
     },[theme.breakpoints.down('xs')]: {
       marginTop: '10em',
       fontSize: '4em',
       width: '5em',
-
     }
   },
     titleDescripcion: {
@@ -47,22 +44,17 @@ const useStyles = makeStyles((theme) => ({
       color: '#2f281e',
       fontSize: '1em',
       marginLeft:'20em',
-      marginBottom:'1em',
+      marginBottom:'12.5em',
       [theme.breakpoints.down('lg')]: {
         marginLeft:'16em',
-
-      },[theme.breakpoints.down('md')]: {
-        marginLeft:'auto',
-        marginRight:'auto',
+      },[theme.breakpoints.down('sm')]: {
+        marginInline:'auto',
         textAlign:'center',
-        width:'31em',
+        width:'75%',
         color:'#a6a6a6',
-
       },[theme.breakpoints.down('xs')]: {
         width:'17em',
-        
       }
-    
     },
    headerDescription: {
       width: '42em',
@@ -77,71 +69,47 @@ const useStyles = makeStyles((theme) => ({
       textAlign:'center',
       fontWeight:'600',
       [theme.breakpoints.down('lg')]: {
-        marginTop:'1em',
+        marginBlock:'2em',
         width: '33em',
-
       },[theme.breakpoints.down('md')]: {
         fontSize: '1.7em',
         width: '15em',
         width: '27em',
-
       },[theme.breakpoints.down('xs')]: {
         fontSize: '1em',
         width: '20em',
       }
-    
     },
     content: {
-      marginTop: '-9em',
-      backgroundColor: 'none',
       backgroundImage: `url(${desktopHeader})`,
-      backgroundSize: 'auto',
-      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height:'62em',
       maxWidth:'1600px',
-      marginLeft:'auto',
-      marginRight:'auto',
-      border:'0',
-      [theme.breakpoints.down('lg')]: {
-        
-      },
-      [theme.breakpoints.down('md')]: {
+      marginInline:'auto',
+      [theme.breakpoints.down('sm')]: {
         backgroundImage: `url(${tabletHeader})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height:'81em',
-        marginBottom:'14em',
-        marginTop: '0em',
+        height: '86.8em',
       },
       [theme.breakpoints.down('xs')]: {
-        backgroundImage: `url(${tabletHeader})`,
-        backgroundSize: 'contain',
-        backgroundPosition: 'inherit',
-        marginBottom:'-10em'
+        backgroundImage: `url(${mobileHeader})`,
+        height: 'inherit',
       },
     },
 }));
 
 const classes = useStyles();
-const textContentP1 = 'Hasta para los servicios básicos necesitamos tener al día nuestras cuentas de taxes (impuestos) y debido a que en nuestros países latinos no es un tema relevante, chocamos cuando ya viviendo en EEUU las cosas con los impuestos cambian, ya que como persona natural  debes declarar tanto tus gastos y ganancias absolutamente todos los años y como sabemos que tienes otras cosas por las cuales ocuparse claramente los taxes quedan para lo último y muchas veces se te olvida ¡Y no queremos que eso te ocurra!. Por eso Lana Tax está siempre contigo desde tu celular, déjalo en nuestras manos.'
-const textContentP2 = 'Debido a que cada persona es diferente, Lana tax ha creado varios planes para cada una de ellas, ya que no es lo mismo realizar planes para una persona que trabaja para una empresa, que realizar taxes para una persona quien es propietaria de la empresa. A continuación te mostraremos el plan que hemos diseñado para cada tipo de persona.'
 
+const textTitle = 'Entender el sistema de impuestos de los Estados Unidos de América puede resultar complicado y en la mayoría de los casos desconocemos que la obligación de rendir sus impuestos también representa beneficios para los  contribuyentes activos.';
+const textBody = 'Nuestra comunidad latina merece tener el mejor servicio en materia de impuestos y de asesoría de negocios en su idioma. Lanatax  garantiza a nuestra comunidad la asesoría completa en cuestión tributaria para usted y para su negocio.'
 
   return (
-    <div>
       <Grid container className={classes.root}>
-        <Grid item xs={12} lg={12} className={classes.content} > 
+        <Grid item xs={12} className={classes.content} > 
             <p className={classes.title}>QUÉ HACEMOS</p>
-            <p className={classes.titleDescripcion}>Entender el sistema de impuestos de los Estados Unidos de América puede resultar complicado y en la mayoría de los casos desconocemos que la obligación de rendir sus impuestos también representa beneficios para los  contribuyentes activos. </p>
-          
+            <p className={classes.titleDescripcion}>{textTitle}</p>
         </Grid>
-        <p className={classes.headerDescription}>Nuestra comunidad latina merece tener el mejor servicio en materia de impuestos y de asesoría de negocios en su idioma. Lanatax  garantiza a
-nuestra comunidad la asesoría completa en cuestión tributaria para usted y para su negocio. 
-</p>
-      </Grid>  
-    
-    </div>
+        <p className={classes.headerDescription}>{textBody}</p>
+      </Grid>
   );
 }
 

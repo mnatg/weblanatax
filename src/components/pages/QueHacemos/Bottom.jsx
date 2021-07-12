@@ -1,20 +1,16 @@
+// React
 import React from 'react';
-import { Grid, Paper } from '@material-ui/core';
+// Components
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import '../../../assets/styles/QueHacemos/QueHacemos.scss'
-import iconllamada from '../../../assets/images/Home/initA/icon-llamada.png'
-import BottomBackground from '../../../assets/images/WeDo/BottomBackground.jpg'
+// Assets
+import BottomBackground from '../../../assets/images/WeDo/BottomBackground.webp'
 import BottomBackgroundTablet from '../../../assets/images/WeDo/ButtonBackgroundTablet.png'
 import BottomBackgroundMobile from '../../../assets/images/WeDo/ButtonBackgroundMobile.png'
 import Cohete from '../../../assets/images/WeDo/cohete.png'
 
-
-import { Height } from '@material-ui/icons';
-
 function Bottom() {
   const useStyles = makeStyles((theme) => ({
-    root: {
-    },
     colorOne:{
       [theme.breakpoints.down('xl')]: {
         backgroundColor: 'transparent', 
@@ -69,16 +65,13 @@ function Bottom() {
     },
     textOne: {
       width: '21em',
-      heigth: 'auto',
       fontFamily: 'Poppins',
       fontWeight: 'normal',
       color: '#a6a6a6',
       fontSize: '1em',
       lineHeight: '1.5em',
-      marginTop: '3em',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      marginBottom: 'auto',
+      marginBlock: '5em',
+      marginInline: 'auto',
       [theme.breakpoints.down('lg')]: {
     
 
@@ -96,16 +89,13 @@ function Bottom() {
     },
     textTwo: {
       width: '21em',
-      heigth: 'auto',
       fontFamily: 'Poppins',
       fontWeight: 'normal',
       color: '#ffffff',
       fontSize: '1em',
       lineHeight: '1.5em',
-      marginTop: '3em',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      marginBottom: 'auto',
+      marginBlock: '5em',
+      marginInline: 'auto',
       
       [theme.breakpoints.down('lg')]: {
      
@@ -124,16 +114,13 @@ function Bottom() {
     },
     textThree: {
       width: '21em',
-      heigth: 'auto',
       fontFamily: 'Poppins',
       fontWeight: 'normal',
       color: '#ffffff',
       fontSize: '1em',
       lineHeight: '1.5em',
-      marginTop: '22em',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      marginBottom: 'auto',
+      marginBlock: '11em',
+      marginInline: 'auto',
       [theme.breakpoints.down('lg')]: {
       
       }, [theme.breakpoints.down('md')]: {
@@ -146,16 +133,13 @@ function Bottom() {
     },
     textFour: {
       width: '21em',
-      heigth: 'auto',
       fontFamily: 'Poppins',
       fontWeight: 'normal',
       color: '#a6a6a6',
       fontSize: '1em',
       lineHeight: '1.5em',
-      marginTop: '22em',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      marginBottom: 'auto',
+      marginTop: '11em',
+      marginInline: 'auto',
       [theme.breakpoints.down('lg')]: {
       
 
@@ -176,8 +160,7 @@ function Bottom() {
       fontSize: '2em',
       marginLeft: 'auto',
       marginRight: 'auto',
-      marginBottom: '3em',
-      marginTop: '3em',
+      marginBlock: '2em',
       textAlign: 'center',
       fontWeight: '600',
       [theme.breakpoints.down('lg')]: {
@@ -197,21 +180,12 @@ function Bottom() {
 
     },
     content: {
-      marginTop: '0em',
-      backgroundColor: 'none',
       backgroundImage: `url(${BottomBackground})`,
-      backgroundSize: 'auto',
-      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '90em',
       maxWidth: '1600px',
-      marginLeft: 'auto',
-      marginRight: 'auto',
       border: '0',
-      marginBottom: '10em',
-      [theme.breakpoints.down('lg')]: {
-
-      },
+      marginInline: 'auto',
       [theme.breakpoints.down('md')]: {
         backgroundImage: `url(${BottomBackgroundTablet})`,
         backgroundSize: 'cover',
@@ -267,12 +241,13 @@ function Bottom() {
      
       },
     },
+    container: {
+      marginInline: 'auto',
+      paddingBlock: '10%'
+    }
   }));
 
   const classes = useStyles();
-  const textContentP1 = 'Hasta para los servicios básicos necesitamos tener al día nuestras cuentas de taxes (impuestos) y debido a que en nuestros países latinos no es un tema relevante, chocamos cuando ya viviendo en EEUU las cosas con los impuestos cambian, ya que como persona natural  debes declarar tanto tus gastos y ganancias absolutamente todos los años y como sabemos que tienes otras cosas por las cuales ocuparse claramente los taxes quedan para lo último y muchas veces se te olvida ¡Y no queremos que eso te ocurra!. Por eso Lana Tax está siempre contigo desde tu celular, déjalo en nuestras manos.'
-  const textContentP2 = 'Debido a que cada persona es diferente, Lana tax ha creado varios planes para cada una de ellas, ya que no es lo mismo realizar planes para una persona que trabaja para una empresa, que realizar taxes para una persona quien es propietaria de la empresa. A continuación te mostraremos el plan que hemos diseñado para cada tipo de persona.'
-
 
   return (
     <div className='pngcontainer1'>
@@ -282,17 +257,17 @@ function Bottom() {
       <div className='circleThree hideCircles'></div>
       <div className='circleFour hideCircles'></div>
       <Grid container className={classes.root} className={classes.content}>
-        <Grid item xs={12} lg={6} xl={6} className={classes.colorOne}>
+        <Grid item xs={12} lg={6} xl={6} className={[classes.colorOne, classes.container]}>
           <p className={classes.textOne}>Lamentablemente, nuestra comunidad ha sido víctima de personas inescrupulosas quienes sin estar habilitadas han practicado ante el IRS y los Departamentos de Impuestos Estatales, colocando a personas y negocios de nuestra comunidad en serios problemas tributarios.
 </p></Grid>
-        <Grid item xs={12} lg={6} xl={6} className={classes.colorTwo}>
+        <Grid item xs={12} lg={6} xl={6} className={[classes.colorTwo, classes.container]}>
           <p className={classes.textTwo}>Lanatax le brinda a nuestra comunidad EN SU IDIOMA un servicio profesional, personalizado, seguro y de calidad. Nosotros nos encargamos de hacerte fácil y seguro tu camino de impuestos (taxes).</p>
         </Grid>
 
-        <Grid item xs={12} lg={6} xl={6} className={classes.colorThree}>
+        <Grid item xs={12} lg={6} xl={6} className={[classes.colorThree, classes.container]}>
           <p className={classes.textThree}>Adiós a las malas experiencias y si quieres iniciarte en impuestos somos la compañía correcta, Lanatax no te abandona desde el principio hasta el final de tu proceso de impuestos.
 </p></Grid>
-        <Grid item xs={12} lg={6} xl={6} className={classes.colorFour}>
+        <Grid item xs={12} lg={6} xl={6} className={[classes.colorFour, classes.container]}>
           <p className={classes.textFour}>¡No queremos que te sientas inseguro en temas tributarios, déjalos en nuestras manos!. Por eso Lanatax está siempre contigo desde tu celular, cerca de ti.
 </p>
         </Grid>

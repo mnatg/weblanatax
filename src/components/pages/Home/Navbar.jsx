@@ -1,7 +1,5 @@
 // React
-import React, { useState, useEffect } from 'react';
-// Redux
-import { useDispatch } from 'react-redux'
+import React from 'react';
 // Components
 import {
   AppBar,
@@ -9,19 +7,12 @@ import {
   IconButton,
   Button
 } from '@material-ui/core';
-import { Link, useHistory } from 'react-router-dom';
-
-// Styles
-import '../../../assets/styles/Home/Navbar.scss';
-import '../../../assets/styles/Home/Home.scss'
+import { Link } from 'react-router-dom';
 // Assets
 import logo from '../../../assets/images/Home/init/lana@3x.png';
 //Auth
-import 'firebase/auth';
-import { useFirebaseApp, useUser } from 'reactfire';
 import { createStyles, makeStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-
 
 const drawerWidth = 240;
 
@@ -50,7 +41,7 @@ const useStyles = makeStyles(theme =>
     navBarButton: {
       color: theme.palette.primary.main,
       textDecoration: 'none',
-      marginLeft: '0.5em',
+      marginLeft: '1%',
       [theme.breakpoints.down('sm')]: {
         display: 'none',
       },
@@ -77,8 +68,6 @@ const useStyles = makeStyles(theme =>
 
 
 const Navbar = (props) => {
-  const dispatch = useDispatch()
-  const firebase = useFirebaseApp();
   const classes = useStyles();
 
   return (
