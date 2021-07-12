@@ -20,6 +20,7 @@ function Bottom() {
       justifyContent: 'center',
       [theme.breakpoints.down('sm')]: {
         backgroundImage: `url(${BottomBackgroundTablet})`,
+        alignItems: 'center',
       },
     },
     primaryChange: {
@@ -49,26 +50,51 @@ function Bottom() {
     texts: {
       [theme.breakpoints.down('sm')]: {
         textAlign: 'center',
+        height: '10em'
       },
     },
     rocket: {
       position: 'absolute',
       marginTop: '30em',
       [theme.breakpoints.down('sm')]: {
-        marginTop: '75em',
+        marginTop: 0,
       },
     },
     finalText: {
       color: '#d9e021',
       fontSize: '1.5em',
       textAlign: 'center',
-      marginTop: '2em',
+      marginBlock: '2em',
       marginInline: 'auto',
       width: '65%',
+    },
+    smallBubble: {
+      position: 'absolute',
+      width: '2.1875em',
+      height: '2.1875em',
+      background: 'linear-gradient(to bottom, #fbe146, #f5bf21)',
+      borderRadius: 25,
+      marginRight: '75%',
+      marginBottom: '180em',
+      [theme.breakpoints.up('md')]: {
+        display: 'none',
+      },
+    },
+    bigBubble: {
+      position: 'absolute',
+      width: '6.5625em',
+      height: '6.5625em',
+      background: 'linear-gradient(to bottom, #fbe146, #f5bf21)',
+      borderRadius: 60,
+      marginLeft: '70%',
+      marginBottom: '111em',
+      [theme.breakpoints.up('md')]: {
+        display: 'none',
+      },
     }
   }));
 
-  const contentBox = (text) => (<Box px={{sm: 33, md: 22}} py={35}  className={classes.texts} >
+  const contentBox = (text) => (<Box px={{ sm: 25, md: 22 }} py={{ sm: 37, md: 35 }} className={classes.texts} >
     <p >{text}</p>
   </Box>)
 
@@ -77,6 +103,8 @@ function Bottom() {
 
   return (<>
     <Grid item xs={12} container className={classes.container} >
+      <Grid item xs={6} className={classes.smallBubble} />
+      <Grid item xs={6} className={classes.bigBubble} />
       <Grid item xs={12} md={6} className={classes.secondaryChange} >
         {contentBox('Lamentablemente, nuestra comunidad ha sido víctima de personas inescrupulosas quienes sin estar habilitadas han practicado ante el IRS y los Departamentos de Impuestos Estatales, colocando a personas y negocios de nuestra comunidad en serios problemas tributarios.')}
       </Grid>
