@@ -109,8 +109,8 @@ function Footer() {
 
     },
     inputEmail: {
-      width: "8em",
-      padding: "1em 70% 1em 1em",
+      width: "85%",
+      padding: "1em ",
       borderRadius: "4px",
       border: "solid 1px #bcd0e5",
       backgroundColor: "#ffffff",
@@ -118,6 +118,9 @@ function Footer() {
       marginBottom: "1em"
     },
     buttonRegister: {
+      focus:{
+        online: "none",
+      },
       width: "12.5em",
       padding: "0.5em 0.9375em",
       borderRadius: "4px",
@@ -129,8 +132,11 @@ function Footer() {
       letterSpacing: "normal",
       textAlign: "center",
       color: "#ffffff",
-      marginTop: "1em"
+      marginTop: "1em",
+      border: "none",
+      cursor:"pointer"
     },
+ 
     linkTerms: {
       fontSize: "80%",
       color: "#a9a8a7",
@@ -222,11 +228,12 @@ function Footer() {
         <Grid className={classes.space} item xs={12} sm={4} md={4} lg={4}></Grid>
         <Grid className={classes.sub} item xs={9} sm={6} md={4} lg={4}>
           <p className={classes.title}>Suscribete a nuestro <br />Newslatter</p>
-          <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)} />
+          <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)}  />
           <br />
           <Link className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
             ¿Ya leiste nuestras politicas de privacidad ?
           </Link>
+          <br></br>
           <button disable={acceptPolicy} onClick={Send} className={classes.buttonRegister}>Registrar</button>
         </Grid>
 
