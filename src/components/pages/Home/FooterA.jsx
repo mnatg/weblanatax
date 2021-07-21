@@ -39,7 +39,7 @@ function Footer() {
           let request = {
             "email": email.current.value,
             "message": message,
-            "topic":'newslatter'
+            "topic":'newsletter'
           }
           console.log('enviando mail: ', request)
 
