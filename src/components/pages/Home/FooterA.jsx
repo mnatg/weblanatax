@@ -10,7 +10,7 @@ import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/Home/Navbar.scss'
-import SendEmail from '../../../Services/NewsLatter/SendEmail';
+import SendEmail from '../../../Services/NewsLetter/SendEmail';
 import Toast from '../../../utils/Toast';
 import validator from 'validator'
 

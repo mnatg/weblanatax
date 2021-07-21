@@ -10,7 +10,7 @@ import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
 import '../../../assets/styles/Home/Home.scss'
 import '../../../assets/styles/Home/Navbar.scss'
-import SendEmail from '../../../Services/NewsLatter/SendEmail';
+import SendEmail from '../../../Services/NewsLetter/SendEmail';
 import Toast from '../../../utils/Toast';
 import validator from 'validator'
 
@@ -39,7 +39,7 @@ function Footer() {
           let request = {
             "email": email.current.value,
             "message": message,
-            "topic":'newslatter'
+            "topic":'newsletter'
           }
           console.log('enviando mail: ', request)
 
@@ -89,7 +89,7 @@ function Footer() {
           </Link>
         </div>
         <div className='third'>
-          <p className='suscribete'>Suscribete a nuestro <br />Newslatter</p>
+          <p className='suscribete'>Suscribete a nuestro <br />Newsletter</p>
           <Grid container>
             <input ref={email} className="Rectangle-5-Copy" placeholder="Email" onChange={(e) => validateEmail(e)} />
 
