@@ -22,9 +22,8 @@
 }
 .pngcontainer1 img:first-child {
   position: absolute;
-  top: 19em;
-  left: 41em;
-  z-index: 100;
+  margin-block: 20%;
+  margin-inline: 30.3%;
 }
 //Circulos
 
@@ -152,11 +151,15 @@
 @media (min-width: 1200px) and (max-width: 1600px) {
   .pngcontainer1 img:first-child {
     position: absolute;
-    top: 19em;
-    left: 26em;
-    z-index: 100;
+    margin-block: 25%;
+    margin-inline: 25.3%;
   }
+}
 
-
-
+@media (min-width: 2000px) {
+  .pngcontainer1 img:first-child {
+    position: absolute;
+    margin-block: 15%;
+    margin-inline: 35.3%;
+  }
 }
