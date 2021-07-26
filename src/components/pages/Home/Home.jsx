@@ -15,7 +15,7 @@ import SectionD from './sectionD'
 
 const Home = () => {
   return (
-    <Grid>
+    <Grid container >
       <HomeHeader/>
       <Cards />
       <SectionA />
