@@ -4,7 +4,7 @@ import React from 'react';
 // Components
 import { Grid } from '@material-ui/core';
 import Cards from './Cards';
-import HeroSection from './HeroSection';
+import HomeHeader from './homeHeader';
 import Footer from './Footer';
 import SectionA from './sectionA'
 import SectionB from './sectionB'
@@ -16,7 +16,7 @@ import SectionD from './sectionD'
 const Home = () => {
   return (
     <Grid>
-      <HeroSection />
+      <HomeHeader/>
       <Cards />
       <SectionA />
       <SectionB />
