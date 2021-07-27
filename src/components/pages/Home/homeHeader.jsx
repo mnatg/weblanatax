@@ -5,6 +5,7 @@ import { Grid, Paper } from '@material-ui/core';
 // Styles
 import { makeStyles } from '@material-ui/core/styles';
 // Assets
+import bgmovil from '../../../../src/assets/images/Home/init/photoMobile.webp'
 import bgtablet from '../../../../src/assets/images/Home/init/photoTablet.webp'
 import bgweb from '../../../../src/assets/images/Home/init/photo.webp'
 import storelabels from '../../../assets/images/Home/init/app-store.png'
@@ -46,19 +47,25 @@ function HomeHeader() {
     header: {
       background: `url(${bgweb}) no-repeat`,
       marginInline: 'auto',
-      backgroundSize:'100%',
-      padding: '8% 0% 8% 42%',
-      
+      backgroundSize: '100%',
+      padding: '15% 0% 15% 50%',
+
       [theme.breakpoints.down('md')]: {
         padding: '7% 0% 7% 50%',
 
       },
       [theme.breakpoints.down('sm')]: {
         background: `url(${bgtablet}) no-repeat`,
-        backgroundSize:'contain',
-        padding: '26% 0% 17% 57%',
+        backgroundSize: 'contain',
+        padding: '21% 0% 21% 57%',
       },
- 
+      [theme.breakpoints.down('xs')]: {
+        background: `url(${bgmovil}) no-repeat`,
+        backgroundSize: 'contain',
+        padding: '100% 0% 0% 0%',
+      },
+
+
     },
     textTitle: {
       fontSize: '4em',
@@ -89,14 +96,14 @@ function HomeHeader() {
       color: '#009245',
       width: '7em',
       maxWidth: '7em',
-      marginTop:'1em',
+      marginTop: '1em',
       [theme.breakpoints.down('sm')]: {
         fontSize: '2.3em',
-      
+
       },
       [theme.breakpoints.down('md')]: {
         fontSize: '3em',
-        with:'3em'
+        with: '3em'
       }
     },
     textSubTitle: {
@@ -107,7 +114,6 @@ function HomeHeader() {
       letterSpacing: 'normal',
       color: '#ffffff',
       fontFamily: 'PoppinsExtraBold',
-     
     },
     iconStore: {
       marginTop: '6em',
@@ -119,25 +125,28 @@ function HomeHeader() {
       fontStyle: 'normal',
       letterSpacing: 'normal',
       color: '#fff',
-      marginTop:'1.5%',
+      marginTop: '1.5%',
       [theme.breakpoints.down('md')]: {
-        fontSize:'1em',
-        margin:'0% 0% 10% 0%',
+        fontSize: '1em',
+        margin: '0% 0% 10% 0%',
       },
-
+      [theme.breakpoints.down('xs')]: {
+        textAlign: 'center',
+        fontSize: '1em',
+        margin: '0% 0% 5% 0%',
+      },
     },
-    LogoStore:{
+    LogoStore: {
       margin: '0 16px 0 0',
       width: '42%',
       height: '70%',
       [theme.breakpoints.down('md')]: {
-        width:'40%',
-        height:'70%'
+        width: '40%',
+
       },
-      [theme.breakpoints.down('sm')]: {
-        width: '42%',
-        height: '70%',
+      [theme.breakpoints.down('xs')]: {
       },
+
 
     },
   }));
@@ -147,19 +156,19 @@ function HomeHeader() {
   const textSupTitle = 'Nos encargamos de todo por ti';
   const textApp = 'Descarga la app gratis ';
   return (
-    <Grid container  item xs={12} sm={12} md={12} lg={12} xl={10} className={classes.header}>
-      <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className={classes.textContent}>
+    <Grid container item xs={12} sm={12} md={12} lg={12} xl={10} className={classes.header}>
+      <Grid item xs={10} sm={12} md={12} lg={12} xl={12} className={classes.textContent}>
         <p className={classes.textTitle}>{textTitle}</p>
         <Carousel className={classes.Carousel} autoPlay={true} navButtonsAlwaysInvisible animation='slide' indicatorIconButtonProps={{ style: { color: '#efefef' } }} activeIndicatorIconButtonProps={{ style: { color: '#009245' } }} >
           {items.map(item => <div key={item.id}  >{item.title}</div>)}
         </Carousel>
         <p className={classes.textSubTitle}>{textSupTitle}</p>
       </Grid>
-      <Grid container item xs={6} sm={12} md={12} lg={12} className={classes.iconStore}>
-        <Grid item xs={6} sm={12} md={5} lg={5}>
+      <Grid container item xs={10} sm={12} md={12} lg={12} className={classes.iconStore}>
+        <Grid item xs={12} sm={12} md={5} lg={5}>
           <p className={classes.textApp}>{textApp}</p>
         </Grid>
-        <Grid item xs={6} sm={12} md={6} lg={6} >
+        <Grid item xs={12} sm={12} md={5} lg={6} xl={6}>
           <a href='https://apps.apple.com/co/app/lanatax/id1556736650' >
             <img className={classes.LogoStore} src={storelabels} alt="storelabels" />
           </a>

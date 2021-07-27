@@ -15,7 +15,11 @@ function Cards() {
     card: {
       background: "d8d8d8",
       borderRadius: '15px',
-      margin:'2em'
+      margin:'2em',
+      [theme.breakpoints.down('xs')]: {
+        marginTop: '5em',
+
+      }
     },
     Textcards: {
       background: '#d8d8d8',
