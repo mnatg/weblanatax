@@ -50,7 +50,7 @@ function HomeHeader() {
       padding: '8% 0% 8% 42%',
       
       [theme.breakpoints.down('md')]: {
-        padding: '17% 0% 17% 57%',
+        padding: '7% 0% 7% 50%',
 
       },
       [theme.breakpoints.down('sm')]: {
@@ -68,9 +68,12 @@ function HomeHeader() {
       lineHeight: '0.97',
       letterSpacing: '4.1px',
       color: '#fff',
-      fontFamily: 'PoppinsBold',
+      fontFamily: 'PoppinsExtraBold',
       width: '7em',
       maxWidth: '7em',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '3em',
+      },
       [theme.breakpoints.down('sm')]: {
         fontSize: '2.3em',
       }
@@ -82,13 +85,18 @@ function HomeHeader() {
       fontStyle: 'normal',
       lineHeight: '.97',
       letterSpacing: '4.1px',
-      fontFamily: 'PoppinsBold',
+      fontFamily: 'PoppinsExtraBold',
       color: '#009245',
       width: '7em',
       maxWidth: '7em',
       marginTop:'1em',
       [theme.breakpoints.down('sm')]: {
         fontSize: '2.3em',
+      
+      },
+      [theme.breakpoints.down('md')]: {
+        fontSize: '3em',
+        with:'3em'
       }
     },
     textSubTitle: {
@@ -98,7 +106,7 @@ function HomeHeader() {
       fontStyle: 'normal',
       letterSpacing: 'normal',
       color: '#ffffff',
-      fontFamily: 'PoppinsBold',
+      fontFamily: 'PoppinsExtraBold',
      
     },
     iconStore: {
@@ -139,8 +147,8 @@ function HomeHeader() {
   const textSupTitle = 'Nos encargamos de todo por ti';
   const textApp = 'Descarga la app gratis ';
   return (
-    <Grid container item xs={12} sm={12} md={12} lg={10} className={classes.header}>
-      <Grid item xs={6} sm={6} md={6} lg={6} className={classes.textContent}>
+    <Grid container  item xs={12} sm={12} md={12} lg={12} xl={10} className={classes.header}>
+      <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className={classes.textContent}>
         <p className={classes.textTitle}>{textTitle}</p>
         <Carousel className={classes.Carousel} autoPlay={true} navButtonsAlwaysInvisible animation='slide' indicatorIconButtonProps={{ style: { color: '#efefef' } }} activeIndicatorIconButtonProps={{ style: { color: '#009245' } }} >
           {items.map(item => <div key={item.id}  >{item.title}</div>)}
