@@ -63,6 +63,8 @@ function HomeHeader() {
         background: `url(${bgmovil}) no-repeat`,
         backgroundSize: 'contain',
         padding: '100% 0% 0% 0%',
+        backgroundSize: '100%',
+        justifyContent: 'flex-end'
       },
 
 
@@ -144,10 +146,6 @@ function HomeHeader() {
         width: '40%',
 
       },
-      [theme.breakpoints.down('xs')]: {
-      },
-
-
     },
   }));
   const classes = useStyles();
@@ -165,7 +163,7 @@ function HomeHeader() {
         <p className={classes.textSubTitle}>{textSupTitle}</p>
       </Grid>
       <Grid container item xs={10} sm={12} md={12} lg={12} className={classes.iconStore}>
-        <Grid item xs={12} sm={12} md={5} lg={5}>
+        <Grid item xs={10} sm={12} md={5} lg={5}>
           <p className={classes.textApp}>{textApp}</p>
         </Grid>
         <Grid item xs={12} sm={12} md={5} lg={6} xl={6}>
