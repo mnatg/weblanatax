@@ -47,7 +47,7 @@ function HomeHeader() {
       background: `url(${bgweb}) no-repeat`,
       marginInline: 'auto',
       backgroundSize:'100%',
-      padding: '12% 0% 12% 42%',
+      padding: '8% 0% 8% 42%',
       
       [theme.breakpoints.down('md')]: {
         padding: '17% 0% 17% 57%',
