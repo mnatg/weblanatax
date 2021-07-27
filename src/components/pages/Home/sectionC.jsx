@@ -41,6 +41,27 @@ const useStyles = makeStyles((theme) => ({
   container: {
     marginBlock: '2em',
   },
+  headerTitle: {
+    marginLeft: '4%',
+    fontSize: '2.125em',
+    color: '#009245',
+    fontWeight: 'bold',
+    fontFamily: 'PoppinsBold',
+    marginTop: '0.5em',
+    [theme.breakpoints.down('xs')]: {
+      textAlign: 'center',
+    },
+  },
+  headerBody: {
+    marginLeft: '4%',
+    fontSize: '1em',
+    color: '#a6a6a6',
+    lineHeight: 1.63,
+    marginBottom: '1em',
+    [theme.breakpoints.down('xs')]: {
+      textAlign: 'center',
+    },
+  },
   img: {
     maxWidth: '100%'
   },
@@ -65,6 +86,8 @@ const SectionC = () => {
   const classes = useStyles();
   return (
     <Grid continer item xs={12} className={classes.container} >
+      <p className={classes.headerTitle} >Miles nos Respaldan</p>
+      <p className={classes.headerBody} >Nuestros especialistas te ayudarán a obtener los mejores resultados</p>
       <Hidden smDown >
         <Carousel autoPlay={false} navButtonsAlwaysInvisible  animation='slide' indicatorIconButtonProps={{style: {color: '#efefef'}}} activeIndicatorIconButtonProps={{style: {color: '#009245'}}} > 
           <Grid item container xs={12} justify='space-around' >
