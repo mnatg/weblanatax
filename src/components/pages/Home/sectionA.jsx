@@ -40,10 +40,6 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       flexDirection: 'column'
     },
-    [theme.breakpoints.down('xs')]: {
-      alignItems: 'flex-start',
-      marginInline: '2.5em'
-    }
   }
 }))
 
