@@ -209,14 +209,14 @@ function Footer() {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.ContainerFooter}>
+    <Grid className={classes.ContainerFooter} item xl={12}>
       <Grid container className={classes.GeneralFooter}>
-        <Grid item xs={10} sm={4} md={4} lg={4}>
+        <Grid item xs={10} sm={4} md={4} lg={4} xl={4}>
           <Link to='/'  >
             <img className={classes.LogoLana} src={logo} alt="logo" />
           </Link>
         </Grid>
-        <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4}>
+        <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Enlaces Rápidos</p>
           <Link className={classes.link} to='/quienes-somos' >
             <p className={classes.link}>Quienes somos</p>
@@ -225,8 +225,8 @@ function Footer() {
             <p className={classes.link}>Que Hacemos</p>
           </Link>
         </Grid>
-        <Grid className={classes.space} item xs={12} sm={4} md={4} lg={4}></Grid>
-        <Grid className={classes.sub} item xs={9} sm={6} md={4} lg={4}>
+        <Grid className={classes.space} item xs={12} sm={4} md={4} lg={4} xl={4}></Grid>
+        <Grid className={classes.sub} item xs={9} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Suscribete a nuestro <br />Newslatter</p>
           <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)}  />
           <br />
