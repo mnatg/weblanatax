@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
   },
   noticeBox: {
     marginInline: 'auto',
-    paddingLeft: '5em',
+    paddingInline: '10%',
   }
 }))
 
