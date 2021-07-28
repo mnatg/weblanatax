@@ -1,10 +1,10 @@
-import api, { handleError } from '../../Services/index'
+import api, { handleError } from '../index'
 import { Config } from '../../Config/config'
 import axios from 'axios'
 
 export default async (data) => {
   return axios({
-    baseURL: Config.API_URL + "notification",
+    baseURL: Config.API_URL + "notification/push",
     method: 'post',
     headers: {
       Accept: 'application/json',

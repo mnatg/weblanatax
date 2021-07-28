@@ -7,18 +7,14 @@ import twitter from '../../../assets/images/Home/sectionD/twitter.png';
 import instagram from '../../../assets/images/Home/sectionD/instagram.png';
 import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
-import SendEmail from '../../../Services/NewsLatter/SendEmail';
+import SendEmail from '../../../Services/Notication/EmailNotification';
 import Toast from '../../../utils/Toast';
 import validator from 'validator'
 import { makeStyles } from '@material-ui/core/styles';
 
-
-
 function Footer() {
 
   let email = React.createRef();
-
-  const message = "";
 
   const [acceptPolicy, setAcceptPolicy] = useState(false);
 
@@ -37,8 +33,7 @@ function Footer() {
         try {
           let request = {
             "email": email.current.value,
-            "message": message,
-            "topic": 'newslatter'
+            "topic": 'newsLetter'
           }
           console.log('enviando mail: ', request)
 
@@ -118,7 +113,7 @@ function Footer() {
       marginBottom: "1em"
     },
     buttonRegister: {
-      focus:{
+      focus: {
         online: "none",
       },
       width: "12.5em",
@@ -134,9 +129,9 @@ function Footer() {
       color: "#ffffff",
       marginTop: "1em",
       border: "none",
-      cursor:"pointer"
+      cursor: "pointer"
     },
- 
+
     linkTerms: {
       fontSize: "80%",
       color: "#a9a8a7",
@@ -202,7 +197,7 @@ function Footer() {
         display: "none",
       },
       [theme.breakpoints.down('xs')]: {
-        textAlign:"center"
+        textAlign: "center"
       },
     }
   }))
@@ -261,7 +256,7 @@ function Footer() {
             <img className={classes.icon} src={googleplay} alt="googleplay" />
           </Link>
         </Grid>
-        <Grid item xs={12}  className={classes.iconsMovil}>
+        <Grid item xs={12} className={classes.iconsMovil}>
           <Link href='https://www.facebook.com/mnataxgroup'>
             <img className={classes.iconMovil} src={facebook} alt="facebook" />
           </Link>

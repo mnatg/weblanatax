@@ -12,7 +12,7 @@ import MaterialUiPhoneNumber from 'material-ui-phone-number';
 import image from '../../../assets/images/Home/sectionD/photo-cel.webp'
 import bgImage from '../../../assets/images/Home/sectionD/bg.webp'
 // Services
-import SendSms from '../../../Services/NewsLatter/SendSms';
+import SendSms from '../../../Services/Notication/SmsNotification';
 // Utils
 import Toast from '../../../utils/Toast';
 
