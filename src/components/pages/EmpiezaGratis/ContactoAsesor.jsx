@@ -12,7 +12,7 @@ import callBtn from '../../../assets/images/EmpiezaGratis/callBtn.png';
 import imagenB from '../../../assets/images/QuienesSomos/free-phone-12-mockup.png'
 //Services
 import GetTalkSessionsService from '../../../Services/TalkSession/GetTalkSessions'
-import SendNotification from '../../../Services/Notication/SendNotification'
+import SendNotification from '../../../Services/Notication/PushNotification'
 
 // Util
 import Toast from '../../../utils/Toast';
