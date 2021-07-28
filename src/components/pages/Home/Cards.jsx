@@ -56,10 +56,10 @@ function Cards() {
         marginTop: '-4em',
       },
       [theme.breakpoints.down('xs')]: {
-        width: '12em',
-        height: '10em',
+        width: '8em',
+        height: '5em',
         marginTop: '-4em',
-        marginLeft: '25%',
+        marginLeft: '20%',
       }
     },
     TaxImgCards: {
@@ -82,10 +82,10 @@ function Cards() {
         marginTop: '-4em',
       },
       [theme.breakpoints.down('xs')]: {
-        width: '9em',
-        height: '9em',
+        width: '5em',
+        height: '5em',
         marginTop: '-6em',
-        marginLeft: '25%',
+        marginLeft: '20%',
       }
     },
     title: {
