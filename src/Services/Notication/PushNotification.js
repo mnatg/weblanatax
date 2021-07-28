@@ -1,4 +1,4 @@
-import api, { handleError } from '../../Services/index'
+import api, { handleError } from '../index'
 import { Config } from '../../Config/config'
 import axios from 'axios'
 
