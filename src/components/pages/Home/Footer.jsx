@@ -51,6 +51,15 @@ function Footer() {
       Toast("Por favor ingrese un correo válido", "error");
     }
   }
+  const handleClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
 
   const [emailError, setEmailError] = useState('')
@@ -213,10 +222,10 @@ function Footer() {
         </Grid>
         <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Enlaces Rápidos</p>
-          <Link className={classes.link} to='/quienes-somos' >
+          <Link className={classes.link} to='/quienes-somos' onClick={handleClick}>
             <p className={classes.link}>Quienes somos</p>
           </Link>
-          <Link className={classes.link} to='/que-hacemos' >
+          <Link className={classes.link} to='/que-hacemos' onClick={handleClick} >
             <p className={classes.link}>Que Hacemos</p>
           </Link>
         </Grid>
@@ -238,23 +247,23 @@ function Footer() {
           <p className={classes.textFooter}>©2021 M&A Tax Group. All rights reserved</p>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://www.facebook.com/mnataxgroup'>
+          <a href='https://www.facebook.com/mnataxgroup'>
             <img className={classes.icon} src={facebook} alt="facebook" />
-          </Link>
-          <Link href=''>
+          </a>
+          <a href=''>
             <img className={classes.twitter} src={twitter} alt="twitter" />
-          </Link>
-          <Link href='https://www.instagram.com/mnataxgroup/'>
+          </a>
+          <a href='https://www.instagram.com/mnataxgroup/'>
             <img className={classes.icon} src={instagram} alt="instagram" />
-          </Link>
+          </a>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://apps.apple.com/co/app/lanatax/id1556736650'>
+          <a href='https://apps.apple.com/co/app/lanatax/id1556736650'>
             <img className={classes.icon} src={apple} alt="apple" />
-          </Link>
-          <Link href='https://play.google.com/store/apps/details?id=com.lanatax'>
+          </a>
+          <a href='https://play.google.com/store/apps/details?id=com.lanatax'>
             <img className={classes.icon} src={googleplay} alt="googleplay" />
-          </Link>
+          </a>
         </Grid>
         <Grid item xs={12} className={classes.iconsMovil}>
           <Link href='https://www.facebook.com/mnataxgroup'>
