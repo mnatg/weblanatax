@@ -28,7 +28,7 @@ import moment from "moment";
 import Toast from '../../utils/Toast';
 
 //Service
-import SendNotificationService from '../../Services/Notication/SendNotification';
+import SendNotificationService from '../../Services/Notication/PushNotification';
 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();

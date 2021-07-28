@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export default async (data) => {
   return axios({
-    baseURL: Config.API_URL + "notification",
+    baseURL: Config.API_URL + "notification/push",
     method: 'post',
     headers: {
       Accept: 'application/json',

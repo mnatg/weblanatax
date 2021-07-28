@@ -4,7 +4,7 @@ import imageD from '../../../assets/images/Home/sectionD/photo-cel.png'
 import textA from '../../../assets/images/Home/sectionA/textA.png'
 import { Button, Grid } from '@material-ui/core';
 import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.png'
-import SendSms from '../../../Services/NewsLatter/SendSms';
+import SendSms from '../../../Services/Notication/SmsNotification';
 import Toast from '../../../utils/Toast';
 
 

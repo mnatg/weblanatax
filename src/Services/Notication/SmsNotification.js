@@ -4,8 +4,7 @@ import axios from 'axios'
 
 export default async (data) => {
     return axios({
-        baseURL: Config.API_URL + "notification/emailnotification",
-       //baseURL: 'http://localhost:5000/' + "notification/emailnotification",
+        baseURL: Config.API_URL + "notification/sms",
         method: 'post',
         headers: {
             Accept: 'application/json',
@@ -16,7 +15,7 @@ export default async (data) => {
     }).then(({ data }) => {
         return data
     }).catch((err) => {
-        console.error("Error al enviar mail: ", err)
+        console.error("Error al enviar sms: ", err)
         return (err)
     })
 }
