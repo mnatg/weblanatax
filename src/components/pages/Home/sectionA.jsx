@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       alignItems: 'center',
       flexDirection: 'column',
+    },
+    [theme.breakpoints.down('xs')]: {
       marginLeft: '-1.5em',
     },
   }
