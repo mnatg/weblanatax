@@ -209,7 +209,7 @@ function Footer() {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.ContainerFooter} item xl={12}>
+    <Grid className={classes.ContainerFooter} item xs={12} sm={12} md={12} lg={12} xl={12}>
       <Grid container className={classes.GeneralFooter}>
         <Grid item xs={10} sm={4} md={4} lg={4} xl={4}>
           <Link to='/'  >
