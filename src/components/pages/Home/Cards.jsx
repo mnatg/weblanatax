@@ -46,18 +46,13 @@ function Cards() {
       marginLeft: '2em',
       marginTop: '-7em',
       [theme.breakpoints.down('lg')]: {
-        width: '7em',
-        height: '6em',
-        marginTop: '-6em',
-      },
-      [theme.breakpoints.down('lg')]: {
         width: '6em',
         height: '4em',
         marginTop: '-4em',
       },
       [theme.breakpoints.down('xs')]: {
         width: '8em',
-        height: '5em',
+        height: '6em',
         marginTop: '-4em',
         marginLeft: '20%',
       }
@@ -72,18 +67,13 @@ function Cards() {
       marginLeft: '2em',
       marginTop: '-7em',
       [theme.breakpoints.down('lg')]: {
-        width: '4em',
-        height: '6em',
-        marginTop: '-6em',
-      },
-      [theme.breakpoints.down('lg')]: {
         width: '3em',
         height: '4em',
         marginTop: '-4em',
       },
       [theme.breakpoints.down('xs')]: {
         width: '5em',
-        height: '5em',
+        height: '6em',
         marginTop: '-6em',
         marginLeft: '20%',
       }
