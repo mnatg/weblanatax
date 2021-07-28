@@ -225,9 +225,9 @@ function Footer() {
           <p className={classes.title}>Suscribete a nuestro <br />Newslatter</p>
           <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)}  />
           <br />
-          <Link className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
+          <a className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
             ¿Ya leiste nuestras politicas de privacidad ?
-          </Link>
+          </a>
           <br></br>
           <button disable={acceptPolicy} onClick={Send} className={classes.buttonRegister}>Registrar</button>
         </Grid>
