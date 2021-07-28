@@ -85,7 +85,10 @@ function HomeHeader() {
       },
       [theme.breakpoints.down('sm')]: {
         fontSize: '2.3em',
-      }
+      },
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '1.5em',
+      },
     },
     Carousel: {
       fontSize: '4em',
@@ -106,7 +109,12 @@ function HomeHeader() {
       [theme.breakpoints.down('md')]: {
         fontSize: '3em',
         with: '3em'
-      }
+      },
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '2em',
+        with: '2em'
+      },
+
     },
     textSubTitle: {
       fontSize: '1.4em',
@@ -116,9 +124,22 @@ function HomeHeader() {
       letterSpacing: 'normal',
       color: '#ffffff',
       fontFamily: 'PoppinsExtraBold',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '1em',
+      },
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '1em',
+        marginRight: '5%'
+      },
     },
     iconStore: {
       marginTop: '6em',
+      [theme.breakpoints.down('md')]: {
+        marginTop: '2em'
+      },
+      [theme.breakpoints.down('xs')]: {
+        marginTop: '2em'
+      },
     },
     textApp: {
       fontSize: '1.1em',
@@ -135,7 +156,7 @@ function HomeHeader() {
       [theme.breakpoints.down('xs')]: {
         textAlign: 'center',
         fontSize: '1em',
-        margin: '0% 0% 5% 0%',
+        margin: '0% 0% 1% 0%',
       },
     },
     LogoStore: {
@@ -144,7 +165,6 @@ function HomeHeader() {
       height: '70%',
       [theme.breakpoints.down('md')]: {
         width: '40%',
-
       },
     },
   }));
