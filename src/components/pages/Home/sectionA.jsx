@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     marginBlock: '1em',
     [theme.breakpoints.down('sm')]: {
       alignItems: 'center',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      marginLeft: '-1.5em',
     },
   }
 }))
