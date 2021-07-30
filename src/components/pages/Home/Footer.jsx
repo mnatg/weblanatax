@@ -12,13 +12,9 @@ import Toast from '../../../utils/Toast';
 import validator from 'validator'
 import { makeStyles } from '@material-ui/core/styles';
 
-
-
 function Footer() {
 
   let email = React.createRef();
-
-  const message = "";
 
   const [acceptPolicy, setAcceptPolicy] = useState(false);
 
@@ -37,7 +33,7 @@ function Footer() {
         try {
           let request = {
             "email": email.current.value,
-            "message": message,
+            "message": '',
             "topic":'newsletter'
 
           }
@@ -57,6 +53,15 @@ function Footer() {
       Toast("Por favor ingrese un correo válido", "error");
     }
   }
+  const handleClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
 
   const [emailError, setEmailError] = useState('')
@@ -119,7 +124,7 @@ function Footer() {
       marginBottom: "1em"
     },
     buttonRegister: {
-      focus:{
+      focus: {
         online: "none",
       },
       width: "12.5em",
@@ -135,9 +140,9 @@ function Footer() {
       color: "#ffffff",
       marginTop: "1em",
       border: "none",
-      cursor:"pointer"
+      cursor: "pointer"
     },
- 
+
     linkTerms: {
       fontSize: "80%",
       color: "#a9a8a7",
@@ -203,37 +208,37 @@ function Footer() {
         display: "none",
       },
       [theme.breakpoints.down('xs')]: {
-        textAlign:"center"
+        textAlign: "center"
       },
     }
   }))
   const classes = useStyles();
 
   return (
-    <Grid className={classes.ContainerFooter}>
+    <Grid className={classes.ContainerFooter} item xs={12} sm={12} md={12} lg={12} xl={12}>
       <Grid container className={classes.GeneralFooter}>
-        <Grid item xs={10} sm={4} md={4} lg={4}>
+        <Grid item xs={10} sm={4} md={4} lg={4} xl={4}>
           <Link to='/'  >
             <img className={classes.LogoLana} src={logo} alt="logo" />
           </Link>
         </Grid>
-        <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4}>
+        <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Enlaces Rápidos</p>
-          <Link className={classes.link} to='/quienes-somos' >
+          <Link className={classes.link} to='/quienes-somos' onClick={handleClick}>
             <p className={classes.link}>Quienes somos</p>
           </Link>
-          <Link className={classes.link} to='/que-hacemos' >
+          <Link className={classes.link} to='/que-hacemos' onClick={handleClick} >
             <p className={classes.link}>Que Hacemos</p>
           </Link>
         </Grid>
-        <Grid className={classes.space} item xs={12} sm={4} md={4} lg={4}></Grid>
-        <Grid className={classes.sub} item xs={9} sm={6} md={4} lg={4}>
+        <Grid className={classes.space} item xs={12} sm={4} md={4} lg={4} xl={4}></Grid>
+        <Grid className={classes.sub} item xs={9} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Suscribete a nuestro <br />Newslatter</p>
           <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)}  />
           <br />
-          <Link className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
+          <a className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a' target="_blank">
             ¿Ya leiste nuestras politicas de privacidad ?
-          </Link>
+          </a>
           <br></br>
           <button disable={acceptPolicy} onClick={Send} className={classes.buttonRegister}>Registrar</button>
         </Grid>
@@ -244,25 +249,25 @@ function Footer() {
           <p className={classes.textFooter}>©2021 M&A Tax Group. All rights reserved</p>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://www.facebook.com/mnataxgroup'>
+          <a href='https://www.facebook.com/mnataxgroup'>
             <img className={classes.icon} src={facebook} alt="facebook" />
-          </Link>
-          <Link href=''>
+          </a>
+          <a href=''>
             <img className={classes.twitter} src={twitter} alt="twitter" />
-          </Link>
-          <Link href='https://www.instagram.com/mnataxgroup/'>
+          </a>
+          <a href='https://www.instagram.com/mnataxgroup/'>
             <img className={classes.icon} src={instagram} alt="instagram" />
-          </Link>
+          </a>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://apps.apple.com/co/app/lanatax/id1556736650'>
+          <a href='https://apps.apple.com/co/app/lanatax/id1556736650'>
             <img className={classes.icon} src={apple} alt="apple" />
-          </Link>
-          <Link href='https://play.google.com/store/apps/details?id=com.lanatax'>
+          </a>
+          <a href='https://play.google.com/store/apps/details?id=com.lanatax'>
             <img className={classes.icon} src={googleplay} alt="googleplay" />
-          </Link>
+          </a>
         </Grid>
-        <Grid item xs={12}  className={classes.iconsMovil}>
+        <Grid item xs={12} className={classes.iconsMovil}>
           <Link href='https://www.facebook.com/mnataxgroup'>
             <img className={classes.iconMovil} src={facebook} alt="facebook" />
           </Link>

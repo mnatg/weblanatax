@@ -5,13 +5,6 @@ import imagenB from '../../../assets/images/QuienesSomos/free-phone-12-mockup.pn
 import { Link } from 'react-router-dom';
 import { Grid, Paper } from '@material-ui/core';
 
-//images
-import callBtn from  '../../../assets/images/EmpiezaGratis/callBtn.png';
-//Services
-import GetTalkSessionsService from '../../../Services/TalkSession/GetTalkSessions'
-import ListTaxes from '../../../Services/Taxes/ListTaxes'
-import SendNotification from '../../../Services/Notication/SendNotification'
-import { onAddTaxes } from '../../../Store/actions/Taxes'
 // Util
 import Toast from '../../../utils/Toast';
 import 'firebase/firestore';

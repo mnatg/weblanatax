@@ -1,102 +1,153 @@
+// React
 import React, { useState } from 'react';
-import '../../../assets/styles/Home/Home.scss';
-import imageD from '../../../assets/images/Home/sectionD/photo-cel.png'
-import textA from '../../../assets/images/Home/sectionA/textA.png'
-import { Button, Grid } from '@material-ui/core';
-import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.png'
-import SendSms from '../../../Services/NewsLetter/SendSms';
+// Components
+import {
+  Button,
+  Grid,
+  makeStyles,
+  TextField
+} from '@material-ui/core';
+import MaterialUiPhoneNumber from 'material-ui-phone-number';
+// Assets
+import image from '../../../assets/images/Home/sectionD/photo-cel.webp'
+import bgImage from '../../../assets/images/Home/sectionD/bg.webp'
+// Services
+import SendSms from '../../../Services/Notication/SmsNotification';
+// Utils
 import Toast from '../../../utils/Toast';
 
+const useStyles = makeStyles((theme) => ({
+  container: {
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    marginBlock: '1em',
+  },
+  contentText: {
+    paddingLeft: '15%',
+    [theme.breakpoints.down('sm')]: {
+      order: 1,
+      paddingLeft: 0,
+      textAlign: 'center',
+    },
+  },
+  title: {
+    fontFamily: 'PoppinsExtraBold',
+    fontSize: '3.6875em',
+    fontWeight: 900,
+    lineHeight: 1.1,
+    color: '#009245',
+    marginBlock: '1em',
+    [theme.breakpoints.down('sm')]: {
+      width: '65%',
+      marginInline: 'auto',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '2.5em',
+      width: '100%',
+    },
+  },
+  body: {
+    fontSize: '1em',
+    color: '#a6a6a6',
+    marginBlock: '1em',
+    [theme.breakpoints.down('sm')]: {
+      width: '50%',
+      marginInline: 'auto',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '80%',
+    },
+  },
+  subTitle: {
+    fontWeight: 'bold',
+    fontSize: '1.25em',
+    marginBottom: '1em',
+    [theme.breakpoints.down('sm')]: {
+      marginInline: 'auto',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '50%',
+    },
+  },
+  img: {
+    maxWidth: '70%',
+    marginLeft: '15%',
+  },
+  phoneInput: {
+    backgroundColor: '#d6d6d6',
+    marginLeft: '25%',
+    borderRadius: 25,
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 0,
+    },
+  },
+  btn: {
+    marginLeft: '35%',
+    marginTop: '2em',
+    backgroundColor: '#009245',
+    color: 'white',
+    paddingInline: '2em',
+    borderRadius: 25,
+    height: 'max-content',
+    '&:hover': {
+      backgroundColor: '#009245ad',
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginInline: 'auto',
+    },
+  },
+}))
 
-import { Link } from 'react-router-dom';
+const SectionD = () => {
 
-function sectionD() {
-
-  let mobile = React.createRef();
-  let mobile2 = React.createRef();
+  const [mobile, setMobile] = useState('');
 
   const message = "☺¡Muchas gracias por suscribirte! Te damos la bienvenida a la familia de Lanatax, expertos ayudando a latinos en sus impuestos y auditorías, si no has descargado la app ingresa aquí 👉Para dispositivos iOS https://apps.apple.com/co/app/lanatax/id1556736650 Para dispostivos Android  https://play.google.com/store/apps/details?id=com.lanatax  y empieza a disfrutar de nuestros servicios. ";
-  
-  const Send = async() => {
-    var mobileNumber='';
-    console.log("current value mobile",mobile.current.value);
-    console.log("current value mobile2",mobile2.current.value);
 
-    if(mobile.current.value!=null && mobile.current.value !=undefined && mobile.current.value != ""){
-
-      console.log("if mobile")
-      mobileNumber = mobile.current.value;
-    }
-  else{
-      console.log("else mobile2")
-      mobileNumber=mobile2.current.value;
-    }
-    console.log('enviar sms: ',mobileNumber);
-
-    if (mobileNumber=='') { 
-      Toast("Debe ingresar un número movil","error");
-    }else
-    {
-    try {
-      let request = {
-          "phoneNumber": mobileNumber,
-           "message": message
+  const Send = async () => {
+    if (mobile.length == 0) {
+      Toast("Debe ingresar un número movil", "error");
+    } else {
+      try {
+        let request = {
+          "phoneNumber": mobile,
+          "message": message
+        }
+        console.log('enviando sms: ', request)
+        await SendSms(request);
+        Toast("Suscripción exitosa", "success");
+      } catch (err) {
+        Toast("Ha ocurrido un error, contacte al administardor", "error");
+        console.error("Error al enviar mensaje", err);
       }
-      console.log('enviando sms: ',request)
-     
-      await SendSms(request);
-      Toast("Suscripción exitosa","success");
-
-  } catch (err) {
-    Toast("Ha ocurrido un error, contacte al administardor","error");
-      console.error("Error al enviar mensaje", err);
+    }
   }
 
-}
-    
-}
-
+  const classes = useStyles();
 
   return (
-    <div className='homebackground'>
-      <Grid className='sectionD'>
-        <div className="GridLeft">
-          <h1 className='CONECTAR-CON-TU-ASES'>
-            RESOLVIENDO <br/>CON <br />TRANSPARENCIA<br />
-          </h1>
-          <h1 className='textD'>
-            Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
-          </h1>
-          <h1 className='textD1'>
-          SUCRÍBETE PARA ESTAR INFORMADO VÍA SMS
-          </h1>
-          <input ref={mobile} className="Boton-Nombre-d"  placeholder="Example : 14********" /><br/>
-            <Button onClick={Send} className="BotonConectarD" >conectar</Button>
-        </div>
-        <div className="GridRight ">
-          <img className="imageD" src={imageD} alt="imageD" />
-        </div>
+    <Grid container item xs={12} className={classes.container} >
+      <Grid item container xs={12} md={6} className={classes.contentText} >
+        <p className={classes.title} >Resolviendo con transparencia</p>
+        <p className={classes.body} >Conéctate con los expertos que han servido a la comunidad latina por más de 20 años.</p>
+        <p className={classes.subTitle} >SUSCRÍBETE PARA ESTAR INFORMADO VÍA SMS</p>
+        <Grid item xs={12} >
+          <MaterialUiPhoneNumber defaultCountry={'us'}
+            onChange={setMobile}
+            className={classes.phoneInput}
+            InputProps={{disableUnderline: true}}
+          />
+        </Grid>
+        <Button variant="contained" onClick={Send} className={classes.btn} >
+          Conectar
+        </Button>
       </Grid>
-      <Grid className='sectionDMovil'>
-        <div className="GridRight ">
-          <img className="imageD" src={imageD} alt="imageD" />
-        </div>
-        <div className="GridLeft">
-          <h1 className='CONECTAR-CON-TU-ASES'>
-            RESOLVIENDO <br/>CON <br />TRANSPARENCIA<br />
-          </h1>
-          <h1 className='textD'>
-            Conéctate con los expertos en impuestos que han servido a la comunidad hispana por más de 20 años.
-          </h1>
-          <h1 className='textD1'>
-          SUCRÍBETE PARA ESTAR INFORMADO VÍA SMS
-          </h1>
-          <input ref={mobile2} className="Boton-Nombre-d" placeholder="Example : 14********" /><br/>
-            <Button onClick={Send} className="BotonConectarD" >conectar</Button>
-        </div>
+      <Grid item xs={12} md={6} >
+        <img src={image} alt="Telefono" className={classes.img} />
       </Grid>
-    </div>
+    </Grid>
   );
 }
 
-export default sectionD;
+export default SectionD;

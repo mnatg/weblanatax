@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from '../../pages/Home/Cards';
-import HeroSection from '../../pages/Home/HeroSection';
+import homeHeader from '../../pages/Home/homeHeader';
 import Footer from '../../pages/Home/Footer';
 import SectionA from '../../pages/QuienesSomos/SectionA'
 import SectionB from '../../pages/QuienesSomos/SectionB'

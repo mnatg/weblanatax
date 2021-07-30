@@ -46,7 +46,7 @@
 //--Photo Styles
 
 .Photo {
-  background           : url('../../images/Home/init/home4k.jpg') center center/cover no-repeat;
+ 
   width                : 95%;
   height               : 900px;
   margin-top           : 0em;
@@ -397,7 +397,6 @@
     grid-auto-rows         : minmax(100px, auto);
     width                  : 90%;
     margin                 : 5% auto;
-    background             : url("../../images/Home/sectionD/bginit.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
     -webkit-background-size: cover;
@@ -700,7 +699,6 @@
     grid-template-columns  : repeat(2, 1fr);
     grid-gap               : 10px;
     grid-auto-rows         : minmax(100px, auto);
-    background-image       : url("../../images/Home/sectionD/bg.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
     -webkit-background-size: cover;
@@ -963,7 +961,7 @@
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .Photo {
-   background-image     : url('../../images/Home/init/photoMobile.webp');
+
     background-position  : center;
     height               : 48.8em;
     grid-template-columns: repeat(1, auto);
@@ -1389,7 +1387,6 @@
     margin-top             : 10%;
     display                : block;
     grid-template-columns  : repeat(1, 1fr);
-    background-image       : url("../../images/Home/sectionD/bg.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
     -webkit-background-size: round;
@@ -1589,7 +1586,7 @@
 /*-----------Responsive tablet--------------*/
 @media (min-width: 601px) and (max-width: 960px) {
   .Photo {
-    background-image     : url('../../images/Home/init/pick-header@2x.png') center center/cover no-repeat;
+  
     background-position  : center;
     height: 100%;
     margin   : 0 0 0 0;
@@ -1852,7 +1849,6 @@
     margin-top             : 10%;
     display                : block;
     grid-template-columns  : repeat(1, 1fr);
-    background-image       : url("../../images/Home/sectionD/bg.png");
     background-position-x  : center;
     background-repeat      : no-repeat;
     -webkit-background-size: round;
@@ -2100,7 +2096,7 @@
 @media (min-width: 1200px) and (max-width: 1600px) {
 
   .Photo {
-    background           : url('../../images/Home/init/home4k.jpg') center center/cover no-repeat;
+  
     width                : 95%;
     height               : 734px;
     margin-top           : 0em;

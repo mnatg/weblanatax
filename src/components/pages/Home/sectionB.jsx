@@ -1,68 +1,115 @@
+// React
 import React from 'react';
-import '../../../assets/styles/Home/Home.scss';
-import imageA from '../../../assets/images/Home/sectionA/photo.png'
-import textA from '../../../assets/images/Home/sectionA/textA.png'
-import { Grid } from '@material-ui/core';
-import botonConectar from '../../../assets/images/Home/sectionA/boton-conectar.png'
-import billetes from '../../../assets/images/Home/initA/billetes.png'
-import iconllamada from '../../../assets/images/Home/initA/icon-llamada.png'
-import bolsitadinero from '../../../assets/images/Home/initA/bolsitadinero.png'
-import ahorratiempo from '../../../assets/images/Home/initA/ahorratiempo.png'
-import estadistica from '../../../assets/images/Home/initA/estadistica.png'
-import hojas from '../../../assets/images/Home/initA/hojas.png'
-import personas from '../../../assets/images/Home/initA/personas.png'
-import planeta from '../../../assets/images/Home/initA/planeta.png'
-import torta from '../../../assets/images/Home/initA/torta.png'
+// Components
+import { Grid, makeStyles } from '@material-ui/core';
+// Assets
+import call from '../../../assets/images/Home/sectionB/call.webp';
+import timer from '../../../assets/images/Home/sectionB/timer.png';
+import money from '../../../assets/images/Home/sectionB/money.webp';
+import cake from '../../../assets/images/Home/sectionB/cake.webp';
+import people from '../../../assets/images/Home/sectionB/people.webp';
+import statistic from '../../../assets/images/Home/sectionB/statistic.webp';
+import earth from '../../../assets/images/Home/sectionB/earth.webp';
+import papers from '../../../assets/images/Home/sectionB/papers.webp';
 
-import { Link } from 'react-router-dom';
+const content = [{
+  img: call,
+  alt: 'Videollamada',
+  text: 'Videollamada Gratis.'
+}, {
+  img: timer,
+  alt: 'Reloj',
+  text: 'Ahorra tiempo.'
+}, {
+  img: money,
+  alt: 'Billetes',
+  text: 'Simple, rápido y seguro.'
+}, {
+  img: cake,
+  alt: 'Torta',
+  text: 'Obtén una revisión y análisis completo.'
+}, {
+  img: people,
+  alt: 'Personas',
+  text: 'Calidad con la que puedes contar.'
+}, {
+  img: statistic,
+  alt: 'Estadistica',
+  text: 'Te mantendremos informado.'
+}, {
+  img: earth,
+  alt: 'Planeta',
+  text: 'Te ayudaremos en donde sea que estés.'
+}, {
+  img: papers,
+  alt: 'Hojas',
+  text: 'Ten acceso a todos tus documentos.'
+},]
 
-function sectionB() {
-  return (
-    <div className='homebackground'>
-      <Grid className='sectionB'>
-        <div className="GridLefB">
-          <p className='TextB'>La mejor combinación
-          entre personas
-          + tecnología
-        </p>
-        </div>
-        <Grid className='GridRightB' >
-          <div className='gridtest'>
-            <img className="ICON" src={iconllamada} alt="iconllamada" />
-            <p className='TEXT'> Videollamada Gratis. </p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON ICON-left" src={ahorratiempo} alt="bolsitadinero" />
-            <p className='TEXT'>Ahorra Tiempo.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={billetes} alt="billetes" />
-            <p className='TEXT'> Simple, rápido y seguro. </p>
-          </div>
-          <div className='gridtest'>
-            <img className="TORTA" src={torta} alt="torta" />
-            <p className='TEXT'> Obtén una revisión y análisis completo.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={personas} alt="personas" />
-            <p className='TEXT'>Calidad al alcance de <br />tu bolsillo.</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={estadistica} alt="estadistica" />
-            <p className='TEXT'>Te mantendremos informado</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={planeta} alt="planeta" />
-            <p className='TEXT'>Te ayudaremos en donde<br />quiera que estes</p>
-          </div>
-          <div className='gridtest'>
-            <img className="ICON" src={hojas} alt="hojas" />
-            <p className='TEXT'>Ten acceso a todos tus<br />documentos. </p>
-          </div>
-        </Grid>
+const IconRender = ({img, alt, text, classes}) => <>
+      <Grid item xs={4} sm={2} >
+        <img src={img} alt={alt} className={classes.img} />
       </Grid>
-    </div>
+      <Grid item xs={8} sm={4} >
+        <p className={classes.text} >{text}</p>
+      </Grid>
+    </>
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    alignItems: 'center',
+    marginBlock: '1em',
+  },
+  title: {
+    fontSize: '2.1875em',
+    fontWeight: 'bold',
+    lineHeight: 1.43,
+    color: '#009245',
+    fontFamily: 'PoppinsBold',
+    marginLeft: '2em',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      marginLeft: 0,
+    },
+  },
+  iconContainer: {
+    alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '15%',
+    },
+  },
+  img: {
+    maxWidth: '4.8125em',
+    maxHeight: '6em',
+    marginTop: '1em',
+  },
+  text: {
+    fontSize: '0.9375em',
+    color: '#a6a6a6',
+    lineHeight: 1.73,
+    marginRight: '3em',
+    [theme.breakpoints.down('sm')]: {
+      marginRight: 0,
+    },
+  }
+}))
+
+const SectionB = () => {
+  const classes = useStyles();
+  return (
+    <Grid container item xs={12} className={classes.container} >
+      <Grid item xs={12} md={5} >
+        <p className={classes.title} >La mejor combinación entre personas + tecnología</p>
+      </Grid>
+      <Grid item container xs={12} md={7} className={classes.iconContainer} >
+        {content.map(item => {
+          return (
+            <IconRender img={item.img} alt={item.alt} text={item.text} classes={classes} />
+          )
+        })}
+      </Grid>
+    </Grid>
   );
 }
 
-export default sectionB;
+export default SectionB;
