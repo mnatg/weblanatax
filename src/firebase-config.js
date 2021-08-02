@@ -1,10 +1,11 @@
 
 export default {
-  apiKey: "AIzaSyBARPyMQkqiQT57SbyaY7FJIwGOH0VN5G4",
-  authDomain: "dev-lanatax.firebaseapp.com",
-  projectId: "dev-lanatax",
-  storageBucket: "dev-lanatax.appspot.com",
-  messagingSenderId: "1099491225094",
-  appId: "1:1099491225094:web:9f0ae164f4745d19fb9d87",
-  measurementId: "G-PVQ2NC2128"
+  apiKey: "AIzaSyAXMXkUjen4zi1px6I2mAbLlLtiRTJ_RRc",
+  authDomain: "lanatax-f806e.firebaseapp.com",
+  databaseURL: "https://lanatax-f806e-default-rtdb.firebaseio.com",
+  projectId: "lanatax-f806e",
+  storageBucket: "lanatax-f806e.appspot.com",
+  messagingSenderId: "547793364917",
+  appId: "1:547793364917:web:4b83e5b29ff4f75f1e5bfc",
+  measurementId: "G-97TZBS2FPB"
 };
