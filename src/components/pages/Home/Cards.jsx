@@ -11,6 +11,9 @@ function Cards() {
       background: "rgba(233, 233, 233, 0.6)",
       paddingBlock: '5%',
       justifyContent: 'center',
+      [theme.breakpoints.up('lg')]: {
+       
+      },
     },
     card: {
       background: "d8d8d8",
@@ -86,9 +89,10 @@ function Cards() {
       fontFamily: 'PoppinsExtraBold',
       fontSize: '2em',
       color: '#009245',
-      marginLeft:'2em',
+      marginLeft:'5.5em',
       [theme.breakpoints.down('md')]: {
-        textAlign: 'end',
+        //textAlign: 'end',
+        marginLeft:'4.5em',
       },
       [theme.breakpoints.down('xs')]: {
         textAlign: 'center',

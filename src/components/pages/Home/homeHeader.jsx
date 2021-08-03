@@ -55,8 +55,9 @@ function HomeHeader() {
 
       },
       [theme.breakpoints.down('sm')]: {
-        background: `url(${bgtablet}) no-repeat`,
+        background: `url(${bgtablet}) cover no-repeat`,
         backgroundSize: 'contain',
+       // backgroundSize: '100%',
         padding: '21% 0% 21% 57%',
       },
       [theme.breakpoints.down('xs')]: {
