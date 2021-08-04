@@ -7,7 +7,7 @@ import twitter from '../../../assets/images/Home/sectionD/twitter.png';
 import instagram from '../../../assets/images/Home/sectionD/instagram.png';
 import apple from '../../../assets/images/Home/sectionD/apple.png';
 import googleplay from '../../../assets/images/Home/sectionD/googleplay.png';
-import SendEmail from '../../../Services/NewsLetter/SendEmail';
+import SendEmail from '../../../Services/Notication/EmailNotification';
 import Toast from '../../../utils/Toast';
 import validator from 'validator'
 import { makeStyles } from '@material-ui/core/styles';
