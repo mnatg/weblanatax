@@ -33,7 +33,9 @@ function Footer() {
         try {
           let request = {
             "email": email.current.value,
-            "topic": 'newsLetter'
+            "message": '',
+            "topic":'newsLetter'
+
           }
           console.log('enviando mail: ', request)
 
@@ -51,6 +53,15 @@ function Footer() {
       Toast("Por favor ingrese un correo válido", "error");
     }
   }
+  const handleClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
 
   const [emailError, setEmailError] = useState('')
@@ -213,10 +224,10 @@ function Footer() {
         </Grid>
         <Grid className={classes.body} item xs={10} sm={6} md={4} lg={4} xl={4}>
           <p className={classes.title}>Enlaces Rápidos</p>
-          <Link className={classes.link} to='/quienes-somos' >
+          <Link className={classes.link} to='/quienes-somos' onClick={handleClick}>
             <p className={classes.link}>Quienes somos</p>
           </Link>
-          <Link className={classes.link} to='/que-hacemos' >
+          <Link className={classes.link} to='/que-hacemos' onClick={handleClick} >
             <p className={classes.link}>Que Hacemos</p>
           </Link>
         </Grid>
@@ -225,7 +236,7 @@ function Footer() {
           <p className={classes.title}>Suscribete a nuestro <br />Newslatter</p>
           <input ref={email} className={classes.inputEmail} placeholder="Email" onChange={(e) => validateEmail(e)}  />
           <br />
-          <a className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a'>
+          <a className={classes.linkTerms} href='https://firebasestorage.googleapis.com/v0/b/dev-lanatax.appspot.com/o/Privacy_policy%2F9233184a-bfbc-11eb-a980-0cc47a792c0a_id_9233184a-bfbc-11eb-a980-0cc47a792c0a.html?alt=media&token=5a71f1b0-ff86-4efd-aca5-9bf49fa8f14a' target="_blank">
             ¿Ya leiste nuestras politicas de privacidad ?
           </a>
           <br></br>
@@ -238,23 +249,23 @@ function Footer() {
           <p className={classes.textFooter}>©2021 M&A Tax Group. All rights reserved</p>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://www.facebook.com/mnataxgroup'>
+          <a href='https://www.facebook.com/mnataxgroup'>
             <img className={classes.icon} src={facebook} alt="facebook" />
-          </Link>
-          <Link href=''>
+          </a>
+          <a href=''>
             <img className={classes.twitter} src={twitter} alt="twitter" />
-          </Link>
-          <Link href='https://www.instagram.com/mnataxgroup/'>
+          </a>
+          <a href='https://www.instagram.com/mnataxgroup/'>
             <img className={classes.icon} src={instagram} alt="instagram" />
-          </Link>
+          </a>
         </Grid>
         <Grid item xs={6} sm={3} md={4} lg={4} xl={4} className={classes.icons}>
-          <Link href='https://apps.apple.com/co/app/lanatax/id1556736650'>
+          <a href='https://apps.apple.com/co/app/lanatax/id1556736650'>
             <img className={classes.icon} src={apple} alt="apple" />
-          </Link>
-          <Link href='https://play.google.com/store/apps/details?id=com.lanatax'>
+          </a>
+          <a href='https://play.google.com/store/apps/details?id=com.lanatax'>
             <img className={classes.icon} src={googleplay} alt="googleplay" />
-          </Link>
+          </a>
         </Grid>
         <Grid item xs={12} className={classes.iconsMovil}>
           <Link href='https://www.facebook.com/mnataxgroup'>

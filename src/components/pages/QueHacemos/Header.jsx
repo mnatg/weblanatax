@@ -68,7 +68,7 @@ function Header() {
       marginInline: 'auto',
       marginBlock: '3em',
       textAlign: 'center',
-      fontWeight: '600',
+      fontWeight: 'bold',
       [theme.breakpoints.down('lg')]: {
         marginBlock: '2em',
         width: '33em',

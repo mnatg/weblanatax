@@ -31,7 +31,7 @@ const content = [{
 }, {
   img: people,
   alt: 'Personas',
-  text: 'Calidad con la que puedes contar.'
+  text: 'Calidad al alcance de tu bolsillo.'
 }, {
   img: statistic,
   alt: 'Estadistica',

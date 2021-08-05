@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       fontSize: '2.5em',
       width: '100%',
+      
     },
   },
   body: {
@@ -68,6 +69,8 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       width: '50%',
+      marginLeft:'auto',
+      marginRigth:'auto',
     },
   },
   img: {

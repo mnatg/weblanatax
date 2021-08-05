@@ -72,12 +72,13 @@ function Bottom() {
       },
     },
     finalText: {
-      color: '#d9e021',
+      color: '#009245',
       fontSize: '1.5em',
       textAlign: 'center',
       marginBlock: '2em',
       marginInline: 'auto',
       width: '65%',
+      fontWeight: 'bold',
       [theme.breakpoints.down('xs')]: {
         width: '80%',
         marginTop: 0,
@@ -146,7 +147,7 @@ function Bottom() {
         <Grid item xs={6} className={classes.bigBubble} style={{ marginTop: '110em', marginBottom: 0 }} />
       </Hidden>
     </Grid>
-    <p className={classes.finalText} >Lanatax ha creado planes que se ajustan a tu realidad tributaria, pues no es lo mismo proceso para un contratista, inversionista o un empleado. A continuación te mostraremos el plan que hemos diseñado para cada tipo de situación tributaria.</p>
+    <p className={classes.finalText} >Lanatax ha creado planes que se ajustan a tu realidad tributaria, pues no es lo mismo proceso para un contratista, inversionista o un empleado. Para saber más de dichos planes ingresa a la app Lanatax desde tu móvil.</p>
   </>
   );
 }

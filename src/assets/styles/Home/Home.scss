@@ -7,6 +7,17 @@
   font-family: 'Poppins';
 }
 
+.impuestos {
+  font-size     : 1em;
+  font-weight   : bold;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 0.7;
+  letter-spacing: 3px;
+  color         : #009245;
+  font-family: "PoppinsBold" !important;
+}
+
 .apple-icon{
   margin-left: 0em;
 }
@@ -993,6 +1004,7 @@
       width         : 60%;
       margin-inline : auto;
       letter-spacing: 2.14px;
+      font-family: "PoppinsBold" !important;
     }
 
     .Nos-encargamos {
@@ -1610,6 +1622,7 @@
 
     .impuestos {
       font-size  : 1.5em;
+      font-family: "PoppinsBold" !important;
     }
   }
 
