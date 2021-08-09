@@ -67,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
     color: '#009245',
     fontFamily: 'PoppinsBold',
     marginLeft: '2em',
+    [theme.breakpoints.up('lg')]: {
+      width:'15em'
+    },
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
       marginLeft: 0,
