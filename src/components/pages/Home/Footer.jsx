@@ -33,7 +33,6 @@ function Footer() {
         try {
           let request = {
             "email": email.current.value,
-            "message": '',
             "topic":'newsLetter'
 
           }

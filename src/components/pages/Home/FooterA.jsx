@@ -19,8 +19,6 @@ function Footer() {
 
   let email = React.createRef();
 
-  const message = "";
-
   const [acceptPolicy, setAcceptPolicy] = useState(false);
 
   const handleClickFooter = () => {
@@ -38,7 +36,6 @@ function Footer() {
         try {
           let request = {
             "email": email.current.value,
-            "message": message,
             "topic":'newsLetter'
           }
           console.log('enviando mail: ', request)
@@ -49,9 +46,7 @@ function Footer() {
           Toast("Ha ocurrido un error, contacte al administardor: ", "error");
           console.error("Error al enviar mensaje", err);
         }
-
       }
-
     }
     else {
       Toast("Por favor ingrese un correo válido", "error");
